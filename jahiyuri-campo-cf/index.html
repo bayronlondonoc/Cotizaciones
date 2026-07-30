@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cotización final de viaje para Jahiyuri · Raíces</title>
-<meta name="description" content="Playa del Carmen y Cancún · lista de pasajeros por habitación · CF.">
+<meta name="description" content="Playa del Carmen y Cancún · valor final por habitación · CF.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" type="image/png" href="assets/marca/favicon.png">
 <meta property="og:title" content="Cotización final de viaje para Jahiyuri · Raíces">
-<meta property="og:description" content="Playa del Carmen y Cancún · lista de pasajeros por habitación · CF.">
+<meta property="og:description" content="Playa del Carmen y Cancún · valor final por habitación · CF.">
 <meta property="og:image" content="https://bayronlondonoc.github.io/cotizaciones/jahiyuri-campo-cf/assets/destinos/hero.jpg">
 <meta property="og:url" content="https://bayronlondonoc.github.io/cotizaciones/jahiyuri-campo-cf/">
 <meta property="og:type" content="website">
@@ -42,30 +42,32 @@ p{margin:0 0 1em}
 .eyebrow{font-family:var(--font-body);font-weight:500;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--atardecer);margin-bottom:14px}
 
 .nav{position:sticky;top:0;z-index:50;background:rgba(247,240,228,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav-in{display:flex;align-items:center;justify-content:center;height:78px}
+.nav-in{display:flex;align-items:center;justify-content:center;height:78px;gap:26px}
 .nav img{height:38px;width:auto}
+.nav-links{display:flex;gap:20px;font-size:14px}
+.nav-links a{text-decoration:none;color:var(--ink-soft)}
+.nav-links a:hover{color:var(--atardecer)}
+@media(max-width:640px){.nav-links{display:none}}
 
 section{padding:clamp(48px,7vw,90px) 0;position:relative;text-align:center}
 .sec-head{margin-bottom:38px}
 .sec-head p{color:var(--ink-soft);font-size:16px;margin:12px auto 0;max-width:60ch}
 .alt{background:var(--paper)}
 
-.hero{position:relative;min-height:min(56vh,460px);display:flex;align-items:flex-end;justify-content:center;color:#fff;overflow:hidden;text-align:center}
+.hero{position:relative;min-height:min(52vh,420px);display:flex;align-items:flex-end;justify-content:center;color:#fff;overflow:hidden;text-align:center}
 .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(59,32,24,.35) 0%,rgba(59,32,24,.12) 22%,rgba(85,42,33,.58) 48%,rgba(85,42,33,.90) 78%,rgba(72,35,27,.97) 100%)}
-.hero-in{position:relative;z-index:2;width:100%;padding:48px 6vw 52px}
+.hero-in{position:relative;z-index:2;width:100%;padding:44px 6vw 48px}
 .hero h1{color:#fff;margin:14px 0 10px}
 .hero .kicker{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--arena);font-weight:500}
 .hero .sub{font-size:clamp(15px,1.9vw,18px);color:#F6E7D6;max-width:56ch;font-weight:300;margin-inline:auto}
-.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;justify-content:center}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;justify-content:center}
 .pill{border:1px solid rgba(230,202,178,.5);border-radius:999px;padding:7px 16px;font-size:13px;color:#F6E7D6;backdrop-filter:blur(4px);background:rgba(59,32,24,.22)}
 .pill.cf{background:var(--atardecer);border-color:var(--atardecer);font-weight:500}
 
 .habs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;text-align:left}
 .hab{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-soft);padding:20px 22px;display:flex;flex-direction:column}
-.hab.wide{grid-column:1/-1;max-width:640px;margin-inline:auto}
 .hab-tag{font-family:var(--font-display);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--tierra);padding:5px 13px;border-radius:999px;display:inline-block;margin-bottom:14px;align-self:flex-start}
-.hab-tag.n4{background:var(--atardecer)}
 .pax{list-style:none;margin:0;padding:0}
 .pax li{padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
 .pax li:last-child{border-bottom:0}
@@ -76,17 +78,47 @@ section{padding:clamp(48px,7vw,90px) 0;position:relative;text-align:center}
 .nota-box{margin-top:8px;background:var(--arena-soft);border-radius:14px;padding:18px 22px;font-size:13.5px;color:var(--ink-soft);line-height:1.75;text-align:left;max-width:640px;margin-inline:auto}
 .nota-box b{color:var(--tierra);font-weight:600}
 
-.alert{background:rgba(156,43,13,.07);border:1px solid rgba(156,43,13,.22);border-radius:14px;padding:20px 22px;display:flex;gap:16px;align-items:flex-start;text-align:left;max-width:640px;margin:0 auto}
-.alert .ic{flex:none;width:34px;height:34px;border-radius:50%;background:var(--atardecer);color:#fff;display:grid;place-items:center;font-family:var(--font-display);font-size:18px}
-.alert h3{font-size:17px;margin-bottom:6px}
-.alert p{margin:0;font-size:13.5px;color:var(--ink-soft)}
+.hcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;text-align:left}
+.hcard{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;box-shadow:var(--shadow-soft)}
+.hcard .city{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--atardecer);font-weight:500;margin-bottom:6px}
+.hcard h3{margin-bottom:4px}
+.hcard .dates{font-size:13px;color:var(--mute);margin-bottom:10px}
+.hcard p{font-size:13.5px;color:var(--ink-soft);margin:0}
+
+.fare-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.fare-row{grid-template-columns:1fr}}
+.fare{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-align:left}
+.fare.classic{border-color:rgba(156,43,13,.3)}
+.fare .ftag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--mute);font-weight:500;margin-bottom:2px;display:block}
+.fare.classic .ftag{color:var(--atardecer)}
+.fare .famt{font-family:var(--font-display);font-size:15px;color:var(--tierra);margin-bottom:2px}
+
+.rooms{display:flex;flex-direction:column;gap:18px}
+.rcard{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-soft);padding:22px 24px;text-align:left}
+.rcard-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:14px}
+.rcard-head h3{font-size:19px}
+.rcard-who{font-size:13px;color:var(--mute)}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.price-grid{grid-template-columns:1fr}}
+.pcol{border-radius:14px;padding:16px 18px}
+.pcol.light{background:var(--arena-soft)}
+.pcol.classic{background:rgba(156,43,13,.06);border:1px solid rgba(156,43,13,.2)}
+.pcol .plabel{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500}
+.pcol.classic .plabel{color:var(--atardecer)}
+.pcol .ptotal{font-family:var(--font-display);font-size:clamp(24px,3vw,30px);color:var(--tierra);margin:4px 0 2px}
+.pcol .pcop{font-size:12.5px;color:var(--mute);margin-bottom:10px}
+.pcol .prow{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink-soft);padding:4px 0;border-top:1px dashed var(--line)}
+.pcol .prow:first-of-type{border-top:1px solid var(--line);margin-top:6px;padding-top:8px}
+
+.grouptotal{margin-top:34px;font-size:13px;color:var(--mute);text-align:center}
+.grouptotal b{color:var(--tierra);font-weight:500}
 
 footer{background:var(--tierra);color:rgba(230,202,178,.72);padding:48px 0 26px;font-size:13px;text-align:center}
 footer img{height:32px;margin:0 auto 20px}
 footer p{margin:0 0 6px;line-height:1.7}
 .f-bot{border-top:1px solid rgba(230,202,178,.16);margin-top:24px;padding-top:20px;font-size:11.5px;color:rgba(230,202,178,.5)}
 
-@media print{ .nav{display:none} .hero{min-height:auto} body{background:#fff} section{padding:22px 0;break-inside:avoid} .hab{break-inside:avoid;box-shadow:none} }
+@media print{ .nav{display:none} .hero{min-height:auto} body{background:#fff} section{padding:22px 0;break-inside:avoid} .hab,.rcard,.hcard{break-inside:avoid;box-shadow:none} }
 </style>
 </head>
 <body>
@@ -94,6 +126,11 @@ footer p{margin:0 0 6px;line-height:1.7}
 <nav class="nav">
   <div class="wrap nav-in">
     <a href="#top" aria-label="Raíces"><img src="assets/marca/logo-horizontal.png" alt="Raíces"></a>
+    <div class="nav-links">
+      <a href="#pasajeros">Pasajeros</a>
+      <a href="#hoteles">Hoteles</a>
+      <a href="#precios">Precio por habitación</a>
+    </div>
   </div>
 </nav>
 
@@ -101,12 +138,12 @@ footer p{margin:0 0 6px;line-height:1.7}
   <img class="bg" src="assets/destinos/hero.jpg" alt="Riviera Maya, México">
   <div class="hero-in">
     <div class="kicker">Cotización final · Jahiyuri Campo</div>
-    <h1>Pasajeros por habitación</h1>
-    <p class="sub">Playa del Carmen y Cancún. Aquí queda la lista definitiva de quién va en cada habitación, ya con los ajustes de último momento. El hotel y el valor por habitación se agregan en la próxima actualización.</p>
+    <h1>Valor final por habitación</h1>
+    <p class="sub">Playa del Carmen y Cancún, 6 noches. Ya con hoteles, vuelo y tours confirmados: aquí está el valor final por cada habitación, en tarifa Light o Classic con Avianca.</p>
     <div class="hero-meta">
       <span class="pill cf">Cotización Final · CF</span>
-      <span class="pill">20 pasajeros · 8 habitaciones</span>
-      <span class="pill">Hoteles pendientes de confirmar</span>
+      <span class="pill">20 pasajeros · 9 habitaciones</span>
+      <span class="pill">27 nov – 4 dic 2026</span>
     </div>
   </div>
 </header>
@@ -116,7 +153,7 @@ footer p{margin:0 0 6px;line-height:1.7}
     <div class="sec-head">
       <div class="eyebrow">Lista definitiva</div>
       <h2>Quién va en cada habitación</h2>
-      <p>Tomás Zuluaga Chávez ya no viaja. Yolid se pasó a la habitación de Ingrid, y la habitación de Inés queda con Valeria y Emiliana.</p>
+      <p>Tomás Zuluaga Chávez ya no viaja. Yolid se pasó a la habitación de Ingrid, la de Inés quedó con Valeria y Emiliana, y el grupo de Emilia, Gabriela, Sarah y Zoraida se organizó en 2 habitaciones dobles (así quedó también en Playa del Carmen, no solo en Cancún).</p>
     </div>
     <div class="habs">
 
@@ -178,11 +215,17 @@ footer p{margin:0 0 6px;line-height:1.7}
         </ul>
       </div>
 
-      <div class="hab wide">
-        <span class="hab-tag n4">Habitación 8 · 4 personas</span>
+      <div class="hab">
+        <span class="hab-tag">Habitación 8 · 2 personas</span>
         <ul class="pax">
           <li><b>Emilia Chávez Campo</b><span class="doc">Cc: 1038439666</span></li>
           <li><b>Gabriela Chávez Campo</b><span class="doc">Cc: 1038113233</span></li>
+        </ul>
+      </div>
+
+      <div class="hab">
+        <span class="hab-tag">Habitación 9 · 2 personas</span>
+        <ul class="pax">
           <li><b>Sarah Chavez Campo</b><span class="doc">TI: 1038124255</span></li>
           <li><b>Zoraida Marín López</b><span class="doc">Cc: 42024965</span></li>
         </ul>
@@ -192,30 +235,157 @@ footer p{margin:0 0 6px;line-height:1.7}
   </div>
 </section>
 
-<section class="alt" id="notas">
+<section class="alt" id="hoteles">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">Importante</div>
-      <h2>Sobre la habitación de 4</h2>
+      <div class="eyebrow">Ya confirmados</div>
+      <h2>Hoteles y vuelo</h2>
+      <p>Todas las habitaciones ya están cotizadas en estos dos hoteles, más el vuelo Avianca Medellín–Cancún ida y regreso.</p>
     </div>
-    <div class="alert">
-      <div class="ic">!</div>
-      <div>
-        <h3>Habitación 8 (Emilia, Gabriela, Sarah y Zoraida)</h3>
-        <p>Va en <b>una sola habitación de 4</b> únicamente en el hotel de <b>Playa del Carmen</b>. En los hoteles <b>Riu</b> de Cancún se organiza como <b>2 habitaciones dobles</b>, porque ese es su límite de ocupación.</p>
+    <div class="hcards">
+      <div class="hcard">
+        <span class="city">Playa del Carmen · 4 noches</span>
+        <h3>Antera Hotel & Residences</h3>
+        <div class="dates">Entrada 25 nov · salida 29 nov de 2026 · alojamiento y desayuno</div>
+        <p>Habitaciones dobles deluxe para las parejas y apartamentos de dos dormitorios para las familias con niños.</p>
+      </div>
+      <div class="hcard">
+        <span class="city">Cancún · 2 noches</span>
+        <h3>Riu Ventura</h3>
+        <div class="dates">Entrada 29 nov · salida 1 dic de 2026 · todo incluido</div>
+        <p>Habitaciones dobles con vista mar lateral para las 9 habitaciones del grupo.</p>
       </div>
     </div>
-    <div class="nota-box">
-      <b>Pendiente por definir:</b> hotel en Playa del Carmen, hotel en Cancún, tiquetes aéreos y valor por habitación. En cuanto se confirmen esos datos se actualiza esta misma página con los precios.
+    <div class="nota-box" style="margin-top:22px;max-width:100%">
+      <b>Vuelo Avianca (Medellín ✈ Cancún ✈ Medellín):</b> ida viernes 27 de noviembre, regreso viernes 4 de diciembre de 2026, directo, sin escalas. Precio por pasajero (igual para niños):
     </div>
+    <div class="fare-row" style="max-width:640px;margin:14px auto 0">
+      <div class="fare">
+        <span class="ftag">Tarifa Light</span>
+        <div class="famt">US$531 por pasajero</div>
+      </div>
+      <div class="fare classic">
+        <span class="ftag">Tarifa Classic</span>
+        <div class="famt">US$665 por pasajero</div>
+      </div>
+    </div>
+    <div class="nota-box" style="margin-top:18px;max-width:100%">
+      <b>Tours incluidos (4 noches en Playa):</b> Xcaret Plus + Xel-Há + Xoximilco + Xenses. US$558 por adulto; los niños pagan el 75% (US$419). <b>Transporte:</b> US$120 por persona, igual para niños y adultos.
+    </div>
+  </div>
+</section>
+
+<section id="precios">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">El valor por habitación</div>
+      <h2>Precio final por habitación</h2>
+      <p>Incluye hotel (Playa + Cancún), vuelo, tours y traslados de todos los que duermen en esa habitación. La reserva es el 100% del vuelo más el 22% del resto; el saldo se paga antes de la fecha límite del hotel.</p>
+    </div>
+
+    <div class="rooms">
+
+      <div class="rcard">
+        <div class="rcard-head"><h3>Habitación 1</h3><span class="rcard-who">Ingrid Chávez · Yolid Chávez</span></div>
+        <div class="price-grid">
+          <div class="pcol light"><span class="plabel">Light</span><div class="ptotal">US$2.826</div><div class="pcop">≈ COP 9.219.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.450</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+          <div class="pcol classic"><span class="plabel">Classic</span><div class="ptotal">US$3.093</div><div class="pcop">≈ COP 10.090.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.717</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+        </div>
+      </div>
+
+      <div class="rcard">
+        <div class="rcard-head"><h3>Habitación 2</h3><span class="rcard-who">Fredy Cabrera · Samuel Cabrera · Nicolás Cabrera (8 años)</span></div>
+        <div class="price-grid">
+          <div class="pcol light"><span class="plabel">Light</span><div class="ptotal">US$4.093</div><div class="pcop">≈ COP 13.353.000</div>
+            <div class="prow"><span>Reserva</span><b>US$2.143</b></div><div class="prow"><span>Saldo</span><b>US$1.950</b></div></div>
+          <div class="pcol classic"><span class="plabel">Classic</span><div class="ptotal">US$4.493</div><div class="pcop">≈ COP 14.660.000</div>
+            <div class="prow"><span>Reserva</span><b>US$2.544</b></div><div class="prow"><span>Saldo</span><b>US$1.950</b></div></div>
+        </div>
+      </div>
+
+      <div class="rcard">
+        <div class="rcard-head"><h3>Habitación 3</h3><span class="rcard-who">Nober Chávez · Kathya Guerra</span></div>
+        <div class="price-grid">
+          <div class="pcol light"><span class="plabel">Light</span><div class="ptotal">US$2.826</div><div class="pcop">≈ COP 9.219.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.450</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+          <div class="pcol classic"><span class="plabel">Classic</span><div class="ptotal">US$3.093</div><div class="pcop">≈ COP 10.090.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.717</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+        </div>
+      </div>
+
+      <div class="rcard">
+        <div class="rcard-head"><h3>Habitación 4</h3><span class="rcard-who">Bryant Rueda · Antonella Álvarez (6 años)</span></div>
+        <div class="price-grid">
+          <div class="pcol light"><span class="plabel">Light</span><div class="ptotal">US$2.712</div><div class="pcop">≈ COP 8.849.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.425</b></div><div class="prow"><span>Saldo</span><b>US$1.287</b></div></div>
+          <div class="pcol classic"><span class="plabel">Classic</span><div class="ptotal">US$2.980</div><div class="pcop">≈ COP 9.721.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.692</b></div><div class="prow"><span>Saldo</span><b>US$1.287</b></div></div>
+        </div>
+      </div>
+
+      <div class="rcard">
+        <div class="rcard-head"><h3>Habitación 5</h3><span class="rcard-who">Primavera Inés Chávez · Valeria Cabrera · Emiliana Torres (8 años)</span></div>
+        <div class="price-grid">
+          <div class="pcol light"><span class="plabel">Light</span><div class="ptotal">US$4.093</div><div class="pcop">≈ COP 13.353.000</div>
+            <div class="prow"><span>Reserva</span><b>US$2.143</b></div><div class="prow"><span>Saldo</span><b>US$1.950</b></div></div>
+          <div class="pcol classic"><span class="plabel">Classic</span><div class="ptotal">US$4.493</div><div class="pcop">≈ COP 14.660.000</div>
+            <div class="prow"><span>Reserva</span><b>US$2.544</b></div><div class="prow"><span>Saldo</span><b>US$1.950</b></div></div>
+        </div>
+      </div>
+
+      <div class="rcard">
+        <div class="rcard-head"><h3>Habitación 6</h3><span class="rcard-who">Madeleine Londoño · David Ballen</span></div>
+        <div class="price-grid">
+          <div class="pcol light"><span class="plabel">Light</span><div class="ptotal">US$2.826</div><div class="pcop">≈ COP 9.219.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.450</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+          <div class="pcol classic"><span class="plabel">Classic</span><div class="ptotal">US$3.093</div><div class="pcop">≈ COP 10.090.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.717</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+        </div>
+      </div>
+
+      <div class="rcard">
+        <div class="rcard-head"><h3>Habitación 7</h3><span class="rcard-who">Luis Chávez · Jahiyuri Campo</span></div>
+        <div class="price-grid">
+          <div class="pcol light"><span class="plabel">Light</span><div class="ptotal">US$2.826</div><div class="pcop">≈ COP 9.219.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.450</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+          <div class="pcol classic"><span class="plabel">Classic</span><div class="ptotal">US$3.093</div><div class="pcop">≈ COP 10.090.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.717</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+        </div>
+      </div>
+
+      <div class="rcard">
+        <div class="rcard-head"><h3>Habitación 8</h3><span class="rcard-who">Emilia Chávez · Gabriela Chávez</span></div>
+        <div class="price-grid">
+          <div class="pcol light"><span class="plabel">Light</span><div class="ptotal">US$2.826</div><div class="pcop">≈ COP 9.219.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.450</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+          <div class="pcol classic"><span class="plabel">Classic</span><div class="ptotal">US$3.093</div><div class="pcop">≈ COP 10.090.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.717</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+        </div>
+      </div>
+
+      <div class="rcard">
+        <div class="rcard-head"><h3>Habitación 9</h3><span class="rcard-who">Sarah Chávez · Zoraida Marín</span></div>
+        <div class="price-grid">
+          <div class="pcol light"><span class="plabel">Light</span><div class="ptotal">US$2.826</div><div class="pcop">≈ COP 9.219.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.450</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+          <div class="pcol classic"><span class="plabel">Classic</span><div class="ptotal">US$3.093</div><div class="pcop">≈ COP 10.090.000</div>
+            <div class="prow"><span>Reserva</span><b>US$1.717</b></div><div class="prow"><span>Saldo</span><b>US$1.376</b></div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="grouptotal">Referencia — valor total del grupo (20 personas, 9 habitaciones): <b>US$27.851</b> en tarifa Light o <b>US$30.523</b> en tarifa Classic. TRM referencial usada para el equivalente en pesos: US$1 = COP 3.262,58.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <img src="assets/marca/logo-blanco.png" alt="Raíces">
-    <p>Cotización final (CF) preparada para Jahiyuri Campo</p>
-    <div class="f-bot">Documento privado. No constituye reserva confirmada.</div>
+    <p>Cotización final (CF) preparada para Jahiyuri Campo · 30 de julio de 2026</p>
+    <div class="f-bot">Documento privado. No constituye reserva confirmada. Valores sujetos a la disponibilidad de cada proveedor al momento de pagar.</div>
   </div>
 </footer>
 
