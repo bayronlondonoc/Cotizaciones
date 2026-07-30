@@ -120,23 +120,13 @@ section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
 .hm-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;cursor:zoom-in}
 @media(max-width:560px){.hm-gal{grid-template-columns:1fr 1fr}}
 /* video */
-.card-img.is-video img{transition:transform .4s ease}
-.card-img.is-video:hover img{transform:scale(1.04)}
-.card-img.is-video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,14,8,.05) 0%,rgba(30,14,8,.42) 100%)}
-.card-img .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:3;width:66px;height:66px;border-radius:50%;background:rgba(255,255,255,.94);color:var(--atardecer);display:grid;place-items:center;box-shadow:0 8px 26px rgba(30,14,8,.34);transition:transform .25s ease}
-.card-img .play svg{margin-left:3px}
-.card-img.is-video:hover .play{transform:translate(-50%,-50%) scale(1.08)}
-.card-img .vlabel{position:absolute;left:0;right:0;bottom:14px;z-index:3;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#fff;font-weight:500;text-shadow:0 1px 8px rgba(30,14,8,.6)}
+.card-video{position:relative;aspect-ratio:16/10;background:#000}
+.card-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.card-video .badge{pointer-events:none}
 .mini-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin:0 0 14px}
 .mini-gal button{padding:0;border:0;background:none;cursor:pointer;border-radius:9px;overflow:hidden;line-height:0}
 .mini-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:opacity .2s}
 .mini-gal button:hover img{opacity:.8}
-.vmodal-overlay{position:fixed;inset:0;z-index:400;background:rgba(22,9,4,.93);display:flex;align-items:center;justify-content:center;padding:5vh 5vw;opacity:0;pointer-events:none;transition:opacity .3s ease}
-.vmodal-overlay.open{opacity:1;pointer-events:auto}
-.vmodal{width:min(980px,100%);position:relative}
-.vmodal-frame{position:relative;padding-top:56.25%;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 30px 90px rgba(0,0,0,.5)}
-.vmodal-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.vmodal-close{position:fixed;top:14px;right:22px;background:none;border:0;font-size:38px;color:rgba(255,255,255,.85);cursor:pointer;line-height:1}
 
 .lightbox{position:fixed;inset:0;z-index:400;background:rgba(22,9,4,.93);display:flex;align-items:center;justify-content:center;padding:5vh 5vw;opacity:0;pointer-events:none;transition:opacity .3s ease}
 .lightbox.open{opacity:1;pointer-events:auto}
@@ -332,7 +322,7 @@ footer p{margin:0 0 8px;line-height:1.7}
     <div class="sec-head">
       <div class="eyebrow">Dónde se van a quedar</div>
       <h2>Los dos hoteles</h2>
-      <p>Cuatro noches en Playa del Carmen, a pocas cuadras de la Quinta Avenida, y dos noches en Cancún frente al mar en régimen todo incluido. Toca la foto del Antera para ver la galería, y el play del Riu Ventura para ver el video del hotel.</p>
+      <p>Cuatro noches en Playa del Carmen, a pocas cuadras de la Quinta Avenida, y dos noches en Cancún frente al mar en régimen todo incluido. Del Riu Ventura les dejamos el video del hotel para que lo vean completo; del Antera, la galería de fotos.</p>
     </div>
     <div class="grid2" id="grid-hoteles"></div>
   </div>
@@ -572,12 +562,6 @@ footer p{margin:0 0 8px;line-height:1.7}
   <button class="lb-close" id="lb-close" aria-label="Cerrar">&times;</button>
   <img id="lightbox-img" src="" alt="">
 </div>
-<div class="vmodal-overlay" id="vmodal-overlay">
-  <div class="vmodal">
-    <button class="vmodal-close" id="vmodal-close" aria-label="Cerrar">&times;</button>
-    <div class="vmodal-frame" id="vmodal-frame"></div>
-  </div>
-</div>
 
 <script>
 const TRM = 3206.18;
@@ -642,18 +626,16 @@ document.getElementById("grid-pax").innerHTML = HABS.map(h=>`
 function estStars(e){ return "★".repeat(Math.floor(e)); }
 document.getElementById("grid-hoteles").innerHTML = HOTELES.map(h=>{
   const media = h.video
-    ? `<button class="card-img is-video" type="button" data-video="${h.video}" data-start="${h.videoStart||0}" aria-label="Ver el video de ${h.nombre}">
+    ? `<div class="card-video">
          <span class="badge">${h.badge}</span><span class="badge city">${h.ciudad}</span>
-         <img src="assets/hoteles/${h.slug}/${FOTOS[h.slug][0]}" alt="${h.nombre}" loading="lazy">
-         <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
-         <span class="vlabel">Ver el video del hotel</span>
-       </button>`
+         <iframe src="https://www.youtube-nocookie.com/embed/${h.video}?start=${h.videoStart||0}&rel=0" title="Video del ${h.nombre}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       </div>`
     : `<button class="card-img" type="button" data-gal="${h.slug}" aria-label="Ver fotos de ${h.nombre}">
          <span class="badge">${h.badge}</span><span class="badge city">${h.ciudad}</span>
          <img src="assets/hoteles/${h.slug}/${FOTOS[h.slug][0]}" alt="${h.nombre}" loading="lazy">
        </button>`;
   const thumbs = h.video
-    ? `<div class="mini-gal">${FOTOS[h.slug].slice(1,5).map((f,i)=>
+    ? `<div class="mini-gal">${FOTOS[h.slug].slice(0,4).map(f=>
          `<button type="button" data-gal="${h.slug}" aria-label="Ver fotos de ${h.nombre}"><img src="assets/hoteles/${h.slug}/${f}" alt="${h.nombre}" loading="lazy"></button>`).join("")}</div>`
     : "";
   return `
@@ -689,22 +671,11 @@ function openGallery(slug){
 }
 function openLightbox(src){ document.getElementById("lightbox-img").src=src; document.getElementById("lightbox").classList.add("open"); }
 document.querySelectorAll("[data-gal]").forEach(el=>el.addEventListener("click",e=>{ e.preventDefault(); openGallery(el.dataset.gal); }));
-
-/* ===== video ===== */
-const vOv = document.getElementById("vmodal-overlay"), vBox = document.getElementById("vmodal-frame");
-function openVideo(id, start){
-  vBox.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?start=${start||0}&autoplay=1&rel=0" title="Video del hotel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-  vOv.classList.add("open");
-}
-function closeVideo(){ vOv.classList.remove("open"); vBox.innerHTML = ""; }
-document.querySelectorAll("[data-video]").forEach(el=>el.addEventListener("click",e=>{ e.preventDefault(); openVideo(el.dataset.video, el.dataset.start); }));
-document.getElementById("vmodal-close").addEventListener("click", closeVideo);
-vOv.addEventListener("click", e=>{ if(e.target.id==="vmodal-overlay") closeVideo(); });
 document.getElementById("hmodal-close").addEventListener("click",()=>document.getElementById("hmodal-overlay").classList.remove("open"));
 document.getElementById("hmodal-overlay").addEventListener("click",e=>{ if(e.target.id==="hmodal-overlay") e.currentTarget.classList.remove("open"); });
 document.getElementById("lb-close").addEventListener("click",()=>document.getElementById("lightbox").classList.remove("open"));
 document.getElementById("lightbox").addEventListener("click",e=>{ if(e.target.id==="lightbox") e.currentTarget.classList.remove("open"); });
-addEventListener("keydown",e=>{ if(e.key==="Escape"){ document.getElementById("hmodal-overlay").classList.remove("open"); document.getElementById("lightbox").classList.remove("open"); closeVideo(); } });
+addEventListener("keydown",e=>{ if(e.key==="Escape"){ document.getElementById("hmodal-overlay").classList.remove("open"); document.getElementById("lightbox").classList.remove("open"); } });
 
 /* ===== selector de tarifa ===== */
 document.getElementById("sel-fare").innerHTML = TARIFAS.map(t=>`
