@@ -119,6 +119,25 @@ section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
 .hm-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .hm-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;cursor:zoom-in}
 @media(max-width:560px){.hm-gal{grid-template-columns:1fr 1fr}}
+/* video */
+.card-img.is-video img{transition:transform .4s ease}
+.card-img.is-video:hover img{transform:scale(1.04)}
+.card-img.is-video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,14,8,.05) 0%,rgba(30,14,8,.42) 100%)}
+.card-img .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:3;width:66px;height:66px;border-radius:50%;background:rgba(255,255,255,.94);color:var(--atardecer);display:grid;place-items:center;box-shadow:0 8px 26px rgba(30,14,8,.34);transition:transform .25s ease}
+.card-img .play svg{margin-left:3px}
+.card-img.is-video:hover .play{transform:translate(-50%,-50%) scale(1.08)}
+.card-img .vlabel{position:absolute;left:0;right:0;bottom:14px;z-index:3;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#fff;font-weight:500;text-shadow:0 1px 8px rgba(30,14,8,.6)}
+.mini-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin:0 0 14px}
+.mini-gal button{padding:0;border:0;background:none;cursor:pointer;border-radius:9px;overflow:hidden;line-height:0}
+.mini-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:opacity .2s}
+.mini-gal button:hover img{opacity:.8}
+.vmodal-overlay{position:fixed;inset:0;z-index:400;background:rgba(22,9,4,.93);display:flex;align-items:center;justify-content:center;padding:5vh 5vw;opacity:0;pointer-events:none;transition:opacity .3s ease}
+.vmodal-overlay.open{opacity:1;pointer-events:auto}
+.vmodal{width:min(980px,100%);position:relative}
+.vmodal-frame{position:relative;padding-top:56.25%;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 30px 90px rgba(0,0,0,.5)}
+.vmodal-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vmodal-close{position:fixed;top:14px;right:22px;background:none;border:0;font-size:38px;color:rgba(255,255,255,.85);cursor:pointer;line-height:1}
+
 .lightbox{position:fixed;inset:0;z-index:400;background:rgba(22,9,4,.93);display:flex;align-items:center;justify-content:center;padding:5vh 5vw;opacity:0;pointer-events:none;transition:opacity .3s ease}
 .lightbox.open{opacity:1;pointer-events:auto}
 .lightbox img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 30px 90px rgba(0,0,0,.5)}
@@ -313,7 +332,7 @@ footer p{margin:0 0 8px;line-height:1.7}
     <div class="sec-head">
       <div class="eyebrow">Dónde se van a quedar</div>
       <h2>Los dos hoteles</h2>
-      <p>Cuatro noches en Playa del Carmen, a pocas cuadras de la Quinta Avenida, y dos noches en Cancún frente al mar en régimen todo incluido. Toca cada tarjeta para ver todas las fotos.</p>
+      <p>Cuatro noches en Playa del Carmen, a pocas cuadras de la Quinta Avenida, y dos noches en Cancún frente al mar en régimen todo incluido. Toca la foto del Antera para ver la galería, y el play del Riu Ventura para ver el video del hotel.</p>
     </div>
     <div class="grid2" id="grid-hoteles"></div>
   </div>
@@ -486,15 +505,15 @@ footer p{margin:0 0 8px;line-height:1.7}
           </div>
           <div class="pc-col best">
             <span class="pc-l">Tarifa Classic</span>
-            <div class="pc-row"><span>Adulto</span><b>US$2.076<span class="cc">$6.656.000 COP</span></b></div>
-            <div class="pc-row"><span>Niño</span><b>US$1.561<span class="cc">$5.005.000 COP</span></b></div>
+            <div class="pc-row"><span>Adulto</span><b>US$2.072<span class="cc">$6.643.000 COP</span></b></div>
+            <div class="pc-row"><span>Niño</span><b>US$1.557<span class="cc">$4.992.000 COP</span></b></div>
           </div>
         </div>
         <div class="pc-foot">
           Son <b>US$195 más por adulto</b> y <b>US$105 más por niño</b> que el plan de dos noches. Total del grupo en tarifa Light: <b>US$37.255</b> · $119.446.000 COP.
         </div>
         <div class="pc-foot">
-          <b>Si aprovechan la habitación de regalo:</b> las dos personas que entren en la habitación 10 pagarían aproximadamente <b>US$1.410</b> cada una en tarifa Light ($4.521.000 COP), o <b>US$1.545</b> en Classic. Ese valor cubre el vuelo, el hotel en Playa del Carmen, los cuatro tours y todos los traslados — el hotel de Cancún va de regalo. El valor exacto se confirma al hacer la reserva.
+          <b>Si aprovechan la habitación de regalo:</b> las dos personas que entren en la habitación 10 pagarían aproximadamente <b>US$1.410</b> cada una en tarifa Light ($4.521.000 COP), o <b>US$1.540</b> en Classic. Ese valor cubre el vuelo, el hotel en Playa del Carmen, los cuatro tours y todos los traslados — el hotel de Cancún va de regalo. El valor exacto se confirma al hacer la reserva.
         </div>
       </div>
     </div>
@@ -553,6 +572,12 @@ footer p{margin:0 0 8px;line-height:1.7}
   <button class="lb-close" id="lb-close" aria-label="Cerrar">&times;</button>
   <img id="lightbox-img" src="" alt="">
 </div>
+<div class="vmodal-overlay" id="vmodal-overlay">
+  <div class="vmodal">
+    <button class="vmodal-close" id="vmodal-close" aria-label="Cerrar">&times;</button>
+    <div class="vmodal-frame" id="vmodal-frame"></div>
+  </div>
+</div>
 
 <script>
 const TRM = 3206.18;
@@ -562,7 +587,7 @@ const cop = n => "$" + (Math.round(n/1000)*1000).toLocaleString("es-CO") + " COP
 /* ===== tarifas ===== */
 const TARIFAS = [
   {k:"light", label:"Light", desc:"1 artículo personal y 1 equipaje de mano (10 kg)", adulto:1745, nino:1320, resAd:767, resNi:674},
-  {k:"classic", label:"Classic", desc:"Suma maleta de bodega (23 kg), asiento y check-in en aeropuerto", adulto:1881, nino:1456, resAd:903, resNi:810}
+  {k:"classic", label:"Classic", desc:"Suma maleta de bodega (23 kg), asiento y check-in en aeropuerto", adulto:1871, nino:1446, resAd:894, resNi:800}
 ];
 let fare = "light";
 
@@ -581,18 +606,19 @@ const HABS = [
 
 /* ===== hoteles ===== */
 const FOTOS = {
-  "antera":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"],
+  "antera":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg"],
   "riu-ventura":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
 };
 const HOTELES = [
   {slug:"antera", nombre:"Antera Hotel & Residences", ciudad:"Playa del Carmen", est:4, badge:"Desayuno incluido",
    fechas:"Entrada miércoles 25 · salida domingo 29 de noviembre · 4 noches",
-   desc:"En la Avenida 10 Norte con Calle 6, a pocas cuadras de la Quinta Avenida y a caminata de la playa. Las parejas van en habitación Doble Deluxe y las familias con niños en apartamentos de dos dormitorios, con cocina y sala, para tener espacio de sobra. El desayuno está incluido todos los días.",
-   feat:["Desayuno incluido","Piscina","Restaurante","Aire acondicionado","Parqueadero","Wi-Fi"]},
+   desc:"En la Avenida 10 Norte con Calle 6, a pocas cuadras de la Quinta Avenida y a caminata de la playa. Arriba tiene una terraza con piscina y camastros mirando toda Playa del Carmen, y abajo una piscina rodeada de palmeras. Las parejas van en habitación Doble Deluxe y las familias con niños en apartamentos de dos dormitorios, con cocina equipada y sala, para tener espacio de sobra. El desayuno está incluido todos los días.",
+   feat:["Desayuno incluido","Piscina en la terraza","Restaurante","Apartamentos con cocina","Aire acondicionado","Parqueadero","Wi-Fi"]},
   {slug:"riu-ventura", nombre:"Riu Ventura", ciudad:"Cancún", est:5, badge:"Todo incluido",
+   video:"fQzdSM4Dbsc", videoStart:7,
    fechas:"Entrada domingo 29 de noviembre · salida martes 1 de diciembre · 2 noches",
-   desc:"Cinco estrellas en la zona hotelera de Cancún, en régimen todo incluido las 24 horas. Todas las habitaciones del grupo son dobles con vista al mar lateral. Restaurantes temáticos y buffet, bares, piscina, gimnasio, spa, deportes acuáticos no motorizados y espectáculos en la noche.",
-   feat:["Todo incluido 24h","Vista al mar","Piscina","Spa","Gimnasio","Restaurantes temáticos","Wi-Fi"]}
+   desc:"Cinco estrellas en la zona hotelera de Cancún, con la piscina y el club de playa dando directo al mar Caribe. Todo incluido las 24 horas: restaurantes temáticos y buffet, bares, snacks a cualquier hora, gimnasio, spa, deportes acuáticos no motorizados y espectáculos en la noche. Todas las habitaciones del grupo son dobles con vista al mar lateral.",
+   feat:["Todo incluido 24h","Frente al mar","Vista al mar lateral","Piscina","Spa","Gimnasio","Restaurantes temáticos","Wi-Fi"]}
 ];
 
 /* ===== tours ===== */
@@ -614,21 +640,36 @@ document.getElementById("grid-pax").innerHTML = HABS.map(h=>`
 
 /* ===== render hoteles ===== */
 function estStars(e){ return "★".repeat(Math.floor(e)); }
-document.getElementById("grid-hoteles").innerHTML = HOTELES.map(h=>`
+document.getElementById("grid-hoteles").innerHTML = HOTELES.map(h=>{
+  const media = h.video
+    ? `<button class="card-img is-video" type="button" data-video="${h.video}" data-start="${h.videoStart||0}" aria-label="Ver el video de ${h.nombre}">
+         <span class="badge">${h.badge}</span><span class="badge city">${h.ciudad}</span>
+         <img src="assets/hoteles/${h.slug}/${FOTOS[h.slug][0]}" alt="${h.nombre}" loading="lazy">
+         <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+         <span class="vlabel">Ver el video del hotel</span>
+       </button>`
+    : `<button class="card-img" type="button" data-gal="${h.slug}" aria-label="Ver fotos de ${h.nombre}">
+         <span class="badge">${h.badge}</span><span class="badge city">${h.ciudad}</span>
+         <img src="assets/hoteles/${h.slug}/${FOTOS[h.slug][0]}" alt="${h.nombre}" loading="lazy">
+       </button>`;
+  const thumbs = h.video
+    ? `<div class="mini-gal">${FOTOS[h.slug].slice(1,5).map((f,i)=>
+         `<button type="button" data-gal="${h.slug}" aria-label="Ver fotos de ${h.nombre}"><img src="assets/hoteles/${h.slug}/${f}" alt="${h.nombre}" loading="lazy"></button>`).join("")}</div>`
+    : "";
+  return `
   <article class="card">
-    <button class="card-img" type="button" data-gal="${h.slug}" aria-label="Ver fotos de ${h.nombre}">
-      <span class="badge">${h.badge}</span><span class="badge city">${h.ciudad}</span>
-      <img src="assets/hoteles/${h.slug}/${FOTOS[h.slug][0]}" alt="${h.nombre}" loading="lazy">
-    </button>
+    ${media}
     <div class="card-b">
       <h3>${h.nombre}</h3>
       <div class="stars">${estStars(h.est)}</div>
       <div class="card-dates">${h.fechas}</div>
       <p class="hdesc">${h.desc}</p>
       <ul class="hfeat">${h.feat.map(f=>`<li>${f}</li>`).join("")}</ul>
+      ${thumbs}
       <button class="gal-link" type="button" data-gal="${h.slug}">Ver las ${FOTOS[h.slug].length} fotos →</button>
     </div>
-  </article>`).join("");
+  </article>`;
+}).join("");
 
 /* ===== render tours ===== */
 document.getElementById("grid-tours").innerHTML = TOURS.map(t=>`
@@ -648,11 +689,22 @@ function openGallery(slug){
 }
 function openLightbox(src){ document.getElementById("lightbox-img").src=src; document.getElementById("lightbox").classList.add("open"); }
 document.querySelectorAll("[data-gal]").forEach(el=>el.addEventListener("click",e=>{ e.preventDefault(); openGallery(el.dataset.gal); }));
+
+/* ===== video ===== */
+const vOv = document.getElementById("vmodal-overlay"), vBox = document.getElementById("vmodal-frame");
+function openVideo(id, start){
+  vBox.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?start=${start||0}&autoplay=1&rel=0" title="Video del hotel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+  vOv.classList.add("open");
+}
+function closeVideo(){ vOv.classList.remove("open"); vBox.innerHTML = ""; }
+document.querySelectorAll("[data-video]").forEach(el=>el.addEventListener("click",e=>{ e.preventDefault(); openVideo(el.dataset.video, el.dataset.start); }));
+document.getElementById("vmodal-close").addEventListener("click", closeVideo);
+vOv.addEventListener("click", e=>{ if(e.target.id==="vmodal-overlay") closeVideo(); });
 document.getElementById("hmodal-close").addEventListener("click",()=>document.getElementById("hmodal-overlay").classList.remove("open"));
 document.getElementById("hmodal-overlay").addEventListener("click",e=>{ if(e.target.id==="hmodal-overlay") e.currentTarget.classList.remove("open"); });
 document.getElementById("lb-close").addEventListener("click",()=>document.getElementById("lightbox").classList.remove("open"));
 document.getElementById("lightbox").addEventListener("click",e=>{ if(e.target.id==="lightbox") e.currentTarget.classList.remove("open"); });
-addEventListener("keydown",e=>{ if(e.key==="Escape"){ document.getElementById("hmodal-overlay").classList.remove("open"); document.getElementById("lightbox").classList.remove("open"); } });
+addEventListener("keydown",e=>{ if(e.key==="Escape"){ document.getElementById("hmodal-overlay").classList.remove("open"); document.getElementById("lightbox").classList.remove("open"); closeVideo(); } });
 
 /* ===== selector de tarifa ===== */
 document.getElementById("sel-fare").innerHTML = TARIFAS.map(t=>`
