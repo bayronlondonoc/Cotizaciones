@@ -213,6 +213,33 @@ section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
 .alert h3{font-size:17px;margin-bottom:6px}
 .alert p{margin:0;font-size:13.5px;color:var(--ink-soft)}
 
+/* promo */
+.promo{background:linear-gradient(135deg,#5E6547 0%,#7D8561 55%,#8E9670 100%);color:#fff;overflow:hidden}
+.promo h2{color:#fff}
+.promo .eyebrow{color:#EDE3C8}
+.promo-in{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+@media(max-width:900px){.promo-in{grid-template-columns:1fr;gap:26px}}
+.promo-gift{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.34);border-radius:999px;padding:7px 16px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;margin-bottom:16px}
+.promo-txt > p{color:rgba(255,255,255,.9);font-size:16px;margin:16px 0 18px;max-width:52ch}
+.promo-txt b{color:#fff;font-weight:600}
+.promo-list{list-style:none;padding:0;margin:0}
+.promo-list li{position:relative;padding:8px 0 8px 28px;font-size:14.5px;color:rgba(255,255,255,.92)}
+.promo-list li::before{content:"✓";position:absolute;left:0;top:8px;font-family:var(--font-display);color:#F0DFC9;font-size:15px}
+.promo-card{background:var(--paper);color:var(--ink);border-radius:var(--radius);padding:26px 28px;box-shadow:0 22px 50px rgba(30,34,20,.28)}
+.pc-tag{font-family:var(--font-display);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--oliva-dark);padding:5px 14px;border-radius:999px;display:inline-block;margin-bottom:16px}
+.pc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:480px){.pc-grid{grid-template-columns:1fr}}
+.pc-col{border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.pc-col.best{border-color:rgba(156,43,13,.28);background:rgba(156,43,13,.05)}
+.pc-l{display:block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500;margin-bottom:10px}
+.pc-col.best .pc-l{color:var(--atardecer)}
+.pc-row{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:6px 0}
+.pc-row span{font-size:13px;color:var(--ink-soft)}
+.pc-row b{font-family:var(--font-display);font-size:20px;color:var(--tierra);font-weight:400;line-height:1}
+.pc-row .cc{display:block;font-family:var(--font-body);font-size:10.5px;color:var(--mute);font-weight:400;margin-top:2px;text-align:right}
+.pc-foot{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-soft);line-height:1.65}
+.pc-foot b{color:var(--tierra);font-weight:600}
+
 .cta{background:var(--atardecer);color:#fff;text-align:center}
 .cta h2{color:#fff}
 .cta p{color:rgba(255,255,255,.88);max-width:56ch;margin:16px auto 30px;font-size:17px}
@@ -245,6 +272,7 @@ footer p{margin:0 0 8px;line-height:1.7}
       <a href="#tours">Tours</a>
       <a href="#inversion">Tu inversión</a>
       <a href="#condiciones">Condiciones</a>
+      <a href="#promo">Beneficio</a>
     </div>
   </div>
 </nav>
@@ -427,6 +455,45 @@ footer p{margin:0 0 8px;line-height:1.7}
           </div>
         </div>
       </details>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo" id="promo">
+  <div class="wrap">
+    <div class="promo-in">
+      <div class="promo-txt">
+        <span class="promo-gift">★ Beneficio del Riu Ventura</span>
+        <h2>Una noche más<br>y una habitación gratis</h2>
+        <p>El Riu Ventura tiene una oferta para grupos: si en vez de dos noches se quedan <b>tres noches</b> en Cancún, el hotel <b>regala una habitación completa</b>. Como ustedes van con nueve habitaciones, la décima entraría sin pagar hotel en Cancún.</p>
+        <ul class="promo-list">
+          <li>Una noche más de todo incluido frente al mar, sin pagar el doble</li>
+          <li>La décima habitación no paga alojamiento en Cancún</li>
+          <li>Podrían sumarse dos personas más al viaje aprovechando esa habitación</li>
+          <li>El regreso pasaría al miércoles 2 de diciembre de 2026</li>
+        </ul>
+      </div>
+
+      <div class="promo-card">
+        <span class="pc-tag">Con 3 noches en Cancún</span>
+        <div class="pc-grid">
+          <div class="pc-col">
+            <span class="pc-l">Tarifa Light</span>
+            <div class="pc-row"><span>Adulto</span><b>US$1.985<span class="cc">$6.364.000 COP</span></b></div>
+            <div class="pc-row"><span>Niño</span><b>US$1.500<span class="cc">$4.809.000 COP</span></b></div>
+          </div>
+          <div class="pc-col best">
+            <span class="pc-l">Tarifa Classic</span>
+            <div class="pc-row"><span>Adulto</span><b>US$2.127<span class="cc">$6.820.000 COP</span></b></div>
+            <div class="pc-row"><span>Niño</span><b>US$1.642<span class="cc">$5.265.000 COP</span></b></div>
+          </div>
+        </div>
+        <div class="pc-foot">
+          Son <b>US$195 más por adulto</b> y <b>US$105 más por niño</b> que el plan de dos noches. Total del grupo en tarifa Light: <b>US$38.245</b> · $122.620.000 COP.<br>
+          Y si aprovechan la habitación de regalo, esas dos personas pagarían alrededor de <b>US$1.460</b> cada una en vez de US$1.985, porque no pagan el hotel de Cancún. El valor exacto se confirma al reservar.
+        </div>
+      </div>
     </div>
   </div>
 </section>
