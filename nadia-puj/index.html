@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cotización de viaje para Nadia · Raíces</title>
+<meta name="description" content="Punta Cana para dos · octubre o noviembre de 2026 · fechas abiertas, 4, 5 o 6 noches · resorts todo incluido.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="assets/marca/favicon.png">
+<meta property="og:title" content="Cotización de viaje para Nadia · Raíces">
+<meta property="og:description" content="Punta Cana para dos · octubre o noviembre de 2026 · fechas abiertas · resorts todo incluido">
+<meta property="og:image" content="https://bayronlondonoc.github.io/cotizaciones/nadia-puj/assets/destinos/hero.jpg">
+<meta property="og:url" content="https://bayronlondonoc.github.io/cotizaciones/nadia-puj/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --arena:#E6CAB2; --arena-soft:#F0DFC9; --bg:#F7F0E4; --paper:#FDFAF3;
+  --tierra:#68362C; --ink:#3B2018; --ink-soft:#5C3A2E; --mute:#8A6A58;
+  --atardecer:#9C2B0D; --oliva:#7D8561; --oliva-dark:#5E6547;
+  --line:rgba(59,32,24,.14);
+  --shadow:0 18px 40px rgba(59,32,24,.10); --shadow-soft:0 8px 22px rgba(59,32,24,.07);
+  --radius:18px;
+  --font-display:"Passion One","Arial Black",sans-serif; --font-body:"Poppins",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-body);font-weight:300;font-size:16px;line-height:1.65;color:var(--ink);background:var(--bg);overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1180px,92vw);margin-inline:auto}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:.96;letter-spacing:.01em;text-transform:uppercase;color:var(--tierra);margin:0}
+h1{font-size:clamp(40px,7vw,84px)} h2{font-size:clamp(30px,4.6vw,56px)} h3{font-size:clamp(20px,2.6vw,28px)}
+p{margin:0 0 1em}
+.eyebrow{font-family:var(--font-body);font-weight:500;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--atardecer);margin-bottom:14px}
+
+.nav{position:sticky;top:0;z-index:50;background:rgba(247,240,228,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:center;gap:34px;height:78px}
+.nav img{height:38px;width:auto}
+.nav-links{display:flex;gap:24px;font-size:15px;letter-spacing:.03em}
+.nav-links a{text-decoration:none;color:var(--ink-soft);padding:4px 0;border-bottom:1.5px solid transparent;transition:.2s;white-space:nowrap}
+.nav-links a:hover{color:var(--atardecer);border-bottom-color:var(--atardecer)}
+.nav-burger{display:none}
+@media(max-width:920px){
+  .nav-in{justify-content:space-between;gap:12px}
+  .nav-burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:40px;padding:0 9px;background:transparent;border:1px solid var(--line);border-radius:11px;cursor:pointer;flex:none}
+  .nav-burger span{display:block;height:2px;border-radius:2px;background:var(--tierra);transition:transform .25s,opacity .2s}
+  .nav-burger[aria-expanded="true"]{border-color:var(--atardecer)}
+  .nav-burger[aria-expanded="true"] span{background:var(--atardecer)}
+  .nav-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .nav-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{position:absolute;left:0;right:0;top:100%;display:none;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 0}
+  .nav-links.is-open{display:flex}
+  .nav-links a{padding:13px 6vw;border-bottom:0;border-left:3px solid transparent}
+  .nav-links a:hover{border-left-color:var(--atardecer);background:rgba(230,202,178,.34)}
+}
+
+.hero{position:relative;min-height:min(80vh,700px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(45,24,18,.62) 0%,rgba(45,24,18,.28) 45%,rgba(45,24,18,0) 80%),
+  linear-gradient(180deg,rgba(59,32,24,.35) 0%,rgba(59,32,24,.12) 22%,rgba(85,42,33,.58) 48%,rgba(85,42,33,.90) 78%,rgba(72,35,27,.97) 100%)}
+.hero-in{position:relative;z-index:2;width:100%;padding:56px 6vw 62px 18vw}
+@media(max-width:900px){.hero-in{padding:48px 6vw 52px}}
+.hero h1{color:#fff;margin:14px 0 10px}
+.hero .kicker{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--arena);font-weight:500}
+.hero .sub{font-size:clamp(15px,1.9vw,19px);color:#F6E7D6;max-width:58ch}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.pill{border:1px solid rgba(230,202,178,.5);border-radius:999px;padding:7px 16px;font-size:13px;color:#F6E7D6;backdrop-filter:blur(4px);background:rgba(59,32,24,.22)}
+
+section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
+.sec-head{margin-bottom:40px}
+.sec-head p{color:var(--ink-soft);font-size:17px;margin-top:16px}
+.rot{position:absolute;left:max(12px,calc((100vw - min(1180px,92vw))/2 - 46px));top:clamp(54px,7.5vw,104px);writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);font-weight:500;user-select:none}
+@media(max-width:1100px){.rot{display:none}}
+.alt{background:var(--paper)}
+
+/* aerolíneas */
+.air-block{margin-bottom:30px}
+.air-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;margin-bottom:6px}
+.air-head h3{font-size:clamp(22px,3vw,30px)}
+.air-tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--oliva);padding:4px 11px;border-radius:999px;font-weight:500}
+.air-tag.escala{background:var(--atardecer)}
+.air-route{font-size:12.5px;color:var(--mute)}
+.air-legs{font-size:13px;color:var(--ink-soft);margin-bottom:14px}
+.fares{display:grid;gap:14px}
+.fares.c3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:720px){.fares.c3{grid-template-columns:1fr}}
+.fare-col{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.fare-col.best{border-color:rgba(156,43,13,.4);box-shadow:0 0 0 1px rgba(156,43,13,.16)}
+.fare-col h4{font-family:var(--font-display);font-weight:400;font-size:20px;text-transform:uppercase;color:var(--tierra);margin:0 0 2px}
+.fare-col .ftag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--atardecer);font-weight:500;margin-bottom:12px;display:block}
+.fare-col ul{list-style:none;margin:0;padding:0}
+.fare-col li{font-size:12.5px;color:var(--ink-soft);padding:5px 0 5px 20px;position:relative;line-height:1.45}
+.fare-col li::before{position:absolute;left:0;top:5px;font-family:var(--font-display);font-size:13px}
+.fare-col li.y::before{content:"+";color:var(--oliva)}
+.fare-col li.n::before{content:"–";color:var(--mute)}
+.fare-col li.n{color:var(--mute)}
+.nota-box{background:var(--arena-soft);border-radius:14px;padding:16px 20px;font-size:13.5px;color:var(--ink-soft);line-height:1.7;margin-top:8px}
+.nota-box b{color:var(--tierra);font-weight:600}
+
+/* hoteles */
+.city-tab{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--tierra);padding:7px 16px;border-radius:999px;margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{position:relative;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-soft);display:flex;flex-direction:column}
+.card-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--arena-soft);cursor:pointer;border:0;padding:0;width:100%;display:block}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.card-img.ph{cursor:default;display:grid;place-items:center;background:linear-gradient(135deg,var(--arena-soft),var(--arena))}
+.card-img.ph span{font-family:var(--font-display);font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:rgba(104,54,44,.45);text-align:center;padding:0 18px;line-height:1.15}
+.badge{position:absolute;top:10px;left:10px;background:var(--tierra);color:#fff;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:500;padding:4px 9px;border-radius:999px;z-index:2}
+.badge.ao{background:var(--atardecer);left:auto;right:10px}
+.card-b{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.card-b h3{font-size:18px;margin-bottom:2px;line-height:1.08}
+.chain{font-size:11.5px;color:var(--mute);display:block;margin-bottom:6px}
+.stars{color:#C6892B;font-size:12px;letter-spacing:1px;margin-bottom:8px}
+.hdesc{font-size:12.5px;color:var(--ink-soft);line-height:1.65;margin:0 0 12px}
+.hmeta{font-size:11.5px;color:var(--mute);margin-bottom:10px}
+.gal-link{margin-top:auto;background:none;border:0;padding:0;color:var(--oliva-dark);font-size:12px;text-decoration:underline;cursor:pointer;font-family:var(--font-body);text-align:left}
+
+.hmodal-overlay{position:fixed;inset:0;z-index:300;background:rgba(59,32,24,.65);backdrop-filter:blur(4px);opacity:0;pointer-events:none;overflow-y:auto;padding:30px 16px;transition:opacity .3s}
+.hmodal-overlay.open{opacity:1;pointer-events:auto}
+.hmodal{background:var(--paper);border-radius:18px;max-width:820px;margin:0 auto;padding:26px;position:relative;box-shadow:var(--shadow)}
+.hmodal-close{position:absolute;top:10px;right:14px;background:none;border:0;font-size:28px;color:var(--mute);cursor:pointer;line-height:1}
+.hm-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.hm-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;cursor:zoom-in}
+@media(max-width:560px){.hm-gal{grid-template-columns:1fr 1fr}}
+.lightbox{position:fixed;inset:0;z-index:400;background:rgba(22,9,4,.93);display:flex;align-items:center;justify-content:center;padding:5vh 5vw;opacity:0;pointer-events:none;transition:opacity .3s}
+.lightbox.open{opacity:1;pointer-events:auto}
+.lightbox img{max-width:100%;max-height:100%;border-radius:10px}
+.lb-close{position:fixed;top:14px;right:22px;background:none;border:0;font-size:38px;color:rgba(255,255,255,.85);cursor:pointer;line-height:1}
+
+/* cotizador */
+.quote{background:var(--tierra);color:var(--arena)}
+.quote h2,.quote h3{color:var(--arena)} .quote .eyebrow{color:var(--arena)}
+.quote .sec-head p{color:rgba(230,202,178,.82)}
+.q-panel{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-radius:var(--radius);padding:26px 28px}
+.q-selgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px 26px}
+@media(max-width:720px){.q-selgrid{grid-template-columns:1fr}}
+.q-selgroup>label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(230,202,178,.65);margin-bottom:9px;font-weight:500}
+.q-opts{display:flex;flex-wrap:wrap;gap:7px}
+.q-opt{position:relative}
+.q-opt input{position:absolute;opacity:0;pointer-events:none}
+.q-opt span{display:block;border:1px solid rgba(230,202,178,.32);border-radius:999px;padding:8px 14px;font-size:12.5px;cursor:pointer;color:var(--arena);line-height:1.3}
+.q-opt input:checked + span{background:var(--atardecer);border-color:var(--atardecer);color:#fff}
+.q-opt input:focus-visible + span{outline:2px solid var(--arena);outline-offset:2px}
+.hsel{position:relative}
+.hsel-btn{width:100%;text-align:left;background:var(--paper);border:1px solid rgba(230,202,178,.4);border-radius:12px;padding:12px 40px 12px 15px;font-family:var(--font-body);font-size:14px;color:var(--ink);cursor:pointer;position:relative}
+.hsel-btn::after{content:"";position:absolute;right:16px;top:50%;width:8px;height:8px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:translateY(-70%) rotate(45deg)}
+.hsel-btn b{font-weight:600}
+.hsel-btn small{display:block;font-size:11px;color:var(--mute);margin-top:1px}
+.hsel-list{position:absolute;z-index:20;left:0;right:0;top:calc(100% + 6px);max-height:300px;overflow-y:auto;background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:6px;display:none}
+.hsel-list.open{display:block}
+.hsel-list li{list-style:none;padding:10px 12px;border-radius:8px;cursor:pointer;font-size:13.5px;color:var(--ink)}
+.hsel-list li small{color:var(--mute);font-size:11px;display:block}
+.hsel-list li:hover{background:var(--arena-soft)}
+.hsel-list li[aria-selected="true"]{background:rgba(156,43,13,.1);color:var(--atardecer);font-weight:600}
+.q-resumen{background:rgba(253,250,243,.06);border:1px dashed rgba(230,202,178,.3);border-radius:12px;padding:14px 18px;margin-top:18px;font-size:13px;color:rgba(230,202,178,.9);line-height:1.6}
+.q-resumen b{color:#fff;font-weight:500}
+
+.inv-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;margin:32px 0 0}
+.inv-head h3{font-size:clamp(22px,3vw,30px)}
+.inv-head .trm{font-size:12px;color:rgba(230,202,178,.62)}
+.price-main{background:var(--atardecer);color:#fff;border-radius:var(--radius);padding:28px 30px;margin-top:20px}
+.pp-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:600px){.pp-grid{grid-template-columns:1fr}}
+.pp .l{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.85}
+.pp .v{font-family:var(--font-display);font-size:clamp(34px,5.4vw,46px);line-height:1;margin:6px 0 2px}
+.pp .c{font-size:clamp(14px,2vw,17px);opacity:.95}
+.pp .s{font-size:12px;opacity:.8;margin-top:6px}
+.pair{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:600px){.pair{grid-template-columns:1fr}}
+.pair .l{font-size:11px;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
+.pair .v{font-family:var(--font-display);font-size:clamp(20px,2.8vw,26px);line-height:1.1;margin-top:3px}
+.pair .c{font-size:12.5px;opacity:.85}
+
+.pay{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+@media(max-width:640px){.pay{grid-template-columns:1fr}}
+.pay-card{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-left:3px solid var(--atardecer);border-radius:14px;padding:20px 22px}
+.pay-card .n{font-family:var(--font-display);font-size:12.5px;letter-spacing:.14em;color:var(--arena);text-transform:uppercase;margin-bottom:8px}
+.pay-card .amt{font-family:var(--font-display);font-size:24px;color:#fff;line-height:1.2}
+.pay-card .amt small{display:block;font-family:var(--font-body);font-size:12.5px;color:rgba(230,202,178,.8);font-weight:300;margin-top:2px}
+.pay-card p{font-size:12.5px;color:rgba(230,202,178,.7);margin:10px 0 0;line-height:1.6}
+.q-note{font-size:12.5px;color:rgba(230,202,178,.62);margin-top:20px;line-height:1.7;text-align:center}
+
+.acc{display:flex;flex-direction:column;gap:14px}
+.ac{background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-soft);overflow:hidden}
+.ac[open]{border-color:rgba(104,54,44,.28)}
+.ac summary{display:flex;align-items:center;gap:14px;padding:20px 24px;cursor:pointer;list-style:none;font-family:var(--font-display);text-transform:uppercase;font-size:clamp(17px,2.1vw,21px);color:var(--tierra)}
+.ac summary::-webkit-details-marker{display:none}
+.ac summary:hover{background:rgba(230,202,178,.24)}
+.ac-ic{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-family:var(--font-display);font-size:15px;color:#fff}
+.ac-ic.yes{background:var(--oliva)} .ac-ic.no{background:var(--atardecer)}
+.ac-ic.warn{background:var(--tierra)} .ac-ic.info{background:var(--mute);font-style:italic}
+.ac-ar{margin-left:auto;flex:none;width:9px;height:9px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:rotate(45deg) translate(-2px,-2px);transition:transform .25s}
+.ac[open] .ac-ar{transform:rotate(225deg) translate(-2px,-2px);border-color:var(--atardecer)}
+.ac-b{padding:0 24px 22px}
+.lst{list-style:none;padding:0;margin:0;font-size:14.5px;color:var(--ink-soft)}
+.lst li{padding:9px 0 9px 28px;position:relative;border-bottom:1px solid var(--line)}
+.lst li:last-child{border-bottom:0}
+.lst li::before{position:absolute;left:0;top:9px;font-family:var(--font-display);font-size:15px}
+.lst.yes li::before{content:"+";color:var(--oliva)}
+.lst.no li::before{content:"–";color:var(--atardecer)}
+.fine{font-size:13px;color:var(--mute);line-height:1.75}
+.fine strong{color:var(--tierra);font-weight:500}
+
+.cta{background:var(--atardecer);color:#fff;text-align:center}
+.cta h2{color:#fff}
+.cta p{color:rgba(255,255,255,.88);max-width:56ch;margin:16px auto 30px;font-size:17px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--arena);color:var(--tierra);text-decoration:none;font-weight:500;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:16px 34px;border-radius:999px;transition:.2s}
+.btn:hover{background:#fff;transform:translateY(-2px)}
+footer{background:var(--tierra);color:rgba(230,202,178,.72);padding:56px 0 30px;font-size:13px}
+footer img{height:34px;margin-bottom:22px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;margin-bottom:40px}
+@media(max-width:760px){.f-grid{grid-template-columns:1fr;gap:26px}}
+footer h4{font-family:var(--font-display);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--arena);margin:0 0 14px}
+footer a{color:rgba(230,202,178,.72);text-decoration:none}
+footer a:hover{color:#fff}
+footer p{margin:0 0 8px;line-height:1.7}
+.f-bot{border-top:1px solid rgba(230,202,178,.16);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;font-size:11.5px;color:rgba(230,202,178,.5)}
+.credits{font-size:10.5px;color:rgba(230,202,178,.38);line-height:1.8;margin-top:18px}
+@media print{ .nav,.cta,.ac-ar,.hmodal-overlay,.lightbox{display:none} .hero{min-height:auto} body{background:#fff} section{padding:22px 0} .card,.ac,.fare-col{break-inside:avoid;box-shadow:none} }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" aria-label="Raíces"><img src="assets/marca/logo-horizontal.png" alt="Raíces"></a>
+    <button class="nav-burger" type="button" id="nav-burger" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir el menú"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="nav-links">
+      <a href="#fechas">Fechas</a>
+      <a href="#vuelo">Vuelo</a>
+      <a href="#hoteles">Hoteles</a>
+      <a href="#inversion">Tu inversión</a>
+      <a href="#condiciones">Condiciones</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <img class="bg" src="assets/destinos/hero.jpg" alt="Punta Cana, República Dominicana">
+  <div class="hero-in">
+    <div class="kicker">Cotización para Nadia</div>
+    <h1>Punta Cana</h1>
+    <p class="sub">Un viaje para dos al Caribe dominicano, con fechas abiertas: eliges el mes, cuántas noches, el resort todo incluido y la aerolínea — y el valor por persona se calcula solo.</p>
+    <div class="hero-meta">
+      <span class="pill">Octubre o noviembre de 2026</span>
+      <span class="pill">4, 5 o 6 noches</span>
+      <span class="pill">2 personas</span>
+      <span class="pill">Todo incluido</span>
+    </div>
+  </div>
+</header>
+
+<!-- FECHAS -->
+<section id="fechas">
+  <div class="rot">Fechas</div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Fechas abiertas</div>
+      <h2>Eliges tú<br>cuándo viajar</h2>
+      <p>No hay una fecha fija: puedes salir cualquier día dentro de estas dos ventanas, y desde ahí cuentas 4, 5 o 6 noches. Los valores de esta cotización son de referencia sobre una fecha dentro de cada ventana; al escoger el día exacto lo confirmamos y te decimos si cambia algo.</p>
+    </div>
+    <div class="fares c3" style="grid-template-columns:1fr 1fr">
+      <div class="fare-col">
+        <h4>Octubre</h4><span class="ftag">Vuelas con Wingo</span>
+        <ul>
+          <li class="y">Salidas entre el <b>5 y el 26 de octubre de 2026</b></li>
+          <li class="y">Vuelo directo Bogotá–Punta Cana</li>
+          <li class="n">No aplica el puente del 12 de octubre</li>
+        </ul>
+      </div>
+      <div class="fare-col">
+        <h4>Noviembre</h4><span class="ftag">Vuelas con Avianca</span>
+        <ul>
+          <li class="y">Salidas entre el <b>3 y el 24 de noviembre de 2026</b></li>
+          <li class="y">Ida directa; el regreso hace una escala en Medellín</li>
+          <li class="n">No aplican los puentes del 2 y el 16 de noviembre</li>
+        </ul>
+      </div>
+    </div>
+    <div class="nota-box" style="margin-top:16px">
+      <b>Sobre los puentes festivos:</b> en esos fines de semana largos el tiquete sube bastante, por eso quedan por fuera de estos valores. Si te sirve viajar en un puente lo cotizamos aparte, sin problema.
+    </div>
+  </div>
+</section>
+
+<!-- VUELO -->
+<section id="vuelo" class="alt">
+  <div class="rot">Vuelo</div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Tiquete aéreo</div>
+      <h2>Con quién vuelas</h2>
+      <p>Bogotá–Punta Cana ida y regreso. En octubre volamos con Wingo y en noviembre con Avianca; cada una tiene sus categorías de tarifa. Abajo, en Tu inversión, eliges la que prefieras.</p>
+    </div>
+    <div id="airlines"></div>
+  </div>
+</section>
+
+<!-- HOTELES -->
+<section id="hoteles">
+  <div class="rot">Hoteles</div>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="city-tab" id="hoteles-tab">Punta Cana</span>
+      <h2>Los resorts</h2>
+      <p id="hoteles-intro">Todos son todo incluido y en habitación doble para los dos. Las opciones cambian según el mes que elijas abajo, en Tu inversión. Toca cada tarjeta para ver las fotos.</p>
+    </div>
+    <div class="grid" id="grid-hoteles"></div>
+  </div>
+</section>
+
+<!-- INVERSIÓN -->
+<section id="inversion" class="quote">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Tu inversión</div>
+      <h2>Arma tu plan</h2>
+      <p>Elige el mes, cuántas noches, la aerolínea con su tarifa y el resort. El valor por persona se calcula solo.</p>
+    </div>
+
+    <div class="q-panel">
+      <div class="q-selgrid">
+        <div class="q-selgroup"><label>Mes de viaje</label><div class="q-opts" id="sel-mes"></div></div>
+        <div class="q-selgroup"><label>Cuántas noches</label><div class="q-opts" id="sel-noches"></div></div>
+        <div class="q-selgroup"><label>Tarifa del vuelo</label><div class="q-opts" id="sel-fare"></div></div>
+        <div class="q-selgroup"><label>Resort todo incluido</label><div class="hsel" id="hsel-hotel"></div></div>
+      </div>
+      <div class="q-resumen" id="q-resumen">—</div>
+    </div>
+
+    <div class="inv-head">
+      <h3>Valor por persona</h3>
+      <div class="trm">Precio principal en dólares · TRM de hoy: US$1 = $3.204,51</div>
+    </div>
+
+    <div class="price-main">
+      <div class="pp-grid">
+        <div class="pp">
+          <div class="l">Total por persona</div>
+          <div class="v" id="v-usd">—</div>
+          <div class="c" id="v-cop">—</div>
+          <div class="s">Vuelo, hotel todo incluido y traslados</div>
+        </div>
+        <div class="pp">
+          <div class="l">Total por las dos personas</div>
+          <div class="v" id="v2-usd" style="font-size:clamp(24px,3.6vw,32px)">—</div>
+          <div class="c" id="v2-cop">—</div>
+        </div>
+      </div>
+      <div class="pair">
+        <div><div class="l">Reserva por persona</div><div class="v" id="v-res">—</div><div class="c" id="v-res-cop">—</div></div>
+        <div><div class="l">Saldo por persona</div><div class="v" id="v-sal">—</div><div class="c" id="v-sal-cop">—</div></div>
+      </div>
+    </div>
+
+    <div class="pay">
+      <div class="pay-card">
+        <div class="n">Qué separa la reserva</div>
+        <p style="margin:0">Con la reserva quedan emitidos los tiquetes y separado el resort. El saldo se paga antes de la fecha de cancelación gratuita del hotel que elijas, que verás en su tarjeta.</p>
+      </div>
+      <div class="pay-card">
+        <div class="n">Habitación doble</div>
+        <p style="margin:0">Todos los valores son en habitación doble compartida entre las dos personas, en régimen todo incluido, con los traslados aeropuerto–hotel–aeropuerto incluidos.</p>
+      </div>
+    </div>
+
+    <p class="q-note">Valores de referencia sujetos a disponibilidad y a la fecha exacta que elijan. Al confirmar el día de salida verificamos el valor definitivo.</p>
+  </div>
+</section>
+
+<!-- CONDICIONES -->
+<section id="condiciones">
+  <div class="rot">Condiciones</div>
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Letra clara</div><h2>Qué incluye<br>y qué no</h2></div>
+    <div class="acc">
+      <details class="ac" open>
+        <summary><span class="ac-ic yes">+</span>El plan incluye<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <ul class="lst yes">
+            <li>Tiquete aéreo Bogotá–Punta Cana ida y regreso, con la aerolínea y tarifa que elijan, con impuestos</li>
+            <li>Alojamiento en el resort elegido, en habitación doble y régimen todo incluido</li>
+            <li>Traslados aeropuerto–hotel–aeropuerto en Punta Cana</li>
+            <li>Acompañamiento de Raíces por WhatsApp, antes y durante el viaje</li>
+          </ul>
+        </div>
+      </details>
+      <details class="ac">
+        <summary><span class="ac-ic no">–</span>El plan no incluye<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <ul class="lst no">
+            <li>Tarjeta de turismo o tasas de entrada y salida de República Dominicana, si aplican</li>
+            <li>Maleta de bodega en las tarifas más básicas, según la aerolínea elegida</li>
+            <li>Excursiones, tours y actividades fuera del resort</li>
+            <li>Seguro de asistencia médica en viaje</li>
+            <li>Propinas y gastos personales</li>
+          </ul>
+        </div>
+      </details>
+      <details class="ac">
+        <summary><span class="ac-ic warn">!</span>Pagos, fechas y cambios<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <ul class="lst no">
+            <li>La reserva se paga para separar; con ella se emiten los tiquetes aéreos</li>
+            <li>El saldo se paga antes de la fecha de cancelación gratuita del resort elegido</li>
+            <li>Los tiquetes, una vez emitidos, no son reembolsables; los cambios aplican cargo según la aerolínea y la tarifa</li>
+            <li>Los valores son de referencia para las ventanas de fechas indicadas y no aplican en puentes festivos</li>
+            <li>Todo está sujeto a disponibilidad al momento de confirmar</li>
+          </ul>
+        </div>
+      </details>
+      <details class="ac">
+        <summary><span class="ac-ic info">i</span>Documentación y vigencia<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <div class="fine">
+            <p><strong>Documentación:</strong> pasaporte vigente con al menos 6 meses de validez. República Dominicana no exige visa a colombianos como turistas; el formulario migratorio electrónico (E-Ticket) se diligencia en línea antes de viajar y te guiamos en el proceso.</p>
+            <p><strong>Vigencia:</strong> esta cotización se envía el 5 de agosto de 2026 y está sujeta a cambios y disponibilidad sin previo aviso por parte de las aerolíneas y los hoteles.</p>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="eyebrow" style="color:rgba(255,255,255,.7)">¿Lista?</div>
+    <h2>Reservar por WhatsApp</h2>
+    <p>Al tocar el botón se abre WhatsApp con tu plan ya escrito: mes, noches, resort, aerolínea y el valor por persona. Solo lo envías y seguimos por ahí.</p>
+    <a class="btn js-wa" href="https://wa.me/573122738001" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+    <p style="font-size:13.5px;margin-top:26px;opacity:.75">¿Prefieres ajustar algo antes? Escríbenos y lo resolvemos.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/marca/logo-blanco.png" alt="Raíces">
+    <div class="f-grid">
+      <div><h4>Raíces</h4><p>Cumplimos lo que prometemos.<br>Turismo auténtico y con esencia.</p></div>
+      <div>
+        <h4>Contacto</h4>
+        <p><a href="https://wa.me/573122738001" target="_blank" rel="noopener">WhatsApp +57 312 273 8001</a></p>
+        <p><a href="mailto:hola@raices.travel">hola@raices.travel</a></p>
+        <p><a href="https://raices.travel" target="_blank" rel="noopener">raices.travel</a></p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <p>RNT No. 92495</p>
+        <p>Lemont Group S.A.S.</p>
+        <p><a href="https://raices.travel/terminos-y-condiciones.html" target="_blank" rel="noopener">Términos y condiciones</a></p>
+        <p><a href="https://raices.travel/tratamiento-de-datos.html" target="_blank" rel="noopener">Tratamiento de datos</a></p>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>Cotización preparada para Nadia · 5 de agosto de 2026</span>
+      <span>Documento privado. No constituye reserva confirmada.</span>
+    </div>
+    <p class="credits"><b style="color:rgba(230,202,178,.55);font-weight:500">Créditos.</b> Fotos de los hoteles: cortesía de cada propiedad y de sus sitios y motores de reserva oficiales. Las marcas y logotipos citados pertenecen a sus respectivos titulares.</p>
+  </div>
+</footer>
+
+<div class="hmodal-overlay" id="hmodal-overlay">
+  <div class="hmodal">
+    <button class="hmodal-close" id="hmodal-close" aria-label="Cerrar">&times;</button>
+    <h3 id="hmodal-title">Hotel</h3>
+    <p id="hmodal-sub" style="font-size:13px;color:var(--mute);margin:6px 0 16px"></p>
+    <div class="hm-gal" id="hmodal-gal"></div>
+  </div>
+</div>
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close" aria-label="Cerrar">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+const TRM = 3204.51, MARGEN = 0.90, TRASLADO = 30;
+const usd = n => "US$" + Math.round(n).toLocaleString("es-CO");
+const cop = n => "$" + (Math.round(n/1000)*1000).toLocaleString("es-CO") + " COP";
+
+/* ===== aerolíneas · precios NETOS por pasajero (ida+regreso) ===== */
+const AIRLINES = {
+  wingo: { nombre:"Wingo", mes:"octubre", tag:"Directo", esc:false,
+    ruta:"Bogotá ✈ Punta Cana · sin escalas",
+    legs:"Ida 1:51 p.m. → 5:36 p.m. (2h 45m) · Regreso directo, mismo trayecto",
+    fares:[
+      {k:"basic", label:"Go Basic", ftag:"Vuela ligero", usd:391.51, best:false,
+       inc:[["y","1 morral pequeño o cartera (40×35×25 cm)"],["n","Sin equipaje de mano"],["n","Sin maleta de bodega"],["n","Sin cambios"]]},
+      {k:"standard", label:"Go Standard", ftag:"Como la mayoría", usd:455.03, best:true,
+       inc:[["y","1 morral pequeño o cartera"],["y","Equipaje de mano hasta 12 kg"],["y","1 cambio de vuelo (Flex-1)"],["n","Sin maleta de bodega"]]},
+      {k:"plus", label:"Go Plus", ftag:"Vuela con más", usd:501.01, best:false,
+       inc:[["y","Maleta de bodega hasta 23 kg"],["y","Equipaje de mano hasta 12 kg"],["y","Check-in en aeropuerto y silla"],["y","1 cambio de vuelo (Flex-1)"]]}
+    ]},
+  avianca: { nombre:"Avianca", mes:"noviembre", tag:"Regreso con 1 escala", esc:true,
+    ruta:"Bogotá ✈ Punta Cana · ida directa",
+    legs:"Ida 07:40 → 11:30 directo (2h 50m) · Regreso 13:45 → 18:35 con escala en Medellín (5h 50m)",
+    fares:[
+      {k:"light", label:"Light", ftag:"Lo esencial", cop:2065745, best:false,
+       inc:[["y","1 artículo personal (bajo el asiento)"],["y","1 equipaje de mano (10 kg)"],["n","Sin maleta de bodega"],["n","Sin selección de asiento"],["n","Sin cambios ni reembolsos"]]},
+      {k:"classic", label:"Classic", ftag:"La más elegida", cop:2442600, best:true,
+       inc:[["y","1 artículo personal y 1 equipaje de mano (10 kg)"],["y","1 maleta de bodega (23 kg)"],["y","Check-in en aeropuerto y asiento Economy"],["n","Sin cambios ni reembolsos"]]},
+      {k:"flex", label:"Flex", ftag:"La más flexible", cop:3131285, best:false,
+       inc:[["y","1 artículo personal y 1 equipaje de mano (10 kg)"],["y","1 maleta de bodega (23 kg)"],["y","Asiento Plus (sujeto a disponibilidad)"],["y","Cambios y reembolsos antes del vuelo"]]}
+    ]}
+};
+function tiquetePP(mes, fareK){
+  const a = mes==="octubre" ? AIRLINES.wingo : AIRLINES.avianca;
+  const f = a.fares.find(x=>x.k===fareK) || a.fares[0];
+  return (f.usd!=null ? f.usd : f.cop/TRM) / MARGEN;
+}
+
+/* ===== hoteles · precio COMISIONABLE en USD, habitación doble, 4 noches ===== */
+const HOTELES = [
+  {slug:"vista-sol", nombre:"Vista Sol Punta Cana Beach Resort & Spa", cadena:"Vista Sol · Bávaro", est:4, op:"8.897", ao:false, fotos:12,
+   meses:{octubre:{usd4:798.62, hab:"Comfort (2 adultos)", cancel:"05/10/2026"}},
+   desc:"Resort todo incluido con acceso directo a la playa de Bávaro. Tiene 6 restaurantes entre cocina internacional y gourmet, un food truck frente al mar y pizzería — Mamma Mia, El Mariachi y el Teppanyaki & Sushi Bar son los favoritos. Suma 3 piscinas, 7 bares, spa, gimnasio y espectáculos nocturnos en la playa. Las habitaciones estándar tienen balcón privado."},
+  {slug:"bp-turquesa", nombre:"Bahía Príncipe Explore Turquesa", cadena:"Bahia Principe · Bávaro", est:5, op:"", ao:false, fotos:0,
+   meses:{octubre:{usd4:818.29, hab:"Junior Suite Standard", cancel:"16/10/2026"}},
+   desc:"Complejo todo incluido en Playa Bávaro, dentro de la gran ciudad turística de Bahia Principe. Habitaciones tipo Junior Suite con sala de estar, balcón o terraza y minibar. Acceso a los restaurantes temáticos, piscinas y zonas comunes del complejo, además de spa, gimnasio y el pueblo comercial con bares, tiendas y espectáculos nocturnos."},
+  {slug:"tropical-deluxe", nombre:"Tropical Deluxe Princess", cadena:"Princess Hotels · Bávaro", est:5, op:"5.421", ao:false, fotos:0,
+   meses:{octubre:{usd4:830.52, hab:"Tropical Deluxe", cancel:"17/10/2026"}},
+   desc:"Resort todo incluido a pocos pasos de Playa Bávaro, rodeado de jardines tropicales y con arquitectura de baja altura. Ofrece varios restaurantes temáticos y buffet, piscinas amplias, spa, gimnasio y programa de entretenimiento diario y nocturno. Los huéspedes acceden también a las instalaciones de los hoteles hermanos del complejo Princess."},
+  {slug:"royalton-splash", nombre:"Royalton Splash Punta Cana", cadena:"Royalton · Punta Cana", est:4, op:"15.812", ao:false, fotos:12,
+   meses:{octubre:{usd4:847.45, hab:"Luxury Room", cancel:"18/10/2026"}, noviembre:{usd4:831.47, hab:"Luxury Room", cancel:"14/11/2026"}},
+   desc:"Resort todo incluido con parque acuático propio, toboganes y piscinas con zona de olas — el más divertido del listado. Las habitaciones Luxury traen la cama Royalton DreamBed, minibar y balcón. Suma restaurantes temáticos sin reserva previa, bares, spa, gimnasio, deportes acuáticos no motorizados y shows nocturnos."},
+  {slug:"grand-sirenis", nombre:"Grand Sirenis Punta Cana Resort", cadena:"Sirenis Hotels · Uvero Alto", est:5, op:"15.922", ao:false, fotos:12, video:"lupJTsKjDrU",
+   meses:{octubre:{usd4:860.88, hab:"Double Room (2 adultos)", cancel:"17/10/2026"}, noviembre:{usd4:924.77, hab:"Family Suite (2 adultos)", cancel:"13/11/2026"}},
+   desc:"Resort todo incluido frente al mar en Uvero Alto, con un parque acuático de 12.000 m² con toboganes, 2 piscinas grandes y 2 infantiles. Ofrece 8 restaurantes temáticos —italiano, japonés, tex-mex y brasileño— y 13 bares, incluyendo discoteca y casino. Kayak, snorkel, mini-golf y shows nocturnos. Habitaciones con aire acondicionado, minibar, TV satelital y balcón."},
+  {slug:"riu-bambu", nombre:"Riu Bambu", cadena:"Riu Hoteles · Bávaro", est:5, op:"5.398", ao:false, fotos:0,
+   meses:{octubre:{usd4:878.61, hab:"Doble Standard", cancel:"15/10/2026"}},
+   desc:"Todo incluido 24 horas de la cadena Riu, en primera línea de Playa Bávaro. Tiene restaurante buffet y varios temáticos, bares, piscina con zona de hidromasaje, spa, gimnasio y deportes acuáticos no motorizados. Los huéspedes pueden usar además las instalaciones y restaurantes de los hoteles Riu vecinos del mismo complejo."},
+  {slug:"wyndham-alltra", nombre:"Wyndham Alltra Punta Cana", cadena:"Wyndham Hotel Group · Uvero Alto", est:5, op:"", ao:false, fotos:0,
+   meses:{octubre:{usd4:883.90, hab:"Standard 2 camas dobles", cancel:"12/10/2026"}},
+   desc:"Resort todo incluido en Uvero Alto, sobre una playa amplia y tranquila, con propuesta moderna y muy buena relación calidad-precio. Incluye restaurantes a la carta y buffet, bares, piscinas, spa, gimnasio y actividades diarias. Habitaciones amplias con balcón o terraza y minibar surtido."},
+  {slug:"ocean-el-faro", nombre:"Ocean El Faro", cadena:"H10 Hotels · Punta Cana", est:5, op:"9.926", ao:false, fotos:12, video:"EBc8OvwZDvw",
+   meses:{octubre:{usd4:905.24, hab:"Junior Suite Nature", cancel:"16/10/2026"}},
+   desc:"Resort de arquitectura colonial con su icónico faro-mirador y una oferta de entretenimiento muy completa: río lento, parque acuático y bolera dentro del complejo. Tiene 10 restaurantes y 13 bares — Sakura (teppanyaki y sushi), Blue Moon (cocina de autor) y Route 66 (BBQ americano) destacan. La habitación estándar es Junior Suite, con balcón o terraza, sala de estar y minibar."},
+  {slug:"royalton-chic", nombre:"Royalton CHIC Punta Cana", cadena:"Royalton · Uvero Alto · Solo adultos", est:5, op:"14.675", ao:true, fotos:5,
+   meses:{octubre:{usd4:958.35, hab:"Luxury Room", cancel:"18/10/2026"}, noviembre:{usd4:892.65, hab:"Doble Deluxe", cancel:"12/11/2026"}},
+   desc:"Todo incluido solo para adultos, con ambiente de resort-boutique y mucha vida nocturna: piscina con bar dentro del agua, fiestas temáticas y coctelería de autor. Restaurantes a la carta sin reserva previa, spa Royal Spa, gimnasio y playa privada. Las habitaciones Luxury tienen cama DreamBed, minibar y balcón."},
+  {slug:"riu-palace", nombre:"Riu Palace Punta Cana", cadena:"Riu Hoteles · Bávaro", est:5, op:"3.955", ao:false, fotos:0,
+   meses:{octubre:{usd4:1007.03, hab:"Jr. Suite Standard", cancel:"16/10/2026"}},
+   desc:"La categoría Palace de Riu, la más alta de la cadena, en primera línea de Playa Bávaro. Todo incluido 24 horas con restaurantes a la carta sin reserva, bar-piscina, spa, gimnasio y club nocturno. Las Junior Suites son amplias, con zona de estar, minibar surtido a diario y balcón o terraza."},
+  {slug:"grand-palladium", nombre:"Grand Palladium Punta Cana Resort & Spa", cadena:"Palladium Hotel Group · Bávaro", est:5, op:"18.443", ao:false, fotos:8,
+   meses:{octubre:{usd4:1109.43, hab:"Deluxe Garden View", cancel:"16/10/2026"}},
+   desc:"Gran complejo todo incluido sobre Playa Bávaro, rodeado de vegetación tropical y con acceso a las instalaciones de todo el complejo Palladium. Suma múltiples restaurantes temáticos y buffets, varias piscinas —una de ellas con toboganes—, Zentropia Spa, gimnasio, deportes acuáticos y espectáculos nocturnos."},
+  {slug:"bp-explore-punta-cana", nombre:"Bahía Príncipe Explore Punta Cana", cadena:"Bahia Principe · Bávaro", est:5, op:"12.397", ao:false, fotos:12,
+   meses:{noviembre:{usd4:879.39, hab:"Junior Suite Standard", cancel:"12/11/2026"}},
+   desc:"Todo incluido en Playa Bávaro dentro del gran complejo Bahia Principe, con habitaciones Junior Suite de sala de estar, balcón o terraza y minibar. Acceso a los restaurantes temáticos, buffets y piscinas del complejo, más spa, gimnasio y el pueblo comercial con bares, tiendas y espectáculos cada noche."},
+  {slug:"barcelo-bavaro-beach", nombre:"Barceló Bávaro Beach · Solo adultos", cadena:"Barceló Hotels · Bávaro · Solo adultos", est:5, op:"13.774", ao:true, fotos:0,
+   meses:{noviembre:{usd4:1042.44, hab:"Superior", cancel:"02/11/2026"}},
+   desc:"Todo incluido solo para adultos, en primera línea de Playa Bávaro y con acceso a las instalaciones del complejo Barceló Bávaro Grand Resort: campo de golf de 18 hoyos, casino, bolera y más de una decena de restaurantes. Ambiente tranquilo, piscina exclusiva para adultos, U-Spa y habitaciones Superior con terraza."}
+];
+
+const state = { mes:"noviembre", noches:4, fare:"light", hotel:"royalton-splash" };
+
+const estStars = e => "★".repeat(e);
+const hotelesDelMes = () => HOTELES.filter(h => h.meses[state.mes]);
+const fotoFiles = h => Array.from({length:h.fotos},(_,i)=>`assets/hoteles/${h.slug}/${i+1}.jpg`);
+
+/* ===== aerolíneas (informativo) ===== */
+document.getElementById("airlines").innerHTML = Object.values(AIRLINES).map(a=>`
+  <div class="air-block">
+    <div class="air-head"><h3>${a.nombre}</h3><span class="air-tag ${a.esc?'escala':''}">${a.tag}</span><span class="air-route">${a.ruta}</span></div>
+    <div class="air-legs">Para viajes en <b>${a.mes}</b> · ${a.legs}</div>
+    <div class="fares c3">
+      ${a.fares.map(f=>`
+        <div class="fare-col ${f.best?'best':''}">
+          <h4>${f.label}</h4><span class="ftag">${f.ftag}</span>
+          <ul>${f.inc.map(i=>`<li class="${i[0]}">${i[1]}</li>`).join("")}</ul>
+        </div>`).join("")}
+    </div>
+  </div>`).join("");
+
+/* ===== hoteles ===== */
+function renderHoteles(){
+  const lista = hotelesDelMes();
+  document.getElementById("hoteles-tab").textContent = state.mes==="octubre" ? "Opciones de octubre" : "Opciones de noviembre";
+  document.getElementById("grid-hoteles").innerHTML = lista.map(h=>{
+    const m = h.meses[state.mes];
+    const thumb = h.video ? `https://img.youtube.com/vi/${h.video}/hqdefault.jpg` : (h.fotos?fotoFiles(h)[0]:null);
+    const media = thumb
+      ? `<button class="card-img" type="button" data-gal="${h.slug}" aria-label="Ver fotos de ${h.nombre}">
+           <span class="badge">Todo incluido</span>${h.ao?'<span class="badge ao">Solo adultos</span>':''}
+           <img src="${thumb}" alt="${h.nombre}" loading="lazy"></button>`
+      : `<div class="card-img ph"><span class="badge">Todo incluido</span>${h.ao?'<span class="badge ao">Solo adultos</span>':''}<span>${h.nombre}</span></div>`;
+    return `<article class="card">${media}
+      <div class="card-b">
+        <h3>${h.nombre}</h3><span class="chain">${h.cadena}</span>
+        <div class="stars">${estStars(h.est)}${h.op?` <span style="color:var(--mute);font-size:11px;letter-spacing:0">· ${h.op} opiniones</span>`:""}</div>
+        <p class="hdesc">${h.desc}</p>
+        <div class="hmeta">${m.hab} · cancelación gratuita hasta el ${m.cancel}</div>
+        ${h.fotos?`<button class="gal-link" type="button" data-gal="${h.slug}">Ver las ${h.fotos} fotos →</button>`:""}
+      </div></article>`;
+  }).join("");
+  document.querySelectorAll("[data-gal]").forEach(el=>el.addEventListener("click",e=>{e.preventDefault();openGallery(el.dataset.gal);}));
+}
+const ov=document.getElementById("hmodal-overlay");
+function openGallery(slug){
+  const h=HOTELES.find(x=>x.slug===slug); if(!h||!h.fotos) return;
+  document.getElementById("hmodal-title").textContent=h.nombre;
+  document.getElementById("hmodal-sub").textContent=`${estStars(h.est)} · ${h.cadena}`;
+  document.getElementById("hmodal-gal").innerHTML=fotoFiles(h).map(s=>`<img src="${s}" loading="lazy" alt="${h.nombre}">`).join("");
+  document.querySelectorAll("#hmodal-gal img").forEach(im=>im.addEventListener("click",()=>{
+    document.getElementById("lightbox-img").src=im.src; document.getElementById("lightbox").classList.add("open");}));
+  ov.classList.add("open");
+}
+document.getElementById("hmodal-close").addEventListener("click",()=>ov.classList.remove("open"));
+ov.addEventListener("click",e=>{ if(e.target.id==="hmodal-overlay") ov.classList.remove("open"); });
+document.getElementById("lb-close").addEventListener("click",()=>document.getElementById("lightbox").classList.remove("open"));
+document.getElementById("lightbox").addEventListener("click",e=>{ if(e.target.id==="lightbox") e.currentTarget.classList.remove("open"); });
+addEventListener("keydown",e=>{ if(e.key==="Escape"){ ov.classList.remove("open"); document.getElementById("lightbox").classList.remove("open"); } });
+
+/* ===== selectores ===== */
+const pill=(n,v,l,c)=>`<label class="q-opt"><input type="radio" name="${n}" value="${v}" ${c?"checked":""}><span>${l}</span></label>`;
+function renderMes(){
+  document.getElementById("sel-mes").innerHTML =
+    pill("mes","octubre","Octubre · Wingo",state.mes==="octubre") + pill("mes","noviembre","Noviembre · Avianca",state.mes==="noviembre");
+  document.querySelectorAll('input[name="mes"]').forEach(r=>r.addEventListener("change",()=>{
+    state.mes=r.value;
+    const a = state.mes==="octubre"?AIRLINES.wingo:AIRLINES.avianca;
+    state.fare = a.fares.find(f=>f.best).k;
+    const lista=hotelesDelMes();
+    if(!lista.some(h=>h.slug===state.hotel)) state.hotel=lista[0].slug;
+    renderFare(); renderHoteles(); buildHsel(); render();
+  }));
+}
+function renderNoches(){
+  document.getElementById("sel-noches").innerHTML = [4,5,6].map(n=>pill("noches",n,`${n} noches`,state.noches===n)).join("");
+  document.querySelectorAll('input[name="noches"]').forEach(r=>r.addEventListener("change",()=>{state.noches=+r.value;render();}));
+}
+function renderFare(){
+  const a = state.mes==="octubre"?AIRLINES.wingo:AIRLINES.avianca;
+  document.getElementById("sel-fare").innerHTML = a.fares.map(f=>pill("fare",f.k,f.label,state.fare===f.k)).join("");
+  document.querySelectorAll('input[name="fare"]').forEach(r=>r.addEventListener("change",()=>{state.fare=r.value;render();}));
+}
+function buildHsel(){
+  const el=document.getElementById("hsel-hotel"), lista=hotelesDelMes();
+  const cur=lista.find(h=>h.slug===state.hotel)||lista[0]; state.hotel=cur.slug;
+  el.innerHTML=`<button class="hsel-btn" type="button" aria-haspopup="listbox" aria-expanded="false"><b>${cur.nombre}</b><small>${estStars(cur.est)} · ${cur.meses[state.mes].hab}</small></button>
+    <ul class="hsel-list" role="listbox">${lista.map(h=>`<li role="option" data-val="${h.slug}" aria-selected="${h.slug===state.hotel}"><b>${h.nombre}</b><small>${estStars(h.est)}${h.ao?" · solo adultos":""}</small></li>`).join("")}</ul>`;
+  const btn=el.querySelector(".hsel-btn"), ul=el.querySelector(".hsel-list");
+  btn.addEventListener("click",()=>{const o=ul.classList.toggle("open");btn.setAttribute("aria-expanded",o);});
+  ul.querySelectorAll("li").forEach(li=>li.addEventListener("click",()=>{
+    ul.classList.remove("open");btn.setAttribute("aria-expanded","false");
+    state.hotel=li.dataset.val; buildHsel(); render();}));
+  document.addEventListener("click",e=>{ if(!el.contains(e.target)){ul.classList.remove("open");btn.setAttribute("aria-expanded","false");} });
+}
+
+/* ===== cálculo ===== */
+function calc(){
+  const h=HOTELES.find(x=>x.slug===state.hotel), m=h.meses[state.mes];
+  const tiq=tiquetePP(state.mes,state.fare);
+  const hotelPP=(m.usd4/4)*state.noches/2;          // por persona, según noches
+  const servicios=hotelPP+TRASLADO;                  // hotel + traslados (comisionables)
+  const total=tiq+servicios;
+  const reserva=tiq+0.22*servicios;
+  return {h,m,tiq,total,reserva,saldo:total-reserva};
+}
+function render(){
+  const c=calc();
+  const a=state.mes==="octubre"?AIRLINES.wingo:AIRLINES.avianca;
+  const fare=a.fares.find(f=>f.k===state.fare);
+  document.getElementById("v-usd").textContent=usd(c.total);
+  document.getElementById("v-cop").textContent=cop(c.total*TRM);
+  document.getElementById("v2-usd").textContent=usd(c.total*2);
+  document.getElementById("v2-cop").textContent=cop(c.total*2*TRM);
+  document.getElementById("v-res").textContent=usd(c.reserva);
+  document.getElementById("v-res-cop").textContent=cop(c.reserva*TRM);
+  document.getElementById("v-sal").textContent=usd(c.saldo);
+  document.getElementById("v-sal-cop").textContent=cop(c.saldo*TRM);
+  document.getElementById("q-resumen").innerHTML=
+    `<b>${state.noches} noches</b> en ${c.h.nombre} (${c.m.hab}) · viaje en <b>${state.mes}</b> con <b>${a.nombre}</b>, tarifa ${fare.label} · incluye traslados. Cancelación gratuita del hotel hasta el ${c.m.cancel}.`;
+  const msg=`Hola Raíces, soy Nadia. Quiero reservar el viaje a Punta Cana:\n\n`+
+    `• ${state.noches} noches en ${c.h.nombre}\n• Viaje en ${state.mes} de 2026, fechas por definir\n`+
+    `• Vuelo ${a.nombre}, tarifa ${fare.label}\n• 2 personas en habitación doble, todo incluido, con traslados\n\n`+
+    `Valor por persona: ${usd(c.total)} (${cop(c.total*TRM)})\nReserva por persona: ${usd(c.reserva)}\n\n¿Cómo hacemos la reserva?`;
+  document.querySelectorAll("a.js-wa").forEach(x=>{x.href="https://wa.me/573122738001?text="+encodeURIComponent(msg);});
+}
+
+renderMes(); renderNoches(); renderFare(); renderHoteles(); buildHsel(); render();
+
+(() => {
+  const b=document.getElementById("nav-burger"), m=document.getElementById("nav-links");
+  const cerrar=()=>{m.classList.remove("is-open");b.setAttribute("aria-expanded","false");};
+  b.addEventListener("click",()=>{m.classList.contains("is-open")?cerrar():(m.classList.add("is-open"),b.setAttribute("aria-expanded","true"));});
+  m.querySelectorAll("a").forEach(a=>a.addEventListener("click",cerrar));
+  addEventListener("keydown",e=>{if(e.key==="Escape")cerrar();});
+  matchMedia("(min-width: 921px)").addEventListener("change",cerrar);
+})();
+(() => {
+  const acs=[...document.querySelectorAll("details.ac")]; let prev=[];
+  addEventListener("beforeprint",()=>{prev=acs.map(d=>d.open);acs.forEach(d=>d.open=true);});
+  addEventListener("afterprint",()=>acs.forEach((d,i)=>d.open=prev[i]));
+})();
+</script>
+</body>
+</html>
