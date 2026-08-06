@@ -308,7 +308,7 @@ footer p{margin:0 0 8px;line-height:1.7}
     <div class="sec-head">
       <span class="city-tab" id="hoteles-tab">Punta Cana</span>
       <h2>Los resorts</h2>
-      <p id="hoteles-intro">Todos son todo incluido y en habitación doble para los dos. Las opciones cambian según el mes que elijas abajo, en Tu inversión. Toca cada tarjeta para ver las fotos.</p>
+      <p id="hoteles-intro">Todos son todo incluido y en habitación doble para los dos. Toca cada tarjeta para ver las fotos. Abajo, en Tu inversión, seleccionas el que prefieras.</p>
     </div>
     <div class="grid" id="grid-hoteles"></div>
   </div>
@@ -320,12 +320,12 @@ footer p{margin:0 0 8px;line-height:1.7}
     <div class="sec-head">
       <div class="eyebrow">Tu inversión</div>
       <h2>Arma tu plan</h2>
-      <p>Elige el mes, cuántas noches, la aerolínea con su tarifa y el resort. El valor por persona se calcula solo.</p>
+      <p>Elige la aerolínea con su tarifa, cuántas noches y el resort. El valor por persona se calcula solo.</p>
     </div>
 
     <div class="q-panel">
       <div class="q-selgrid">
-        <div class="q-selgroup"><label>Mes de viaje</label><div class="q-opts" id="sel-mes"></div></div>
+        <div class="q-selgroup"><label>Aerolínea y mes</label><div class="q-opts" id="sel-mes"></div></div>
         <div class="q-selgroup"><label>Cuántas noches</label><div class="q-opts" id="sel-noches"></div></div>
         <div class="q-selgroup"><label>Tarifa del vuelo</label><div class="q-opts" id="sel-fare"></div></div>
         <div class="q-selgroup"><label>Resort todo incluido</label><div class="hsel" id="hsel-hotel"></div></div>
@@ -507,8 +507,8 @@ const AIRLINES = {
        inc:[["y","1 artículo personal y 1 equipaje de mano (10 kg)"],["y","1 maleta de bodega (23 kg)"],["y","Asiento Plus (sujeto a disponibilidad)"],["y","Cambios y reembolsos antes del vuelo"]]}
     ]}
 };
-function tiquetePP(mes, fareK){
-  const a = mes==="octubre" ? AIRLINES.wingo : AIRLINES.avianca;
+function tiquetePP(airK, fareK){
+  const a = AIRLINES[airK];
   const f = a.fares.find(x=>x.k===fareK) || a.fares[0];
   return (f.usd!=null ? f.usd : f.cop/TRM) / MARGEN;
 }
@@ -516,50 +516,50 @@ function tiquetePP(mes, fareK){
 /* ===== hoteles · precio COMISIONABLE en USD, habitación doble, 4 noches ===== */
 const HOTELES = [
   {slug:"vista-sol", nombre:"Vista Sol Punta Cana Beach Resort & Spa", cadena:"Vista Sol · Bávaro", est:4, op:"8.897", ao:false, fotos:12,
-   meses:{octubre:{usd4:798.62, hab:"Comfort (2 adultos)", cancel:"05/10/2026"}},
+   usd4:798.62, hab:"Comfort (2 adultos)", cancel:"05/10/2026",
    desc:"Resort todo incluido con acceso directo a la playa de Bávaro. Tiene 6 restaurantes entre cocina internacional y gourmet, un food truck frente al mar y pizzería — Mamma Mia, El Mariachi y el Teppanyaki & Sushi Bar son los favoritos. Suma 3 piscinas, 7 bares, spa, gimnasio y espectáculos nocturnos en la playa. Las habitaciones estándar tienen balcón privado."},
   {slug:"bp-turquesa", nombre:"Bahía Príncipe Explore Turquesa", cadena:"Bahia Principe · Bávaro", est:5, op:"", ao:false, fotos:0,
-   meses:{octubre:{usd4:818.29, hab:"Junior Suite Standard", cancel:"16/10/2026"}},
+   usd4:818.29, hab:"Junior Suite Standard", cancel:"16/10/2026",
    desc:"Complejo todo incluido en Playa Bávaro, dentro de la gran ciudad turística de Bahia Principe. Habitaciones tipo Junior Suite con sala de estar, balcón o terraza y minibar. Acceso a los restaurantes temáticos, piscinas y zonas comunes del complejo, además de spa, gimnasio y el pueblo comercial con bares, tiendas y espectáculos nocturnos."},
   {slug:"tropical-deluxe", nombre:"Tropical Deluxe Princess", cadena:"Princess Hotels · Bávaro", est:5, op:"5.421", ao:false, fotos:0,
-   meses:{octubre:{usd4:830.52, hab:"Tropical Deluxe", cancel:"17/10/2026"}},
+   usd4:830.52, hab:"Tropical Deluxe", cancel:"17/10/2026",
    desc:"Resort todo incluido a pocos pasos de Playa Bávaro, rodeado de jardines tropicales y con arquitectura de baja altura. Ofrece varios restaurantes temáticos y buffet, piscinas amplias, spa, gimnasio y programa de entretenimiento diario y nocturno. Los huéspedes acceden también a las instalaciones de los hoteles hermanos del complejo Princess."},
   {slug:"royalton-splash", nombre:"Royalton Splash Punta Cana", cadena:"Royalton · Punta Cana", est:4, op:"15.812", ao:false, fotos:12,
-   meses:{octubre:{usd4:847.45, hab:"Luxury Room", cancel:"18/10/2026"}, noviembre:{usd4:831.47, hab:"Luxury Room", cancel:"14/11/2026"}},
+   usd4:847.45, hab:"Luxury Room", cancel:"18/10/2026",
    desc:"Resort todo incluido con parque acuático propio, toboganes y piscinas con zona de olas — el más divertido del listado. Las habitaciones Luxury traen la cama Royalton DreamBed, minibar y balcón. Suma restaurantes temáticos sin reserva previa, bares, spa, gimnasio, deportes acuáticos no motorizados y shows nocturnos."},
   {slug:"grand-sirenis", nombre:"Grand Sirenis Punta Cana Resort", cadena:"Sirenis Hotels · Uvero Alto", est:5, op:"15.922", ao:false, fotos:12, video:"lupJTsKjDrU",
-   meses:{octubre:{usd4:860.88, hab:"Double Room (2 adultos)", cancel:"17/10/2026"}, noviembre:{usd4:924.77, hab:"Family Suite (2 adultos)", cancel:"13/11/2026"}},
+   usd4:924.77, hab:"Family Suite (2 adultos)", cancel:"13/11/2026",
    desc:"Resort todo incluido frente al mar en Uvero Alto, con un parque acuático de 12.000 m² con toboganes, 2 piscinas grandes y 2 infantiles. Ofrece 8 restaurantes temáticos —italiano, japonés, tex-mex y brasileño— y 13 bares, incluyendo discoteca y casino. Kayak, snorkel, mini-golf y shows nocturnos. Habitaciones con aire acondicionado, minibar, TV satelital y balcón."},
   {slug:"riu-bambu", nombre:"Riu Bambu", cadena:"Riu Hoteles · Bávaro", est:5, op:"5.398", ao:false, fotos:0,
-   meses:{octubre:{usd4:878.61, hab:"Doble Standard", cancel:"15/10/2026"}},
+   usd4:878.61, hab:"Doble Standard", cancel:"15/10/2026",
    desc:"Todo incluido 24 horas de la cadena Riu, en primera línea de Playa Bávaro. Tiene restaurante buffet y varios temáticos, bares, piscina con zona de hidromasaje, spa, gimnasio y deportes acuáticos no motorizados. Los huéspedes pueden usar además las instalaciones y restaurantes de los hoteles Riu vecinos del mismo complejo."},
   {slug:"wyndham-alltra", nombre:"Wyndham Alltra Punta Cana", cadena:"Wyndham Hotel Group · Uvero Alto", est:5, op:"", ao:false, fotos:0,
-   meses:{octubre:{usd4:883.90, hab:"Standard 2 camas dobles", cancel:"12/10/2026"}},
+   usd4:883.90, hab:"Standard 2 camas dobles", cancel:"12/10/2026",
    desc:"Resort todo incluido en Uvero Alto, sobre una playa amplia y tranquila, con propuesta moderna y muy buena relación calidad-precio. Incluye restaurantes a la carta y buffet, bares, piscinas, spa, gimnasio y actividades diarias. Habitaciones amplias con balcón o terraza y minibar surtido."},
   {slug:"ocean-el-faro", nombre:"Ocean El Faro", cadena:"H10 Hotels · Punta Cana", est:5, op:"9.926", ao:false, fotos:12, video:"EBc8OvwZDvw",
-   meses:{octubre:{usd4:905.24, hab:"Junior Suite Nature", cancel:"16/10/2026"}},
+   usd4:905.24, hab:"Junior Suite Nature", cancel:"16/10/2026",
    desc:"Resort de arquitectura colonial con su icónico faro-mirador y una oferta de entretenimiento muy completa: río lento, parque acuático y bolera dentro del complejo. Tiene 10 restaurantes y 13 bares — Sakura (teppanyaki y sushi), Blue Moon (cocina de autor) y Route 66 (BBQ americano) destacan. La habitación estándar es Junior Suite, con balcón o terraza, sala de estar y minibar."},
   {slug:"royalton-chic", nombre:"Royalton CHIC Punta Cana", cadena:"Royalton · Uvero Alto · Solo adultos", est:5, op:"14.675", ao:true, fotos:5,
-   meses:{octubre:{usd4:958.35, hab:"Luxury Room", cancel:"18/10/2026"}, noviembre:{usd4:892.65, hab:"Doble Deluxe", cancel:"12/11/2026"}},
+   usd4:958.35, hab:"Luxury Room", cancel:"18/10/2026",
    desc:"Todo incluido solo para adultos, con ambiente de resort-boutique y mucha vida nocturna: piscina con bar dentro del agua, fiestas temáticas y coctelería de autor. Restaurantes a la carta sin reserva previa, spa Royal Spa, gimnasio y playa privada. Las habitaciones Luxury tienen cama DreamBed, minibar y balcón."},
   {slug:"riu-palace", nombre:"Riu Palace Punta Cana", cadena:"Riu Hoteles · Bávaro", est:5, op:"3.955", ao:false, fotos:0,
-   meses:{octubre:{usd4:1007.03, hab:"Jr. Suite Standard", cancel:"16/10/2026"}},
+   usd4:1007.03, hab:"Jr. Suite Standard", cancel:"16/10/2026",
    desc:"La categoría Palace de Riu, la más alta de la cadena, en primera línea de Playa Bávaro. Todo incluido 24 horas con restaurantes a la carta sin reserva, bar-piscina, spa, gimnasio y club nocturno. Las Junior Suites son amplias, con zona de estar, minibar surtido a diario y balcón o terraza."},
   {slug:"grand-palladium", nombre:"Grand Palladium Punta Cana Resort & Spa", cadena:"Palladium Hotel Group · Bávaro", est:5, op:"18.443", ao:false, fotos:8,
-   meses:{octubre:{usd4:1109.43, hab:"Deluxe Garden View", cancel:"16/10/2026"}},
+   usd4:1109.43, hab:"Deluxe Garden View", cancel:"16/10/2026",
    desc:"Gran complejo todo incluido sobre Playa Bávaro, rodeado de vegetación tropical y con acceso a las instalaciones de todo el complejo Palladium. Suma múltiples restaurantes temáticos y buffets, varias piscinas —una de ellas con toboganes—, Zentropia Spa, gimnasio, deportes acuáticos y espectáculos nocturnos."},
   {slug:"bp-explore-punta-cana", nombre:"Bahía Príncipe Explore Punta Cana", cadena:"Bahia Principe · Bávaro", est:5, op:"12.397", ao:false, fotos:12,
-   meses:{noviembre:{usd4:879.39, hab:"Junior Suite Standard", cancel:"12/11/2026"}},
+   usd4:879.39, hab:"Junior Suite Standard", cancel:"12/11/2026",
    desc:"Todo incluido en Playa Bávaro dentro del gran complejo Bahia Principe, con habitaciones Junior Suite de sala de estar, balcón o terraza y minibar. Acceso a los restaurantes temáticos, buffets y piscinas del complejo, más spa, gimnasio y el pueblo comercial con bares, tiendas y espectáculos cada noche."},
   {slug:"barcelo-bavaro-beach", nombre:"Barceló Bávaro Beach · Solo adultos", cadena:"Barceló Hotels · Bávaro · Solo adultos", est:5, op:"13.774", ao:true, fotos:0,
-   meses:{noviembre:{usd4:1042.44, hab:"Superior", cancel:"02/11/2026"}},
+   usd4:1042.44, hab:"Superior", cancel:"02/11/2026",
    desc:"Todo incluido solo para adultos, en primera línea de Playa Bávaro y con acceso a las instalaciones del complejo Barceló Bávaro Grand Resort: campo de golf de 18 hoyos, casino, bolera y más de una decena de restaurantes. Ambiente tranquilo, piscina exclusiva para adultos, U-Spa y habitaciones Superior con terraza."}
 ];
 
-const state = { mes:"noviembre", noches:4, fare:"light", hotel:"royalton-splash" };
+const state = { air:"avianca", noches:4, fare:"light", hotel:"vista-sol" };
 
 const estStars = e => "★".repeat(e);
-const hotelesDelMes = () => HOTELES.filter(h => h.meses[state.mes]);
+const hotelesDelMes = () => HOTELES;
 const fotoFiles = h => Array.from({length:h.fotos},(_,i)=>`assets/hoteles/${h.slug}/${i+1}.jpg`);
 
 /* ===== aerolíneas (informativo) ===== */
@@ -579,9 +579,9 @@ document.getElementById("airlines").innerHTML = Object.values(AIRLINES).map(a=>`
 /* ===== hoteles ===== */
 function renderHoteles(){
   const lista = hotelesDelMes();
-  document.getElementById("hoteles-tab").textContent = state.mes==="octubre" ? "Opciones de octubre" : "Opciones de noviembre";
+  document.getElementById("hoteles-tab").textContent = "Punta Cana · todo incluido";
   document.getElementById("grid-hoteles").innerHTML = lista.map(h=>{
-    const m = h.meses[state.mes];
+    const m = h;
     const thumb = h.video ? `https://img.youtube.com/vi/${h.video}/hqdefault.jpg` : (h.fotos?fotoFiles(h)[0]:null);
     const media = thumb
       ? `<button class="card-img" type="button" data-gal="${h.slug}" aria-label="Ver fotos de ${h.nombre}">
@@ -619,14 +619,11 @@ addEventListener("keydown",e=>{ if(e.key==="Escape"){ ov.classList.remove("open"
 const pill=(n,v,l,c)=>`<label class="q-opt"><input type="radio" name="${n}" value="${v}" ${c?"checked":""}><span>${l}</span></label>`;
 function renderMes(){
   document.getElementById("sel-mes").innerHTML =
-    pill("mes","octubre","Octubre · Wingo",state.mes==="octubre") + pill("mes","noviembre","Noviembre · Avianca",state.mes==="noviembre");
-  document.querySelectorAll('input[name="mes"]').forEach(r=>r.addEventListener("change",()=>{
-    state.mes=r.value;
-    const a = state.mes==="octubre"?AIRLINES.wingo:AIRLINES.avianca;
-    state.fare = a.fares.find(f=>f.best).k;
-    const lista=hotelesDelMes();
-    if(!lista.some(h=>h.slug===state.hotel)) state.hotel=lista[0].slug;
-    renderFare(); renderHoteles(); buildHsel(); render();
+    pill("air","wingo","Wingo · octubre",state.air==="wingo") + pill("air","avianca","Avianca · noviembre",state.air==="avianca");
+  document.querySelectorAll('input[name="air"]').forEach(r=>r.addEventListener("change",()=>{
+    state.air=r.value;
+    state.fare = AIRLINES[state.air].fares.find(f=>f.best).k;
+    renderFare(); render();
   }));
 }
 function renderNoches(){
@@ -634,14 +631,14 @@ function renderNoches(){
   document.querySelectorAll('input[name="noches"]').forEach(r=>r.addEventListener("change",()=>{state.noches=+r.value;render();}));
 }
 function renderFare(){
-  const a = state.mes==="octubre"?AIRLINES.wingo:AIRLINES.avianca;
+  const a = AIRLINES[state.air];
   document.getElementById("sel-fare").innerHTML = a.fares.map(f=>pill("fare",f.k,f.label,state.fare===f.k)).join("");
   document.querySelectorAll('input[name="fare"]').forEach(r=>r.addEventListener("change",()=>{state.fare=r.value;render();}));
 }
 function buildHsel(){
   const el=document.getElementById("hsel-hotel"), lista=hotelesDelMes();
   const cur=lista.find(h=>h.slug===state.hotel)||lista[0]; state.hotel=cur.slug;
-  el.innerHTML=`<button class="hsel-btn" type="button" aria-haspopup="listbox" aria-expanded="false"><b>${cur.nombre}</b><small>${estStars(cur.est)} · ${cur.meses[state.mes].hab}</small></button>
+  el.innerHTML=`<button class="hsel-btn" type="button" aria-haspopup="listbox" aria-expanded="false"><b>${cur.nombre}</b><small>${estStars(cur.est)} · ${cur.hab}</small></button>
     <ul class="hsel-list" role="listbox">${lista.map(h=>`<li role="option" data-val="${h.slug}" aria-selected="${h.slug===state.hotel}"><b>${h.nombre}</b><small>${estStars(h.est)}${h.ao?" · solo adultos":""}</small></li>`).join("")}</ul>`;
   const btn=el.querySelector(".hsel-btn"), ul=el.querySelector(".hsel-list");
   btn.addEventListener("click",()=>{const o=ul.classList.toggle("open");btn.setAttribute("aria-expanded",o);});
@@ -653,8 +650,8 @@ function buildHsel(){
 
 /* ===== cálculo ===== */
 function calc(){
-  const h=HOTELES.find(x=>x.slug===state.hotel), m=h.meses[state.mes];
-  const tiq=tiquetePP(state.mes,state.fare);
+  const h=HOTELES.find(x=>x.slug===state.hotel), m=h;
+  const tiq=tiquetePP(state.air,state.fare);
   const hotelPP=(m.usd4/4)*state.noches/2;          // por persona, según noches
   const servicios=hotelPP+TRASLADO;                  // hotel + traslados (comisionables)
   const total=tiq+servicios;
@@ -663,7 +660,7 @@ function calc(){
 }
 function render(){
   const c=calc();
-  const a=state.mes==="octubre"?AIRLINES.wingo:AIRLINES.avianca;
+  const a=AIRLINES[state.air];
   const fare=a.fares.find(f=>f.k===state.fare);
   document.getElementById("v-usd").textContent=usd(c.total);
   document.getElementById("v-cop").textContent=cop(c.total*TRM);
@@ -674,9 +671,9 @@ function render(){
   document.getElementById("v-sal").textContent=usd(c.saldo);
   document.getElementById("v-sal-cop").textContent=cop(c.saldo*TRM);
   document.getElementById("q-resumen").innerHTML=
-    `<b>${state.noches} noches</b> en ${c.h.nombre} (${c.m.hab}) · viaje en <b>${state.mes}</b> con <b>${a.nombre}</b>, tarifa ${fare.label} · incluye traslados. Cancelación gratuita del hotel hasta el ${c.m.cancel}.`;
+    `<b>${state.noches} noches</b> en ${c.h.nombre} (${c.m.hab}) · viaje en <b>${a.mes}</b> con <b>${a.nombre}</b>, tarifa ${fare.label} · incluye traslados. Cancelación gratuita del hotel hasta el ${c.m.cancel}.`;
   const msg=`Hola Raíces, soy Nadia. Quiero reservar el viaje a Punta Cana:\n\n`+
-    `• ${state.noches} noches en ${c.h.nombre}\n• Viaje en ${state.mes} de 2026, fechas por definir\n`+
+    `• ${state.noches} noches en ${c.h.nombre}\n• Viaje en ${a.mes} de 2026, fechas por definir\n`+
     `• Vuelo ${a.nombre}, tarifa ${fare.label}\n• 2 personas en habitación doble, todo incluido, con traslados\n\n`+
     `Valor por persona: ${usd(c.total)} (${cop(c.total*TRM)})\nReserva por persona: ${usd(c.reserva)}\n\n¿Cómo hacemos la reserva?`;
   document.querySelectorAll("a.js-wa").forEach(x=>{x.href="https://wa.me/573122738001?text="+encodeURIComponent(msg);});
