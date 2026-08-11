@@ -347,7 +347,6 @@ footer p{margin:0 0 8px;line-height:1.7}
 
     <div class="inv-head">
       <h3>El valor de cada quien</h3>
-      <div class="trm">TRM de hoy: US$1 = $3.125,47</div>
     </div>
 
     <div class="price-main">
@@ -355,12 +354,10 @@ footer p{margin:0 0 8px;line-height:1.7}
         <div class="pp">
           <div class="l">Total por adulto</div>
           <div class="v" id="v-adulto">—</div>
-          <div class="c" id="v-adulto-cop">—</div>
         </div>
         <div class="pp">
           <div class="l">Total por niño de 9 años</div>
           <div class="v" id="v-nino">—</div>
-          <div class="c" id="v-nino-cop">—</div>
         </div>
       </div>
       <div class="famtot">
@@ -369,17 +366,15 @@ footer p{margin:0 0 8px;line-height:1.7}
       </div>
     </div>
 
-    <div class="iva-note" id="iva-note">—</div>
-
     <div class="pay">
       <div class="pay-card">
         <div class="n">Con esto reserva el cliente</div>
-        <div class="amt" id="v-reserva">—<small id="v-reserva-cop"></small></div>
+        <div class="amt" id="v-reserva">—</div>
         <p>Con esto quedan separados los tiquetes y el hotel. Los tiquetes se emiten con este pago.</p>
       </div>
       <div class="pay-card">
-        <div class="n">Saldo</div>
-        <div class="amt" id="v-saldo">—<small id="v-saldo-cop"></small></div>
+        <div class="n">Saldo restante</div>
+        <div class="amt" id="v-saldo">—</div>
         <p>Se paga a más tardar el <b style="color:#fff;font-weight:500">25 de agosto de 2026</b>, sin intereses ni recargos.</p>
       </div>
     </div>
@@ -409,7 +404,6 @@ footer p{margin:0 0 8px;line-height:1.7}
         <summary><span class="ac-ic no">–</span>El plan no incluye<span class="ac-ar" aria-hidden="true"></span></summary>
         <div class="ac-b">
           <ul class="lst no">
-            <li>IVA del 19% sobre el alojamiento (se paga directamente en el hotel al llegar)</li>
             <li>Traslados aeropuerto–hotel–aeropuerto</li>
             <li>Equipaje de mano y maleta de bodega si eligen la tarifa Basic</li>
             <li>Alimentación no especificada, tours y entradas</li>
@@ -485,9 +479,7 @@ footer p{margin:0 0 8px;line-height:1.7}
 
 <script>
 const TRM = 3125.47;
-const cop = n => "$" + (Math.round(n/1000)*1000).toLocaleString("es-CO");
-const copExact = n => "$" + Math.round(n).toLocaleString("es-CO");
-const usd = n => "US$" + Math.round(n).toLocaleString("es-CO");
+const cop = n => "$" + Math.round(n).toLocaleString("es-CO");
 
 /* ===== vuelo (netos en COP; venta = neto/0,94) ===== */
 const MARGEN = 0.94;
@@ -509,33 +501,31 @@ function pill(k,label,checked){
 document.getElementById("sel-fare").innerHTML = FARES.map(f=>pill(f.k,f.label,state.fare===f.k)).join("");
 document.querySelectorAll('input[name="fare"]').forEach(r=>r.addEventListener("change",()=>{state.fare=r.value;render();}));
 
-/* ===== cálculo ===== */
+/* ===== cálculo (todo en COP; el IVA del hotel va incluido en el valor del adulto, sin desglose) ===== */
 function calc(){
   const f = FARES.find(x=>x.k===state.fare);
   const vueloUSD = ((f.ida + f.reg) / MARGEN) / TRM;   // por pasajero
   const hotelAd = HOTEL.p2/2;
   const hotelNi = HOTEL.p3 - HOTEL.p2;
-  const adulto = vueloUSD + hotelAd;
-  const nino   = vueloUSD + hotelNi;
-  const familia = 3*vueloUSD + HOTEL.p3;
-  const reserva = 3*vueloUSD + 0.22*HOTEL.p3;
-  const saldo = familia - reserva;
-  const iva = HOTEL.p3 * 0.78 * 0.19;
-  return { f, vueloUSD, adulto, nino, familia, reserva, saldo, iva };
+  const ivaUSD = HOTEL.p3 * 0.78 * 0.19;
+  const ivaAdShareUSD = ivaUSD/2;
+
+  const adultoCOP = Math.round((vueloUSD + hotelAd + ivaAdShareUSD) * TRM / 1000) * 1000;
+  const ninoCOP   = Math.round((vueloUSD + hotelNi) * TRM / 1000) * 1000;
+  const familiaCOP = 2*adultoCOP + ninoCOP;
+  const reservaCOP  = Math.round((3*vueloUSD + 0.22*HOTEL.p3) * TRM / 1000) * 1000;
+  const saldoCOP = familiaCOP - reservaCOP;   // por construcción siempre reserva+saldo=total
+
+  return { f, adultoCOP, ninoCOP, familiaCOP, reservaCOP, saldoCOP };
 }
 
 function render(){
   const c = calc();
-  document.getElementById("v-adulto").textContent = usd(c.adulto);
-  document.getElementById("v-adulto-cop").textContent = cop(c.adulto*TRM);
-  document.getElementById("v-nino").textContent = usd(c.nino);
-  document.getElementById("v-nino-cop").textContent = cop(c.nino*TRM);
-  document.getElementById("v-familia").textContent = usd(c.familia) + " · " + cop(c.familia*TRM);
-  document.getElementById("v-reserva").innerHTML = usd(c.reserva) + `<small>${cop(c.reserva*TRM)}</small>`;
-  document.getElementById("v-saldo").innerHTML = usd(c.saldo) + `<small>${cop(c.saldo*TRM)}</small>`;
-
-  document.getElementById("iva-note").innerHTML =
-    `<b>Y en el hotel deberán pagar ${copExact(c.iva*TRM)}</b> (≈${usd(c.iva)}) por concepto de IVA del alojamiento, por las tres noches. Por ley se paga allá directamente al hacer el check-in y no está incluido arriba. Es un aproximado a la TRM de hoy (US$1 = $3.125,47), así que puede variar un poco según el dólar del día.`;
+  document.getElementById("v-adulto").textContent = cop(c.adultoCOP);
+  document.getElementById("v-nino").textContent = cop(c.ninoCOP);
+  document.getElementById("v-familia").textContent = cop(c.familiaCOP);
+  document.getElementById("v-reserva").textContent = cop(c.reservaCOP);
+  document.getElementById("v-saldo").textContent = cop(c.saldoCOP);
 
   document.getElementById("q-resumen").innerHTML =
     `<b>3 noches</b> en el City House Puerta del Sol · vuelo Avianca directo, ida jueves 24 (05:00) y regreso domingo 27 (22:10) de septiembre · tarifa <b>${c.f.label}</b>.`;
@@ -547,8 +537,8 @@ function render(){
     `• Vuelo Avianca directo, tarifa ${c.f.label}\n` +
     `• Ida jueves 24 (05:00) · regreso domingo 27 (22:10)\n` +
     `• 2 adultos y 1 niño de 9 años\n\n` +
-    `Por adulto: ${usd(c.adulto)} · Por el niño: ${usd(c.nino)}\n` +
-    `Reservo con: ${usd(c.reserva)}\n\n¿Cómo hago la reserva?`;
+    `Por adulto: ${cop(c.adultoCOP)} · Por el niño: ${cop(c.ninoCOP)}\n` +
+    `Reservo con: ${cop(c.reservaCOP)}\n\n¿Cómo hago la reserva?`;
   document.querySelectorAll("a.js-wa").forEach(a=>{ a.href = "https://wa.me/573122738001?text=" + encodeURIComponent(msg); });
 }
 render();
