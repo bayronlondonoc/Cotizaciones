@@ -1,817 +1,985 @@
-<meta charset="UTF-8">
-<title>Cotización de viaje para Diana Correa · Raíces</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cotización de viaje para Diana Correa · Raíces</title>
+<meta name="description" content="Miami · Orlando · Miami — 1 al 12 de octubre de 2026 · 9 viajeros en 3 habitaciones, con vuelos, hoteles y parques.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Cotización de viaje a Miami y Orlando para Diana Correa · Raíces Travel">
+<link rel="icon" type="image/png" href="assets/marca/favicon.png">
 <meta property="og:title" content="Cotización de viaje para Diana Correa · Raíces">
-<meta property="og:description" content="Miami · Orlando · Miami — 1 al 12 de octubre de 2026">
-<meta property="og:image" content="https://bayronlondonoc.github.io/cotizaciones/diana-correa/assets/marca/logo-principal.png">
+<meta property="og:description" content="Miami · Orlando · Miami — 1 al 12 de octubre de 2026 · 9 viajeros en 3 habitaciones, con vuelos, hoteles y parques.">
+<meta property="og:image" content="https://bayronlondonoc.github.io/cotizaciones/diana-correa/assets/destinos/hero.jpg">
 <meta property="og:url" content="https://bayronlondonoc.github.io/cotizaciones/diana-correa/">
-<link rel="icon" href="assets/marca/favicon.png">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --arena:#E6CAB2; --arena-soft:#F1DFCB; --bg:#F7F0E4; --paper:#FDFAF3;
-  --tierra:#68362C; --ink:#3B2018; --ink-soft:#5A4038; --mute:#8A7267;
-  --atardecer:#9C2B0D; --oliva:#7D8561; --oliva-dark:#5F6849;
-  --line:#E5D6C3; --shadow:0 18px 40px rgba(59,32,24,.12); --shadow-soft:0 8px 20px rgba(59,32,24,.08);
-  --radius:18px; --font-display:"Passion One",serif; --font-body:"Poppins",sans-serif;
+  --arena:#E6CAB2; --arena-soft:#F0DFC9; --bg:#F7F0E4; --paper:#FDFAF3;
+  --tierra:#68362C; --ink:#3B2018; --ink-soft:#5C3A2E; --mute:#8A6A58;
+  --atardecer:#9C2B0D; --oliva:#7D8561; --oliva-dark:#5E6547;
+  --line:rgba(59,32,24,.14);
+  --shadow:0 18px 40px rgba(59,32,24,.10); --shadow-soft:0 8px 22px rgba(59,32,24,.07);
+  --radius:18px;
+  --font-display:"Passion One","Arial Black",sans-serif; --font-body:"Poppins",system-ui,sans-serif;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-weight:300;line-height:1.6;overflow-x:hidden}
-h1,h2,h3,h4{font-family:var(--font-display);font-weight:900;color:var(--tierra);margin:0;letter-spacing:.3px}
-a{color:inherit}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-body);font-weight:300;font-size:16px;line-height:1.65;color:var(--ink);background:var(--bg);overflow-x:clip}
 img{max-width:100%;display:block}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+.wrap{width:min(1180px,92vw);margin-inline:auto}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:.96;letter-spacing:.01em;text-transform:uppercase;color:var(--tierra);margin:0}
+h1{font-size:clamp(40px,7vw,84px)} h2{font-size:clamp(30px,4.6vw,56px)} h3{font-size:clamp(20px,2.6vw,28px)}
+h2 em{font-style:normal;color:var(--atardecer)}
+p{margin:0 0 1em}
+.eyebrow{font-family:var(--font-body);font-weight:500;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--atardecer);margin-bottom:14px}
 
-/* NAV */
-nav{position:sticky;top:0;z-index:50;height:78px;background:rgba(253,250,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-nav .wrap{height:78px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo img{height:38px}
-.nav-links{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:15px}
-.nav-links a{text-decoration:none;color:var(--ink-soft);font-weight:500}
-.nav-links a:hover{color:var(--atardecer)}
-.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
-.burger span{width:24px;height:2px;background:var(--tierra)}
-@media(max-width:920px){
-  .nav-links{position:fixed;top:78px;left:0;right:0;background:var(--paper);flex-direction:column;padding:20px 24px;gap:18px;transform:translateY(-130%);transition:transform .25s;border-bottom:1px solid var(--line)}
-  .nav-links.open{transform:translateY(0)}
-  .burger{display:flex}
+.nav{position:sticky;top:0;z-index:50;background:rgba(247,240,228,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:center;gap:34px;height:78px}
+.nav img{height:38px;width:auto}
+.nav-links{display:flex;gap:22px;font-size:15px;letter-spacing:.03em}
+.nav-links a{text-decoration:none;color:var(--ink-soft);padding:4px 0;border-bottom:1.5px solid transparent;transition:.2s;white-space:nowrap}
+.nav-links a:hover{color:var(--atardecer);border-bottom-color:var(--atardecer)}
+.nav-burger{display:none}
+@media(max-width:1020px){
+  .nav-in{justify-content:space-between;gap:12px}
+  .nav-burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:40px;padding:0 9px;background:transparent;border:1px solid var(--line);border-radius:11px;cursor:pointer;flex:none}
+  .nav-burger span{display:block;height:2px;border-radius:2px;background:var(--tierra);transition:transform .25s,opacity .2s}
+  .nav-burger[aria-expanded="true"]{border-color:var(--atardecer)}
+  .nav-burger[aria-expanded="true"] span{background:var(--atardecer)}
+  .nav-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .nav-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{position:absolute;left:0;right:0;top:100%;display:none;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 0}
+  .nav-links.is-open{display:flex}
+  .nav-links a{padding:13px 6vw;border-bottom:0;border-left:3px solid transparent}
+  .nav-links a:hover{border-left-color:var(--atardecer);background:rgba(230,202,178,.34)}
 }
 
-/* HERO */
-.hero{position:relative;padding:90px 0 70px;background:linear-gradient(160deg,var(--arena) 0%,var(--bg) 60%)}
-.hero .kicker{color:var(--atardecer);font-weight:600;letter-spacing:2px;text-transform:uppercase;font-size:13px}
-.hero h1{font-size:clamp(38px,6vw,64px);margin-top:10px}
-.hero .sub{font-size:17px;color:var(--ink-soft);max-width:620px;margin-top:14px}
-.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-.pill-tag{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px;color:var(--tierra);font-weight:500}
+.hero{position:relative;min-height:min(80vh,700px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(45,24,18,.62) 0%,rgba(45,24,18,.28) 45%,rgba(45,24,18,0) 80%),
+  linear-gradient(180deg,rgba(59,32,24,.35) 0%,rgba(59,32,24,.12) 22%,rgba(85,42,33,.58) 48%,rgba(85,42,33,.90) 78%,rgba(72,35,27,.97) 100%)}
+.hero-in{position:relative;z-index:2;width:100%;padding:56px 6vw 62px 18vw}
+@media(max-width:900px){.hero-in{padding:48px 6vw 52px}}
+.hero h1{color:#fff;margin:14px 0 10px}
+.hero .kicker{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--arena);font-weight:500}
+.hero .sub{font-size:clamp(15px,1.9vw,19px);color:#F6E7D6;max-width:58ch}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.pill{border:1px solid rgba(230,202,178,.5);border-radius:999px;padding:7px 16px;font-size:13px;color:#F6E7D6;backdrop-filter:blur(4px);background:rgba(59,32,24,.22)}
 
-/* SECTION */
-section{padding:64px 0}
-.sec-head{display:flex;align-items:flex-end;gap:18px;margin-bottom:32px}
-.rot{writing-mode:vertical-rl;font-family:var(--font-display);font-size:14px;color:var(--mute);letter-spacing:2px;text-transform:uppercase;padding-bottom:4px}
-.sec-head h2{font-size:clamp(28px,4vw,42px)}
-.sec-note{color:var(--mute);font-size:14px;margin-top:6px}
+section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
+.sec-head{margin-bottom:40px}
+.sec-head p{color:var(--ink-soft);font-size:17px;margin-top:16px}
+.rot{position:absolute;left:max(12px,calc((100vw - min(1180px,92vw))/2 - 46px));top:clamp(54px,7.5vw,104px);writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);font-weight:500;user-select:none}
+@media(max-width:1100px){.rot{display:none}}
+.alt{background:var(--paper)}
 
-/* CICLO / SEGMENTOS */
-.ciclos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
-.ciclo{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;text-align:center}
-.ciclo b{display:block;color:var(--tierra);font-family:var(--font-display);font-size:22px}
-.ciclo span{font-size:13px;color:var(--mute)}
-@media(max-width:700px){.ciclos{grid-template-columns:1fr}}
+.ciclos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.ciclo{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow-soft)}
+.alt .ciclo{background:var(--bg)}
+.ciclo .mes-tag{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500;margin-bottom:6px}
+.ciclo h3{font-size:24px;margin-bottom:8px}
+.ciclo .d{font-size:13.5px;color:var(--ink-soft);line-height:1.6}
+.ciclo .d b{color:var(--tierra);font-weight:500}
 
-/* AEROLINEAS */
-.air-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
-.air-tab{border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:10px 18px;cursor:pointer;font-size:14px;font-weight:500;color:var(--ink-soft)}
-.air-tab.sel{background:var(--tierra);border-color:var(--tierra);color:#fff}
-.air-block{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-soft)}
-.air-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:18px}
-.air-head h3{font-size:24px}
-.air-route{font-size:13px;color:var(--mute)}
-.itin-sel{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 22px}
-.itin-opt{border:1px solid var(--line);border-radius:10px;padding:9px 14px;font-size:13px;cursor:pointer;background:#fff}
-.itin-opt.sel{border-color:var(--atardecer);background:#FBEAE3;color:var(--atardecer);font-weight:600}
+.air-block{margin-bottom:34px}
+.air-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;margin-bottom:6px}
+.air-head h3{font-size:clamp(22px,3vw,30px)}
+.air-tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--oliva);padding:4px 11px;border-radius:999px;font-weight:500}
+.air-route{font-size:12.5px;color:var(--mute)}
+.air-legs{font-size:13px;color:var(--ink-soft);margin-bottom:14px;line-height:1.75}
+.air-legs b{color:var(--tierra);font-weight:500}
 .fares{display:grid;gap:14px}
 .fares.c2{grid-template-columns:1fr 1fr}
-@media(max-width:640px){.fares.c2{grid-template-columns:1fr}}
-.fare-col{border:2px solid var(--line);border-radius:14px;padding:18px;cursor:pointer;transition:.15s}
-.fare-col:hover{border-color:var(--oliva)}
-.fare-col.sel{border-color:var(--atardecer);background:#FBEAE3}
-.fare-col h4{font-size:19px;color:var(--tierra)}
-.fare-col .fp{font-size:13px;color:var(--mute);margin:2px 0 10px}
-.lst{list-style:none;margin:0;padding:0;font-size:13.5px}
-.lst li{display:flex;gap:8px;padding:4px 0;color:var(--ink-soft)}
-.ac-ic{flex:none;width:16px;text-align:center;font-weight:700}
-.ac-ic.y{color:var(--oliva-dark)}
-.ac-ic.n{color:var(--atardecer)}
-.fine{font-size:12px;color:var(--mute);margin-top:14px}
+@media(max-width:820px){.fares.c2{grid-template-columns:1fr}}
+.fare-col{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.alt .fare-col{background:var(--bg)}
+.fare-col.best{border-color:rgba(156,43,13,.4);box-shadow:0 0 0 1px rgba(156,43,13,.16)}
+.fare-col h4{font-family:var(--font-display);font-weight:400;font-size:20px;text-transform:uppercase;color:var(--tierra);margin:0 0 2px}
+.fare-col .ftag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--atardecer);font-weight:500;margin-bottom:12px;display:block}
+.fare-col ul{list-style:none;margin:0;padding:0}
+.fare-col li{font-size:12.5px;color:var(--ink-soft);padding:5px 0 5px 20px;position:relative;line-height:1.45}
+.fare-col li::before{position:absolute;left:0;top:5px;font-family:var(--font-display);font-size:13px}
+.fare-col li.y::before{content:"+";color:var(--oliva)}
+.fare-col li.n::before{content:"–";color:var(--mute)}
+.fare-col li.n{color:var(--mute)}
+.air-note{font-size:12.5px;color:var(--mute);line-height:1.7;margin:14px 0 0;font-style:italic}
 
-/* HOTELES */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-soft);transition:.15s}
-.card.sel{border-color:var(--atardecer);box-shadow:var(--shadow)}
-.card-img{aspect-ratio:4/3;overflow:hidden;position:relative;cursor:pointer;background:var(--arena-soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.card{position:relative;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s}
+.alt .card{background:var(--bg)}
+.card.is-sel{border-color:var(--atardecer);box-shadow:0 0 0 1px rgba(156,43,13,.2),var(--shadow)}
+.card-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--arena-soft);border:0;padding:0;width:100%;display:block;cursor:pointer}
 .card-img img{width:100%;height:100%;object-fit:cover}
-.card-video{aspect-ratio:16/9}
-.card-video iframe{width:100%;height:100%;border:0}
-.badge{position:absolute;top:10px;left:10px;background:rgba(59,32,24,.75);color:#fff;font-size:11px;padding:4px 10px;border-radius:999px}
-.card-b{padding:18px 20px}
-.stars{color:#C98A2C;font-size:14px;letter-spacing:1px}
-.hmeta{font-size:12.5px;color:var(--mute);margin:2px 0 10px}
-.hdesc{font-size:13.5px;color:var(--ink-soft);margin-bottom:12px}
-.mini-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-bottom:10px}
-.mini-gal img{aspect-ratio:1;object-fit:cover;border-radius:6px;cursor:pointer}
-.hab-block{border-top:1px dashed var(--line);padding-top:12px;margin-top:8px}
-.hab-name{font-size:13px;font-weight:600;color:var(--tierra);margin-bottom:6px}
-.hab-note{font-size:11.5px;color:var(--mute);margin-top:4px}
-.gal-link{display:inline-block;margin-top:10px;font-size:13px;color:var(--atardecer);font-weight:600;cursor:pointer;text-decoration:underline}
-.price-tag{margin-top:12px;font-size:13px;color:var(--ink-soft)}
-.price-tag b{color:var(--tierra);font-size:16px}
-.select-btn{width:100%;margin-top:14px;padding:10px;border-radius:10px;border:1px solid var(--tierra);background:#fff;color:var(--tierra);font-weight:600;font-size:13px;cursor:pointer}
-.card.sel .select-btn{background:var(--tierra);color:#fff}
+.badge{position:absolute;top:10px;left:10px;background:var(--tierra);color:#fff;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:500;padding:4px 9px;border-radius:999px;z-index:2;max-width:calc(100% - 20px)}
+.badge.warn{background:var(--atardecer)}
+.card-b{padding:16px 20px 20px;display:flex;flex-direction:column;flex:1}
+.card-b h3{font-size:18px;margin:0 0 3px;line-height:1.08}
+.stars{color:#C6892B;font-size:12px;letter-spacing:1px;margin-bottom:6px}
+.hmeta{font-size:11.5px;color:var(--mute);margin-bottom:10px}
+.hdesc{font-size:12.5px;color:var(--ink-soft);line-height:1.65;margin:0 0 12px}
+.mini-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.mini-gal button{padding:0;border:0;background:none;cursor:pointer;border-radius:8px;overflow:hidden;line-height:0}
+.mini-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:opacity .2s}
+.mini-gal button:hover img{opacity:.8}
+.hab-block{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line)}
+.hab-h{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500;margin-bottom:2px}
+.hab-name{font-family:var(--font-display);font-size:15px;color:var(--tierra);letter-spacing:.02em;text-transform:uppercase;line-height:1.15;margin-bottom:4px}
+.hab-name span{font-family:var(--font-body);font-size:10.5px;letter-spacing:.12em;color:var(--mute);display:block;text-transform:uppercase;font-weight:500}
+.hab-note{font-size:11px;color:var(--mute);margin-top:7px;line-height:1.5;font-style:italic}
+.cancel-note{font-size:11.5px;color:var(--ink-soft);line-height:1.55;margin-top:10px;padding-left:11px;border-left:2px solid var(--arena)}
+.gal-link{margin-top:14px;background:none;border:0;padding:0;color:var(--oliva-dark);font-size:12px;text-decoration:underline;cursor:pointer;font-family:var(--font-body);text-align:left;align-self:flex-start}
+.select-btn{margin-top:auto;padding-top:16px}
+.select-btn button{width:100%;border:1.5px solid var(--tierra);background:transparent;color:var(--tierra);font-family:var(--font-body);font-weight:500;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;padding:12px;border-radius:999px;cursor:pointer;transition:.2s}
+.select-btn button:hover{background:var(--arena-soft)}
+.card.is-sel .select-btn button{background:var(--atardecer);border-color:var(--atardecer);color:#fff;cursor:default}
 
-/* MODAL / LIGHTBOX */
-.hmodal-overlay{display:none;position:fixed;inset:0;background:rgba(20,10,6,.82);z-index:200;padding:40px 16px}
-.hmodal-overlay.open{display:flex;align-items:flex-start;justify-content:center}
-.hmodal{background:var(--paper);border-radius:var(--radius);max-width:900px;width:100%;max-height:88vh;overflow:auto;padding:26px}
-.hm-close{float:right;background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink)}
-.hm-gal{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
-.hm-gal img{aspect-ratio:4/3;object-fit:cover;border-radius:8px;cursor:pointer}
-.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:300;align-items:center;justify-content:center}
-.lightbox.open{display:flex}
-.lightbox img{max-width:92vw;max-height:88vh;object-fit:contain}
-.lightbox .lb-x{position:absolute;top:20px;right:28px;color:#fff;font-size:30px;cursor:pointer;background:none;border:none}
+.hmodal-overlay{position:fixed;inset:0;z-index:300;background:rgba(59,32,24,.65);backdrop-filter:blur(4px);opacity:0;pointer-events:none;overflow-y:auto;padding:30px 16px;transition:opacity .3s}
+.hmodal-overlay.open{opacity:1;pointer-events:auto}
+.hmodal{background:var(--paper);border-radius:18px;max-width:880px;margin:0 auto;padding:26px;position:relative;box-shadow:var(--shadow)}
+.hmodal-close{position:absolute;top:10px;right:14px;background:none;border:0;font-size:28px;color:var(--mute);cursor:pointer;line-height:1}
+.hm-sec{font-family:var(--font-display);font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--tierra);margin:22px 0 10px}
+.hm-sub{font-size:11.5px;color:var(--mute);margin:-6px 0 10px;font-style:italic}
+.hm-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.hm-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;cursor:zoom-in}
+@media(max-width:560px){.hm-gal{grid-template-columns:1fr 1fr}}
+.lightbox{position:fixed;inset:0;z-index:400;background:rgba(22,9,4,.93);display:flex;align-items:center;justify-content:center;padding:5vh 5vw;opacity:0;pointer-events:none;transition:opacity .3s}
+.lightbox.open{opacity:1;pointer-events:auto}
+.lightbox img{max-width:100%;max-height:100%;border-radius:10px}
+.lb-close{position:fixed;top:14px;right:22px;background:none;border:0;font-size:38px;color:rgba(255,255,255,.85);cursor:pointer;line-height:1}
 
-/* PARQUES */
-.parks{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-@media(max-width:760px){.parks{grid-template-columns:1fr}}
-.park-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-soft)}
-.park-card h3{font-size:22px;margin-bottom:6px}
-.park-card .days{font-size:12.5px;color:var(--atardecer);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
-.park-card p{font-size:13.5px;color:var(--ink-soft)}
-.park-price{margin-top:14px;font-size:13px;color:var(--mute)}
-.park-price b{color:var(--tierra);font-size:16px}
+.quote{background:var(--tierra);color:var(--arena)}
+.quote h2,.quote h3{color:var(--arena)} .quote .eyebrow{color:var(--arena)}
+.quote h2 em{color:#F0B49C}
+.quote .sec-head p{color:rgba(230,202,178,.82)}
+.q-panel{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-radius:var(--radius);padding:26px 28px}
+.q-selgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px 26px}
+@media(max-width:720px){.q-selgrid{grid-template-columns:1fr}}
+.q-selgroup{min-width:0}
+.q-selgroup > label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(230,202,178,.65);margin-bottom:9px;font-weight:500}
+.q-opts{display:flex;flex-wrap:wrap;gap:7px}
+.q-opt{position:relative}
+.q-opt input{position:absolute;opacity:0;pointer-events:none}
+.q-opt span{display:block;border:1px solid rgba(230,202,178,.32);border-radius:999px;padding:8px 14px;font-size:12.5px;cursor:pointer;color:var(--arena);line-height:1.3}
+.q-opt input:checked + span{background:var(--atardecer);border-color:var(--atardecer);color:#fff}
+.q-opt input:focus-visible + span{outline:2px solid var(--arena);outline-offset:2px}
+.q-resumen{background:rgba(253,250,243,.06);border:1px dashed rgba(230,202,178,.3);border-radius:12px;padding:14px 18px;margin-top:18px;font-size:13px;color:rgba(230,202,178,.9);line-height:1.7}
+.q-resumen b{color:#fff;font-weight:500}
 
-/* HABITACIONES resumen */
-.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:760px){.rooms{grid-template-columns:1fr}}
-.room-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
-.room-card h4{font-size:19px}
-.room-card p{font-size:13px;color:var(--ink-soft);margin:6px 0 0}
+.inv-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;margin:34px 0 0}
+.inv-head h3{font-size:clamp(22px,3vw,30px)}
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+@media(max-width:900px){.rooms{grid-template-columns:1fr}}
+.rp{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-left:3px solid var(--atardecer);border-radius:14px;padding:22px 24px;display:flex;flex-direction:column}
+.rp .rp-who{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(230,202,178,.7);font-weight:500;margin-bottom:14px;line-height:1.5}
+.rp .rp-l{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(230,202,178,.6);font-weight:500}
+.rp .rp-usd{font-family:var(--font-display);font-size:clamp(30px,4.4vw,40px);color:#fff;line-height:1.05;margin:5px 0 2px}
+.rp .rp-cop{font-size:12px;color:rgba(230,202,178,.68)}
+.rp-split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(230,202,178,.2)}
+.rp-split .rp-amt{font-family:var(--font-display);font-size:20px;color:#fff;line-height:1.2;margin-top:4px}
+.rp-split .rp-cop{font-size:10.5px}
+.rp-solo{margin-top:18px;padding-top:16px;border-top:1px solid rgba(230,202,178,.2);font-size:12px;color:rgba(230,202,178,.78);line-height:1.6}
+.rp-solo b{color:#fff;font-weight:500}
+.group-total{text-align:center;margin-top:24px;font-family:var(--font-display);font-size:clamp(16px,2.2vw,20px);color:rgba(230,202,178,.9);letter-spacing:.02em;text-transform:uppercase}
+.group-total b{color:#fff;font-weight:400}
+.group-total .g-cop{display:block;font-family:var(--font-body);font-size:12px;font-weight:300;letter-spacing:0;text-transform:none;color:rgba(230,202,178,.6);margin-top:4px}
+.pay-note{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-left:3px solid var(--arena);border-radius:14px;padding:18px 22px;margin-top:22px;font-size:13px;color:rgba(230,202,178,.85);line-height:1.7}
+.pay-note b{color:#fff;font-weight:500}
+.q-note{font-size:12.5px;color:rgba(230,202,178,.62);margin-top:20px;line-height:1.7;text-align:center}
 
-/* COTIZACION */
-.quote{background:var(--tierra);border-radius:24px;padding:44px 34px;color:#fff}
-.q-panel h2{color:#fff}
-.inv-head{margin-bottom:26px}
-.room-prices{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0 26px}
-@media(max-width:760px){.room-prices{grid-template-columns:1fr}}
-.rp-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:18px}
-.rp-card .rp-label{font-size:12px;text-transform:uppercase;letter-spacing:1px;opacity:.75}
-.rp-card .rp-usd{font-family:var(--font-display);font-size:30px;margin:4px 0 2px}
-.rp-card .rp-cop{font-size:12.5px;opacity:.75}
-.price-main{margin-top:10px}
-.price-main .p-usd{font-family:var(--font-display);font-size:clamp(38px,6vw,58px);line-height:1}
-.price-main .p-cop{font-size:14px;opacity:.8;margin-top:4px}
-.price-main .p-group{font-size:clamp(19px,3vw,29px);opacity:.85;margin-top:14px;font-family:var(--font-display)}
-.pay{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
-@media(max-width:640px){.pay{grid-template-columns:1fr}}
-.pay-card{background:rgba(255,255,255,.1);border-radius:14px;padding:18px}
-.pay-card .pc-label{font-size:12px;text-transform:uppercase;letter-spacing:1px;opacity:.75}
-.pay-card .pc-val{font-family:var(--font-display);font-size:26px;margin-top:4px}
-.pay-note{background:rgba(255,255,255,.1);border-radius:14px;padding:18px;margin-top:26px;font-size:14px}
-.q-note{font-size:12.5px;opacity:.75;margin-top:16px}
-.q-resumen{font-size:13.5px;opacity:.85;margin-top:10px;line-height:1.7}
-.cta{display:inline-block;margin-top:26px;background:var(--atardecer);color:#fff;text-decoration:none;padding:15px 30px;border-radius:12px;font-weight:600;font-size:15px}
-.cta:hover{background:#7e2309}
-
-/* CONDICIONES */
-.acc{display:flex;flex-direction:column;gap:10px}
-.ac{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:4px 20px}
-.ac summary{cursor:pointer;padding:16px 0;font-weight:600;color:var(--tierra);list-style:none;display:flex;justify-content:space-between}
+.acc{display:flex;flex-direction:column;gap:14px}
+.ac{background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-soft);overflow:hidden}
+.alt .ac{background:var(--bg)}
+.ac[open]{border-color:rgba(104,54,44,.28)}
+.ac summary{display:flex;align-items:center;gap:14px;padding:20px 24px;cursor:pointer;list-style:none;font-family:var(--font-display);text-transform:uppercase;font-size:clamp(17px,2.1vw,21px);color:var(--tierra)}
 .ac summary::-webkit-details-marker{display:none}
-.ac[open] summary{border-bottom:1px solid var(--line)}
-.ac-body{padding:14px 0;font-size:13.5px;color:var(--ink-soft)}
+.ac summary:hover{background:rgba(230,202,178,.24)}
+.ac-ic{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-family:var(--font-display);font-size:15px;color:#fff}
+.ac-ic.yes{background:var(--oliva)} .ac-ic.no{background:var(--atardecer)}
+.ac-ic.warn{background:var(--tierra)} .ac-ic.info{background:var(--mute);font-style:italic}
+.ac-ar{margin-left:auto;flex:none;width:9px;height:9px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:rotate(45deg) translate(-2px,-2px);transition:transform .25s}
+.ac[open] .ac-ar{transform:rotate(225deg) translate(-2px,-2px);border-color:var(--atardecer)}
+.ac-b{padding:0 24px 22px}
+.lst{list-style:none;padding:0;margin:0;font-size:14.5px;color:var(--ink-soft)}
+.lst li{padding:9px 0 9px 28px;position:relative;border-bottom:1px solid var(--line)}
+.lst li:last-child{border-bottom:0}
+.lst li::before{position:absolute;left:0;top:9px;font-family:var(--font-display);font-size:15px}
+.lst.yes li::before{content:"+";color:var(--oliva)}
+.lst.no li::before{content:"–";color:var(--atardecer)}
+.fine{font-size:13px;color:var(--mute);line-height:1.75}
+.fine strong{color:var(--tierra);font-weight:500}
 
-/* FOOTER */
-footer{background:var(--ink);color:#EBDFCF;padding:50px 0 24px;margin-top:60px}
-.f-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
-@media(max-width:700px){.f-grid{grid-template-columns:1fr}}
-footer img{height:34px;margin-bottom:12px}
-footer h5{font-family:var(--font-display);font-size:16px;color:#fff;margin-bottom:10px}
-footer a{color:#D8C6B0;text-decoration:none;font-size:13.5px;display:block;margin-bottom:6px}
-.f-bot{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:18px;font-size:12px;color:#A9927F;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.credits{font-size:11.5px;color:#8A7563}
-
-@media print{
-  .ac{page-break-inside:avoid}
-}
+.cta{background:var(--atardecer);color:#fff;text-align:center}
+.cta h2{color:#fff} .cta h2 em{color:var(--arena)}
+.cta p{color:rgba(255,255,255,.88);max-width:56ch;margin:16px auto 30px;font-size:17px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--arena);color:var(--tierra);text-decoration:none;font-weight:500;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:16px 34px;border-radius:999px;transition:.2s}
+.btn:hover{background:#fff;transform:translateY(-2px)}
+footer{background:var(--tierra);color:rgba(230,202,178,.72);padding:56px 0 30px;font-size:13px}
+footer img{height:34px;margin-bottom:22px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;margin-bottom:40px}
+@media(max-width:760px){.f-grid{grid-template-columns:1fr;gap:26px}}
+footer h4{font-family:var(--font-display);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--arena);margin:0 0 14px}
+footer a{color:rgba(230,202,178,.72);text-decoration:none}
+footer a:hover{color:#fff}
+footer p{margin:0 0 8px;line-height:1.7}
+.f-bot{border-top:1px solid rgba(230,202,178,.16);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;font-size:11.5px;color:rgba(230,202,178,.5)}
+.credits{font-size:10.5px;color:rgba(230,202,178,.38);line-height:1.8;margin-top:18px}
+@media print{ .nav,.cta,.ac-ar,.hmodal-overlay,.lightbox,.select-btn{display:none} .hero{min-height:auto} body{background:#fff} section{padding:22px 0} .card,.ac,.fare-col,.ciclo,.rp{break-inside:avoid;box-shadow:none} }
 </style>
+</head>
+<body>
 
-<nav>
-  <div class="wrap">
-    <a class="nav-logo" href="#"><img src="assets/marca/logo-horizontal.png" alt="Raíces"></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#vuelos">Vuelos</a></li>
-      <li><a href="#miami1">Miami</a></li>
-      <li><a href="#orlando">Orlando</a></li>
-      <li><a href="#parques">Parques</a></li>
-      <li><a href="#cotizacion">Cotización</a></li>
-      <li><a href="#condiciones">Condiciones</a></li>
-    </ul>
-    <button class="burger" id="burgerBtn" aria-expanded="false" aria-label="Menú"><span></span><span></span><span></span></button>
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" aria-label="Raíces"><img src="assets/marca/logo-horizontal.png" alt="Raíces"></a>
+    <button class="nav-burger" type="button" id="nav-burger" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir el menú"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="nav-links">
+      <a href="#vuelos">Vuelos</a>
+      <a href="#miami1">Miami</a>
+      <a href="#orlando">Orlando</a>
+      <a href="#parques">Parques</a>
+      <a href="#grupo">El grupo</a>
+      <a href="#inversion">Tu inversión</a>
+      <a href="#condiciones">Condiciones</a>
+    </div>
   </div>
 </nav>
 
-<section class="hero">
-  <div class="wrap">
-    <div class="kicker">Cotización de viaje</div>
-    <h1>Diana Correa &amp; familia</h1>
-    <p class="sub">Miami → Orlando → Miami. Un viaje de 11 noches para 7 adultos y 2 niñas, con parques, hoteles y vuelos pensados para el grupo completo.</p>
-    <div class="pills">
-      <span class="pill-tag">1 – 12 de octubre de 2026</span>
-      <span class="pill-tag">9 viajeros · 3 habitaciones</span>
-      <span class="pill-tag">Miami · Orlando · Miami</span>
-      <span class="pill-tag">Universal Studios + Walt Disney World</span>
+<header class="hero" id="top">
+  <img class="bg" src="assets/destinos/hero.jpg" alt="Miami Beach al amanecer">
+  <div class="hero-in">
+    <div class="kicker">Cotización para Diana Correa</div>
+    <h1>Miami<br>y Orlando</h1>
+    <p class="sub">Once noches en familia, del 1 al 12 de octubre de 2026: Miami, Orlando con Universal y Disney, y de vuelta a Miami. Elige la aerolínea y el hotel de cada tramo, y el valor de cada habitación se calcula solo.</p>
+    <div class="hero-meta">
+      <span class="pill">1 al 12 de octubre de 2026</span>
+      <span class="pill">11 noches</span>
+      <span class="pill">9 viajeros · 3 habitaciones</span>
+      <span class="pill">Universal + Walt Disney World</span>
     </div>
   </div>
-</section>
+</header>
 
 <section id="vuelos">
+  <div class="rot">Vuelos</div>
   <div class="wrap">
-    <div class="sec-head"><span class="rot">Vuelos</span><div><h2>Elige tu aerolínea</h2><p class="sec-note">Ida y regreso, tarifa por persona. El grupo puede viajar por Montería o por Medellín.</p></div></div>
-
-    <div class="air-tabs" id="airTabs"></div>
-    <div id="airBlock"></div>
+    <div class="sec-head">
+      <div class="eyebrow">Tiquete aéreo</div>
+      <h2>Con quién<br><em>vuelan</em></h2>
+      <p>Cuatro aerolíneas para el mismo viaje, cada una con sus categorías de tarifa. Más abajo, en Tu inversión, eliges la aerolínea, la tarifa y —con Avianca— el itinerario de regreso.</p>
+    </div>
+    <div id="airlines"></div>
   </div>
 </section>
 
-<section id="miami1">
+<section id="miami1" class="alt">
+  <div class="rot">Segmento 1</div>
   <div class="wrap">
-    <div class="sec-head"><span class="rot">Segmento 1</span><div><h2>Miami</h2><p class="sec-note">1 al 4 de octubre · 3 noches · elige el hotel</p></div></div>
-    <div class="grid" id="gridSeg1"></div>
+    <div class="sec-head">
+      <div class="eyebrow">Segmento 1 · 1 al 4 de octubre · 3 noches</div>
+      <h2>Miami, la<br><em>llegada</em></h2>
+      <p>Seis opciones para las primeras tres noches, casi todas en South Beach. Cada tarjeta trae su propia política de cancelación. Elige la que prefieras: el valor de las habitaciones se recalcula al instante.</p>
+    </div>
+    <div class="grid" id="grid-seg1"></div>
   </div>
 </section>
 
 <section id="orlando">
+  <div class="rot">Segmento 2</div>
   <div class="wrap">
-    <div class="sec-head"><span class="rot">Segmento 2</span><div><h2>Orlando</h2><p class="sec-note">4 al 9 de octubre · 5 noches · elige el hotel</p></div></div>
-    <div class="grid" id="gridSeg2"></div>
+    <div class="sec-head">
+      <div class="eyebrow">Segmento 2 · 4 al 9 de octubre · 5 noches</div>
+      <h2>Orlando y los<br><em>parques</em></h2>
+      <p>Cinco noches cerca de los parques, entre International Drive y Lake Buena Vista. Cada hotel tiene su propia política de cancelación.</p>
+    </div>
+    <div class="grid" id="grid-seg2"></div>
   </div>
 </section>
 
-<section id="miami2">
+<section id="miami2" class="alt">
+  <div class="rot">Segmento 3</div>
   <div class="wrap">
-    <div class="sec-head"><span class="rot">Segmento 3</span><div><h2>Miami</h2><p class="sec-note">9 al 12 de octubre · 3 noches · elige el hotel</p></div></div>
-    <div class="grid" id="gridSeg3"></div>
+    <div class="sec-head">
+      <div class="eyebrow">Segmento 3 · 9 al 12 de octubre · 3 noches</div>
+      <h2>Miami, el<br><em>cierre</em></h2>
+      <p>Tres noches finales en Miami Beach antes del regreso. Siete opciones, cada una con su política de cancelación — algunas repiten hotel del primer tramo, con tarifa y condiciones propias de estas fechas.</p>
+    </div>
+    <div class="grid" id="grid-seg3"></div>
   </div>
 </section>
 
 <section id="parques">
+  <div class="rot">Parques</div>
   <div class="wrap">
-    <div class="sec-head"><span class="rot">Parques</span><div><h2>Orlando: 4 días de magia</h2><p class="sec-note">2 días en Universal Studios + 2 días en Walt Disney World, entrada electrónica.</p></div></div>
-    <div class="parks">
-      <div class="park-card">
-        <div class="days">Lunes 5 de octubre</div>
+    <div class="sec-head">
+      <div class="eyebrow">Cuatro días de parques</div>
+      <h2>Universal<br>y <em>Disney</em></h2>
+      <p>Entradas electrónicas para los nueve viajeros, ya incluidas en el valor de cada habitación. No requieren canje físico.</p>
+    </div>
+    <div class="ciclos">
+      <div class="ciclo">
+        <span class="mes-tag">Lunes 5 de octubre</span>
         <h3>Universal Studios Orlando</h3>
-        <p>Dos parques en un mismo día: Universal Studios Florida e Islands of Adventure. Atracciones, shows y personajes para toda la familia, con entrada electrónica de acceso directo. Entrada no reembolsable una vez emitida.</p>
-        <div class="park-price">Desde <b id="uniAdultUSD">—</b> por adulto <span id="uniAdultCOP"></span></div>
+        <div class="d">Dos parques en un mismo día: <b>Universal Studios Florida</b> e <b>Islands of Adventure</b>. Atracciones, shows y personajes para toda la familia, con entrada electrónica de acceso directo. Una vez emitida, la entrada no es reembolsable.</div>
       </div>
-      <div class="park-card">
-        <div class="days">Miércoles 7 de octubre</div>
+      <div class="ciclo">
+        <span class="mes-tag">Miércoles 7 de octubre</span>
         <h3>Walt Disney World Resort</h3>
-        <p>Entrada de 2 días, un parque por día, a elegir entre Magic Kingdom, EPCOT, Hollywood Studios o Animal Kingdom. Entrada electrónica con cancelación gratuita hasta 12 horas antes del primer uso.</p>
-        <div class="park-price">Desde <b id="disAdultUSD">—</b> por adulto <span id="disAdultCOP"></span></div>
+        <div class="d">Entrada de <b>2 días</b>, un parque por día, a elegir entre Magic Kingdom, EPCOT, Hollywood Studios o Animal Kingdom. Cancelación gratuita hasta 12 horas antes del primer uso.</div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="habitaciones">
+<section id="grupo" class="alt">
+  <div class="rot">El grupo</div>
   <div class="wrap">
-    <div class="sec-head"><span class="rot">Grupo</span><div><h2>Cómo se distribuye el grupo</h2></div></div>
-    <div class="rooms">
-      <div class="room-card"><h4>Habitación 1</h4><p>Diana, Samir, su hija mayor y la niña de 4 años — 3 adultos y 1 niña.</p></div>
-      <div class="room-card"><h4>Habitación 2</h4><p>La hermana de Diana, su esposo y su hija de 7 años — 2 adultos y 1 niña.</p></div>
-      <div class="room-card"><h4>Habitación 3</h4><p>Las dos mamás, cama Twin — 2 adultas.</p></div>
+    <div class="sec-head">
+      <div class="eyebrow">Nueve viajeros</div>
+      <h2>Cómo se<br><em>distribuye</em></h2>
+      <p>Tres habitaciones en los tres hoteles del viaje. Cada una tiene su propio valor, porque cambia el número de viajeros y la categoría de habitación.</p>
+    </div>
+    <div class="ciclos">
+      <div class="ciclo">
+        <span class="mes-tag">Habitación 1 · 3 adultos, 1 niña</span>
+        <h3>Diana y los suyos</h3>
+        <div class="d">Diana, Samir y su hija mayor, con la niña de 4 años.</div>
+      </div>
+      <div class="ciclo">
+        <span class="mes-tag">Habitación 2 · 2 adultos, 1 niña</span>
+        <h3>La hermana de Diana</h3>
+        <div class="d">La hermana de Diana, su esposo y su hija de 7 años.</div>
+      </div>
+      <div class="ciclo">
+        <span class="mes-tag">Habitación 3 · 2 adultas</span>
+        <h3>Las mamás</h3>
+        <div class="d">Las dos mamás, en habitación con camas Twin.</div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="cotizacion">
+<section id="inversion" class="quote">
   <div class="wrap">
-    <div class="quote">
-      <div class="q-panel">
-        <div class="inv-head"><h2>Tu inversión</h2></div>
+    <div class="sec-head">
+      <div class="eyebrow">Tu inversión</div>
+      <h2>Arma tu <em>plan</em></h2>
+      <p>Elige la aerolínea, la tarifa y el hotel de cada tramo. El valor de cada habitación se calcula solo.</p>
+    </div>
 
-        <div class="room-prices" id="roomPrices"></div>
+    <div class="q-panel">
+      <div class="q-selgrid">
+        <div class="q-selgroup"><label>Aerolínea</label><div class="q-opts" id="sel-aero"></div></div>
+        <div class="q-selgroup"><label>Tarifa del vuelo</label><div class="q-opts" id="sel-fare"></div></div>
+        <div class="q-selgroup" id="q-itin-wrap" style="grid-column:1/-1"><label>Itinerario de regreso</label><div class="q-opts" id="sel-itin"></div></div>
+      </div>
+      <div class="q-resumen" id="q-resumen">Vuelo <b>Avianca</b>, tarifa <b>Classic</b> · regreso MIA 08:15 → MTR 15:55.<br>Hoteles: <b>Esmé Miami Beach</b> (Miami, 1–4 oct) · <b>Fairfield Inn &amp; Suites Orlando Lake Buena Vista</b> (Orlando, 4–9 oct) · <b>Esmé Miami Beach</b> (Miami, 9–12 oct).</div>
+    </div>
 
-        <div class="price-main">
-          <div class="p-group">Total del grupo: <span id="vTotalUSD">—</span></div>
-          <div class="p-cop" id="vTotalCOP"></div>
+    <div class="inv-head"><h3>Valor por habitación</h3></div>
+
+    <div class="rooms" id="rooms">
+      <div class="rp">
+        <div class="rp-who">Habitación 1 · 3 adultos, 1 niña</div>
+        <div class="rp-l">Total de la habitación</div>
+        <div class="rp-usd">US$ 10,057</div>
+        <div class="rp-cop">≈ $30.654.000 COP</div>
+        <div class="rp-split">
+          <div><div class="rp-l">Reserva</div><div class="rp-amt">US$ 5,610</div><div class="rp-cop">≈ $17.099.000 COP</div></div>
+          <div><div class="rp-l">Saldo</div><div class="rp-amt">US$ 4,447</div><div class="rp-cop">≈ $13.555.000 COP</div></div>
         </div>
-
-        <div id="payZone"></div>
-
-        <div class="q-resumen" id="qResumen"></div>
-        <div class="q-note">Precios sujetos a disponibilidad y cambio sin previo aviso hasta confirmar la reserva. Tarifas en dólares, equivalente en pesos a la TRM del día — puede variar levemente al momento del pago.</div>
-
-        <a class="cta js-wa" href="#" target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+      </div>
+      <div class="rp">
+        <div class="rp-who">Habitación 2 · 2 adultos, 1 niña</div>
+        <div class="rp-l">Total de la habitación</div>
+        <div class="rp-usd">US$ 7,835</div>
+        <div class="rp-cop">≈ $23.881.000 COP</div>
+        <div class="rp-split">
+          <div><div class="rp-l">Reserva</div><div class="rp-amt">US$ 4,266</div><div class="rp-cop">≈ $13.002.000 COP</div></div>
+          <div><div class="rp-l">Saldo</div><div class="rp-amt">US$ 3,569</div><div class="rp-cop">≈ $10.878.000 COP</div></div>
+        </div>
+      </div>
+      <div class="rp">
+        <div class="rp-who">Habitación 3 · 2 adultas</div>
+        <div class="rp-l">Total de la habitación</div>
+        <div class="rp-usd">US$ 5,551</div>
+        <div class="rp-cop">≈ $16.921.000 COP</div>
+        <div class="rp-split">
+          <div><div class="rp-l">Reserva</div><div class="rp-amt">US$ 2,909</div><div class="rp-cop">≈ $8.868.000 COP</div></div>
+          <div><div class="rp-l">Saldo</div><div class="rp-amt">US$ 2,642</div><div class="rp-cop">≈ $8.053.000 COP</div></div>
+        </div>
       </div>
     </div>
+
+    <div class="group-total" id="group-total">Total del grupo · <b>US$ 23,443</b><span class="g-cop">≈ $71.456.000 COP · las tres habitaciones juntas</span></div>
+
+    <div id="pay-zone"><div class="pay-note">La reserva de cada habitación deja emitidos sus tiquetes y confirmados sus hoteles y entradas. El saldo se paga <b>antes del 11 de septiembre de 2026</b>; si no se paga ese día, la reserva se libera automáticamente.</div></div>
+
+    <p class="q-note">Valores por habitación, con todo incluido para quienes la ocupan. Sujetos a disponibilidad al momento de confirmar. El equivalente en pesos es de referencia, a la TRM del día, y puede variar levemente al momento del pago.</p>
   </div>
 </section>
 
-<section id="condiciones">
+<section id="condiciones" class="alt">
+  <div class="rot">Condiciones</div>
   <div class="wrap">
-    <div class="sec-head"><span class="rot">Condiciones</span><div><h2>Todo lo que debes saber</h2></div></div>
+    <div class="sec-head"><div class="eyebrow">Letra clara</div><h2>Qué incluye<br>y <em>qué no</em></h2></div>
     <div class="acc">
-      <details class="ac">
-        <summary>¿Qué incluye la cotización? <span class="ac-ic info">i</span></summary>
-        <div class="ac-body">
-          <ul class="lst">
-            <li><span class="ac-ic y">✓</span> Tiquetes aéreos ida y regreso en la aerolínea y tarifa elegidas</li>
-            <li><span class="ac-ic y">✓</span> Alojamiento en los 3 segmentos (Miami · Orlando · Miami) en los hoteles elegidos</li>
-            <li><span class="ac-ic y">✓</span> Entradas a Universal Studios (2 parques, 1 día) y Walt Disney World (2 días)</li>
-            <li><span class="ac-ic n">✕</span> Traslados, alimentación, tours adicionales y gastos personales</li>
-            <li><span class="ac-ic n">✕</span> Impuestos o tarifas de resort que cobre el hotel directamente (cuando aplica, se indica en su descripción)</li>
+      <details class="ac" open>
+        <summary><span class="ac-ic yes">+</span>El plan incluye<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <ul class="lst yes">
+            <li>Tiquete aéreo ida y regreso para los nueve viajeros, con la aerolínea y la tarifa que elijan, con impuestos</li>
+            <li>Once noches de alojamiento en los tres tramos —Miami, Orlando y Miami— en los hoteles que elijan, en las tres habitaciones del grupo</li>
+            <li>Entradas a Universal Studios Orlando: dos parques en un mismo día, lunes 5 de octubre</li>
+            <li>Entradas a Walt Disney World: dos días, un parque por día, desde el miércoles 7 de octubre</li>
+            <li>Acompañamiento de Raíces por WhatsApp, antes y durante el viaje</li>
           </ul>
         </div>
       </details>
       <details class="ac">
-        <summary>Política de pago <span class="ac-ic info">i</span></summary>
-        <div class="ac-body" id="polPago">Cargando…</div>
+        <summary><span class="ac-ic no">–</span>El plan no incluye<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <ul class="lst no">
+            <li>Traslados entre aeropuertos, hoteles y parques</li>
+            <li>Alimentación fuera de la que ofrezca cada hotel</li>
+            <li>Maleta de bodega y selección de asiento en las tarifas más básicas, según la aerolínea</li>
+            <li>Resort fee, parqueadero e impuestos que cobre el hotel directamente en el mostrador</li>
+            <li>Seguro de asistencia médica en viaje</li>
+            <li>Tours, compras y gastos personales</li>
+          </ul>
+        </div>
       </details>
       <details class="ac">
-        <summary>Cancelación de hoteles <span class="ac-ic warn">!</span></summary>
-        <div class="ac-body">La política de cancelación depende del hotel elegido en cada segmento — se muestra en la tarjeta de cada hotel. Algunos exigen pago no reembolsable desde la reserva; otros permiten cancelar sin costo hasta una fecha límite. El sistema calcula la fecha de pago automáticamente según los hoteles que elijas.</div>
+        <summary><span class="ac-ic warn">!</span>Política de pago<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <div class="fine" id="pol-pago"><p>Con los hoteles elegidos, cada habitación reserva con su valor de reserva y paga el saldo <strong>antes del 11 de septiembre de 2026</strong>. Con el pago de la reserva se emiten los tiquetes aéreos y se confirman los hoteles y las entradas a los parques. Si el saldo no se paga en esa fecha, la reserva se libera automáticamente.</p></div>
+        </div>
       </details>
       <details class="ac">
-        <summary>Sobre las entradas a los parques <span class="ac-ic info">i</span></summary>
-        <div class="ac-body">Universal Studios: entrada no reembolsable una vez emitida. Walt Disney World: cancelación gratuita hasta 12 horas antes del primer uso. Ambas son entradas electrónicas, no requieren canje físico.</div>
+        <summary><span class="ac-ic warn">!</span>Cancelación de los hoteles<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <div class="fine">
+            <p>Cada hotel tiene su propia política y aparece en su tarjeta. Hay tres casos:</p>
+            <p><strong>Cancelación gratuita:</strong> se puede cancelar sin costo hasta la fecha indicada en la tarjeta.</p>
+            <p><strong>No reembolsable:</strong> el valor se compromete desde la confirmación y no se devuelve.</p>
+            <p><strong>Con gastos:</strong> el President Villa aplica condiciones distintas por habitación en el primer tramo, y el Atwell Suites cobra gastos del 45% del valor reservado.</p>
+            <p>Si alguno de los tres hoteles elegidos no es de cancelación gratuita, el viaje completo se paga al 100% por adelantado — así se deja todo confirmado y emitido de una vez.</p>
+          </div>
+        </div>
       </details>
       <details class="ac">
-        <summary>Documentos de viaje <span class="ac-ic warn">!</span></summary>
-        <div class="ac-body">Pasaporte vigente con mínimo 6 meses de validez y visa americana vigente para todos los viajeros, incluidas las niñas. La aerolínea puede negar el embarque si la documentación no está en regla.</div>
+        <summary><span class="ac-ic info">i</span>Las entradas a los parques<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <div class="fine">
+            <p><strong>Universal Studios:</strong> entrada no reembolsable una vez emitida.</p>
+            <p><strong>Walt Disney World:</strong> cancelación gratuita hasta 12 horas antes del primer uso.</p>
+            <p>Ambas son entradas electrónicas: llegan al correo y se presentan desde el celular, sin canje físico.</p>
+          </div>
+        </div>
+      </details>
+      <details class="ac">
+        <summary><span class="ac-ic info">i</span>Documentación y vigencia<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <div class="fine">
+            <p><strong>Documentación:</strong> pasaporte vigente con al menos 6 meses de validez y visa americana vigente para los nueve viajeros, incluidas las niñas. La aerolínea puede negar el embarque si la documentación no está en regla.</p>
+            <p><strong>Vigencia:</strong> esta cotización se envía el 22 de agosto de 2026 y está sujeta a cambios y disponibilidad por parte de las aerolíneas, los hoteles y los parques — se recomienda confirmar lo antes posible.</p>
+          </div>
+        </div>
       </details>
     </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="eyebrow" style="color:rgba(255,255,255,.7)">¿Listos?</div>
+    <h2>Reservar por <em>WhatsApp</em></h2>
+    <p>Al tocar el botón se abre WhatsApp con el plan ya escrito: los hoteles de cada tramo, la aerolínea, la tarifa y el valor total. Solo lo envían y seguimos por ahí.</p>
+    <a class="btn js-wa" href="https://wa.me/573122738001?text=Hola%20Ra%C3%ADces%2C%20soy%20Diana%20Correa.%20Quiero%20reservar%20el%20viaje%20del%20grupo%20(1%20al%2012%20de%20octubre%20de%202026)%3A%0A%0A%E2%80%A2%20Miami%2C%201%20al%204%20de%20octubre%3A%20Esm%C3%A9%20Miami%20Beach%0A%E2%80%A2%20Orlando%2C%204%20al%209%20de%20octubre%3A%20Fairfield%20Inn%20%26%20Suites%20Orlando%20Lake%20Buena%20Vista%0A%E2%80%A2%20Miami%2C%209%20al%2012%20de%20octubre%3A%20Esm%C3%A9%20Miami%20Beach%0A%E2%80%A2%20Vuelo%20Avianca%2C%20tarifa%20Classic%20%C2%B7%20regreso%20MIA%2008%3A15%20%E2%86%92%20MTR%2015%3A55%0A%0AValor%20total%20del%20grupo%3A%20US%24%2023%2C443%0AReserva%3A%20US%24%2012%2C785%0A%0A%C2%BFC%C3%B3mo%20hago%20el%20pago%3F" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+    <p style="font-size:13.5px;margin-top:26px;opacity:.75">¿Prefieren ajustar algo antes? Escríbenos y lo resolvemos.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
+    <img src="assets/marca/logo-blanco.png" alt="Raíces">
     <div class="f-grid">
+      <div><h4>Raíces</h4><p>Cumplimos lo que prometemos.<br>Turismo auténtico y con esencia.</p></div>
       <div>
-        <img src="assets/marca/logo-blanco.png" alt="Raíces">
-        <p style="font-size:13px;color:#C9B49B;max-width:340px">Viajes diseñados a la medida, con acompañamiento real desde la primera pregunta hasta el regreso a casa.</p>
+        <h4>Contacto</h4>
+        <p><a href="https://wa.me/573122738001" target="_blank" rel="noopener">WhatsApp +57 312 273 8001</a></p>
+        <p><a href="mailto:hola@raices.travel">hola@raices.travel</a></p>
+        <p><a href="https://raices.travel" target="_blank" rel="noopener">raices.travel</a></p>
       </div>
       <div>
-        <h5>Contacto</h5>
-        <a href="https://wa.me/573122738001" target="_blank" rel="noopener">WhatsApp +57 312 273 8001</a>
-        <a href="mailto:hola@raices.travel">hola@raices.travel</a>
-      </div>
-      <div>
-        <h5>Raíces</h5>
-        <a>RNT 92495</a>
-        <a>Lemont Group S.A.</a>
+        <h4>Legal</h4>
+        <p>RNT No. 92495</p>
+        <p>Lemont Group S.A.S.</p>
+        <p><a href="https://raices.travel/terminos-y-condiciones.html" target="_blank" rel="noopener">Términos y condiciones</a></p>
+        <p><a href="https://raices.travel/tratamiento-de-datos.html" target="_blank" rel="noopener">Tratamiento de datos</a></p>
       </div>
     </div>
     <div class="f-bot">
-      <span>© 2026 Raíces Travel</span>
-      <span class="credits">Fotos y videos de los hoteles: cortesía de cada propiedad y de sus sitios y motores de reserva oficiales.</span>
+      <span>Cotización preparada para Diana Correa · 22 de agosto de 2026</span>
+      <span>Documento privado. No constituye reserva confirmada.</span>
     </div>
+    <p class="credits"><b style="color:rgba(230,202,178,.55);font-weight:500">Créditos.</b> Fotos y videos de los hoteles: cortesía de cada propiedad y de sus sitios y motores de reserva oficiales. Las marcas y logotipos citados pertenecen a sus respectivos titulares.</p>
   </div>
 </footer>
 
-<div class="hmodal-overlay" id="hmodalOverlay">
+<div class="hmodal-overlay" id="hmodal-overlay">
   <div class="hmodal">
-    <button class="hm-close" id="hmClose">✕</button>
-    <h3 id="hmTitle"></h3>
-    <div class="hm-gal" id="hmGal"></div>
+    <button class="hmodal-close" id="hmodal-close" aria-label="Cerrar">&times;</button>
+    <h3 id="hmodal-title">Hotel</h3>
+    <p id="hmodal-chain" style="font-size:13px;color:var(--mute);margin:6px 0 0"></p>
+    <div id="hmodal-body"></div>
   </div>
 </div>
 <div class="lightbox" id="lightbox">
-  <button class="lb-x" id="lbClose">✕</button>
-  <img id="lbImg" src="" alt="">
+  <button class="lb-close" id="lb-close" aria-label="Cerrar">&times;</button>
+  <img id="lightbox-img" src="" alt="">
 </div>
 
 <script>
 const TRM = 3048.12;
 const MARGEN_TIQUETE = 0.94;
 const MARGEN_PARQUE = 0.90;
+const RESERVA_SERVICIOS = 0.20;
 const FECHA_VIAJE = "2026-10-01";
+const DIAS_ANTES = 20;
 
-function usd(n){ return "US$ "+n.toLocaleString("en-US",{minimumFractionDigits:0,maximumFractionDigits:0}); }
-function cop(n){ return "$"+Math.round(n/1000)*1000+" COP"; }
-function copFmt(n){ return (Math.round(n/1000)*1000).toLocaleString("es-CO"); }
+const moneyUSD = n => "US$ " + Math.round(n).toLocaleString("en-US");
+const moneyCOP = n => "$" + (Math.round(n/1000)*1000).toLocaleString("es-CO") + " COP";
+const fecha = s => new Date(s + "T00:00:00").toLocaleDateString("es-CO",{day:"numeric",month:"long",year:"numeric"});
+const fechaCorta = s => new Date(s + "T00:00:00").toLocaleDateString("es-CO",{day:"numeric",month:"long"});
 
-// ---------- AEROLINEAS ----------
 const AEROLINEAS = [
-  {
-    id:"avianca", nombre:"Avianca", ruta:"Montería (MTR) ↔ Miami (MIA)",
-    ida:{ dir:"MTR 10:05 → MIA 18:05", info:"1 escala en Bogotá · 7h00" },
+  { id:"avianca", nombre:"Avianca", tag:"Vía Montería", ruta:"Montería (MTR) ✈ Miami (MIA)",
+    ida:"MTR 10:05 → MIA 18:05 · 1 escala en Bogotá · 7h00",
+    monedaNeto:"COP", idaNeto:{light:1353090, classic:1593800},
     itinerarios:[
-      {id:1, dir:"MIA 08:15 → MTR 15:55", info:"1 escala · 8h40", neto:{light:1374331, classic:1628180}},
-      {id:2, dir:"MIA 14:00 → MTR 19:25", info:"1 escala · 6h25", neto:{light:2474393, classic:2728391}},
-      {id:3, dir:"MIA 14:00 → MTR 21:25", info:"1 escala · 8h25", neto:{light:1831310, classic:2085157}}
+      {id:1, label:"MIA 08:15 → MTR 15:55", info:"1 escala · 8h40", neto:{light:1374331, classic:1628180}},
+      {id:2, label:"MIA 14:00 → MTR 19:25", info:"1 escala · 6h25", neto:{light:2474393, classic:2728391}},
+      {id:3, label:"MIA 14:00 → MTR 21:25", info:"1 escala · 8h25", neto:{light:1831310, classic:2085157}}
     ],
-    idaNeto:{light:1353090, classic:1593800},
-    monedaNeto:"COP",
     fares:[
-      {id:"light", nombre:"Light", inc:[["y","1 maleta de mano"],["n","Sin maleta facturada"],["n","Sin cambios de fecha incluidos"],["n","No reembolsable"]]},
-      {id:"classic", nombre:"Classic", inc:[["y","1 maleta de mano"],["y","1 maleta facturada 23kg"],["y","Cambios de fecha con costo"],["n","No reembolsable"]]}
-    ]
-  },
-  {
-    id:"copa", nombre:"Copa Airlines", ruta:"Medellín (MDE) ↔ Miami (MIA)",
-    ida:{ dir:"MDE 09:15am → MIA 04:37pm", info:"Escala en Panamá (PTY), 1h39 · 6h22 total" },
-    regreso:{ dir:"MIA 12:25pm → MDE 04:55pm", info:"Escala en Panamá (PTY), 1h0 · 5h30 total" },
-    idaNeto:{basic:1265390, classic:1406254},
-    regresoNeto:{basic:1448174, classic:1589038},
-    monedaNeto:"COP",
+      {k:"light", label:"Light", ftag:"Lo esencial",
+       inc:[["y","1 equipaje de mano"],["n","Sin maleta de bodega"],["n","Sin cambios de fecha incluidos"],["n","No reembolsable"]]},
+      {k:"classic", label:"Classic", ftag:"La más elegida", best:true,
+       inc:[["y","1 equipaje de mano"],["y","1 maleta de bodega (23 kg)"],["y","Cambios de fecha con costo"],["n","No reembolsable"]]}
+    ]},
+  { id:"copa", nombre:"Copa Airlines", tag:"Vía Medellín", ruta:"Medellín (MDE) ✈ Miami (MIA)",
+    ida:"MDE 09:15 → MIA 16:37 · escala en Panamá (PTY) de 1h39 · 6h22 en total",
+    regreso:"MIA 12:25 → MDE 16:55 · escala en Panamá (PTY) de 1h00 · 5h30 en total",
+    monedaNeto:"COP", idaNeto:{basic:1265390, classic:1406254}, regresoNeto:{basic:1448174, classic:1589038},
     fares:[
-      {id:"basic", nombre:"Económica Basic", inc:[["y","1 artículo personal"],["n","Sin maleta de mano grande"],["n","Sin maleta facturada"],["n","No reembolsable"]]},
-      {id:"classic", nombre:"Económica Classic", inc:[["y","Maleta de mano"],["y","1 maleta facturada 23kg"],["y","Cambios con costo"],["n","No reembolsable"]]}
-    ]
-  },
-  {
-    id:"arajet", nombre:"Arajet", ruta:"Medellín (MDE) ↔ Miami (MIA)",
-    ida:{ dir:"MDE 10:05am → MIA 7:22pm", info:"Escala en Santo Domingo (SDQ) · 8h17 total" },
-    regreso:{ dir:"MIA 2:09pm → MDE 7:40pm", info:"Escala en Santo Domingo (SDQ) · 6h31 total" },
-    idaNeto:{basic:347.73, comfort:397.01},
-    regresoNeto:{basic:280.05, comfort:329.32},
-    monedaNeto:"USD",
+      {k:"basic", label:"Económica Basic", ftag:"Lo esencial",
+       inc:[["y","1 artículo personal"],["n","Sin equipaje de mano grande"],["n","Sin maleta de bodega"],["n","No reembolsable"]]},
+      {k:"classic", label:"Económica Classic", ftag:"La más elegida", best:true,
+       inc:[["y","1 equipaje de mano"],["y","1 maleta de bodega (23 kg)"],["y","Cambios con costo"],["n","No reembolsable"]]}
+    ]},
+  { id:"arajet", nombre:"Arajet", tag:"Vía Medellín", ruta:"Medellín (MDE) ✈ Miami (MIA)",
+    ida:"MDE 10:05 → MIA 19:22 · escala en Santo Domingo (SDQ) · 8h17 en total",
+    regreso:"MIA 14:09 → MDE 19:40 · escala en Santo Domingo (SDQ) · 6h31 en total",
+    monedaNeto:"USD", idaNeto:{basic:347.73, comfort:397.01}, regresoNeto:{basic:280.05, comfort:329.32},
     fares:[
-      {id:"basic", nombre:"Basic", inc:[["y","1 artículo personal"],["n","Sin maleta de mano"],["n","Sin maleta facturada"],["n","No reembolsable"]]},
-      {id:"comfort", nombre:"Comfort", inc:[["y","Maleta de mano"],["y","1 maleta facturada 23kg"],["y","Selección de asiento"],["n","No reembolsable"]]}
-    ]
-  },
-  {
-    id:"jetblue", nombre:"JetBlue", ruta:"Medellín (MDE) ↔ Fort Lauderdale (FLL)",
-    ida:{ dir:"MDE 1:30pm → FLL 6:05pm", info:"Vuelo directo · 3h35" },
-    regreso:{ dir:"FLL 12:00pm → MDE 2:34pm", info:"Vuelo directo · 3h34" },
-    idaNeto:{base:401, main:456},
-    regresoNeto:{base:428, main:428},
-    monedaNeto:"USD",
-    nota:"Fort Lauderdale queda a unos 45 minutos de Miami. Para el regreso solo hay disponible la tarifa Main — no se ofrece tarifa básica en este itinerario.",
+      {k:"basic", label:"Basic", ftag:"Vuela ligero",
+       inc:[["y","1 artículo personal"],["n","Sin equipaje de mano"],["n","Sin maleta de bodega"],["n","No reembolsable"]]},
+      {k:"comfort", label:"Comfort", ftag:"Con equipaje", best:true,
+       inc:[["y","1 equipaje de mano"],["y","1 maleta de bodega (23 kg)"],["y","Selección de asiento"],["n","No reembolsable"]]}
+    ]},
+  { id:"jetblue", nombre:"JetBlue", tag:"Vuelo directo", ruta:"Medellín (MDE) ✈ Fort Lauderdale (FLL)",
+    ida:"MDE 13:30 → FLL 18:05 · vuelo directo · 3h35",
+    regreso:"FLL 12:00 → MDE 14:34 · vuelo directo · 3h34",
+    monedaNeto:"USD", idaNeto:{base:401, main:456}, regresoNeto:{base:428, main:428},
+    nota:"Fort Lauderdale queda a unos 45 minutos de Miami. En el regreso la aerolínea solo ofrece la tarifa Main, así que ese tramo se cotiza con ella en las dos categorías.",
     fares:[
-      {id:"base", nombre:"Main Base", inc:[["y","1 artículo personal"],["n","Sin maleta de mano grande"],["n","Sin maleta facturada"],["n","No reembolsable"]]},
-      {id:"main", nombre:"Main", inc:[["y","Maleta de mano"],["y","1 maleta facturada"],["y","Cambios con costo"],["n","No reembolsable"]]}
-    ]
-  }
+      {k:"base", label:"Main Base", ftag:"Lo esencial",
+       inc:[["y","1 artículo personal"],["n","Sin equipaje de mano grande"],["n","Sin maleta de bodega"],["n","No reembolsable"]]},
+      {k:"main", label:"Main", ftag:"La más elegida", best:true,
+       inc:[["y","1 equipaje de mano"],["y","1 maleta de bodega"],["y","Cambios con costo"],["n","No reembolsable"]]}
+    ]}
 ];
 
-// ---------- PARQUES ----------
-const PARQUES = {
-  universal:{adultoNeto:1247407.76, ninoNeto:1230114.20},
-  disney:{adultoNeto:1401459.99, ninoNeto:1364179.87}
+const PARQUES = { universal:{adulto:1247407.76, nino:1230114.20}, disney:{adulto:1401459.99, nino:1364179.87} };
+
+const CANCEL = {
+  gratis:      f => ({ badge:"Cancelación gratuita hasta el " + fechaCorta(f), warn:false, nota:"Se puede cancelar sin costo hasta el " + fecha(f) + "." }),
+  norefund:    () => ({ badge:"No reembolsable", warn:true, nota:"Tarifa no reembolsable: el valor queda comprometido desde la confirmación." }),
+  mixta:       () => ({ badge:"Cancelación mixta por habitación", warn:true, nota:"La habitación 2 admite cancelación gratuita hasta el 28 de septiembre de 2026; las habitaciones 1 y 3 son no reembolsables." }),
+  parcial:     () => ({ badge:"Gastos de cancelación del 45%", warn:true, nota:"El hotel aplica gastos de cancelación del 45% sobre el valor reservado, sin fecha límite especificada." })
 };
 
-// ---------- HOTELES por segmento ----------
 const HOTELES = {
   seg1:[
-    {slug:"esme", nombre:"Esmé Miami Beach", est:4, cadena:"Esmé Hotel",
+    {slug:"esme", nombre:"Esmé Miami Beach", est:4, cadena:"Esmé Hotel", zona:"South Beach, Miami Beach",
      desc:"Hotel boutique de estilo Art Déco sobre Collins Avenue, en el corazón de South Beach, a pocos pasos de la playa y de la vida de Ocean Drive. Ambiente relajado y elegante, ideal como primera parada del viaje.",
-     fotos:6, hab:{fotos:2},
-     precios:{h3:{nombre:"Classic King Room", usd:396.81}, h1:{nombre:"Classic Double", usd:569.47}, h2:{nombre:"Classic Double", usd:503.35}},
-     cancel:{tipo:"gratis", fecha:"2026-09-17"}},
-    {slug:"president-south-beach", nombre:"President South Beach", est:4, cadena:"Epoque Hotels",
+     fotos:6, hab:{fotos:2}, cancel:{tipo:"gratis", fecha:"2026-09-17"},
+     precios:{h1:{nombre:"Classic Double", usd:569.47}, h2:{nombre:"Classic Double", usd:503.35}, h3:{nombre:"Classic King Room", usd:396.81}}},
+    {slug:"president-south-beach", nombre:"President South Beach", est:4, cadena:"Epoque Hotels", zona:"South Beach, Miami Beach",
      desc:"Hotel de ambiente boutique en pleno South Beach, a metros de Ocean Drive y de la playa. Habitaciones sencillas y funcionales, buena base para explorar Miami Beach caminando.",
-     fotos:6, hab:{fotos:2},
-     precios:{h3:{nombre:"Traditional Room", usd:485.97}, h1:{nombre:"Two Double Beds", usd:558.81}, h2:{nombre:"Two Double Beds", usd:558.81}},
-     cancel:{tipo:"no-reembolsable"}},
-    {slug:"liberty-park", nombre:"Liberty Park Hotel South Beach", est:4, cadena:null,
+     fotos:6, hab:{fotos:2}, cancel:{tipo:"norefund"},
+     precios:{h1:{nombre:"Two Double Beds", usd:558.81}, h2:{nombre:"Two Double Beds", usd:558.81}, h3:{nombre:"Traditional Room", usd:485.97}}},
+    {slug:"liberty-park", nombre:"Liberty Park Hotel South Beach", est:4, cadena:null, zona:"South Beach, Miami Beach",
      desc:"Hotel de estilo Art Déco ubicado en el distrito histórico de South Beach, cerca de Lincoln Road y de la playa. Buena opción para grupos que quieren estar cerca de todo en Miami Beach.",
-     fotos:6, hab:{fotos:2},
-     precios:{h3:{nombre:"Standard Double Room", usd:483.22}, h1:{nombre:"Standard Double Room", usd:675.06}, h2:{nombre:"Standard Double Room", usd:551.74}},
-     cancel:{tipo:"no-reembolsable"}},
-    {slug:"president-villa", nombre:"President Villa Miami Beach", est:3, cadena:null,
-     desc:"Hotel pequeño y sencillo sobre Collins Avenue, en South Beach, a pocas cuadras de la playa. Opción económica dentro de la zona más turística de Miami. Nota: la política de cancelación varía por habitación — la habitación 2 permite cancelación gratuita hasta el 28 de septiembre, mientras que las habitaciones 1 y 3 son no reembolsables.",
-     fotos:5, hab:{fotos:1},
-     precios:{h3:{nombre:"Traditional Room, 1 Queen Bed", usd:485.97}, h1:{nombre:"Deluxe Room, 2 Queen Beds", usd:631.71}, h2:{nombre:"Doble Deluxe", usd:632.72}},
-     cancel:{tipo:"no-reembolsable"}},
-    {slug:"clinton", nombre:"Clinton South Beach", est:3.5, cadena:null,
+     fotos:6, hab:{fotos:2}, cancel:{tipo:"norefund"},
+     precios:{h1:{nombre:"Standard Double Room", usd:675.06}, h2:{nombre:"Standard Double Room", usd:551.74}, h3:{nombre:"Standard Double Room", usd:483.22}}},
+    {slug:"president-villa", nombre:"President Villa Miami Beach", est:3, cadena:null, zona:"South Beach, Miami Beach",
+     desc:"Hotel pequeño y sencillo sobre Collins Avenue, en South Beach, a pocas cuadras de la playa. Opción económica dentro de la zona más turística de Miami.",
+     fotos:5, hab:{fotos:1}, cancel:{tipo:"mixta"},
+     precios:{h1:{nombre:"Deluxe Room, 2 Queen Beds", usd:631.71}, h2:{nombre:"Doble Deluxe", usd:632.72}, h3:{nombre:"Traditional Room, 1 Queen Bed", usd:485.97}}},
+    {slug:"clinton", nombre:"Clinton South Beach", est:3.5, cadena:null, zona:"South Beach, Miami Beach",
      desc:"Hotel Art Déco sobre Washington Avenue, South Beach, a corta distancia de la playa y de la zona de restaurantes y vida nocturna de Miami Beach.",
-     fotos:5, hab:{fotos:2},
-     precios:{h3:{nombre:"Bedroom King", usd:441.21}, h1:{nombre:"Bedroom Double", usd:678.70}, h2:{nombre:"Classic Terrace Double", usd:646.74}},
-     cancel:{tipo:"no-reembolsable"}},
-    {slug:"atwell", nombre:"Atwell Suites Miami Brickell", est:4, cadena:"IHG",
-     desc:"Hotel de suites en Brickell, el distrito financiero de Miami, con diseño moderno y habitaciones tipo suite. Buena opción si se prefiere estar fuera de la zona de playa. Nota: este hotel aplica gastos de cancelación del 45% sobre el valor reservado, sin fecha límite especificada.",
-     fotos:5, hab:{fotos:2},
-     precios:{h3:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:648.00}, h1:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:716.13}, h2:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:648.00}},
-     cancel:{tipo:"no-reembolsable"}}
+     fotos:5, hab:{fotos:2}, cancel:{tipo:"norefund"},
+     precios:{h1:{nombre:"Bedroom Double", usd:678.70}, h2:{nombre:"Classic Terrace Double", usd:646.74}, h3:{nombre:"Bedroom King", usd:441.21}}},
+    {slug:"atwell", nombre:"Atwell Suites Miami Brickell", est:4, cadena:"IHG", zona:"Brickell, Miami",
+     desc:"Hotel de suites en Brickell, el distrito financiero de Miami, con diseño moderno y habitaciones tipo suite. Buena opción si se prefiere estar fuera de la zona de playa.",
+     fotos:5, hab:{fotos:2}, cancel:{tipo:"parcial"},
+     precios:{h1:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:716.13}, h2:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:648.00}, h3:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:648.00}}}
   ],
   seg2:[
-    {slug:"io-drive-north", nombre:"Orlando International Drive North Hotel", est:3.5, cadena:null,
+    {slug:"io-drive-north", nombre:"Orlando International Drive North Hotel", est:3.5, cadena:null, zona:"International Drive, Orlando",
      desc:"Hotel ubicado sobre International Drive, la principal avenida turística de Orlando, con fácil acceso a los parques temáticos y a zonas de restaurantes y compras.",
-     fotos:6, hab:{fotos:0},
-     precios:{h3:{nombre:"Double Guest Room", usd:371.59}, h1:{nombre:"Double Guest Room", usd:371.59}, h2:{nombre:"Double Guest Room", usd:371.59}},
-     cancel:{tipo:"gratis", fecha:"2026-10-03"}},
-    {slug:"fairfield", nombre:"Fairfield Inn & Suites Orlando Lake Buena Vista", est:3, cadena:"Marriott",
+     fotos:6, hab:{fotos:0}, cancel:{tipo:"gratis", fecha:"2026-10-03"},
+     precios:{h1:{nombre:"Double Guest Room", usd:371.59}, h2:{nombre:"Double Guest Room", usd:371.59}, h3:{nombre:"Double Guest Room", usd:371.59}}},
+    {slug:"fairfield", nombre:"Fairfield Inn & Suites Orlando Lake Buena Vista", est:3, cadena:"Marriott", zona:"Lake Buena Vista, Orlando",
      desc:"Hotel de la cadena Marriott ubicado cerca de Disney Springs y de la entrada a Walt Disney World, con habitaciones cómodas y desayuno disponible en el lobby. Tarifa de resort eximida.",
-     fotos:6, hab:{fotos:2},
-     precios:{h3:{nombre:"Single King Room, 1 King, Sofa Bed", usd:470.97}, h1:{nombre:"Single King Room, 1 King, Sofa Bed", usd:470.97}, h2:{nombre:"Single King Room, 1 King, Sofa Bed", usd:470.97}},
-     cancel:{tipo:"gratis", fecha:"2026-10-01"}},
-    {slug:"vietta", nombre:"The Vietta Hotel", est:3, cadena:null,
+     fotos:6, hab:{fotos:2}, cancel:{tipo:"gratis", fecha:"2026-10-01"},
+     precios:{h1:{nombre:"Single King Room, 1 King, Sofa Bed", usd:470.97}, h2:{nombre:"Single King Room, 1 King, Sofa Bed", usd:470.97}, h3:{nombre:"Single King Room, 1 King, Sofa Bed", usd:470.97}}},
+    {slug:"vietta", nombre:"The Vietta Hotel", est:3, cadena:null, zona:"International Drive, Orlando",
      desc:"Hotel moderno sobre International Drive, cerca de los principales parques de Orlando, con habitaciones amplias pensadas para familias y grupos.",
-     fotos:5, hab:{fotos:2},
-     precios:{h3:{nombre:"Doble Dos Camas Dobles", usd:499.52}, h1:{nombre:"Doble Dos Camas Dobles", usd:499.52}, h2:{nombre:"Doble Dos Camas Dobles", usd:499.52}},
-     cancel:{tipo:"gratis", fecha:"2026-10-02"}},
-    {slug:"radisson", nombre:"Radisson Hotel Orlando Lake Buena Vista South", est:4.5, cadena:"Radisson",
-     desc:"Hotel ubicado en Kissimmee, muy cerca de Lake Buena Vista y a pocos minutos de Walt Disney World. Cuenta con una gran piscina estilo río lento, tobogán, zona de chapoteo para los niños, gimnasio y área de desayuno, ideal para familias que buscan un punto de descanso cómodo entre visitas a los parques. Sus habitaciones son amplias y funcionales, con wifi y parqueadero incluidos.",
-     fotos:5, hab:{fotos:0},
-     precios:{h3:{nombre:"Cuádruple Accesible", usd:467.20}, h1:{nombre:"Cuádruple Accesible", usd:580.02}, h2:{nombre:"Cuádruple Accesible", usd:467.20}},
-     cancel:{tipo:"gratis", fecha:"2026-10-03"}},
-    {slug:"doubletree", nombre:"Doubletree by Hilton Orlando Theme Park Resort", est:4, cadena:"Hilton",
-     desc:"Uno de los DoubleTree más grandes del mundo, con más de 1.000 habitaciones distribuidas en varias torres frente a una laguna. Su piscina principal, de estilo infinito con vista a la laguna, es uno de los grandes atractivos, junto con cabañas para relajarse, zona de chapoteo para niños y varias opciones gastronómicas. Está sobre International Drive, cerca de SeaWorld y a corta distancia de los demás parques. Las habitaciones tienen balcón privado y decoración tropical, con la clásica galleta de bienvenida de la marca.",
-     fotos:6, hab:{fotos:2},
-     precios:{h3:{nombre:"2 Queen Beds - Non Smoking", usd:532.29}, h1:{nombre:"2 Queen Beds - Non Smoking", usd:588.15}, h2:{nombre:"2 Queen Beds - Non Smoking", usd:532.29}},
-     cancel:{tipo:"gratis", fecha:"2026-10-03"}},
-    {slug:"courtyard", nombre:"Courtyard Orlando Lake Buena Vista at Vista Centre", est:4, cadena:"Marriott",
-     desc:"Hotel moderno y recién renovado sobre Palm Parkway, muy cerca de Disney Springs y con transporte gratuito hacia Walt Disney World. Cuenta con dos piscinas al aire libre, zona de chapoteo, el Oasis Patio &amp; Lounge y una cafetería con productos Starbucks, ideal para desayunar antes de salir a los parques. Sus habitaciones tienen un diseño contemporáneo y luminoso, con escritorio de trabajo.",
-     fotos:6, hab:{fotos:2},
-     precios:{h3:{nombre:"2 Queen Beds", usd:535.00}, h1:{nombre:"2 Queen Beds", usd:744.68}, h2:{nombre:"2 Queen Beds", usd:608.59}},
-     cancel:{tipo:"no-reembolsable"}}
+     fotos:5, hab:{fotos:2}, cancel:{tipo:"gratis", fecha:"2026-10-02"},
+     precios:{h1:{nombre:"Doble Dos Camas Dobles", usd:499.52}, h2:{nombre:"Doble Dos Camas Dobles", usd:499.52}, h3:{nombre:"Doble Dos Camas Dobles", usd:499.52}}},
+    {slug:"radisson", nombre:"Radisson Hotel Orlando Lake Buena Vista South", est:4.5, cadena:"Radisson", zona:"Kissimmee, Orlando",
+     desc:"Hotel en Kissimmee, muy cerca de Lake Buena Vista y a pocos minutos de Walt Disney World. Tiene una gran piscina estilo río lento, tobogán, zona de chapoteo para los niños, gimnasio y área de desayuno: un buen punto de descanso entre visitas a los parques. Sus habitaciones son amplias y funcionales, con wifi y parqueadero incluidos.",
+     fotos:5, hab:{fotos:0}, cancel:{tipo:"gratis", fecha:"2026-10-03"},
+     precios:{h1:{nombre:"Cuádruple Accesible", usd:580.02}, h2:{nombre:"Cuádruple Accesible", usd:467.20}, h3:{nombre:"Cuádruple Accesible", usd:467.20}}},
+    {slug:"doubletree", nombre:"DoubleTree by Hilton Orlando at SeaWorld", est:4, cadena:"Hilton", zona:"International Drive, Orlando",
+     desc:"Uno de los DoubleTree más grandes del mundo, con más de 1.000 habitaciones repartidas en varias torres frente a una laguna. Su piscina principal, de estilo infinito con vista al agua, es uno de los grandes atractivos, junto con cabañas para relajarse, zona de chapoteo para niños y varias opciones gastronómicas. Está sobre International Drive, cerca de SeaWorld y a corta distancia de los demás parques. Las habitaciones tienen balcón privado y decoración tropical, con la clásica galleta de bienvenida de la marca.",
+     fotos:6, hab:{fotos:2}, cancel:{tipo:"gratis", fecha:"2026-10-03"},
+     precios:{h1:{nombre:"2 Queen Beds - Non Smoking", usd:588.15}, h2:{nombre:"2 Queen Beds - Non Smoking", usd:532.29}, h3:{nombre:"2 Queen Beds - Non Smoking", usd:532.29}}},
+    {slug:"courtyard", nombre:"Courtyard Orlando Lake Buena Vista at Vista Centre", est:4, cadena:"Marriott", zona:"Lake Buena Vista, Orlando",
+     desc:"Hotel moderno y recién renovado sobre Palm Parkway, muy cerca de Disney Springs y con transporte gratuito hacia Walt Disney World. Tiene dos piscinas al aire libre, zona de chapoteo, el Oasis Patio &amp; Lounge y una cafetería con productos Starbucks, ideal para desayunar antes de salir a los parques. Sus habitaciones son de diseño contemporáneo y luminoso, con escritorio de trabajo.",
+     fotos:6, hab:{fotos:2}, cancel:{tipo:"norefund"},
+     precios:{h1:{nombre:"2 Queen Beds", usd:744.68}, h2:{nombre:"2 Queen Beds", usd:608.59}, h3:{nombre:"2 Queen Beds", usd:535.00}}}
   ],
   seg3:[
-    {slug:"president-south-beach", nombre:"President South Beach", est:4, cadena:"Epoque Hotels",
-     desc:"Segunda estadía en Miami, de vuelta al mismo hotel boutique en South Beach, a metros de Ocean Drive y la playa.",
-     fotos:6, hab:{fotos:2},
-     precios:{h3:{nombre:"Traditional Room", usd:521.52}, h1:{nombre:"Two Double Beds", usd:599.75}, h2:{nombre:"Two Double Beds", usd:599.75}},
-     cancel:{tipo:"no-reembolsable"}},
-    {slug:"esme", nombre:"Esmé Miami Beach", est:4, cadena:"Esmé Hotel",
+    {slug:"esme", nombre:"Esmé Miami Beach", est:4, cadena:"Esmé Hotel", zona:"South Beach, Miami Beach",
      desc:"Cierre del viaje en el mismo hotel boutique Art Déco de Collins Avenue, South Beach, a pasos de la playa.",
-     fotos:6, hab:{fotos:2},
-     precios:{h3:{nombre:"Classic King Room", usd:503.35}, h1:{nombre:"Classic Double", usd:675.93}, h2:{nombre:"Classic Double", usd:609.88}},
-     cancel:{tipo:"gratis", fecha:"2026-09-25"}},
-    {slug:"president-villa", nombre:"President Villa Miami Beach", est:3, cadena:null,
-     desc:"Cierre del viaje en este hotel sencillo de Collins Avenue, South Beach. En este segmento las 3 habitaciones son no reembolsables (a diferencia del segmento 1, donde una habitación sí admite cancelación gratuita).",
-     fotos:5, hab:{fotos:1},
-     precios:{h3:{nombre:"Deluxe Room 1 King Bed", usd:573.67}, h1:{nombre:"Deluxe Room 2 Queen Beds", usd:677.97}, h2:{nombre:"Deluxe Room 2 Queen Beds", usd:677.97}},
-     cancel:{tipo:"no-reembolsable"}},
-    {slug:"clinton", nombre:"Clinton South Beach", est:3.5, cadena:null,
+     fotos:6, hab:{fotos:2}, cancel:{tipo:"gratis", fecha:"2026-09-25"},
+     precios:{h1:{nombre:"Classic Double", usd:675.93}, h2:{nombre:"Classic Double", usd:609.88}, h3:{nombre:"Classic King Room", usd:503.35}}},
+    {slug:"president-south-beach", nombre:"President South Beach", est:4, cadena:"Epoque Hotels", zona:"South Beach, Miami Beach",
+     desc:"Segunda estadía en Miami, de vuelta al mismo hotel boutique de South Beach, a metros de Ocean Drive y de la playa.",
+     fotos:6, hab:{fotos:2}, cancel:{tipo:"norefund"},
+     precios:{h1:{nombre:"Two Double Beds", usd:599.75}, h2:{nombre:"Two Double Beds", usd:599.75}, h3:{nombre:"Traditional Room", usd:521.52}}},
+    {slug:"president-villa", nombre:"President Villa Miami Beach", est:3, cadena:null, zona:"South Beach, Miami Beach",
+     desc:"Cierre del viaje en este hotel sencillo de Collins Avenue, South Beach. En este tramo las tres habitaciones son no reembolsables, a diferencia del primero, donde una sí admite cancelación gratuita.",
+     fotos:5, hab:{fotos:1}, cancel:{tipo:"norefund"},
+     precios:{h1:{nombre:"Deluxe Room 2 Queen Beds", usd:677.97}, h2:{nombre:"Deluxe Room 2 Queen Beds", usd:677.97}, h3:{nombre:"Deluxe Room 1 King Bed", usd:573.67}}},
+    {slug:"clinton", nombre:"Clinton South Beach", est:3.5, cadena:null, zona:"South Beach, Miami Beach",
      desc:"Cierre del viaje en este hotel Art Déco de Washington Avenue, a corta distancia de la playa de South Beach.",
-     fotos:5, hab:{fotos:2},
-     precios:{h3:{nombre:"Bedroom King", usd:550.83}, h1:{nombre:"Bedroom Double", usd:788.33}, h2:{nombre:"Classic Terrace Double", usd:756.35}},
-     cancel:{tipo:"no-reembolsable"}},
-    {slug:"liberty-park", nombre:"Liberty Park Hotel South Beach", est:4, cadena:null,
+     fotos:5, hab:{fotos:2}, cancel:{tipo:"norefund"},
+     precios:{h1:{nombre:"Bedroom Double", usd:788.33}, h2:{nombre:"Classic Terrace Double", usd:756.35}, h3:{nombre:"Bedroom King", usd:550.83}}},
+    {slug:"liberty-park", nombre:"Liberty Park Hotel South Beach", est:4, cadena:null, zona:"South Beach, Miami Beach",
      desc:"Cierre del viaje en este hotel Art Déco del distrito histórico de South Beach, cerca de Lincoln Road.",
-     fotos:6, hab:{fotos:2},
-     precios:{h3:{nombre:"Standard Double Room", usd:623.89}, h1:{nombre:"Standard Double Room", usd:815.74}, h2:{nombre:"Standard Double Room", usd:692.42}},
-     cancel:{tipo:"no-reembolsable"}},
-    {slug:"pestana", nombre:"Pestana South Beach Miami", est:4, cadena:"Pestana",
+     fotos:6, hab:{fotos:2}, cancel:{tipo:"norefund"},
+     precios:{h1:{nombre:"Standard Double Room", usd:815.74}, h2:{nombre:"Standard Double Room", usd:692.42}, h3:{nombre:"Standard Double Room", usd:623.89}}},
+    {slug:"pestana", nombre:"Pestana South Beach Miami", est:4, cadena:"Pestana", zona:"Ocean Drive, South Beach",
      desc:"Hotel de la cadena portuguesa Pestana sobre Ocean Drive, South Beach, con vista privilegiada al mar y hospitalidad europea.",
-     fotos:6, hab:{fotos:2},
-     precios:{h3:{nombre:"Classic Double", usd:680.39}, h2:{nombre:"Classic Double 2Ad+1Child", usd:707.79}, h1:{nombre:"Classic Double 3Ad+1Child", usd:822.20}},
-     cancel:{tipo:"no-reembolsable"}},
-    {slug:"atwell", nombre:"Atwell Suites Miami Brickell", est:4, cadena:"IHG",
-     desc:"Cierre del viaje en este hotel de suites en Brickell. Nota: este hotel aplica gastos de cancelación del 45% sobre el valor reservado, sin fecha límite especificada.",
-     fotos:5, hab:{fotos:2},
-     precios:{h3:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:724.75}, h1:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:792.86}, h2:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:724.75}},
-     cancel:{tipo:"no-reembolsable"}}
+     fotos:6, hab:{fotos:2}, cancel:{tipo:"norefund"},
+     precios:{h1:{nombre:"Classic Double 3Ad+1Child", usd:822.20}, h2:{nombre:"Classic Double 2Ad+1Child", usd:707.79}, h3:{nombre:"Classic Double", usd:680.39}}},
+    {slug:"atwell", nombre:"Atwell Suites Miami Brickell", est:4, cadena:"IHG", zona:"Brickell, Miami",
+     desc:"Cierre del viaje en este hotel de suites en Brickell, el distrito financiero de Miami, con diseño moderno y habitaciones tipo suite.",
+     fotos:5, hab:{fotos:2}, cancel:{tipo:"parcial"},
+     precios:{h1:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:792.86}, h2:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:724.75}, h3:{nombre:"1 King 1 Bdrm Suite High Floor Balcony", usd:724.75}}}
   ]
 };
 
-const PAX = { h1:{adultos:3, ninos:1, label:"Habitación 1 · 3 adultos, 1 niña"}, h2:{adultos:2, ninos:1, label:"Habitación 2 · 2 adultos, 1 niña"}, h3:{adultos:2, ninos:0, label:"Habitación 3 · 2 adultas"} };
+const SEGMENTOS = [
+  {key:"seg1", grid:"grid-seg1", label:"Miami, 1 al 4 de octubre"},
+  {key:"seg2", grid:"grid-seg2", label:"Orlando, 4 al 9 de octubre"},
+  {key:"seg3", grid:"grid-seg3", label:"Miami, 9 al 12 de octubre"}
+];
 
-function FOTO(slug,i){ return "assets/hoteles/"+slug+"/"+i+".jpg"; }
-function FOTOHAB(slug,i){ return "assets/hoteles/"+slug+"/hab/"+i+".jpg"; }
+const ROOMS = ["h1","h2","h3"];
+const PAX = {
+  h1:{n:1, adultos:3, ninos:1, who:"Habitación 1 · 3 adultos, 1 niña"},
+  h2:{n:2, adultos:2, ninos:1, who:"Habitación 2 · 2 adultos, 1 niña"},
+  h3:{n:3, adultos:2, ninos:0, who:"Habitación 3 · 2 adultas"}
+};
 
-const state = { aerolinea:"avianca", fare:"classic", itin:1, seg1:"esme", seg2:"fairfield", seg3:"esme" };
+const state = { aero:"avianca", fare:"classic", itin:1, seg1:"esme", seg2:"fairfield", seg3:"esme" };
 
-// ---------- CALCULO TIQUETE ----------
+const aeroActual = () => AEROLINEAS.find(a => a.id === state.aero);
+const hotelDe = seg => HOTELES[seg].find(h => h.slug === state[seg]);
+const cancelDe = h => CANCEL[h.cancel.tipo](h.cancel.fecha);
+const estrellas = n => "★".repeat(Math.floor(n)) + (n % 1 ? "½" : "");
+const FOTO = (slug,i) => "assets/hoteles/" + slug + "/" + i + ".jpg";
+const FOTOHAB = (slug,i) => "assets/hoteles/" + slug + "/hab/" + i + ".jpg";
+
+// ---------- cálculo (interno: el cliente nunca ve estos números sueltos) ----------
 function tiqueteVentaUSD(){
-  const a = AEROLINEAS.find(x=>x.id===state.aerolinea);
-  let idaNeto, regresoNeto;
-  if(a.id==="avianca"){
-    idaNeto = a.idaNeto[state.fare];
-    const it = a.itinerarios.find(x=>x.id===state.itin);
-    regresoNeto = it.neto[state.fare];
-  } else {
-    idaNeto = a.idaNeto[state.fare];
-    regresoNeto = a.regresoNeto[state.fare] !== undefined ? a.regresoNeto[state.fare] : Object.values(a.regresoNeto)[0];
-  }
-  const netoRT = idaNeto + regresoNeto;
-  const ventaRT = netoRT / MARGEN_TIQUETE;
-  return a.monedaNeto==="COP" ? ventaRT / TRM : ventaRT;
+  const a = aeroActual();
+  const ida = a.idaNeto[state.fare];
+  const regreso = a.id === "avianca"
+    ? a.itinerarios.find(i => i.id === state.itin).neto[state.fare]
+    : (a.regresoNeto[state.fare] !== undefined ? a.regresoNeto[state.fare] : Object.values(a.regresoNeto)[0]);
+  const venta = (ida + regreso) / MARGEN_TIQUETE;
+  return a.monedaNeto === "COP" ? venta / TRM : venta;
 }
 
 function parquesVentaUSD(){
-  const uniA = (PARQUES.universal.adultoNeto/MARGEN_PARQUE)/TRM;
-  const uniN = (PARQUES.universal.ninoNeto/MARGEN_PARQUE)/TRM;
-  const disA = (PARQUES.disney.adultoNeto/MARGEN_PARQUE)/TRM;
-  const disN = (PARQUES.disney.ninoNeto/MARGEN_PARQUE)/TRM;
-  return { adulto: uniA+disA, nino: uniN+disN };
-}
-
-function hotelSegPrecio(seg, room){
-  const h = HOTELES[seg].find(x=>x.slug===state[seg]);
-  return h.precios[room].usd;
-}
-
-function hotelCancel(seg){
-  return HOTELES[seg].find(x=>x.slug===state[seg]).cancel;
+  const v = x => (x / MARGEN_PARQUE) / TRM;
+  return { adulto: v(PARQUES.universal.adulto) + v(PARQUES.disney.adulto),
+           nino:   v(PARQUES.universal.nino)   + v(PARQUES.disney.nino) };
 }
 
 function calc(){
-  const ticketUSD = tiqueteVentaUSD();
-  const parkUSD = parquesVentaUSD();
-
+  const tk = tiqueteVentaUSD(), pk = parquesVentaUSD();
   const rooms = {};
-  ["h1","h2","h3"].forEach(r=>{
-    const pax = PAX[r];
-    const ticket = ticketUSD * (pax.adultos+pax.ninos);
-    const park = parkUSD.adulto*pax.adultos + parkUSD.nino*pax.ninos;
-    const hotel = hotelSegPrecio("seg1",r) + hotelSegPrecio("seg2",r) + hotelSegPrecio("seg3",r);
-    rooms[r] = { ticket, park, hotel, total: ticket+park+hotel };
+  ROOMS.forEach(r => {
+    const p = PAX[r];
+    const tiquetes = tk * (p.adultos + p.ninos);           // las niñas pagan tiquete completo
+    const parques  = pk.adulto * p.adultos + pk.nino * p.ninos;
+    const hoteles  = SEGMENTOS.reduce((s,sg) => s + hotelDe(sg.key).precios[r].usd, 0);
+    const total    = tiquetes + parques + hoteles;
+    const reserva  = tiquetes + RESERVA_SERVICIOS * (parques + hoteles);
+    rooms[r] = { total, reserva, saldo: total - reserva };
   });
+  const suma = k => ROOMS.reduce((s,r) => s + rooms[r][k], 0);
 
-  const totalTicket = rooms.h1.ticket+rooms.h2.ticket+rooms.h3.ticket;
-  const totalHotel = rooms.h1.hotel+rooms.h2.hotel+rooms.h3.hotel;
-  const totalPark = rooms.h1.park+rooms.h2.park+rooms.h3.park;
-  const totalGrupo = totalTicket+totalHotel+totalPark;
-
-  const reserva = totalTicket*1.0 + totalHotel*0.20 + totalPark*0.20;
-  const saldo = totalGrupo - reserva;
-
-  // fecha limite de pago = fecha de viaje - 20 dias
-  const cancels = [hotelCancel("seg1"), hotelCancel("seg2"), hotelCancel("seg3")];
-  const todosGratis = cancels.every(c=>c.tipo==="gratis");
+  const todosGratis = SEGMENTOS.every(sg => hotelDe(sg.key).cancel.tipo === "gratis");
   let pagoUnico = true, fechaLimite = null;
   if(todosGratis){
-    const deadline = new Date(FECHA_VIAJE+"T00:00:00");
-    deadline.setDate(deadline.getDate()-20);
-    const hoy = new Date();
-    const unaSemana = new Date(hoy); unaSemana.setDate(hoy.getDate()+7);
-    if(deadline > unaSemana){ pagoUnico=false; fechaLimite=deadline; }
+    const d = new Date(FECHA_VIAJE + "T00:00:00");
+    d.setDate(d.getDate() - DIAS_ANTES);
+    const enUnaSemana = new Date(); enUnaSemana.setDate(enUnaSemana.getDate() + 7);
+    if(d > enUnaSemana){ pagoUnico = false; fechaLimite = d; }
   }
-
-  return { rooms, totalGrupo, totalTicket, totalHotel, totalPark, reserva, saldo, pagoUnico, fechaLimite };
+  return { rooms, total:suma("total"), reserva:suma("reserva"), saldo:suma("saldo"), pagoUnico, fechaLimite };
 }
 
-// ---------- RENDER AEROLINEAS ----------
-function renderAirTabs(){
-  const el = document.getElementById("airTabs");
-  el.innerHTML = AEROLINEAS.map(a=>`<div class="air-tab ${a.id===state.aerolinea?'sel':''}" data-air="${a.id}">${a.nombre}</div>`).join("");
-  el.querySelectorAll(".air-tab").forEach(b=>b.onclick=()=>{
-    state.aerolinea = b.dataset.air;
-    const a = AEROLINEAS.find(x=>x.id===state.aerolinea);
-    state.fare = a.fares[a.fares.length-1].id;
-    if(a.id==="avianca") state.itin = 1;
-    renderAirTabs(); renderAirBlock(); render();
+// ---------- aerolíneas (informativo, sin precios) ----------
+document.getElementById("airlines").innerHTML = AEROLINEAS.map(a => {
+  const itin = a.itinerarios
+    ? "<b>Regreso:</b> " + a.itinerarios.map(i => i.label + " · " + i.info).join(" &nbsp;|&nbsp; ") + " — se elige más abajo"
+    : "<b>Regreso:</b> " + a.regreso;
+  return `
+  <div class="air-block">
+    <div class="air-head"><h3>${a.nombre}</h3><span class="air-tag">${a.tag}</span><span class="air-route">${a.ruta}</span></div>
+    <div class="air-legs"><b>Ida:</b> ${a.ida}<br>${itin}</div>
+    <div class="fares c2">
+      ${a.fares.map(f => `
+        <div class="fare-col ${f.best ? "best" : ""}">
+          <h4>${f.label}</h4><span class="ftag">${f.ftag}</span>
+          <ul>${f.inc.map(i => `<li class="${i[0]}">${i[1]}</li>`).join("")}</ul>
+        </div>`).join("")}
+    </div>
+    ${a.nota ? `<p class="air-note">${a.nota}</p>` : ""}
+  </div>`;
+}).join("");
+
+// ---------- hoteles (sin precios) ----------
+function categorias(h){
+  const grupos = new Map();
+  ROOMS.forEach(r => {
+    const n = h.precios[r].nombre;
+    if(!grupos.has(n)) grupos.set(n, []);
+    grupos.get(n).push(PAX[r].n);
   });
+  if(grupos.size === 1) return `<div class="hab-name">${[...grupos.keys()][0]}</div>`;
+  return [...grupos].map(([n,rs]) =>
+    `<div class="hab-name"><span>Habitación ${rs.join(" y ")}</span>${n}</div>`).join("");
 }
 
-function renderAirBlock(){
-  const a = AEROLINEAS.find(x=>x.id===state.aerolinea);
-  const el = document.getElementById("airBlock");
-  let itinHtml = "";
-  if(a.id==="avianca"){
-    itinHtml = `<div style="margin-bottom:16px"><b style="font-size:13px;color:var(--mute)">Regreso — elige el itinerario:</b><div class="itin-sel">${a.itinerarios.map(it=>`<div class="itin-opt ${it.id===state.itin?'sel':''}" data-itin="${it.id}">${it.dir} · ${it.info}</div>`).join("")}</div></div>`;
-  }
-  const fareCols = a.fares.map(f=>`
-    <div class="fare-col ${f.id===state.fare?'sel':''}" data-fare="${f.id}">
-      <h4>${f.nombre}</h4>
-      <ul class="lst">${f.inc.map(([t,txt])=>`<li><span class="ac-ic ${t}">${t==='y'?'✓':'✕'}</span>${txt}</li>`).join("")}</ul>
-    </div>`).join("");
-
-  el.innerHTML = `
-    <div class="air-block">
-      <div class="air-head"><div><h3>${a.nombre}</h3><div class="air-route">${a.ruta}</div></div></div>
-      <div style="font-size:13px;color:var(--ink-soft);margin-bottom:14px"><b>Ida:</b> ${a.ida.dir} · ${a.ida.info}${a.regreso?`<br><b>Regreso:</b> ${a.regreso.dir} · ${a.regreso.info}`:""}</div>
-      ${itinHtml}
-      <div class="fares c2">${fareCols}</div>
-      ${a.nota?`<div class="fine">${a.nota}</div>`:""}
-    </div>`;
-
-  el.querySelectorAll(".fare-col").forEach(c=>c.onclick=()=>{ state.fare=c.dataset.fare; renderAirBlock(); render(); });
-  if(a.id==="avianca"){
-    el.querySelectorAll(".itin-opt").forEach(c=>c.onclick=()=>{ state.itin=parseInt(c.dataset.itin); renderAirBlock(); render(); });
-  }
-}
-
-// ---------- RENDER HOTELES ----------
-function estrellas(n){ return "★".repeat(Math.floor(n)) + (n%1?"½":""); }
-
-function cancelLabel(c){
-  if(c.tipo==="gratis") return `Cancelación gratuita hasta el ${new Date(c.fecha+"T00:00:00").toLocaleDateString("es-CO",{day:"numeric",month:"long"})}`;
-  return "No reembolsable";
-}
-
-function renderSeg(segKey, gridId){
-  const el = document.getElementById(gridId);
-  el.innerHTML = HOTELES[segKey].map(h=>{
-    const sel = state[segKey]===h.slug;
-    const miniGal = Array.from({length:Math.min(4,h.fotos)},(_,i)=>`<img src="${FOTO(h.slug,i+1)}" data-slug="${h.slug}" data-i="${i+1}" class="js-lb">`).join("");
-    const habHtml = h.hab.fotos>0 ? `
-      <div class="hab-block">
-        <div class="hab-name">${h.precios.h1.nombre}</div>
-        <div class="mini-gal">${Array.from({length:h.hab.fotos},(_,i)=>`<img src="${FOTOHAB(h.slug,i+1)}" data-slug="${h.slug}" data-i="${i+1}" data-hab="1" class="js-lb">`).join("")}</div>
-        <div class="hab-note">Esta es la habitación o una similar.</div>
-      </div>` : `<div class="hab-block"><div class="hab-note">Fotos de habitación no disponibles para este hotel — se confirmará con el hotel al reservar.</div></div>`;
-
+function renderSeg(sg){
+  const el = document.getElementById(sg.grid);
+  el.innerHTML = HOTELES[sg.key].map(h => {
+    const sel = state[sg.key] === h.slug, c = cancelDe(h);
+    const thumbs = `<div class="mini-gal">${[2,3,4,5].map(i =>
+      `<button type="button" data-gal="${h.slug}" data-seg="${sg.key}" aria-label="Ver fotos de ${h.nombre}"><img src="${FOTO(h.slug,i)}" alt="${h.nombre}" loading="lazy"></button>`).join("")}</div>`;
+    const habThumbs = h.hab.fotos
+      ? `<div class="mini-gal">${Array.from({length:h.hab.fotos},(_,i) =>
+          `<button type="button" data-gal="${h.slug}" data-seg="${sg.key}" aria-label="Ver la habitación"><img src="${FOTOHAB(h.slug,i+1)}" alt="Habitación del ${h.nombre}" loading="lazy"></button>`).join("")}</div>
+         <div class="hab-note">Esta es la habitación o una similar.</div>`
+      : `<div class="hab-note">Este hotel no publica fotos de esta categoría de habitación — la confirmamos con el hotel al reservar.</div>`;
     return `
-    <div class="card ${sel?'sel':''}" data-slug="${h.slug}">
-      <div class="card-img js-gal" data-slug="${h.slug}" data-seg="${segKey}"><img src="${FOTO(h.slug,1)}" alt="${h.nombre}"><span class="badge">${cancelLabel(h.cancel)}</span></div>
+    <article class="card ${sel ? "is-sel" : ""}" data-card="${sg.key}:${h.slug}">
+      <button class="card-img" type="button" data-gal="${h.slug}" data-seg="${sg.key}" aria-label="Ver fotos de ${h.nombre}">
+        <span class="badge ${c.warn ? "warn" : ""}">${c.badge}</span>
+        <img src="${FOTO(h.slug,1)}" alt="${h.nombre}" loading="lazy">
+      </button>
       <div class="card-b">
-        <h4>${h.nombre}</h4>
+        <h3>${h.nombre}</h3>
         <div class="stars">${estrellas(h.est)}</div>
-        <div class="hmeta">${h.cadena?h.cadena+" · ":""}Miami/Orlando</div>
-        <div class="hdesc">${h.desc}</div>
-        <div class="mini-gal">${miniGal}</div>
-        <span class="gal-link js-gal" data-slug="${h.slug}" data-seg="${segKey}">Ver galería completa</span>
-        ${habHtml}
-        <div class="price-tag">3 habitaciones desde <b>${usd(h.precios.h3.usd+h.precios.h1.usd+h.precios.h2.usd)}</b> total</div>
-        <button class="select-btn" data-slug="${h.slug}" data-seg="${segKey}">${sel?"Seleccionado":"Elegir este hotel"}</button>
+        <div class="hmeta">${h.cadena ? h.cadena + " · " : ""}${h.zona}</div>
+        <p class="hdesc">${h.desc}</p>
+        ${thumbs}
+        <div class="hab-block">
+          <div class="hab-h">La habitación del grupo</div>
+          ${categorias(h)}
+          ${habThumbs}
+        </div>
+        <div class="cancel-note">${c.nota}</div>
+        <button class="gal-link" type="button" data-gal="${h.slug}" data-seg="${sg.key}">Ver las ${h.fotos + h.hab.fotos} fotos →</button>
+        <div class="select-btn"><button type="button" data-pick="${sg.key}:${h.slug}">${sel ? "Hotel elegido" : "Elegir este hotel"}</button></div>
       </div>
-    </div>`;
+    </article>`;
+  }).join("");
+}
+
+function renderHoteles(){
+  SEGMENTOS.forEach(renderSeg);
+  document.querySelectorAll("[data-gal]").forEach(el => el.addEventListener("click", e => {
+    e.preventDefault(); e.stopPropagation();
+    openGallery(el.dataset.seg, el.dataset.gal);
+  }));
+  document.querySelectorAll("[data-pick]").forEach(el => el.addEventListener("click", () => {
+    const [seg,slug] = el.dataset.pick.split(":");
+    if(state[seg] === slug) return;
+    state[seg] = slug;
+    document.querySelectorAll(`[data-card^="${seg}:"]`).forEach(card => {
+      const on = card.dataset.card === seg + ":" + slug;
+      card.classList.toggle("is-sel", on);
+      card.querySelector("[data-pick]").textContent = on ? "Hotel elegido" : "Elegir este hotel";
+    });
+    render();
+  }));
+}
+
+const ov = document.getElementById("hmodal-overlay");
+function openGallery(seg, slug){
+  const h = HOTELES[seg].find(x => x.slug === slug); if(!h) return;
+  document.getElementById("hmodal-title").textContent = h.nombre;
+  document.getElementById("hmodal-chain").textContent =
+    estrellas(h.est) + " · " + (h.cadena ? h.cadena + " · " : "") + h.zona;
+  const hotelImgs = Array.from({length:h.fotos},(_,i) => `<img src="${FOTO(slug,i+1)}" loading="lazy" alt="${h.nombre}">`).join("");
+  const habImgs = h.hab.fotos
+    ? `<div class="hm-sec">La habitación</div>
+       <div class="hm-sub">Esta es la habitación o una similar.</div>
+       <div class="hm-gal">${Array.from({length:h.hab.fotos},(_,i) => `<img src="${FOTOHAB(slug,i+1)}" loading="lazy" alt="Habitación del ${h.nombre}">`).join("")}</div>`
+    : "";
+  document.getElementById("hmodal-body").innerHTML =
+    `<div class="hm-sec">El hotel</div><div class="hm-gal">${hotelImgs}</div>` + habImgs;
+  document.querySelectorAll("#hmodal-body img").forEach(im => im.addEventListener("click", () => {
+    document.getElementById("lightbox-img").src = im.src;
+    document.getElementById("lightbox").classList.add("open");
+  }));
+  ov.classList.add("open");
+}
+document.getElementById("hmodal-close").addEventListener("click", () => ov.classList.remove("open"));
+ov.addEventListener("click", e => { if(e.target.id === "hmodal-overlay") ov.classList.remove("open"); });
+document.getElementById("lb-close").addEventListener("click", () => document.getElementById("lightbox").classList.remove("open"));
+document.getElementById("lightbox").addEventListener("click", e => { if(e.target.id === "lightbox") e.currentTarget.classList.remove("open"); });
+addEventListener("keydown", e => { if(e.key === "Escape"){ ov.classList.remove("open"); document.getElementById("lightbox").classList.remove("open"); } });
+
+// ---------- selectores de vuelo ----------
+const pill = (name,val,label,checked) =>
+  `<label class="q-opt"><input type="radio" name="${name}" value="${val}" ${checked ? "checked" : ""}><span>${label}</span></label>`;
+
+function renderAero(){
+  document.getElementById("sel-aero").innerHTML =
+    AEROLINEAS.map(a => pill("aero", a.id, a.nombre, state.aero === a.id)).join("");
+  document.querySelectorAll('input[name="aero"]').forEach(r => r.addEventListener("change", () => {
+    state.aero = r.value;
+    const fares = aeroActual().fares;
+    if(!fares.some(f => f.k === state.fare)) state.fare = (fares.find(f => f.best) || fares[0]).k;
+    renderFare(); renderItin(); render();
+  }));
+}
+function renderFare(){
+  const fares = aeroActual().fares;
+  document.getElementById("sel-fare").innerHTML =
+    fares.map(f => pill("fare", f.k, f.label, state.fare === f.k)).join("");
+  document.querySelectorAll('input[name="fare"]').forEach(r => r.addEventListener("change", () => {
+    state.fare = r.value; render();
+  }));
+}
+function renderItin(){
+  const a = aeroActual(), wrap = document.getElementById("q-itin-wrap");
+  if(!a.itinerarios){ wrap.style.display = "none"; document.getElementById("sel-itin").innerHTML = ""; return; }
+  wrap.style.display = "";
+  document.getElementById("sel-itin").innerHTML =
+    a.itinerarios.map(i => pill("itin", i.id, i.label + " · " + i.info, state.itin === i.id)).join("");
+  document.querySelectorAll('input[name="itin"]').forEach(r => r.addEventListener("change", () => {
+    state.itin = Number(r.value); render();
+  }));
+}
+
+// ---------- render de precios ----------
+function render(){
+  const c = calc(), a = aeroActual(), f = a.fares.find(x => x.k === state.fare);
+  const itin = a.itinerarios ? a.itinerarios.find(i => i.id === state.itin) : null;
+
+  document.getElementById("rooms").innerHTML = ROOMS.map(r => {
+    const x = c.rooms[r];
+    const bloque = c.pagoUnico
+      ? `<div class="rp-solo">Con los hoteles elegidos, esta habitación se paga <b>100% por adelantado</b> al confirmar.</div>`
+      : `<div class="rp-split">
+           <div><div class="rp-l">Reserva</div><div class="rp-amt">${moneyUSD(x.reserva)}</div><div class="rp-cop">≈ ${moneyCOP(x.reserva*TRM)}</div></div>
+           <div><div class="rp-l">Saldo</div><div class="rp-amt">${moneyUSD(x.saldo)}</div><div class="rp-cop">≈ ${moneyCOP(x.saldo*TRM)}</div></div>
+         </div>`;
+    return `
+      <div class="rp">
+        <div class="rp-who">${PAX[r].who}</div>
+        <div class="rp-l">Total de la habitación</div>
+        <div class="rp-usd">${moneyUSD(x.total)}</div>
+        <div class="rp-cop">≈ ${moneyCOP(x.total*TRM)}</div>
+        ${bloque}
+      </div>`;
   }).join("");
 
-  el.querySelectorAll(".select-btn").forEach(b=>b.onclick=()=>{
-    state[b.dataset.seg]=b.dataset.slug; renderAll(); render();
-  });
-  el.querySelectorAll(".js-gal").forEach(b=>b.onclick=()=>openGallery(b.dataset.slug, b.dataset.seg));
-  el.querySelectorAll(".js-lb").forEach(img=>img.onclick=(e)=>{ e.stopPropagation(); openLightbox(img.src); });
+  document.getElementById("group-total").innerHTML =
+    `Total del grupo · <b>${moneyUSD(c.total)}</b><span class="g-cop">≈ ${moneyCOP(c.total*TRM)} · las tres habitaciones juntas</span>`;
+
+  const limite = c.fechaLimite
+    ? c.fechaLimite.toLocaleDateString("es-CO",{day:"numeric",month:"long",year:"numeric"}) : null;
+
+  document.getElementById("pay-zone").innerHTML = c.pagoUnico
+    ? `<div class="pay-note">Alguno de los hoteles elegidos no admite cancelación gratuita, así que <b>este plan se paga 100% por adelantado</b> al confirmar. Con ese pago quedan emitidos los tiquetes y confirmados los hoteles y las entradas a los parques.</div>`
+    : `<div class="pay-note">La reserva de cada habitación deja emitidos sus tiquetes y confirmados sus hoteles y entradas. El saldo se paga <b>antes del ${limite}</b>; si no se paga ese día, la reserva se libera automáticamente.</div>`;
+
+  document.getElementById("pol-pago").innerHTML = c.pagoUnico
+    ? `<p>Con los hoteles elegidos, este plan requiere el <strong>100% del pago por adelantado</strong> para confirmar: al menos uno de los hoteles del viaje no admite cancelación gratuita, de modo que su valor queda comprometido desde el primer día.</p>
+       <p>Con ese pago se emiten los tiquetes aéreos y se confirman los hoteles de los tres tramos y las entradas a los parques.</p>`
+    : `<p>Con los hoteles elegidos, cada habitación reserva con su valor de reserva y paga el saldo <strong>antes del ${limite}</strong>. Con el pago de la reserva se emiten los tiquetes aéreos y se confirman los hoteles y las entradas a los parques.</p>
+       <p>Si el saldo no se paga en esa fecha, la reserva se libera automáticamente.</p>`;
+
+  const hs = SEGMENTOS.map(sg => hotelDe(sg.key));
+  document.getElementById("q-resumen").innerHTML =
+    `Vuelo <b>${a.nombre}</b>, tarifa <b>${f.label}</b>${itin ? ` · regreso ${itin.label}` : ""}.<br>` +
+    `Hoteles: ` + SEGMENTOS.map((sg,i) => `<b>${hs[i].nombre}</b> (${sg.label})`).join(" · ") + ".";
+
+  const msg =
+    "Hola Raíces, soy Diana Correa. Quiero reservar el viaje del grupo (1 al 12 de octubre de 2026):\n\n" +
+    SEGMENTOS.map((sg,i) => "• " + sg.label + ": " + hs[i].nombre).join("\n") + "\n" +
+    "• Vuelo " + a.nombre + ", tarifa " + f.label + (itin ? " · regreso " + itin.label : "") + "\n\n" +
+    "Valor total del grupo: " + moneyUSD(c.total) + "\n" +
+    (c.pagoUnico ? "Pago 100% por adelantado.\n" : "Reserva: " + moneyUSD(c.reserva) + "\n") +
+    "\n¿Cómo hago el pago?";
+  document.querySelectorAll("a.js-wa").forEach(x => { x.href = "https://wa.me/573122738001?text=" + encodeURIComponent(msg); });
 }
 
-function renderAll(){ renderSeg("seg1","gridSeg1"); renderSeg("seg2","gridSeg2"); renderSeg("seg3","gridSeg3"); }
+renderHoteles(); renderAero(); renderFare(); renderItin(); render();
 
-function findHotel(slug, segKey){ return HOTELES[segKey].find(h=>h.slug===slug); }
-
-function openGallery(slug, segKey){
-  const h = findHotel(slug, segKey);
-  document.getElementById("hmTitle").textContent = h.nombre;
-  const imgs = Array.from({length:h.fotos},(_,i)=>`<img src="${FOTO(slug,i+1)}" class="js-lb2">`).join("");
-  document.getElementById("hmGal").innerHTML = imgs;
-  document.getElementById("hmodalOverlay").classList.add("open");
-  document.querySelectorAll(".js-lb2").forEach(img=>img.onclick=()=>openLightbox(img.src));
-}
-document.getElementById("hmClose").onclick=()=>document.getElementById("hmodalOverlay").classList.remove("open");
-document.getElementById("hmodalOverlay").onclick=(e)=>{ if(e.target.id==="hmodalOverlay") e.currentTarget.classList.remove("open"); };
-
-function openLightbox(src){
-  document.getElementById("lbImg").src=src;
-  document.getElementById("lightbox").classList.add("open");
-}
-document.getElementById("lbClose").onclick=()=>document.getElementById("lightbox").classList.remove("open");
-document.getElementById("lightbox").onclick=(e)=>{ if(e.target.id==="lightbox") e.currentTarget.classList.remove("open"); };
-document.addEventListener("keydown",e=>{
-  if(e.key==="Escape"){
-    document.getElementById("lightbox").classList.remove("open");
-    document.getElementById("hmodalOverlay").classList.remove("open");
-  }
-});
-
-// ---------- RENDER PRECIO ----------
-function render(){
-  const c = calc();
-  const roomLabels = {h1:"Habitación 1", h2:"Habitación 2", h3:"Habitación 3"};
-  document.getElementById("roomPrices").innerHTML = ["h1","h2","h3"].map(r=>`
-    <div class="rp-card">
-      <div class="rp-label">${roomLabels[r]} · ${PAX[r].adultos} adultos${PAX[r].ninos?`, ${PAX[r].ninos} niña`:""}</div>
-      <div class="rp-usd">${usd(c.rooms[r].total)}</div>
-      <div class="rp-cop">≈ $${copFmt(c.rooms[r].total*TRM)} COP</div>
-    </div>`).join("");
-
-  document.getElementById("vTotalUSD").textContent = usd(c.totalGrupo);
-  document.getElementById("vTotalCOP").textContent = "≈ $"+copFmt(c.totalGrupo*TRM)+" COP";
-
-  const payZone = document.getElementById("payZone");
-  if(c.pagoUnico){
-    payZone.innerHTML = `<div class="pay-note"><b>100% por adelantado.</b> Con los hoteles elegidos, este plan se paga de contado al confirmar.</div>`;
-  } else {
-    const fLim = c.fechaLimite.toLocaleDateString("es-CO",{day:"numeric",month:"long",year:"numeric"});
-    payZone.innerHTML = `
-      <div class="pay">
-        <div class="pay-card"><div class="pc-label">Reserva</div><div class="pc-val">${usd(c.reserva)}</div><div class="rp-cop">≈ $${copFmt(c.reserva*TRM)} COP</div></div>
-        <div class="pay-card"><div class="pc-label">Saldo</div><div class="pc-val">${usd(c.saldo)}</div><div class="rp-cop">≈ $${copFmt(c.saldo*TRM)} COP</div></div>
-      </div>
-      <div class="q-note">Saldo a pagar antes del ${fLim}.</div>`;
-  }
-
-  document.getElementById("polPago").textContent = c.pagoUnico
-    ? "Con los hoteles elegidos, este plan requiere el 100% del pago por adelantado para confirmar la reserva."
-    : `Reserva ahora con ${usd(c.reserva)} y paga el saldo de ${usd(c.saldo)} antes del ${c.fechaLimite.toLocaleDateString("es-CO",{day:"numeric",month:"long",year:"numeric"})}.`;
-
-  const parkUSD = parquesVentaUSD();
-  document.getElementById("uniAdultUSD").textContent = usd((PARQUES.universal.adultoNeto/MARGEN_PARQUE)/TRM);
-  document.getElementById("uniAdultCOP").textContent = "≈ $"+copFmt((PARQUES.universal.adultoNeto/MARGEN_PARQUE))+" COP";
-  document.getElementById("disAdultUSD").textContent = usd((PARQUES.disney.adultoNeto/MARGEN_PARQUE)/TRM);
-  document.getElementById("disAdultCOP").textContent = "≈ $"+copFmt((PARQUES.disney.adultoNeto/MARGEN_PARQUE))+" COP";
-
-  const hSeg1 = findHotel(state.seg1,"seg1"), hSeg2 = findHotel(state.seg2,"seg2"), hSeg3 = findHotel(state.seg3,"seg3");
-  document.getElementById("qResumen").textContent = `Hoteles elegidos: ${hSeg1.nombre} (Miami, 1-4 oct) · ${hSeg2.nombre} (Orlando, 4-9 oct) · ${hSeg3.nombre} (Miami, 9-12 oct).`;
-
-  const msg = `Hola! Quiero confirmar la cotización de viaje para Diana Correa y familia (1-12 oct 2026): vuelo ${AEROLINEAS.find(a=>a.id===state.aerolinea).nombre}, hoteles ${hSeg1.nombre} / ${hSeg2.nombre} / ${hSeg3.nombre}. Total del grupo: ${usd(c.totalGrupo)}.`;
-  document.querySelectorAll(".js-wa").forEach(a=>a.href="https://wa.me/573122738001?text="+encodeURIComponent(msg));
-}
-
-renderAirTabs(); renderAirBlock(); renderAll(); render();
-
-// ---------- NAV BURGER ----------
-(function(){
-  const btn = document.getElementById("burgerBtn"), links = document.getElementById("navLinks");
-  btn.addEventListener("click",()=>{
-    const open = links.classList.toggle("open");
-    btn.setAttribute("aria-expanded", open?"true":"false");
-  });
-  links.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{ links.classList.remove("open"); btn.setAttribute("aria-expanded","false"); }));
-  document.addEventListener("keydown",e=>{ if(e.key==="Escape"){ links.classList.remove("open"); btn.setAttribute("aria-expanded","false"); } });
-  window.addEventListener("resize",()=>{ if(window.innerWidth>920){ links.classList.remove("open"); btn.setAttribute("aria-expanded","false"); } });
+(() => {
+  const b = document.getElementById("nav-burger"), m = document.getElementById("nav-links");
+  const cerrar = () => { m.classList.remove("is-open"); b.setAttribute("aria-expanded","false"); };
+  b.addEventListener("click", () => { m.classList.contains("is-open") ? cerrar() : (m.classList.add("is-open"), b.setAttribute("aria-expanded","true")); });
+  m.querySelectorAll("a").forEach(a => a.addEventListener("click", cerrar));
+  addEventListener("keydown", e => { if(e.key === "Escape") cerrar(); });
+  matchMedia("(min-width: 1021px)").addEventListener("change", cerrar);
 })();
-
-// ---------- PRINT ACCORDION ----------
-(function(){
-  let openState = [];
-  window.addEventListener("beforeprint",()=>{
-    openState = Array.from(document.querySelectorAll(".ac")).map(d=>d.open);
-    document.querySelectorAll(".ac").forEach(d=>d.open=true);
-  });
-  window.addEventListener("afterprint",()=>{
-    document.querySelectorAll(".ac").forEach((d,i)=>d.open=openState[i]);
-  });
+(() => {
+  const acs = [...document.querySelectorAll("details.ac")]; let prev = [];
+  addEventListener("beforeprint", () => { prev = acs.map(d => d.open); acs.forEach(d => d.open = true); });
+  addEventListener("afterprint", () => acs.forEach((d,i) => d.open = prev[i]));
 })();
 </script>
+</body>
+</html>
