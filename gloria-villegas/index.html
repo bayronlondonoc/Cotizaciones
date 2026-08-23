@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cotización para nuestra cliente especial, Gloria Villegas · Raíces</title>
-<meta name="description" content="Tiquete aéreo Medellín – Las Vegas con Copa Airlines, vía Panamá. Del 2 al 17 de septiembre de 2026.">
+<title>Cotización de viaje para Gloria Villegas · Raíces</title>
+<meta name="description" content="Cancún o Punta Cana · 28 de diciembre de 2026 al 3 de enero de 2027 · vuelo y hotel todo incluido, tú eliges el destino, la aerolínea y el hotel.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" type="image/png" href="assets/marca/favicon.png">
-<meta property="og:title" content="Cotización para nuestra cliente especial, Gloria Villegas · Raíces">
-<meta property="og:description" content="Tiquete Medellín – Las Vegas con Copa Airlines · 2 al 17 de septiembre de 2026">
+<meta property="og:title" content="Cotización de viaje para Gloria Villegas · Raíces">
+<meta property="og:description" content="Cancún o Punta Cana · 28 de diciembre de 2026 al 3 de enero de 2027 · vuelo y hotel todo incluido, tú eliges el destino, la aerolínea y el hotel.">
 <meta property="og:image" content="https://bayronlondonoc.github.io/cotizaciones/gloria-villegas/assets/destinos/hero.jpg">
 <meta property="og:url" content="https://bayronlondonoc.github.io/cotizaciones/gloria-villegas/">
 <meta property="og:type" content="website">
@@ -19,14 +19,11 @@
 :root{
   --arena:#E6CAB2; --arena-soft:#F0DFC9; --bg:#F7F0E4; --paper:#FDFAF3;
   --tierra:#68362C; --ink:#3B2018; --ink-soft:#5C3A2E; --mute:#8A6A58;
-  --atardecer:#9C2B0D; --atardecer-dark:#7E2109;
-  --oliva:#7D8561; --oliva-dark:#5E6547;
+  --atardecer:#9C2B0D; --oliva:#7D8561; --oliva-dark:#5E6547;
   --line:rgba(59,32,24,.14);
-  --shadow:0 18px 40px rgba(59,32,24,.10);
-  --shadow-soft:0 8px 22px rgba(59,32,24,.07);
+  --shadow:0 18px 40px rgba(59,32,24,.10); --shadow-soft:0 8px 22px rgba(59,32,24,.07);
   --radius:18px;
-  --font-display:"Passion One","Arial Black",sans-serif;
-  --font-body:"Poppins",system-ui,sans-serif;
+  --font-display:"Passion One","Arial Black",sans-serif; --font-body:"Poppins",system-ui,sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -34,154 +31,186 @@ body{margin:0;font-family:var(--font-body);font-weight:300;font-size:16px;line-h
 img{max-width:100%;display:block}
 a{color:inherit}
 .wrap{width:min(1180px,92vw);margin-inline:auto}
-h1,h2,h3,.display{font-family:var(--font-display);font-weight:400;line-height:.96;letter-spacing:.01em;text-transform:uppercase;color:var(--tierra);margin:0}
-h1{font-size:clamp(40px,7vw,88px)}
-h2{font-size:clamp(32px,4.6vw,58px)}
-h3{font-size:clamp(20px,2.6vw,28px)}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:.96;letter-spacing:.01em;text-transform:uppercase;color:var(--tierra);margin:0}
+h1{font-size:clamp(40px,7vw,84px)} h2{font-size:clamp(30px,4.6vw,56px)} h3{font-size:clamp(20px,2.6vw,28px)}
 p{margin:0 0 1em}
 .eyebrow{font-family:var(--font-body);font-weight:500;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--atardecer);margin-bottom:14px}
 
-/* ---------- Nav ---------- */
 .nav{position:sticky;top:0;z-index:50;background:rgba(247,240,228,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav-in{display:flex;align-items:center;justify-content:center;gap:38px;height:78px}
+.nav-in{display:flex;align-items:center;justify-content:center;gap:34px;height:78px}
 .nav img{height:38px;width:auto}
-.nav-links{display:flex;gap:26px;font-size:15px;font-weight:400;letter-spacing:.04em}
+.nav-links{display:flex;gap:24px;font-size:15px;letter-spacing:.03em}
 .nav-links a{text-decoration:none;color:var(--ink-soft);padding:4px 0;border-bottom:1.5px solid transparent;transition:.2s;white-space:nowrap}
 .nav-links a:hover{color:var(--atardecer);border-bottom-color:var(--atardecer)}
 .nav-burger{display:none}
-
-@media(max-width:900px){
+@media(max-width:920px){
   .nav-in{justify-content:space-between;gap:12px}
-  .nav-burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:42px;height:38px;padding:0 8px;
-    background:transparent;border:1px solid var(--line);border-radius:11px;cursor:pointer;flex:none}
+  .nav-burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:40px;padding:0 9px;background:transparent;border:1px solid var(--line);border-radius:11px;cursor:pointer;flex:none}
   .nav-burger span{display:block;height:2px;border-radius:2px;background:var(--tierra);transition:transform .25s,opacity .2s}
   .nav-burger[aria-expanded="true"]{border-color:var(--atardecer)}
   .nav-burger[aria-expanded="true"] span{background:var(--atardecer)}
   .nav-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
   .nav-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
   .nav-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-  .nav-burger:focus-visible{outline:2px solid var(--atardecer);outline-offset:2px}
-
-  .nav-links{position:absolute;left:0;right:0;top:100%;display:none;flex-direction:column;gap:0;
-    background:var(--bg);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 0}
+  .nav-links{position:absolute;left:0;right:0;top:100%;display:none;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 0}
   .nav-links.is-open{display:flex}
-  .nav-links a{padding:14px 6vw;font-size:15px;border-bottom:0;border-left:3px solid transparent}
-  .nav-links a:hover,.nav-links a:focus-visible{border-bottom-color:transparent;border-left-color:var(--atardecer);background:rgba(230,202,178,.34)}
+  .nav-links a{padding:13px 6vw;border-bottom:0;border-left:3px solid transparent}
+  .nav-links a:hover{border-left-color:var(--atardecer);background:rgba(230,202,178,.34)}
 }
-@media(prefers-reduced-motion:reduce){.nav-burger span{transition:none}}
 
-/* ---------- Hero ---------- */
 .hero{position:relative;min-height:min(80vh,700px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
 .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero::after{content:"";position:absolute;inset:0;background:
   linear-gradient(90deg,rgba(45,24,18,.62) 0%,rgba(45,24,18,.28) 45%,rgba(45,24,18,0) 80%),
   linear-gradient(180deg,rgba(59,32,24,.35) 0%,rgba(59,32,24,.12) 22%,rgba(85,42,33,.58) 48%,rgba(85,42,33,.90) 78%,rgba(72,35,27,.97) 100%)}
-.hero-in{position:relative;z-index:2;width:100%;padding:56px 6vw 62px 20vw}
+.hero-in{position:relative;z-index:2;width:100%;padding:56px 6vw 62px 18vw}
 @media(max-width:900px){.hero-in{padding:48px 6vw 52px}}
 .hero h1{color:#fff;margin:14px 0 10px}
 .hero .kicker{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--arena);font-weight:500}
-.hero .sub{font-size:clamp(15px,1.9vw,19px);color:#F6E7D6;max-width:52ch;font-weight:300}
+.hero .sub{font-size:clamp(15px,1.9vw,19px);color:#F6E7D6;max-width:58ch}
 .hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .pill{border:1px solid rgba(230,202,178,.5);border-radius:999px;padding:7px 16px;font-size:13px;color:#F6E7D6;backdrop-filter:blur(4px);background:rgba(59,32,24,.22)}
 
-/* ---------- Secciones ---------- */
-section{padding:clamp(56px,8vw,110px) 0;position:relative}
-.sec-head{margin-bottom:44px}
+section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
+.sec-head{margin-bottom:40px}
 .sec-head p{color:var(--ink-soft);font-size:17px;margin-top:16px}
-.rot{position:absolute;left:max(12px,calc((100vw - min(1180px,92vw))/2 - 46px));top:clamp(56px,8vw,110px);writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);font-weight:500;user-select:none}
+.rot{position:absolute;left:max(12px,calc((100vw - min(1180px,92vw))/2 - 46px));top:clamp(54px,7.5vw,104px);writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);font-weight:500;user-select:none}
 @media(max-width:1100px){.rot{display:none}}
 .alt{background:var(--paper)}
 
-/* ---------- Vuelos ---------- */
-.flights{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-bottom:40px}
-.flight{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow-soft)}
-.flight-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:20px}
-.flight-top .route{font-family:var(--font-display);font-size:22px;color:var(--tierra);text-transform:uppercase}
-.flight-top .when{font-size:13px;color:var(--mute);letter-spacing:.04em}
-.leg{padding:14px 0;border-top:1px dashed var(--line)}
-.leg:first-of-type{border-top:0}
-.leg-row{display:grid;grid-template-columns:auto minmax(40px,1fr) auto;gap:18px;align-items:center}
-.leg-label{margin-top:8px;text-align:center;font-size:11.5px;color:var(--mute);letter-spacing:.05em}
-.tm{font-family:var(--font-display);font-size:26px;color:var(--ink);line-height:1}
-.tm span{display:block;font-family:var(--font-body);font-size:11.5px;letter-spacing:.14em;color:var(--mute);font-weight:400;margin-top:6px}
-.tm.r{text-align:right}
-.line{position:relative;height:1px;background:var(--line);margin:0 4px}
-.line .dot{position:absolute;top:-3px;width:7px;height:7px;border-radius:50%;background:var(--oliva)}
-.line .dot.a{left:0}.line .dot.b{right:0}
-@media(max-width:560px){.leg-row{grid-template-columns:1fr}.tm.r{text-align:left}.line{display:none}}
-.flight-foot{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px;color:var(--ink-soft)}
-.flight-foot b{font-weight:500;color:var(--tierra)}
+.ciclos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.ciclo{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow-soft)}
+.ciclo .mes-tag{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500;margin-bottom:6px}
+.ciclo h3{font-size:24px;margin-bottom:8px}
+.ciclo .d{font-size:13.5px;color:var(--ink-soft);line-height:1.6}
+.ciclo .d b{color:var(--tierra)}
 
-/* ---------- Comparación de tarifas ---------- */
-.fares{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
-.fare{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow-soft)}
-.fare.hi{border-color:var(--oliva)}
-.fare h3{margin-bottom:4px}
-.fare .tag2{display:block;font-size:12.5px;color:var(--mute);letter-spacing:.02em;margin-bottom:18px}
-.fare ul{list-style:none;padding:0;margin:0;font-size:14px;color:var(--ink-soft)}
-.fare li{padding:9px 0;border-top:1px solid var(--line);display:flex;gap:10px;align-items:baseline}
-.fare li:first-child{border-top:0}
-.fare li::before{content:"✓";color:var(--oliva-dark);font-weight:600;flex:none}
-.fare li.no::before{content:"–";color:var(--atardecer);font-family:var(--font-display)}
+.air-block{margin-bottom:30px}
+.air-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;margin-bottom:6px}
+.air-head h3{font-size:clamp(22px,3vw,30px)}
+.air-tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--oliva);padding:4px 11px;border-radius:999px;font-weight:500}
+.air-route{font-size:12.5px;color:var(--mute)}
+.air-legs{font-size:13px;color:var(--ink-soft);margin-bottom:14px}
+.fares{display:grid;gap:14px}
+.fares.c2{grid-template-columns:1fr 1fr}
+.fares.c3{grid-template-columns:repeat(3,1fr)}
+.fares.c4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:980px){.fares.c3,.fares.c4{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.fares.c2,.fares.c3,.fares.c4{grid-template-columns:1fr}}
+.fare-col{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.fare-col.best{border-color:rgba(156,43,13,.4);box-shadow:0 0 0 1px rgba(156,43,13,.16)}
+.fare-col h4{font-family:var(--font-display);font-weight:400;font-size:20px;text-transform:uppercase;color:var(--tierra);margin:0 0 2px}
+.fare-col .ftag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--atardecer);font-weight:500;margin-bottom:12px;display:block}
+.fare-col ul{list-style:none;margin:0;padding:0}
+.fare-col li{font-size:12.5px;color:var(--ink-soft);padding:5px 0 5px 20px;position:relative;line-height:1.45}
+.fare-col li::before{position:absolute;left:0;top:5px;font-family:var(--font-display);font-size:13px}
+.fare-col li.y::before{content:"+";color:var(--oliva)}
+.fare-col li.n::before{content:"–";color:var(--mute)}
+.fare-col li.n{color:var(--mute)}
 
-/* ---------- Cotizador ---------- */
+.dest-h{margin:0 0 20px}
+.dest-h.second{margin-top:52px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.card{position:relative;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-soft);display:flex;flex-direction:column}
+.card-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--arena-soft);border:0;padding:0;width:100%;display:block;cursor:pointer}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.card-video{position:relative;aspect-ratio:16/10;background:#000}
+.card-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.badge{position:absolute;top:10px;left:10px;background:var(--tierra);color:#fff;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:500;padding:4px 9px;border-radius:999px;z-index:2}
+.badge.refund{background:var(--oliva)}
+.badge.norefund{background:var(--atardecer)}
+.card-b{padding:16px 20px 20px;display:flex;flex-direction:column;flex:1}
+.card-b h3{font-size:18px;margin:0 0 3px;line-height:1.08}
+.stars{color:#C6892B;font-size:12px;letter-spacing:1px;margin-bottom:6px}
+.hmeta{font-size:11.5px;color:var(--mute);margin-bottom:10px}
+.hdesc{font-size:12.5px;color:var(--ink-soft);line-height:1.65;margin:0 0 12px}
+.mini-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.mini-gal button{padding:0;border:0;background:none;cursor:pointer;border-radius:8px;overflow:hidden;line-height:0}
+.mini-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:opacity .2s}
+.mini-gal button:hover img{opacity:.8}
+.hab-block{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line)}
+.hab-h{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500;margin-bottom:2px}
+.hab-name{font-family:var(--font-display);font-size:15px;color:var(--tierra);letter-spacing:.02em;text-transform:uppercase;line-height:1.1;margin-bottom:8px}
+.hab-note{font-size:11px;color:var(--mute);margin-top:7px;line-height:1.5;font-style:italic}
+.gal-link{margin-top:14px;background:none;border:0;padding:0;color:var(--oliva-dark);font-size:12px;text-decoration:underline;cursor:pointer;font-family:var(--font-body);text-align:left;align-self:flex-start}
+
+.hmodal-overlay{position:fixed;inset:0;z-index:300;background:rgba(59,32,24,.65);backdrop-filter:blur(4px);opacity:0;pointer-events:none;overflow-y:auto;padding:30px 16px;transition:opacity .3s}
+.hmodal-overlay.open{opacity:1;pointer-events:auto}
+.hmodal{background:var(--paper);border-radius:18px;max-width:880px;margin:0 auto;padding:26px;position:relative;box-shadow:var(--shadow)}
+.hmodal-close{position:absolute;top:10px;right:14px;background:none;border:0;font-size:28px;color:var(--mute);cursor:pointer;line-height:1}
+.hm-sec{font-family:var(--font-display);font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--tierra);margin:22px 0 10px}
+.hm-sub{font-size:11.5px;color:var(--mute);margin:-6px 0 10px;font-style:italic}
+.hm-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.hm-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;cursor:zoom-in}
+@media(max-width:560px){.hm-gal{grid-template-columns:1fr 1fr}}
+.lightbox{position:fixed;inset:0;z-index:400;background:rgba(22,9,4,.93);display:flex;align-items:center;justify-content:center;padding:5vh 5vw;opacity:0;pointer-events:none;transition:opacity .3s}
+.lightbox.open{opacity:1;pointer-events:auto}
+.lightbox img{max-width:100%;max-height:100%;border-radius:10px}
+.lb-close{position:fixed;top:14px;right:22px;background:none;border:0;font-size:38px;color:rgba(255,255,255,.85);cursor:pointer;line-height:1}
+
 .quote{background:var(--tierra);color:var(--arena)}
-.quote h2,.quote h3{color:var(--arena)}
-.quote .eyebrow{color:var(--arena)}
+.quote h2,.quote h3{color:var(--arena)} .quote .eyebrow{color:var(--arena)}
 .quote .sec-head p{color:rgba(230,202,178,.82)}
-.q-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:start}
-@media(max-width:940px){.q-grid{grid-template-columns:1fr}}
-.q-panel{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-radius:var(--radius);padding:28px 30px}
-.q-sel{margin-bottom:22px}
-.q-sel > label{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(230,202,178,.65);margin-bottom:10px;font-weight:500}
-.q-opts{display:flex;flex-wrap:wrap;gap:8px}
+.q-panel{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-radius:var(--radius);padding:26px 28px}
+.q-selgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px 26px}
+@media(max-width:720px){.q-selgrid{grid-template-columns:1fr}}
+.q-selgroup{min-width:0}
+.q-selgroup > label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(230,202,178,.65);margin-bottom:9px;font-weight:500}
+.q-opts{display:flex;flex-wrap:wrap;gap:7px}
 .q-opt{position:relative}
 .q-opt input{position:absolute;opacity:0;pointer-events:none}
-.q-opt span{display:block;border:1px solid rgba(230,202,178,.32);border-radius:999px;padding:9px 16px;font-size:13px;cursor:pointer;transition:.2s;color:var(--arena);line-height:1.3}
-.q-opt span b{font-weight:500}
-.q-opt span em{font-style:normal;opacity:.6;font-size:11.5px;display:block;letter-spacing:.04em}
+.q-opt span{display:block;border:1px solid rgba(230,202,178,.32);border-radius:999px;padding:8px 14px;font-size:12.5px;cursor:pointer;color:var(--arena);line-height:1.3}
 .q-opt input:checked + span{background:var(--atardecer);border-color:var(--atardecer);color:#fff}
 .q-opt input:focus-visible + span{outline:2px solid var(--arena);outline-offset:2px}
-.q-total{padding:28px 30px;border-radius:var(--radius);background:var(--atardecer);color:#fff}
-.q-total .lbl{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.8}
-.q-total .big{font-family:var(--font-display);font-size:clamp(44px,6vw,64px);line-height:1;margin:8px 0 4px}
-.q-total .sm{font-size:13.5px;opacity:.9}
-.q-note{font-size:12px;color:rgba(230,202,178,.6);margin-top:18px;line-height:1.6}
+.q-resumen{background:rgba(253,250,243,.06);border:1px dashed rgba(230,202,178,.3);border-radius:12px;padding:14px 18px;margin-top:18px;font-size:13px;color:rgba(230,202,178,.9);line-height:1.6}
+.q-resumen b{color:#fff;font-weight:500}
 
-/* ---------- Reserva ---------- */
-.pay{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-bottom:36px}
-.pay-card{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--atardecer);border-radius:14px;padding:24px 26px}
-.pay-card .n{font-family:var(--font-display);font-size:13px;letter-spacing:.14em;color:var(--atardecer);text-transform:uppercase;margin-bottom:10px}
-.pay-card .amt{font-family:var(--font-display);font-size:38px;color:var(--tierra);line-height:1;margin-bottom:8px}
-.pay-card p{font-size:13.5px;color:var(--ink-soft);margin:0}
-.alert{background:rgba(156,43,13,.07);border:1px solid rgba(156,43,13,.22);border-radius:14px;padding:24px 26px;display:flex;gap:18px;align-items:flex-start}
-.alert .ic{flex:none;width:38px;height:38px;border-radius:50%;background:var(--atardecer);color:#fff;display:grid;place-items:center;font-family:var(--font-display);font-size:20px}
-.alert h3{font-size:19px;margin-bottom:8px}
-.alert p{margin:0;font-size:14px;color:var(--ink-soft)}
-.alert b{color:var(--atardecer-dark);font-weight:500}
+.hsel{position:relative}
+.hsel-btn{width:100%;text-align:left;background:var(--paper);border:1px solid rgba(230,202,178,.4);border-radius:12px;padding:12px 40px 12px 15px;font-family:var(--font-body);font-size:14px;color:var(--ink);cursor:pointer;position:relative}
+.hsel-btn::after{content:"";position:absolute;right:16px;top:50%;width:8px;height:8px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:translateY(-70%) rotate(45deg)}
+.hsel-btn b{font-weight:600}
+.hsel-btn small{display:block;font-size:11px;color:var(--mute);margin-top:1px}
+.hsel-list{position:absolute;z-index:20;left:0;right:0;top:calc(100% + 6px);max-height:320px;overflow-y:auto;background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:6px;display:none}
+.hsel-list.open{display:block}
+.hsel-list li{list-style:none;padding:10px 12px;border-radius:8px;cursor:pointer;font-size:13.5px;color:var(--ink)}
+.hsel-list li small{color:var(--mute);font-size:11px;display:block}
+.hsel-list li:hover{background:var(--arena-soft)}
+.hsel-list li[aria-selected="true"]{background:rgba(156,43,13,.1);color:var(--atardecer);font-weight:600}
 
-/* ---------- Condiciones ---------- */
+.inv-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;margin:32px 0 0}
+.inv-head h3{font-size:clamp(22px,3vw,30px)}
+.price-main{background:var(--atardecer);color:#fff;border-radius:var(--radius);padding:30px 32px;margin-top:20px;text-align:center}
+.price-main .l{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.85}
+.price-main .v{font-family:var(--font-display);font-size:clamp(40px,7vw,58px);line-height:1;margin:8px 0 4px}
+.price-main .s{font-size:13px;opacity:.9}
+.price-main .grupo{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.22)}
+.price-main .grupo .l{opacity:.75}
+.price-main .grupo .v2{font-family:var(--font-display);font-size:clamp(20px,3.4vw,29px);line-height:1;margin:6px 0 3px}
+.price-main .grupo .s{opacity:.75}
+.pay{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+@media(max-width:640px){.pay{grid-template-columns:1fr}}
+.pay-card{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-left:3px solid var(--atardecer);border-radius:14px;padding:20px 22px}
+.pay-card .n{font-family:var(--font-display);font-size:12.5px;letter-spacing:.14em;color:var(--arena);text-transform:uppercase;margin-bottom:8px}
+.pay-card .amt{font-family:var(--font-display);font-size:26px;color:#fff;line-height:1.2}
+.pay-card .amt-cop{font-size:11.5px;color:rgba(230,202,178,.65);margin-top:2px}
+.pay-card p{font-size:12.5px;color:rgba(230,202,178,.7);margin:10px 0 0;line-height:1.6}
+.pay-note{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-left:3px solid var(--atardecer);border-radius:14px;padding:20px 22px;margin-top:20px;font-size:13px;color:rgba(230,202,178,.85);line-height:1.7}
+.pay-note b{color:#fff}
+.q-note{font-size:12.5px;color:rgba(230,202,178,.62);margin-top:20px;line-height:1.7;text-align:center}
+
 .acc{display:flex;flex-direction:column;gap:14px}
 .ac{background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-soft);overflow:hidden}
 .ac[open]{border-color:rgba(104,54,44,.28)}
-.ac summary{display:flex;align-items:center;gap:14px;padding:20px 24px;cursor:pointer;list-style:none;
-  font-family:var(--font-display);font-weight:400;text-transform:uppercase;letter-spacing:.02em;
-  font-size:clamp(17px,2.1vw,21px);color:var(--tierra);transition:background .2s}
+.ac summary{display:flex;align-items:center;gap:14px;padding:20px 24px;cursor:pointer;list-style:none;font-family:var(--font-display);text-transform:uppercase;font-size:clamp(17px,2.1vw,21px);color:var(--tierra)}
 .ac summary::-webkit-details-marker{display:none}
 .ac summary:hover{background:rgba(230,202,178,.24)}
-.ac summary:focus-visible{outline:2px solid var(--atardecer);outline-offset:-2px}
-.ac-ic{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
-  font-family:var(--font-display);font-size:15px;line-height:1;color:#fff}
-.ac-ic.yes{background:var(--oliva)}
-.ac-ic.no{background:var(--atardecer)}
-.ac-ic.warn{background:var(--tierra)}
-.ac-ic.info{background:var(--mute);font-style:italic}
-.ac-ar{margin-left:auto;flex:none;width:9px;height:9px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);
-  transform:rotate(45deg) translate(-2px,-2px);transition:transform .25s}
+.ac-ic{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-family:var(--font-display);font-size:15px;color:#fff}
+.ac-ic.yes{background:var(--oliva)} .ac-ic.no{background:var(--atardecer)}
+.ac-ic.warn{background:var(--tierra)} .ac-ic.info{background:var(--mute);font-style:italic}
+.ac-ar{margin-left:auto;flex:none;width:9px;height:9px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:rotate(45deg) translate(-2px,-2px);transition:transform .25s}
 .ac[open] .ac-ar{transform:rotate(225deg) translate(-2px,-2px);border-color:var(--atardecer)}
-.ac-b{padding:0 24px 22px;animation:acIn .3s ease}
-@keyframes acIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
-@media(prefers-reduced-motion:reduce){.ac-b{animation:none}.ac-ar{transition:none}}
+.ac-b{padding:0 24px 22px}
 .lst{list-style:none;padding:0;margin:0;font-size:14.5px;color:var(--ink-soft)}
 .lst li{padding:9px 0 9px 28px;position:relative;border-bottom:1px solid var(--line)}
 .lst li:last-child{border-bottom:0}
@@ -189,10 +218,8 @@ section{padding:clamp(56px,8vw,110px) 0;position:relative}
 .lst.yes li::before{content:"+";color:var(--oliva)}
 .lst.no li::before{content:"–";color:var(--atardecer)}
 .fine{font-size:13px;color:var(--mute);line-height:1.75}
-.fine p:last-child{margin-bottom:0}
 .fine strong{color:var(--tierra);font-weight:500}
 
-/* ---------- CTA + Footer ---------- */
 .cta{background:var(--atardecer);color:#fff;text-align:center}
 .cta h2{color:#fff}
 .cta p{color:rgba(255,255,255,.88);max-width:56ch;margin:16px auto 30px;font-size:17px}
@@ -202,22 +229,13 @@ footer{background:var(--tierra);color:rgba(230,202,178,.72);padding:56px 0 30px;
 footer img{height:34px;margin-bottom:22px}
 .f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;margin-bottom:40px}
 @media(max-width:760px){.f-grid{grid-template-columns:1fr;gap:26px}}
-footer h4{font-family:var(--font-display);font-weight:400;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--arena);margin:0 0 14px}
+footer h4{font-family:var(--font-display);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--arena);margin:0 0 14px}
 footer a{color:rgba(230,202,178,.72);text-decoration:none}
 footer a:hover{color:#fff}
 footer p{margin:0 0 8px;line-height:1.7}
 .f-bot{border-top:1px solid rgba(230,202,178,.16);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;font-size:11.5px;color:rgba(230,202,178,.5)}
-.credits{font-size:10.5px;color:rgba(230,202,178,.38);line-height:1.7;margin-top:18px;max-width:100%}
-.credits a{color:rgba(230,202,178,.5);text-decoration:underline}
-
-@media print{
-  .nav,.cta,.ac-ar{display:none}
-  .hero{min-height:auto}
-  body{background:#fff}
-  section{padding:24px 0;break-inside:avoid}
-  .flight,.fare,.ac{break-inside:avoid;box-shadow:none}
-  .ac-b{animation:none}
-}
+.credits{font-size:10.5px;color:rgba(230,202,178,.38);line-height:1.8;margin-top:18px}
+@media print{ .nav,.cta,.ac-ar,.hmodal-overlay,.lightbox{display:none} .hero{min-height:auto} body{background:#fff} section{padding:22px 0} .card,.ac,.fare-col,.ciclo{break-inside:avoid;box-shadow:none} }
 </style>
 </head>
 <body>
@@ -225,233 +243,165 @@ footer p{margin:0 0 8px;line-height:1.7}
 <nav class="nav">
   <div class="wrap nav-in">
     <a href="#top" aria-label="Raíces"><img src="assets/marca/logo-horizontal.png" alt="Raíces"></a>
-    <button class="nav-burger" type="button" id="nav-burger" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir el menú">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-burger" type="button" id="nav-burger" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir el menú"><span></span><span></span><span></span></button>
     <div class="nav-links" id="nav-links">
-      <a href="#vuelos">Vuelos</a>
+      <a href="#destino">Destinos</a>
+      <a href="#vuelo">Vuelo</a>
+      <a href="#hoteles">Hoteles</a>
       <a href="#inversion">Tu inversión</a>
-      <a href="#reserva">Reserva</a>
+      <a href="#condiciones">Condiciones</a>
     </div>
   </div>
 </nav>
 
 <header class="hero" id="top">
-  <img class="bg" src="assets/destinos/hero.jpg" alt="Atardecer sobre el Strip de Las Vegas">
+  <img class="bg" src="assets/destinos/hero.jpg" alt="Caribe">
   <div class="hero-in">
-    <div class="kicker">Para nuestra cliente especial, Gloria</div>
-    <h1>Las Vegas,<br>de ida y vuelta</h1>
-    <p class="sub">Dos formas de volar a Las Vegas con Copa Airlines, vía Panamá. Elija la tarifa de ida y la de regreso, y el total se ajusta solo.</p>
+    <div class="kicker">Cotización para Gloria Villegas</div>
+    <h1>Cancún o Punta Cana</h1>
+    <p class="sub">Dos destinos todo incluido para que elijas el que más te guste, entre el 28 de diciembre de 2026 y el 3 de enero de 2027. Cambia el destino, la aerolínea, la tarifa y el hotel más abajo, y el valor se calcula solo.</p>
     <div class="hero-meta">
-      <span class="pill">2 – 17 de septiembre de 2026</span>
-      <span class="pill">15 noches en Las Vegas</span>
-      <span class="pill">Copa Airlines · vía Panamá</span>
+      <span class="pill">28 dic 2026 – 3 ene 2027</span>
+      <span class="pill">4 o 5 noches, según la aerolínea</span>
+      <span class="pill">Todo incluido</span>
+      <span class="pill">2 personas</span>
     </div>
   </div>
 </header>
 
-<!-- VUELOS -->
-<section id="vuelos">
-  <div class="rot">Vuelos</div>
+<section id="destino">
+  <div class="rot">Destinos</div>
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">Tiquetes aéreos</div>
-      <h2>Ida y regreso</h2>
-      <p>Los dos tramos con Copa Airlines, con una escala en Panamá (PTY) de ambos lados. Cada tramo tiene dos tarifas — elija la que más le sirva más abajo, en «Tu inversión».</p>
+      <div class="eyebrow">Dos opciones</div>
+      <h2>Elige tu<br>destino</h2>
+      <p>Fechas parecidas, dos experiencias distintas. En cada destino tienes dos aerolíneas para elegir, y cada una trae sus propias fechas de viaje. Abajo, en Tu inversión, seleccionas todo y ves el valor exacto.</p>
     </div>
-
-    <div class="flights">
-      <div class="flight">
-        <div class="flight-top">
-          <div class="route">Medellín → Las Vegas</div>
-          <div class="when">Miércoles 2 de septiembre de 2026</div>
-        </div>
-        <div class="leg">
-          <div class="leg-row">
-            <div class="tm">03:10 pm<span>MDE</span></div>
-            <div class="line"><span class="dot a"></span><span class="dot b"></span></div>
-            <div class="tm r">10:30 pm<span>LAS</span></div>
-          </div>
-          <div class="leg-label">Escala en Panamá · 1 h 12 m</div>
-        </div>
-        <div class="flight-foot">
-          <span><b>CM 154 · CM 456</b></span>
-          <span>Operado por Copa Airlines</span>
-          <span>Duración total: 9 h 20 m</span>
-        </div>
+    <div class="ciclos">
+      <div class="ciclo">
+        <span class="mes-tag">México · Copa Airlines o Wingo</span>
+        <h3>Cancún</h3>
+        <div class="d">Vuelo directo desde Medellín, con Copa Airlines (29 dic – 2 ene, 4 noches) o Wingo (28 dic – 2 ene, 5 noches), y hotel todo incluido a elegir entre 8 opciones.</div>
       </div>
-
-      <div class="flight">
-        <div class="flight-top">
-          <div class="route">Las Vegas → Medellín</div>
-          <div class="when">Jueves 17 de septiembre de 2026</div>
-        </div>
-        <div class="leg">
-          <div class="leg-row">
-            <div class="tm">12:34 am<span>LAS</span></div>
-            <div class="line"><span class="dot a"></span><span class="dot b"></span></div>
-            <div class="tm r">10:55 am<span>MDE</span></div>
-          </div>
-          <div class="leg-label">Escala en Panamá · 30 m</div>
-        </div>
-        <div class="flight-foot">
-          <span><b>CM 253 · CM 397</b></span>
-          <span>Operado por Copa Airlines</span>
-          <span>Duración total: 8 h 21 m</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="sec-head" style="margin-bottom:26px">
-      <div class="eyebrow">Aplica a los dos tramos</div>
-      <h2>Elija cómo volar</h2>
-      <p>Las mismas dos tarifas para la ida y para el regreso. Ninguna es reembolsable — la diferencia está en el equipaje, el asiento y si el cambio de fecha tiene costo.</p>
-    </div>
-    <div class="fares">
-      <div class="fare">
-        <h3>Económica Basic</h3>
-        <span class="tag2">La más económica</span>
-        <ul>
-          <li class="no">Equipaje en bodega con costo adicional</li>
-          <li class="no">Selección de asiento con costo adicional</li>
-          <li>Ascenso PreferMembers, prioridad baja</li>
-          <li>Acumula 50% de millas ConnectMiles</li>
-          <li class="no">Cambios permitidos, con penalidad</li>
-          <li class="no">Tarifa no reembolsable</li>
-        </ul>
-      </div>
-      <div class="fare hi">
-        <h3>Económica Classic</h3>
-        <span class="tag2">Con equipaje incluido</span>
-        <ul>
-          <li>1 maleta en bodega incluida (23 kg)</li>
-          <li>Selección de asiento regular incluida</li>
-          <li>Ascenso PreferMembers, prioridad media</li>
-          <li>Acumula 100% de millas ConnectMiles</li>
-          <li>1 cambio de fecha sin penalidad</li>
-          <li class="no">Tarifa no reembolsable</li>
-        </ul>
+      <div class="ciclo">
+        <span class="mes-tag">República Dominicana · JetSmart o Wingo</span>
+        <h3>Punta Cana</h3>
+        <div class="d">Vuelo directo desde Medellín, con JetSmart (29 dic – 2 ene, 4 noches) o Wingo (29 dic – 3 ene, 5 noches), y hotel todo incluido a elegir entre 4 opciones.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- COTIZADOR -->
+<section id="vuelo" class="alt">
+  <div class="rot">Vuelo</div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Tiquete aéreo</div>
+      <h2>Con quién vuelas</h2>
+      <p>Cada destino tiene dos aerolíneas, cada una con sus propias fechas y categorías de tarifa. Abajo, en Tu inversión, eliges la combinación que prefieras.</p>
+    </div>
+    <div id="airlines"></div>
+  </div>
+</section>
+
+<section id="hoteles">
+  <div class="rot">Hoteles</div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Todo incluido</div>
+      <h2>Tu hotel en<br>cada destino</h2>
+      <p>Habitación doble, régimen todo incluido. El que corresponde a tu selección se calcula solo en Tu inversión.</p>
+    </div>
+    <h3 class="dest-h">Cancún</h3>
+    <div class="grid" id="grid-cancun"></div>
+    <h3 class="dest-h second">Punta Cana</h3>
+    <div class="grid" id="grid-puntacana"></div>
+  </div>
+</section>
+
 <section id="inversion" class="quote">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Tu inversión</div>
       <h2>Arma tu plan</h2>
-      <p>Cambie la tarifa de ida o de regreso y el total se ajusta solo.</p>
+      <p>Elige el destino, la aerolínea, la tarifa y el hotel. El valor se calcula solo.</p>
     </div>
 
-    <div class="q-grid">
-      <div class="q-panel">
-        <div class="q-sel">
-          <label for="sel-ida">Tarifa de ida · Medellín → Las Vegas</label>
-          <div class="q-opts" id="sel-ida" role="radiogroup" aria-label="Tarifa de ida"></div>
-        </div>
-        <div class="q-sel" style="margin-bottom:0">
-          <label for="sel-vta">Tarifa de regreso · Las Vegas → Medellín</label>
-          <div class="q-opts" id="sel-vta" role="radiogroup" aria-label="Tarifa de regreso"></div>
-        </div>
+    <div class="q-panel">
+      <div class="q-selgrid">
+        <div class="q-selgroup"><label>Destino</label><div class="q-opts" id="sel-destino"></div></div>
+        <div class="q-selgroup"><label>Aerolínea</label><div class="q-opts" id="sel-aero"></div></div>
+        <div class="q-selgroup"><label>Tarifa del vuelo</label><div class="q-opts" id="sel-fare"></div></div>
+        <div class="q-selgroup"><label>Hotel</label><div class="hsel" id="hsel-hotel"></div></div>
       </div>
+      <div class="q-resumen" id="q-resumen">—</div>
+    </div>
 
-      <div>
-        <div class="q-total">
-          <div class="lbl">Valor total por persona</div>
-          <div class="big" id="t-pax">—</div>
-          <div class="sm">COP · ida y vuelta</div>
-        </div>
-        <p class="q-note">Incluye los dos tiquetes aéreos con Copa Airlines, en la tarifa que elija para cada tramo. Valores en pesos colombianos, sujetos a disponibilidad al momento de confirmar.</p>
+    <div class="inv-head"><h3>Valor total</h3></div>
+
+    <div class="price-main">
+      <div class="l">Valor por persona</div>
+      <div class="v" id="v-pp">—</div>
+      <div class="s" id="v-pp-cop">—</div>
+      <div class="grupo">
+        <div class="l">Valor total del grupo · 2 personas</div>
+        <div class="v2" id="v-total">—</div>
+        <div class="s" id="v-total-cop">—</div>
       </div>
     </div>
+
+    <div id="bloque-pago"></div>
+
+    <p class="q-note">Valores para 2 personas en habitación doble, sujetos a disponibilidad al momento de confirmar.</p>
   </div>
 </section>
 
-<!-- RESERVA -->
-<section id="reserva">
-  <div class="rot">Reserva</div>
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Cómo asegurar el tiquete</div>
-      <h2>Para reservar<br>y volar</h2>
-      <p>Los tiquetes aéreos se emiten con el pago completo: no hay anticipo ni saldo pendiente.</p>
-    </div>
-
-    <div class="pay" style="grid-template-columns:repeat(auto-fit,minmax(260px,420px))">
-      <div class="pay-card">
-        <div class="n">Pago único</div>
-        <div class="amt" id="p-total">—</div>
-        <p>Por persona. El 100% del valor, para emitir los tiquetes de inmediato.</p>
-      </div>
-    </div>
-
-    <div class="alert">
-      <div class="ic">!</div>
-      <div>
-        <h3>Antes de confirmar</h3>
-        <p>Copa Airlines no bloquea el precio mostrado: la tarifa puede cambiar mientras se decide. <b>Para asegurar este valor, lo mejor es confirmar y pagar cuanto antes.</b></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONDICIONES -->
-<section class="alt">
+<section id="condiciones" class="alt">
   <div class="rot">Condiciones</div>
   <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Letra clara</div>
-      <h2>Qué incluye<br>y qué no</h2>
-    </div>
+    <div class="sec-head"><div class="eyebrow">Letra clara</div><h2>Qué incluye<br>y qué no</h2></div>
     <div class="acc">
-      <details class="ac">
+      <details class="ac" open>
         <summary><span class="ac-ic yes">+</span>El plan incluye<span class="ac-ar" aria-hidden="true"></span></summary>
         <div class="ac-b">
           <ul class="lst yes">
-            <li>Tiquete aéreo Medellín – Las Vegas, con Copa Airlines, vía Panamá</li>
-            <li>Tiquete aéreo Las Vegas – Medellín, con Copa Airlines, vía Panamá</li>
-            <li>Franquicia de equipaje según la tarifa elegida en cada tramo</li>
-            <li>Acumulación de millas ConnectMiles</li>
-            <li>Acompañamiento de Raíces por WhatsApp, antes del viaje</li>
+            <li>Tiquete aéreo Medellín–destino ida y regreso, con la aerolínea y tarifa que elijas, con impuestos</li>
+            <li>Alojamiento en el hotel de tu destino, habitación doble y régimen todo incluido, por las noches del rango de fechas de la aerolínea elegida</li>
+            <li>Traslados aeropuerto–hotel–aeropuerto en tu destino</li>
+            <li>Acompañamiento de Raíces por WhatsApp, antes y durante el viaje</li>
           </ul>
         </div>
       </details>
-
       <details class="ac">
         <summary><span class="ac-ic no">–</span>El plan no incluye<span class="ac-ar" aria-hidden="true"></span></summary>
         <div class="ac-b">
           <ul class="lst no">
-            <li>Equipaje en bodega si elige tarifa Basic (tiene costo aparte con la aerolínea)</li>
-            <li>Selección de asiento si elige tarifa Basic</li>
-            <li>Alimentación a bordo no especificada por la aerolínea</li>
+            <li>Maleta de bodega y selección de asiento en las tarifas más básicas, según la aerolínea</li>
+            <li>Tasas de entrada y salida del país destino, si aplican</li>
             <li>Seguro de asistencia médica en viaje</li>
-            <li>Visa de turismo para Estados Unidos</li>
-            <li>Hospedaje y traslados en Las Vegas</li>
-            <li>Gastos personales</li>
+            <li>Tours, excursiones y gastos fuera del hotel</li>
+            <li>Propinas y gastos personales</li>
           </ul>
         </div>
       </details>
-
       <details class="ac">
-        <summary><span class="ac-ic warn">!</span>Política de cambios y cancelación<span class="ac-ar" aria-hidden="true"></span></summary>
+        <summary><span class="ac-ic warn">!</span>Pagos y cambios<span class="ac-ar" aria-hidden="true"></span></summary>
         <div class="ac-b">
           <ul class="lst no">
-            <li><b>Tarifa Basic:</b> equipaje y selección de asiento con costo adicional, cambios permitidos con penalidad</li>
-            <li><b>Tarifa Classic:</b> 1 maleta de 23 kg incluida, 1 cambio de fecha sin penalidad</li>
-            <li><b>Las dos tarifas:</b> no son reembolsables una vez emitido el tiquete</li>
+            <li>Con el pago de la reserva (o del 100%, según el hotel elegido) se emiten los tiquetes aéreos y se confirma el hotel</li>
+            <li>Los tiquetes, una vez emitidos, no son reembolsables; los cambios aplican cargo según la aerolínea y la tarifa</li>
+            <li>Algunos hoteles de esta cotización tienen tarifa no reembolsable — en esos casos el pago es 100% por adelantado, sin reserva ni saldo</li>
+            <li>En los hoteles con cancelación gratuita, el saldo se paga 10 días antes de esa fecha límite</li>
+            <li>Todo está sujeto a disponibilidad al momento de confirmar</li>
           </ul>
         </div>
       </details>
-
       <details class="ac">
-        <summary><span class="ac-ic info">i</span>Vigencia, documentación y notas<span class="ac-ar" aria-hidden="true"></span></summary>
+        <summary><span class="ac-ic info">i</span>Documentación y vigencia<span class="ac-ar" aria-hidden="true"></span></summary>
         <div class="ac-b">
           <div class="fine">
-            <p><strong>Vigencia:</strong> esta cotización se elaboró el 16 de julio de 2026. Las tarifas de Copa Airlines están sujetas a disponibilidad y a cambios sin previo aviso hasta el momento de la confirmación y el pago.</p>
-            <p><strong>Documentación:</strong> los ciudadanos colombianos requieren pasaporte con vigencia mínima de seis meses y visa de turismo vigente para ingresar a Estados Unidos. Es responsabilidad de cada viajero verificar y cumplir los requisitos migratorios y sanitarios del destino.</p>
-            <p><strong>Equipaje y cambios:</strong> la franquicia de equipaje y las condiciones de cambio corresponden a las políticas de Copa Airlines vigentes al momento de la compra.</p>
+            <p><strong>Documentación:</strong> pasaporte vigente con al menos 6 meses de validez. Ni México ni República Dominicana exigen visa a colombianos como turistas para estadías cortas, pero te recomendamos confirmar los requisitos vigentes antes de viajar.</p>
+            <p><strong>Vigencia:</strong> esta cotización se envía el 22 de agosto de 2026 y está sujeta a cambios y disponibilidad por parte de las aerolíneas y los hoteles — se recomienda confirmar lo antes posible.</p>
           </div>
         </div>
       </details>
@@ -462,10 +412,10 @@ footer p{margin:0 0 8px;line-height:1.7}
 <section class="cta">
   <div class="wrap">
     <div class="eyebrow" style="color:rgba(255,255,255,.7)">¿Lista?</div>
-    <h2>Reservar y pagar</h2>
-    <p>Al tocar el botón se abre WhatsApp con la tarifa de ida, la de regreso y el valor total ya escritos. Solo lo envía y seguimos por ahí.</p>
+    <h2>Reservar por WhatsApp</h2>
+    <p>Al tocar el botón se abre WhatsApp con tu plan ya escrito: destino, aerolínea, tarifa, hotel y el valor total. Solo lo envías y seguimos por ahí.</p>
     <a class="btn js-wa" href="https://wa.me/573122738001" target="_blank" rel="noopener">Reservar por WhatsApp</a>
-    <p style="font-size:13.5px;margin-top:26px;opacity:.75">¿Prefiere ajustar algo antes? Escríbanos y lo resolvemos.</p>
+    <p style="font-size:13.5px;margin-top:26px;opacity:.75">¿Prefieres ajustar algo antes? Escríbenos y lo resolvemos.</p>
   </div>
 </section>
 
@@ -473,10 +423,7 @@ footer p{margin:0 0 8px;line-height:1.7}
   <div class="wrap">
     <img src="assets/marca/logo-blanco.png" alt="Raíces">
     <div class="f-grid">
-      <div>
-        <h4>Raíces</h4>
-        <p>Cumplimos lo que prometemos.<br>Turismo auténtico y con esencia.</p>
-      </div>
+      <div><h4>Raíces</h4><p>Cumplimos lo que prometemos.<br>Turismo auténtico y con esencia.</p></div>
       <div>
         <h4>Contacto</h4>
         <p><a href="https://wa.me/573122738001" target="_blank" rel="noopener">WhatsApp +57 312 273 8001</a></p>
@@ -486,102 +433,360 @@ footer p{margin:0 0 8px;line-height:1.7}
       <div>
         <h4>Legal</h4>
         <p>RNT No. 92495</p>
-        <p>Lemont Group S.A.</p>
+        <p>Lemont Group S.A.S.</p>
         <p><a href="https://raices.travel/terminos-y-condiciones.html" target="_blank" rel="noopener">Términos y condiciones</a></p>
         <p><a href="https://raices.travel/tratamiento-de-datos.html" target="_blank" rel="noopener">Tratamiento de datos</a></p>
       </div>
     </div>
     <div class="f-bot">
-      <span>Cotización preparada para Gloria Villegas · 16 de julio de 2026</span>
+      <span>Cotización preparada para Gloria Villegas · 22 de agosto de 2026</span>
       <span>Documento privado. No constituye reserva confirmada.</span>
     </div>
-    <p class="credits">
-      <b style="color:rgba(230,202,178,.55);font-weight:500">Créditos fotográficos.</b>
-      Imagen de destino vía Wikimedia Commons: Las Vegas Strip at Sunset © Gayinspandex1 (CC BY-SA 4.0).
-      Las marcas y logotipos citados pertenecen a sus respectivos titulares.
-    </p>
+    <p class="credits"><b style="color:rgba(230,202,178,.55);font-weight:500">Créditos.</b> Fotos y videos de los hoteles: cortesía de cada propiedad y de sus sitios y motores de reserva oficiales. Las marcas y logotipos citados pertenecen a sus respectivos titulares.</p>
   </div>
 </footer>
 
-<script>
-const money = n => "$" + n.toLocaleString("es-CO");
+<div class="hmodal-overlay" id="hmodal-overlay">
+  <div class="hmodal">
+    <button class="hmodal-close" id="hmodal-close" aria-label="Cerrar">&times;</button>
+    <h3 id="hmodal-title">Hotel</h3>
+    <p id="hmodal-chain" style="font-size:13px;color:var(--mute);margin:6px 0 0"></p>
+    <div id="hmodal-body"></div>
+  </div>
+</div>
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close" aria-label="Cerrar">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
 
-/* Total por persona, en COP, para cada combinación de tarifa de ida y de regreso.
-   Ya incluye la comisión de $200.000 COP. Se publica ya sumado a propósito:
-   el cliente no ve el valor por trayecto. */
-const PRECIOS = {
-  "basica|basica": 2384618,
-  "basica|classic": 2685610,
-  "classic|basica": 2685610,
-  "classic|classic": 2986602
+<script>
+const TRM = 3048.12, MARGEN = 0.94, PAX = 2, TRASLADO_PP = 30;
+const moneyUSD = n => "US$" + n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+const moneyCOP = n => "$" + (Math.round(n/1000)*1000).toLocaleString("es-CO") + " COP";
+
+const AEROLINEAS = {
+  copa:{ nombre:"Copa Airlines", destTag:"Cancún", ruta:"Medellín ✈ Cancún · sin escalas", noches:4,
+    legs:"29 de diciembre de 2026 al 2 de enero de 2027 · 4 noches",
+    fares:[
+      {k:"basica", label:"Básica", ftag:"Lo esencial", neto:2419507,
+       inc:[["y","1 artículo personal (bajo el asiento)"],["n","Sin equipaje de mano"],["n","Sin maleta de bodega"],["n","Tarifa no reembolsable"]]},
+      {k:"classic", label:"Classic", ftag:"La más elegida", best:true, neto:2734786,
+       inc:[["y","1 artículo personal y 1 equipaje de mano"],["y","1 maleta de bodega (23 kg)"],["y","Selección de asiento estándar"],["n","Tarifa no reembolsable"]]}
+    ]},
+  wingo_can:{ nombre:"Wingo", destTag:"Cancún", ruta:"Medellín ✈ Cancún · sin escalas", noches:5,
+    legs:"28 de diciembre de 2026 al 2 de enero de 2027 · 5 noches",
+    fares:[
+      {k:"basic", label:"Go Basic", ftag:"Vuela ligero", netoUSD:559.46,
+       inc:[["y","1 morral pequeño o cartera (40×35×25 cm)"],["n","Sin equipaje de mano"],["n","Sin maleta de bodega"],["n","Sin cambios"]]},
+      {k:"plus", label:"Go Plus", ftag:"Vuela con más", best:true, netoUSD:668.96,
+       inc:[["y","Maleta de bodega hasta 23 kg"],["y","Equipaje de mano hasta 12 kg"],["y","Check-in en aeropuerto y silla"],["y","1 cambio de vuelo (Flex-1)"]]}
+    ]},
+  jetsmart:{ nombre:"JetSmart", destTag:"Punta Cana", ruta:"Medellín ✈ Punta Cana · sin escalas", noches:4,
+    legs:"29 de diciembre de 2026 al 2 de enero de 2027 · 4 noches",
+    fares:[
+      {k:"basic", label:"Basic", ftag:"Lo esencial", neto:1794155,
+       inc:[["y","1 artículo personal (bajo el asiento)"],["n","Sin equipaje de mano"],["n","Sin maleta de bodega"],["n","Sin selección de asiento"],["n","Tarifa no reembolsable"]]},
+      {k:"light", label:"Light", ftag:"Un poco más", neto:2213880,
+       inc:[["y","1 artículo personal"],["y","1 equipaje de mano (10 kg)"],["n","Sin maleta de bodega"],["n","Tarifa no reembolsable"]]},
+      {k:"smart", label:"Smart", ftag:"La más elegida", best:true, neto:2344140,
+       inc:[["y","1 artículo personal y 1 equipaje de mano"],["y","1 maleta de bodega (23 kg)"],["y","Selección de asiento estándar"],["n","Tarifa no reembolsable"]]},
+      {k:"fullflex", label:"Full Flex", ftag:"Máxima flexibilidad", neto:2452690,
+       inc:[["y","Equipaje de mano y maleta de bodega (23 kg)"],["y","Selección de asiento premium"],["y","Cambios sin costo"],["y","Embarque prioritario"]]}
+    ]},
+  wingo_puj:{ nombre:"Wingo", destTag:"Punta Cana", ruta:"Medellín ✈ Punta Cana · sin escalas", noches:5,
+    legs:"29 de diciembre de 2026 al 3 de enero de 2027 · 5 noches",
+    fares:[
+      {k:"basic", label:"Go Basic", ftag:"Vuela ligero", netoUSD:522.46,
+       inc:[["y","1 morral pequeño o cartera (40×35×25 cm)"],["n","Sin equipaje de mano"],["n","Sin maleta de bodega"],["n","Sin cambios"]]},
+      {k:"standard", label:"Go Standard", ftag:"Un poco más", netoUSD:607.86,
+       inc:[["y","1 morral pequeño"],["y","Equipaje de mano hasta 10 kg"],["n","Sin maleta de bodega"],["n","Sin cambios"]]},
+      {k:"plus", label:"Go Plus", ftag:"La más elegida", best:true, netoUSD:653.86,
+       inc:[["y","Equipaje de mano hasta 12 kg"],["y","Maleta de bodega hasta 23 kg"],["y","Check-in en aeropuerto y silla"],["y","1 cambio de vuelo (Flex-1)"]]},
+      {k:"extra", label:"Go Extra", ftag:"Máximo equipaje", netoUSD:667.00,
+       inc:[["y","Equipaje de mano y maleta de bodega ampliados"],["y","Check-in y selección de silla prioritarios"],["y","Embarque prioritario"],["y","Cambios flexibles"]]}
+    ]}
 };
 
-const state = { ida: "basica", vuelta: "basica" };
+const HOTELES = [
+  // Cancún
+  {slug:"ocean-spa", destino:"cancun", destLabel:"Cancún", nombre:"Ocean Spa Hotel All Inclusive", cadena:"Sunset World Resorts · Cancún", est:4,
+   video:"lqAGw2yLbJc", fotos:25, hab:{nombre:"Habitación Standard", fotos:0},
+   reembolsable:true, cancelTxt4:"Cancelación gratuita hasta el 22 de diciembre de 2026", cancelTxt5:"Cancelación gratuita hasta el 21 de diciembre de 2026",
+   saldoFecha4:"12 de diciembre de 2026", saldoFecha5:"11 de diciembre de 2026",
+   precio4:1503.95, precio5:1879.94,
+   desc:"Resort todo incluido sobre la playa de arena blanca de la Zona Hotelera, a solo 10 minutos del centro de Cancún. Cuenta con piscinas al aire libre, spa de servicio completo y varios restaurantes y bares a la carta. Sus habitaciones, con acabados en madera, ofrecen vista al mar, alberca o jardín desde terraza o balcón."},
+  {slug:"oasis-palm", destino:"cancun", destLabel:"Cancún", nombre:"Grand Oasis Palm All Inclusive", cadena:"Oasis Hoteles · Cancún", est:5,
+   video:"E8zmHX5o084", fotos:23, hab:{nombre:"Standard Limited", fotos:0},
+   reembolsable:false,
+   precio4:1611.49, precio5:1900.79,
+   desc:"Uno de los resorts más completos para familias en Cancún: zona infantil exclusiva con parque acuático, actividades supervisadas todo el día y playa de oleaje suave ideal para menores. Cuenta con 7 restaurantes y 9 bares — entre ellos Maki Taco y The White Box — además de spa, gimnasio y beach club propio."},
+  {slug:"grand-oasis-cancun", destino:"cancun", destLabel:"Cancún", nombre:"Grand Oasis Cancun", cadena:"Oasis Hoteles · Cancún", est:5,
+   video:"LjGM57_AEZs", fotos:42, hab:{nombre:"Grand Standard", fotos:0},
+   reembolsable:false,
+   precio4:1675.08, precio5:1966.54,
+   desc:"Pensado para quien busca entretenimiento de alto nivel dentro del resort: espectáculos estilo Las Vegas, Red Circus, Red Casino y el club nocturno Kinky, más golf de 9 hoyos. Ofrece 16 restaurantes y 17 bares, con propuestas premiadas como Benazuza y Careyes, y spa Sensoria."},
+  {slug:"sens-cancun", destino:"cancun", destLabel:"Cancún", nombre:"The Sens Cancun By Oasis", cadena:"Oasis Hoteles · Cancún", est:5,
+   video:"2kb8THlVokk", fotos:55, hab:{nombre:"Sens Standard Limited View", fotos:0},
+   reembolsable:false,
+   precio4:1869.08, precio5:2237.26,
+   desc:"Se diferencia por su gastronomía de autor dentro del mismo hotel, con 11 restaurantes y 9 bares —entre ellos Careyes, The White Box y Maki Taco— y una oferta de habitaciones que sube hasta las suites Sian Ka'an para quienes buscan más espacio y un descanso premium."},
+  {slug:"krystal-grand", destino:"cancun", destLabel:"Cancún", nombre:"Krystal Grand Cancun All Inclusive", cadena:"Krystal · Cancún", est:5,
+   video:"Ivo51SdLfN0", fotos:26, hab:{nombre:"Doble Deluxe Dos Camas", fotos:1},
+   reembolsable:false,
+   precio4:2148.98, precio5:2633.18,
+   desc:"Se diferencia por su propuesta Altitude (con costo adicional) para un servicio más exclusivo, una oferta gastronómica de 8 espacios y 6 bares que va de lo casual a lo fine dining —The Grill, Le Délice, O— y habitaciones que apuntan a ocean front para la mejor vista de Cancún."},
+  {slug:"riu-cancun", destino:"cancun", destLabel:"Cancún", nombre:"Riu Cancun - Adults Only - All Inclusive", cadena:"Riu Hoteles · Cancún", est:5,
+   video:"zX7p4LAA8KQ", fotos:47, hab:{nombre:"Double Room With Terrace", fotos:0},
+   reembolsable:true, cancelTxt4:"Cancelación gratuita hasta el 25 de diciembre de 2026", cancelTxt5:"Cancelación gratuita hasta el 24 de diciembre de 2026",
+   saldoFecha4:"15 de diciembre de 2026", saldoFecha5:"14 de diciembre de 2026",
+   precio4:2306.62, precio5:2883.27,
+   desc:"Todo incluido 24 horas, solo para adultos, con inventario de habitaciones y suites orientado a vistas al Caribe. Ofrece 7 restaurantes y 5 bares —Kulinarium, Kawachi y La Toscana entre ellos— y una gastronomía que combina buffet con cenas temáticas sin fricción."},
+  {slug:"riu-ventura", destino:"cancun", destLabel:"Cancún", nombre:"Riu Ventura All Inclusive", cadena:"Riu Hoteles · Cancún", est:5,
+   video:null, fotos:40, hab:{nombre:"Doble Vista Parcial", fotos:5},
+   reembolsable:true, cancelTxt4:"Cancelación gratuita hasta el 25 de diciembre de 2026", cancelTxt5:"Cancelación gratuita hasta el 24 de diciembre de 2026",
+   saldoFecha4:"15 de diciembre de 2026", saldoFecha5:"14 de diciembre de 2026",
+   precio4:2404.77, precio5:3005.95,
+   desc:"El resort más reciente de Riu en Cancún, todo incluido 24 horas frente a Playa Delfines, con habitaciones de estilo contemporáneo. Ofrece restaurantes de especialidades —Kaori (asiático), Rimini (italiano) y Agave (mexicano)— además de una piscina en el sexto piso con skybar y club infantil RIULand."},
+  {slug:"royalton-chic-cancun", destino:"cancun", destLabel:"Cancún", nombre:"Royalton CHIC Cancun All-Inclusive - Adults Only", cadena:"Royalton · Cancún", est:5,
+   video:"3Rj4OdvqdFU", fotos:35, hab:{nombre:"Junior Suite Con Vista", fotos:0},
+   reembolsable:true, cancelTxt4:"Cancelación gratuita hasta el 26 de diciembre de 2026", cancelTxt5:"Cancelación gratuita hasta el 25 de diciembre de 2026",
+   saldoFecha4:"16 de diciembre de 2026", saldoFecha5:"15 de diciembre de 2026",
+   precio4:2484.76, precio5:3105.98,
+   desc:"Solo para adultos, con ambiente social y de fiesta controlada. Su diferencial es el Level 18 Rooftop para vivir Cancún desde arriba, con 9 restaurantes y 6 bares —Hunter Steakhouse, Vespa Ristorante y Chopstick entre ellos— y la opción de upgrade Diamond Club™ para una experiencia más exclusiva."},
+  // Punta Cana
+  {slug:"grand-sirenis", destino:"puntacana", destLabel:"Punta Cana", nombre:"Grand Sirenis Punta Cana Resort All Inclusive", cadena:"Sirenis Hotels · Uvero Alto", est:5,
+   video:"lupJTsKjDrU", fotos:39, hab:{nombre:"Double Room", fotos:9},
+   reembolsable:true, cancelTxt4:"Cancelación gratuita hasta el 26 de diciembre de 2026", cancelTxt5:"Cancelación gratuita hasta el 26 de diciembre de 2026",
+   saldoFecha4:"16 de diciembre de 2026", saldoFecha5:"16 de diciembre de 2026",
+   precio4:1972.66, precio5:2465.83,
+   desc:"Resort todo incluido frente al mar en Uvero Alto, ideal para familias, parejas y amigos, con un parque acuático de 12.000 m² con toboganes y zona infantil, además de 2 piscinas grandes y 2 para niños. Ofrece 8 restaurantes temáticos y 13 bares, incluyendo discoteca y casino."},
+  {slug:"tropical-deluxe", destino:"puntacana", destLabel:"Punta Cana", nombre:"Tropical Deluxe Princess", cadena:"Princess Hotels · Bávaro", est:5,
+   video:"_ScTs_YDZsw", fotos:35, hab:{nombre:"Tropical Deluxe", fotos:4},
+   reembolsable:true, cancelTxt4:"Cancelación gratuita hasta el 15 de diciembre de 2026", cancelTxt5:"Cancelación gratuita hasta el 15 de diciembre de 2026",
+   saldoFecha4:"5 de diciembre de 2026", saldoFecha5:"5 de diciembre de 2026",
+   precio4:2102.52, precio5:2628.15,
+   desc:"Todo incluido 24 horas más el Sports Bar 24h para mantener el plan activo a cualquier hora. Ofrece 9 restaurantes y 10 bares, entre ellos el Restaurante Gourmet La Cava, Mediterráneo Restaurant y el asiático Tao (con reservación), y la opción de subir de nivel con el Paquete VIP Deluxe."},
+  {slug:"riu-republica", destino:"puntacana", destLabel:"Punta Cana", nombre:"Riu Republica - Adults Only - All Inclusive", cadena:"Riu Hoteles · Punta Cana", est:5,
+   video:"Izs8DafmzEA", fotos:37, hab:{nombre:"Doble Standard", fotos:4},
+   reembolsable:true, cancelTxt4:"Cancelación gratuita hasta el 25 de diciembre de 2026", cancelTxt5:"Cancelación gratuita hasta el 25 de diciembre de 2026",
+   saldoFecha4:"15 de diciembre de 2026", saldoFecha5:"15 de diciembre de 2026",
+   precio4:2220.00, precio5:2775.00,
+   desc:"Pensado para un viaje con ambiente y movimiento: Todo Incluido 24 horas, acceso a Splash Water World y el sello RIU Party. Ofrece 9 restaurantes y 8 bares —Kulinarium, Quisqueya y Kaori entre ellos— con varias piscinas, discoteca y deportes acuáticos no motorizados."},
+  {slug:"royalton-chic-puntacana", destino:"puntacana", destLabel:"Punta Cana", nombre:"Royalton CHIC Punta Cana All-Inclusive Adults Only", cadena:"Royalton · Uvero Alto", est:5,
+   video:"Clt5QFzdddE", fotos:20, hab:{nombre:"Luxury Room", fotos:5},
+   reembolsable:true, cancelTxt4:"Cancelación gratuita hasta el 27 de diciembre de 2026", cancelTxt5:"Cancelación gratuita hasta el 27 de diciembre de 2026",
+   saldoFecha4:"17 de diciembre de 2026", saldoFecha5:"17 de diciembre de 2026",
+   precio4:2253.65, precio5:2817.06,
+   desc:"Frente al mar en Uvero Alto, Royalton CHIC es un resort todo incluido exclusivo para adultos, pensado para una escapada elegante en pareja. Sus piscinas de borde infinito, su playa privada de arena blanca y sus restaurantes de especialidad —desde cocina marroquí hasta gastronomía internacional— crean un ambiente sofisticado y relajado, con spa y casino."}
+];
 
-function radios(id, group, items) {
-  document.getElementById(id).innerHTML = items.map(i => `
-    <label class="q-opt">
-      <input type="radio" name="${group}" value="${i.id}" ${state[group] === i.id ? "checked" : ""}>
-      <span><b>${i.t}</b><em>${i.s}</em></span>
-    </label>`).join("");
-  document.querySelectorAll(`input[name="${group}"]`).forEach(r => {
-    r.addEventListener("change", () => { state[group] = r.value; renderAll(); });
-  });
+const DESTINOS = {
+  cancun:{ key:"cancun", nombre:"Cancún", aerolineasKeys:["copa","wingo_can"] },
+  puntacana:{ key:"puntacana", nombre:"Punta Cana", aerolineasKeys:["jetsmart","wingo_puj"] }
+};
+
+const state = { destino:"cancun", aero:"copa", fare:"classic", hotel:"ocean-spa" };
+
+const estrellas = n => "★".repeat(n);
+const destinoActual = () => DESTINOS[state.destino];
+const hotelesDestino = key => HOTELES.filter(h => h.destino === key);
+const FOTO = (h,i) => "assets/hoteles/" + h.slug + "/" + i + ".jpg";
+const FOTOHAB = (h,i) => "assets/hoteles/" + h.slug + "/hab/" + i + ".jpg";
+
+document.getElementById("airlines").innerHTML = Object.values(AEROLINEAS).map(a => `
+  <div class="air-block">
+    <div class="air-head"><h3>${a.nombre}</h3><span class="air-tag">${a.destTag}</span><span class="air-route">${a.ruta}</span></div>
+    <div class="air-legs">${a.legs}</div>
+    <div class="fares c${a.fares.length}">
+      ${a.fares.map(f => `
+        <div class="fare-col ${f.best?"best":""}">
+          <h4>${f.label}</h4><span class="ftag">${f.ftag}</span>
+          <ul>${f.inc.map(i => `<li class="${i[0]}">${i[1]}</li>`).join("")}</ul>
+        </div>`).join("")}
+    </div>
+  </div>`).join("");
+
+function hotelCardHTML(h){
+  const media = h.video
+    ? `<div class="card-video"><span class="badge">${h.destLabel}</span><span class="badge ${h.reembolsable?"refund":"norefund"}" style="left:auto;right:10px">${h.reembolsable?"Reembolsable":"No reembolsable"}</span><iframe src="https://www.youtube-nocookie.com/embed/${h.video}?rel=0" title="Video del ${h.nombre}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`
+    : `<button class="card-img" type="button" data-gal="${h.slug}" aria-label="Ver fotos de ${h.nombre}"><span class="badge">${h.destLabel}</span><span class="badge ${h.reembolsable?"refund":"norefund"}" style="left:auto;right:10px">${h.reembolsable?"Reembolsable":"No reembolsable"}</span><img src="${FOTO(h,1)}" alt="${h.nombre}" loading="lazy"></button>`;
+  const desde = h.video ? 1 : 2;
+  const thumbs = h.fotos > 0
+    ? `<div class="mini-gal">${[0,1,2,3].map(i =>
+        `<button type="button" data-gal="${h.slug}" aria-label="Ver fotos de ${h.nombre}"><img src="${FOTO(h,desde+i)}" alt="${h.nombre}" loading="lazy"></button>`).join("")}</div>`
+    : "";
+  const habThumbs = h.hab.fotos
+    ? `<div class="mini-gal">${Array.from({length:Math.min(4,h.hab.fotos)},(_,i) =>
+        `<button type="button" data-gal="${h.slug}" aria-label="Ver la habitación"><img src="${FOTOHAB(h,i+1)}" alt="${h.hab.nombre}" loading="lazy"></button>`).join("")}</div>
+       <div class="hab-note">Esta es la habitación o una similar.</div>`
+    : `<div class="hab-note">Muy pronto sumamos más fotos de esta habitación — mientras tanto puedes ver las fotos y el video del hotel arriba.</div>`;
+  const galLink = h.fotos > 0 ? `<button class="gal-link" type="button" data-gal="${h.slug}">Ver las ${h.fotos + h.hab.fotos} fotos →</button>` : "";
+  return `
+  <article class="card">
+    ${media}
+    <div class="card-b">
+      <h3>${h.nombre}</h3>
+      <div class="stars">${estrellas(h.est)}</div>
+      <div class="hmeta">${h.cadena}</div>
+      <p class="hdesc">${h.desc}</p>
+      ${thumbs}
+      <div class="hab-block">
+        <div class="hab-h">Tu habitación</div>
+        <div class="hab-name">${h.hab.nombre}</div>
+        ${habThumbs}
+      </div>
+      ${galLink}
+    </div>
+  </article>`;
+}
+document.getElementById("grid-cancun").innerHTML = hotelesDestino("cancun").map(hotelCardHTML).join("");
+document.getElementById("grid-puntacana").innerHTML = hotelesDestino("puntacana").map(hotelCardHTML).join("");
+document.querySelectorAll("[data-gal]").forEach(el => el.addEventListener("click", e => { e.preventDefault(); openGallery(el.dataset.gal); }));
+
+const ov = document.getElementById("hmodal-overlay");
+function openGallery(slug){
+  const h = HOTELES.find(x => x.slug === slug); if(!h) return;
+  document.getElementById("hmodal-title").textContent = h.nombre;
+  document.getElementById("hmodal-chain").textContent = estrellas(h.est) + " · " + h.cadena;
+  const hotelImgs = Array.from({length:h.fotos},(_,i) => `<img src="${FOTO(h,i+1)}" loading="lazy" alt="${h.nombre}">`).join("");
+  const habImgs = h.hab.fotos
+    ? `<div class="hm-sec">La habitación · ${h.hab.nombre}</div>
+       <div class="hm-sub">Esta es la habitación o una similar.</div>
+       <div class="hm-gal">${Array.from({length:h.hab.fotos},(_,i) => `<img src="${FOTOHAB(h,i+1)}" loading="lazy" alt="${h.hab.nombre}">`).join("")}</div>`
+    : "";
+  document.getElementById("hmodal-body").innerHTML =
+    `<div class="hm-sec">El hotel</div><div class="hm-gal">${hotelImgs}</div>` + habImgs;
+  document.querySelectorAll("#hmodal-body img").forEach(im => im.addEventListener("click", () => {
+    document.getElementById("lightbox-img").src = im.src;
+    document.getElementById("lightbox").classList.add("open");
+  }));
+  ov.classList.add("open");
+}
+document.getElementById("hmodal-close").addEventListener("click", () => ov.classList.remove("open"));
+ov.addEventListener("click", e => { if(e.target.id === "hmodal-overlay") ov.classList.remove("open"); });
+document.getElementById("lb-close").addEventListener("click", () => document.getElementById("lightbox").classList.remove("open"));
+document.getElementById("lightbox").addEventListener("click", e => { if(e.target.id === "lightbox") e.currentTarget.classList.remove("open"); });
+addEventListener("keydown", e => { if(e.key === "Escape"){ ov.classList.remove("open"); document.getElementById("lightbox").classList.remove("open"); } });
+
+const pill = (name,val,label,checked) =>
+  `<label class="q-opt"><input type="radio" name="${name}" value="${val}" ${checked?"checked":""}><span>${label}</span></label>`;
+
+function renderDestino(){
+  document.getElementById("sel-destino").innerHTML = Object.values(DESTINOS).map(d =>
+    pill("destino", d.key, d.nombre, state.destino === d.key)).join("");
+  document.querySelectorAll('input[name="destino"]').forEach(r => r.addEventListener("change", () => {
+    state.destino = r.value;
+    const d = destinoActual();
+    state.aero = d.aerolineasKeys[0];
+    const fares = AEROLINEAS[state.aero].fares;
+    state.fare = (fares.find(f => f.best) || fares[0]).k;
+    state.hotel = hotelesDestino(state.destino)[0].slug;
+    renderAero(); renderFare(); buildHsel(); render();
+  }));
+}
+function renderAero(){
+  const d = destinoActual();
+  document.getElementById("sel-aero").innerHTML = d.aerolineasKeys.map(k =>
+    pill("aero", k, AEROLINEAS[k].nombre, state.aero === k)).join("");
+  document.querySelectorAll('input[name="aero"]').forEach(r => r.addEventListener("change", () => {
+    state.aero = r.value;
+    const fares = AEROLINEAS[state.aero].fares;
+    if(!fares.some(f => f.k === state.fare)) state.fare = (fares.find(f => f.best) || fares[0]).k;
+    renderFare(); render();
+  }));
+}
+function renderFare(){
+  const fares = AEROLINEAS[state.aero].fares;
+  document.getElementById("sel-fare").innerHTML = fares.map(f => pill("fare", f.k, f.label, state.fare === f.k)).join("");
+  document.querySelectorAll('input[name="fare"]').forEach(r => r.addEventListener("change", () => { state.fare = r.value; render(); }));
+}
+function buildHsel(){
+  const lista = hotelesDestino(state.destino);
+  if(!lista.some(h => h.slug === state.hotel)) state.hotel = lista[0].slug;
+  const cur = lista.find(h => h.slug === state.hotel);
+  const el = document.getElementById("hsel-hotel");
+  el.innerHTML =
+    `<button class="hsel-btn" type="button" aria-haspopup="listbox" aria-expanded="false"><b>${cur.nombre}</b><small>${estrellas(cur.est)} · ${cur.hab.nombre} · ${cur.reembolsable?"reembolsable":"no reembolsable"}</small></button>
+     <ul class="hsel-list" role="listbox">${lista.map(h =>
+       `<li role="option" data-val="${h.slug}" aria-selected="${h.slug===state.hotel}"><b>${h.nombre}</b><small>${estrellas(h.est)} · ${h.hab.nombre}</small></li>`).join("")}</ul>`;
+  const btn = el.querySelector(".hsel-btn"), ul = el.querySelector(".hsel-list");
+  btn.addEventListener("click", () => { const o = ul.classList.toggle("open"); btn.setAttribute("aria-expanded", o); });
+  ul.querySelectorAll("li").forEach(li => li.addEventListener("click", () => {
+    ul.classList.remove("open"); btn.setAttribute("aria-expanded","false");
+    state.hotel = li.dataset.val; buildHsel(); render();
+  }));
+  document.addEventListener("click", e => { if(!el.contains(e.target)){ ul.classList.remove("open"); btn.setAttribute("aria-expanded","false"); } });
 }
 
-function renderRadios() {
-  const opts = [
-    { id: "basica", t: "Basic", s: "equipaje con costo" },
-    { id: "classic", t: "Classic", s: "1 maleta incluida" }
-  ];
-  radios("sel-ida", "ida", opts);
-  radios("sel-vta", "vuelta", opts);
+function calc(){
+  const d = destinoActual(), air = AEROLINEAS[state.aero], fare = air.fares.find(f => f.k === state.fare);
+  const hotel = HOTELES.find(h => h.slug === state.hotel);
+  const vueloUSDpp = fare.netoUSD ? fare.netoUSD/MARGEN : (fare.neto/MARGEN)/TRM;
+  const vueloUSD = vueloUSDpp * PAX;
+  const hotelUSD = air.noches === 5 ? hotel.precio5 : hotel.precio4;
+  const traslado = TRASLADO_PP * PAX;
+  const servicios = hotelUSD + traslado;
+  const totalUSD = vueloUSD + servicios;
+  const totalPP = totalUSD / PAX;
+  let reservaUSD, saldoUSD, upfront;
+  if(hotel.reembolsable){
+    reservaUSD = vueloUSD + 0.22*servicios;
+    saldoUSD = totalUSD - reservaUSD;
+    upfront = false;
+  } else {
+    reservaUSD = totalUSD; saldoUSD = 0; upfront = true;
+  }
+  const saldoFecha = air.noches === 5 ? hotel.saldoFecha5 : hotel.saldoFecha4;
+  return { d, air, fare, hotel, totalUSD, totalPP, reservaUSD, saldoUSD, upfront, saldoFecha };
 }
 
-function renderQuote() {
-  const total = PRECIOS[`${state.ida}|${state.vuelta}`];
-  const nombre = id => id === "basica" ? "Basic" : "Classic";
+function render(){
+  const r = calc();
+  document.getElementById("v-pp").textContent = moneyUSD(r.totalPP);
+  document.getElementById("v-pp-cop").textContent = "≈ " + moneyCOP(r.totalPP*TRM);
+  document.getElementById("v-total").textContent = moneyUSD(r.totalUSD);
+  document.getElementById("v-total-cop").textContent = "≈ " + moneyCOP(r.totalUSD*TRM);
 
-  document.getElementById("t-pax").textContent = money(total);
-  document.getElementById("p-total").textContent = money(total);
+  document.getElementById("bloque-pago").innerHTML = r.upfront
+    ? `<div class="pay-note"><b>Pago 100% por adelantado.</b> El hotel que elegiste tiene tarifa no reembolsable, así que no aplica reserva parcial: el valor total se paga completo para dejar todo confirmado y emitir los tiquetes.</div>`
+    : `<div class="pay">
+        <div class="pay-card"><div class="n">Reserva para separar hoy</div><div class="amt">${moneyUSD(r.reservaUSD)}</div>
+          <div class="amt-cop">≈ ${moneyCOP(r.reservaUSD*TRM)}</div>
+          <p>Con esto quedan emitidos los tiquetes y confirmado el hotel.</p></div>
+        <div class="pay-card"><div class="n">Saldo restante</div><div class="amt">${moneyUSD(r.saldoUSD)}</div>
+          <div class="amt-cop">≈ ${moneyCOP(r.saldoUSD*TRM)}</div>
+          <p>Se paga antes del ${r.saldoFecha}, 10 días antes de la fecha de cancelación gratuita del hotel.</p></div>
+      </div>`;
+
+  document.getElementById("q-resumen").innerHTML =
+    `<b>${r.d.nombre}</b>, ${r.hotel.nombre} (${r.hotel.hab.nombre}) · vuelo <b>${r.air.nombre}</b>, tarifa <b>${r.fare.label}</b> · ${r.air.legs}.`;
 
   const msg =
-    `Hola Raíces, soy Gloria. Quiero reservar y pagar el tiquete a Las Vegas del 2 al 17 de septiembre de 2026, con estas condiciones:\n\n` +
-    `• Vuelo de ida: Económica ${nombre(state.ida)}\n` +
-    `• Vuelo de regreso: Económica ${nombre(state.vuelta)}\n\n` +
-    `Valor total por persona: ${money(total)} COP\n\n` +
-    `¿Cómo hago el pago?`;
-
-  document.querySelectorAll("a.js-wa").forEach(a => {
-    a.href = "https://wa.me/573122738001?text=" + encodeURIComponent(msg);
-  });
+    "Hola Raíces, soy Gloria. Quiero reservar mi viaje:\n\n" +
+    "• Destino: " + r.d.nombre + " (" + r.air.legs + ")\n" +
+    "• Hotel: " + r.hotel.nombre + " — " + r.hotel.hab.nombre + "\n" +
+    "• Vuelo " + r.air.nombre + ", tarifa " + r.fare.label + "\n" +
+    "• 2 personas\n\n" +
+    "Valor total: " + moneyUSD(r.totalUSD) + "\n" +
+    (r.upfront ? "Pago 100% por adelantado\n" : "Reserva: " + moneyUSD(r.reservaUSD) + "\n") +
+    "\n¿Cómo hago el pago?";
+  document.querySelectorAll("a.js-wa").forEach(x => { x.href = "https://wa.me/573122738001?text=" + encodeURIComponent(msg); });
 }
 
-function renderAll() { renderRadios(); renderQuote(); }
-renderAll();
+renderDestino(); renderAero(); renderFare(); buildHsel(); render();
 
-/* ---------- Menú del celular ---------- */
 (() => {
-  const boton = document.getElementById("nav-burger");
-  const menu = document.getElementById("nav-links");
-  if (!boton || !menu) return;
-
-  const cerrar = () => { menu.classList.remove("is-open"); boton.setAttribute("aria-expanded", "false"); boton.setAttribute("aria-label", "Abrir el menú"); };
-  const abrir  = () => { menu.classList.add("is-open");    boton.setAttribute("aria-expanded", "true");  boton.setAttribute("aria-label", "Cerrar el menú"); };
-
-  boton.addEventListener("click", () => menu.classList.contains("is-open") ? cerrar() : abrir());
-  menu.querySelectorAll("a").forEach(a => a.addEventListener("click", cerrar));
-  addEventListener("keydown", e => { if (e.key === "Escape") cerrar(); });
-  addEventListener("click", e => { if (!menu.contains(e.target) && !boton.contains(e.target)) cerrar(); });
-  matchMedia("(min-width: 901px)").addEventListener("change", cerrar);
+  const b = document.getElementById("nav-burger"), m = document.getElementById("nav-links");
+  const cerrar = () => { m.classList.remove("is-open"); b.setAttribute("aria-expanded","false"); };
+  b.addEventListener("click", () => { m.classList.contains("is-open") ? cerrar() : (m.classList.add("is-open"), b.setAttribute("aria-expanded","true")); });
+  m.querySelectorAll("a").forEach(a => a.addEventListener("click", cerrar));
+  addEventListener("keydown", e => { if(e.key === "Escape") cerrar(); });
+  matchMedia("(min-width: 921px)").addEventListener("change", cerrar);
 })();
-
-/* Al imprimir o guardar en PDF, abrir todos los acordeones y restaurarlos después. */
 (() => {
-  const acs = [...document.querySelectorAll("details.ac")];
-  let previo = [];
-  addEventListener("beforeprint", () => { previo = acs.map(d => d.open); acs.forEach(d => d.open = true); });
-  addEventListener("afterprint", () => acs.forEach((d, i) => d.open = previo[i]));
+  const acs = [...document.querySelectorAll("details.ac")]; let prev = [];
+  addEventListener("beforeprint", () => { prev = acs.map(d => d.open); acs.forEach(d => d.open = true); });
+  addEventListener("afterprint", () => acs.forEach((d,i) => d.open = prev[i]));
 })();
 </script>
 </body>
