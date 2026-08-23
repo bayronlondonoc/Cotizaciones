@@ -116,8 +116,6 @@ section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
 .card.is-sel{border-color:var(--atardecer);box-shadow:0 0 0 1px rgba(156,43,13,.2),var(--shadow)}
 .card-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--arena-soft);border:0;padding:0;width:100%;display:block;cursor:pointer}
 .card-img img{width:100%;height:100%;object-fit:cover}
-.badge{position:absolute;top:10px;left:10px;background:var(--tierra);color:#fff;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:500;padding:4px 9px;border-radius:999px;z-index:2;max-width:calc(100% - 20px)}
-.badge.warn{background:var(--atardecer)}
 .card-b{padding:16px 20px 20px;display:flex;flex-direction:column;flex:1}
 .card-b h3{font-size:18px;margin:0 0 3px;line-height:1.08}
 .stars{color:#C6892B;font-size:12px;letter-spacing:1px;margin-bottom:6px}
@@ -132,7 +130,6 @@ section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
 .hab-name{font-family:var(--font-display);font-size:15px;color:var(--tierra);letter-spacing:.02em;text-transform:uppercase;line-height:1.15;margin-bottom:4px}
 .hab-name span{font-family:var(--font-body);font-size:10.5px;letter-spacing:.12em;color:var(--mute);display:block;text-transform:uppercase;font-weight:500}
 .hab-note{font-size:11px;color:var(--mute);margin-top:7px;line-height:1.5;font-style:italic}
-.cancel-note{font-size:11.5px;color:var(--ink-soft);line-height:1.55;margin-top:10px;padding-left:11px;border-left:2px solid var(--arena)}
 .gal-link{margin-top:14px;background:none;border:0;padding:0;color:var(--oliva-dark);font-size:12px;text-decoration:underline;cursor:pointer;font-family:var(--font-body);text-align:left;align-self:flex-start}
 .select-btn{margin-top:auto;padding-top:16px}
 .select-btn button{width:100%;border:1.5px solid var(--tierra);background:transparent;color:var(--tierra);font-family:var(--font-body);font-weight:500;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;padding:12px;border-radius:999px;cursor:pointer;transition:.2s}
@@ -185,9 +182,6 @@ section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
 .rp-split .rp-cop{font-size:10.5px}
 .rp-solo{margin-top:18px;padding-top:16px;border-top:1px solid rgba(230,202,178,.2);font-size:12px;color:rgba(230,202,178,.78);line-height:1.6}
 .rp-solo b{color:#fff;font-weight:500}
-.group-total{text-align:center;margin-top:24px;font-family:var(--font-display);font-size:clamp(16px,2.2vw,20px);color:rgba(230,202,178,.9);letter-spacing:.02em;text-transform:uppercase}
-.group-total b{color:#fff;font-weight:400}
-.group-total .g-cop{display:block;font-family:var(--font-body);font-size:12px;font-weight:300;letter-spacing:0;text-transform:none;color:rgba(230,202,178,.6);margin-top:4px}
 .pay-note{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-left:3px solid var(--arena);border-radius:14px;padding:18px 22px;margin-top:22px;font-size:13px;color:rgba(230,202,178,.85);line-height:1.7}
 .pay-note b{color:#fff;font-weight:500}
 .q-note{font-size:12.5px;color:rgba(230,202,178,.62);margin-top:20px;line-height:1.7;text-align:center}
@@ -283,7 +277,7 @@ footer p{margin:0 0 8px;line-height:1.7}
     <div class="sec-head">
       <div class="eyebrow">Segmento 1 · 1 al 4 de octubre · 3 noches</div>
       <h2>Miami, la<br><em>llegada</em></h2>
-      <p>Seis opciones para las primeras tres noches, casi todas en South Beach. Cada tarjeta trae su propia política de cancelación. Elige la que prefieras: el valor de las habitaciones se recalcula al instante.</p>
+      <p>Seis opciones para las primeras tres noches, casi todas en South Beach. Elige la que prefieras: el valor de las habitaciones se recalcula al instante.</p>
     </div>
     <div class="grid" id="grid-seg1"></div>
   </div>
@@ -295,7 +289,7 @@ footer p{margin:0 0 8px;line-height:1.7}
     <div class="sec-head">
       <div class="eyebrow">Segmento 2 · 4 al 9 de octubre · 5 noches</div>
       <h2>Orlando y los<br><em>parques</em></h2>
-      <p>Cinco noches cerca de los parques, entre International Drive y Lake Buena Vista. Cada hotel tiene su propia política de cancelación.</p>
+      <p>Cinco noches cerca de los parques, entre International Drive y Lake Buena Vista.</p>
     </div>
     <div class="grid" id="grid-seg2"></div>
   </div>
@@ -307,7 +301,7 @@ footer p{margin:0 0 8px;line-height:1.7}
     <div class="sec-head">
       <div class="eyebrow">Segmento 3 · 9 al 12 de octubre · 3 noches</div>
       <h2>Miami, el<br><em>cierre</em></h2>
-      <p>Tres noches finales en Miami Beach antes del regreso. Siete opciones, cada una con su política de cancelación — algunas repiten hotel del primer tramo, con tarifa y condiciones propias de estas fechas.</p>
+      <p>Tres noches finales en Miami Beach antes del regreso. Siete opciones — algunas repiten hotel del primer tramo, con tarifa propia de estas fechas.</p>
     </div>
     <div class="grid" id="grid-seg3"></div>
   </div>
@@ -377,6 +371,9 @@ footer p{margin:0 0 8px;line-height:1.7}
         <div class="q-selgroup"><label>Aerolínea</label><div class="q-opts" id="sel-aero"></div></div>
         <div class="q-selgroup"><label>Tarifa del vuelo</label><div class="q-opts" id="sel-fare"></div></div>
         <div class="q-selgroup" id="q-itin-wrap" style="grid-column:1/-1"><label>Itinerario de regreso</label><div class="q-opts" id="sel-itin"></div></div>
+        <div class="q-selgroup" style="grid-column:1/-1"><label>Hotel en Miami · 1 al 4 de octubre</label><div class="q-opts" id="sel-seg1"></div></div>
+        <div class="q-selgroup" style="grid-column:1/-1"><label>Hotel en Orlando · 4 al 9 de octubre</label><div class="q-opts" id="sel-seg2"></div></div>
+        <div class="q-selgroup" style="grid-column:1/-1"><label>Hotel en Miami · 9 al 12 de octubre</label><div class="q-opts" id="sel-seg3"></div></div>
       </div>
       <div class="q-resumen" id="q-resumen">Vuelo <b>Avianca</b>, tarifa <b>Classic</b> · regreso MIA 08:15 → MTR 15:55.<br>Hoteles: <b>Esmé Miami Beach</b> (Miami, 1–4 oct) · <b>Fairfield Inn &amp; Suites Orlando Lake Buena Vista</b> (Orlando, 4–9 oct) · <b>Esmé Miami Beach</b> (Miami, 9–12 oct).</div>
     </div>
@@ -415,8 +412,6 @@ footer p{margin:0 0 8px;line-height:1.7}
         </div>
       </div>
     </div>
-
-    <div class="group-total" id="group-total">Total del grupo · <b>US$ 23,443</b><span class="g-cop">≈ $71.456.000 COP · las tres habitaciones juntas</span></div>
 
     <div id="pay-zone"><div class="pay-note">La reserva de cada habitación deja emitidos sus tiquetes y confirmados sus hoteles y entradas. El saldo se paga <b>antes del 11 de septiembre de 2026</b>; si no se paga ese día, la reserva se libera automáticamente.</div></div>
 
@@ -458,18 +453,6 @@ footer p{margin:0 0 8px;line-height:1.7}
         <summary><span class="ac-ic warn">!</span>Política de pago<span class="ac-ar" aria-hidden="true"></span></summary>
         <div class="ac-b">
           <div class="fine" id="pol-pago"><p>Con los hoteles elegidos, cada habitación reserva con su valor de reserva y paga el saldo <strong>antes del 11 de septiembre de 2026</strong>. Con el pago de la reserva se emiten los tiquetes aéreos y se confirman los hoteles y las entradas a los parques. Si el saldo no se paga en esa fecha, la reserva se libera automáticamente.</p></div>
-        </div>
-      </details>
-      <details class="ac">
-        <summary><span class="ac-ic warn">!</span>Cancelación de los hoteles<span class="ac-ar" aria-hidden="true"></span></summary>
-        <div class="ac-b">
-          <div class="fine">
-            <p>Cada hotel tiene su propia política y aparece en su tarjeta. Hay tres casos:</p>
-            <p><strong>Cancelación gratuita:</strong> se puede cancelar sin costo hasta la fecha indicada en la tarjeta.</p>
-            <p><strong>No reembolsable:</strong> el valor se compromete desde la confirmación y no se devuelve.</p>
-            <p><strong>Con gastos:</strong> el President Villa aplica condiciones distintas por habitación en el primer tramo, y el Atwell Suites cobra gastos del 45% del valor reservado.</p>
-            <p>Si alguno de los tres hoteles elegidos no es de cancelación gratuita, el viaje completo se paga al 100% por adelantado — así se deja todo confirmado y emitido de una vez.</p>
-          </div>
         </div>
       </details>
       <details class="ac">
@@ -555,8 +538,6 @@ const DIAS_ANTES = 20;
 
 const moneyUSD = n => "US$ " + Math.round(n).toLocaleString("en-US");
 const moneyCOP = n => "$" + (Math.round(n/1000)*1000).toLocaleString("es-CO") + " COP";
-const fecha = s => new Date(s + "T00:00:00").toLocaleDateString("es-CO",{day:"numeric",month:"long",year:"numeric"});
-const fechaCorta = s => new Date(s + "T00:00:00").toLocaleDateString("es-CO",{day:"numeric",month:"long"});
 
 const AEROLINEAS = [
   { id:"avianca", nombre:"Avianca", tag:"Vía Montería", ruta:"Montería (MTR) ✈ Miami (MIA)",
@@ -607,13 +588,6 @@ const AEROLINEAS = [
 ];
 
 const PARQUES = { universal:{adulto:1247407.76, nino:1230114.20}, disney:{adulto:1401459.99, nino:1364179.87} };
-
-const CANCEL = {
-  gratis:      f => ({ badge:"Cancelación gratuita hasta el " + fechaCorta(f), warn:false, nota:"Se puede cancelar sin costo hasta el " + fecha(f) + "." }),
-  norefund:    () => ({ badge:"No reembolsable", warn:true, nota:"Tarifa no reembolsable: el valor queda comprometido desde la confirmación." }),
-  mixta:       () => ({ badge:"Cancelación mixta por habitación", warn:true, nota:"La habitación 2 admite cancelación gratuita hasta el 28 de septiembre de 2026; las habitaciones 1 y 3 son no reembolsables." }),
-  parcial:     () => ({ badge:"Gastos de cancelación del 45%", warn:true, nota:"El hotel aplica gastos de cancelación del 45% sobre el valor reservado, sin fecha límite especificada." })
-};
 
 const HOTELES = {
   seg1:[
@@ -717,7 +691,6 @@ const state = { aero:"avianca", fare:"classic", itin:1, seg1:"esme", seg2:"fairf
 
 const aeroActual = () => AEROLINEAS.find(a => a.id === state.aero);
 const hotelDe = seg => HOTELES[seg].find(h => h.slug === state[seg]);
-const cancelDe = h => CANCEL[h.cancel.tipo](h.cancel.fecha);
 const estrellas = n => "★".repeat(Math.floor(n)) + (n % 1 ? "½" : "");
 const FOTO = (slug,i) => "assets/hoteles/" + slug + "/" + i + ".jpg";
 const FOTOHAB = (slug,i) => "assets/hoteles/" + slug + "/hab/" + i + ".jpg";
@@ -800,7 +773,7 @@ function categorias(h){
 function renderSeg(sg){
   const el = document.getElementById(sg.grid);
   el.innerHTML = HOTELES[sg.key].map(h => {
-    const sel = state[sg.key] === h.slug, c = cancelDe(h);
+    const sel = state[sg.key] === h.slug;
     const thumbs = `<div class="mini-gal">${[2,3,4,5].map(i =>
       `<button type="button" data-gal="${h.slug}" data-seg="${sg.key}" aria-label="Ver fotos de ${h.nombre}"><img src="${FOTO(h.slug,i)}" alt="${h.nombre}" loading="lazy"></button>`).join("")}</div>`;
     const habThumbs = h.hab.fotos
@@ -811,7 +784,6 @@ function renderSeg(sg){
     return `
     <article class="card ${sel ? "is-sel" : ""}" data-card="${sg.key}:${h.slug}">
       <button class="card-img" type="button" data-gal="${h.slug}" data-seg="${sg.key}" aria-label="Ver fotos de ${h.nombre}">
-        <span class="badge ${c.warn ? "warn" : ""}">${c.badge}</span>
         <img src="${FOTO(h.slug,1)}" alt="${h.nombre}" loading="lazy">
       </button>
       <div class="card-b">
@@ -825,7 +797,6 @@ function renderSeg(sg){
           ${categorias(h)}
           ${habThumbs}
         </div>
-        <div class="cancel-note">${c.nota}</div>
         <button class="gal-link" type="button" data-gal="${h.slug}" data-seg="${sg.key}">Ver las ${h.fotos + h.hab.fotos} fotos →</button>
         <div class="select-btn"><button type="button" data-pick="${sg.key}:${h.slug}">${sel ? "Hotel elegido" : "Elegir este hotel"}</button></div>
       </div>
@@ -841,15 +812,21 @@ function renderHoteles(){
   }));
   document.querySelectorAll("[data-pick]").forEach(el => el.addEventListener("click", () => {
     const [seg,slug] = el.dataset.pick.split(":");
-    if(state[seg] === slug) return;
-    state[seg] = slug;
-    document.querySelectorAll(`[data-card^="${seg}:"]`).forEach(card => {
-      const on = card.dataset.card === seg + ":" + slug;
-      card.classList.toggle("is-sel", on);
-      card.querySelector("[data-pick]").textContent = on ? "Hotel elegido" : "Elegir este hotel";
-    });
-    render();
+    pickHotel(seg, slug);
   }));
+}
+
+function pickHotel(seg, slug){
+  if(state[seg] === slug) return;
+  state[seg] = slug;
+  document.querySelectorAll(`[data-card^="${seg}:"]`).forEach(card => {
+    const on = card.dataset.card === seg + ":" + slug;
+    card.classList.toggle("is-sel", on);
+    card.querySelector("[data-pick]").textContent = on ? "Hotel elegido" : "Elegir este hotel";
+  });
+  const radio = document.querySelector(`input[name="${seg}"][value="${slug}"]`);
+  if(radio) radio.checked = true;
+  render();
 }
 
 const ov = document.getElementById("hmodal-overlay");
@@ -900,6 +877,15 @@ function renderFare(){
     state.fare = r.value; render();
   }));
 }
+function renderHotelPills(){
+  SEGMENTOS.forEach(sg => {
+    document.getElementById("sel-" + sg.key).innerHTML =
+      HOTELES[sg.key].map(h => pill(sg.key, h.slug, h.nombre, state[sg.key] === h.slug)).join("");
+    document.querySelectorAll(`input[name="${sg.key}"]`).forEach(r => r.addEventListener("change", () => {
+      pickHotel(sg.key, r.value);
+    }));
+  });
+}
 function renderItin(){
   const a = aeroActual(), wrap = document.getElementById("q-itin-wrap");
   if(!a.itinerarios){ wrap.style.display = "none"; document.getElementById("sel-itin").innerHTML = ""; return; }
@@ -934,20 +920,17 @@ function render(){
       </div>`;
   }).join("");
 
-  document.getElementById("group-total").innerHTML =
-    `Total del grupo · <b>${moneyUSD(c.total)}</b><span class="g-cop">≈ ${moneyCOP(c.total*TRM)} · las tres habitaciones juntas</span>`;
-
   const limite = c.fechaLimite
     ? c.fechaLimite.toLocaleDateString("es-CO",{day:"numeric",month:"long",year:"numeric"}) : null;
 
   document.getElementById("pay-zone").innerHTML = c.pagoUnico
-    ? `<div class="pay-note">Alguno de los hoteles elegidos no admite cancelación gratuita, así que <b>este plan se paga 100% por adelantado</b> al confirmar. Con ese pago quedan emitidos los tiquetes y confirmados los hoteles y las entradas a los parques.</div>`
+    ? `<div class="pay-note">Con los hoteles elegidos, cada habitación se paga <b>100% por adelantado</b> al confirmar. Con ese pago quedan emitidos los tiquetes y confirmados los hoteles y las entradas a los parques.</div>`
     : `<div class="pay-note">La reserva de cada habitación deja emitidos sus tiquetes y confirmados sus hoteles y entradas. El saldo se paga <b>antes del ${limite}</b>; si no se paga ese día, la reserva se libera automáticamente.</div>`;
 
   document.getElementById("pol-pago").innerHTML = c.pagoUnico
-    ? `<p>Con los hoteles elegidos, este plan requiere el <strong>100% del pago por adelantado</strong> para confirmar: al menos uno de los hoteles del viaje no admite cancelación gratuita, de modo que su valor queda comprometido desde el primer día.</p>
+    ? `<p>Con los hoteles elegidos, cada habitación se paga <strong>100% por adelantado</strong> para confirmar.</p>
        <p>Con ese pago se emiten los tiquetes aéreos y se confirman los hoteles de los tres tramos y las entradas a los parques.</p>`
-    : `<p>Con los hoteles elegidos, cada habitación reserva con su valor de reserva y paga el saldo <strong>antes del ${limite}</strong>. Con el pago de la reserva se emiten los tiquetes aéreos y se confirman los hoteles y las entradas a los parques.</p>
+    : `<p>Cada habitación reserva con el valor de reserva que aparece en su tarjeta y paga el saldo <strong>antes del ${limite}</strong>. Con el pago de la reserva se emiten los tiquetes aéreos y se confirman los hoteles y las entradas a los parques.</p>
        <p>Si el saldo no se paga en esa fecha, la reserva se libera automáticamente.</p>`;
 
   const hs = SEGMENTOS.map(sg => hotelDe(sg.key));
@@ -959,13 +942,14 @@ function render(){
     "Hola Raíces, soy Diana Correa. Quiero reservar el viaje del grupo (1 al 12 de octubre de 2026):\n\n" +
     SEGMENTOS.map((sg,i) => "• " + sg.label + ": " + hs[i].nombre).join("\n") + "\n" +
     "• Vuelo " + a.nombre + ", tarifa " + f.label + (itin ? " · regreso " + itin.label : "") + "\n\n" +
-    "Valor total del grupo: " + moneyUSD(c.total) + "\n" +
-    (c.pagoUnico ? "Pago 100% por adelantado.\n" : "Reserva: " + moneyUSD(c.reserva) + "\n") +
+    ROOMS.map(r => PAX[r].who + ": " + moneyUSD(c.rooms[r].total) +
+      (c.pagoUnico ? "" : " (reserva " + moneyUSD(c.rooms[r].reserva) + ")")).join("\n") + "\n" +
+    (c.pagoUnico ? "\nPago 100% por adelantado.\n" : "") +
     "\n¿Cómo hago el pago?";
   document.querySelectorAll("a.js-wa").forEach(x => { x.href = "https://wa.me/573122738001?text=" + encodeURIComponent(msg); });
 }
 
-renderHoteles(); renderAero(); renderFare(); renderItin(); render();
+renderHoteles(); renderAero(); renderFare(); renderItin(); renderHotelPills(); render();
 
 (() => {
   const b = document.getElementById("nav-burger"), m = document.getElementById("nav-links");
