@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cotización de viaje para Gloria Villegas · Raíces</title>
-<meta name="description" content="Cancún · 26 al 30 de septiembre de 2026 · vuelo y hotel todo incluido, tú eliges la tarifa del vuelo y el hotel.">
+<meta name="description" content="Cancún · 26 al 30 de septiembre de 2026 · vuelo y hotel todo incluido para 2 personas, tú eliges la tarifa del vuelo y el hotel.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" type="image/png" href="assets/marca/favicon.png">
 <meta property="og:title" content="Cotización de viaje para Gloria Villegas · Raíces">
-<meta property="og:description" content="Cancún · 26 al 30 de septiembre de 2026 · vuelo y hotel todo incluido, tú eliges la tarifa del vuelo y el hotel.">
+<meta property="og:description" content="Cancún · 26 al 30 de septiembre de 2026 · vuelo y hotel todo incluido para 2 personas, tú eliges la tarifa del vuelo y el hotel.">
 <meta property="og:image" content="https://bayronlondonoc.github.io/cotizaciones/gloria-villegas-cancun/assets/destinos/hero.jpg">
 <meta property="og:url" content="https://bayronlondonoc.github.io/cotizaciones/gloria-villegas-cancun/">
 <meta property="og:type" content="website">
@@ -85,9 +85,8 @@ section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
 .air-route{font-size:12.5px;color:var(--mute)}
 .air-legs{font-size:13px;color:var(--ink-soft);margin-bottom:14px}
 .fares{display:grid;gap:14px}
-.fares.c3{grid-template-columns:repeat(3,1fr)}
-@media(max-width:980px){.fares.c3{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.fares.c3{grid-template-columns:1fr}}
+.fares.c2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:560px){.fares.c2{grid-template-columns:1fr}}
 .fare-col{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
 .fare-col.best{border-color:rgba(156,43,13,.4);box-shadow:0 0 0 1px rgba(156,43,13,.16)}
 .fare-col h4{font-family:var(--font-display);font-weight:400;font-size:20px;text-transform:uppercase;color:var(--tierra);margin:0 0 2px}
@@ -102,6 +101,7 @@ section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
 .card{position:relative;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s}
 .card.is-sel{border-color:var(--atardecer);box-shadow:0 0 0 2px rgba(156,43,13,.18)}
+.card-badge{position:absolute;top:12px;left:12px;z-index:2;background:var(--atardecer);color:#fff;font-family:var(--font-display);font-size:11px;letter-spacing:.07em;text-transform:uppercase;padding:6px 14px;border-radius:999px;box-shadow:var(--shadow-soft)}
 .card-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--arena-soft);border:0;padding:0;width:100%;display:block;cursor:pointer}
 .card-img img{width:100%;height:100%;object-fit:cover}
 .card-b{padding:16px 20px 20px;display:flex;flex-direction:column;flex:1}
@@ -237,7 +237,7 @@ footer p{margin:0 0 8px;line-height:1.7}
       <span class="pill">26 al 30 de septiembre de 2026</span>
       <span class="pill">4 noches</span>
       <span class="pill">Todo incluido</span>
-      <span class="pill">1 persona</span>
+      <span class="pill">2 personas</span>
     </div>
   </div>
 </header>
@@ -260,7 +260,7 @@ footer p{margin:0 0 8px;line-height:1.7}
     <div class="sec-head">
       <div class="eyebrow">Todo incluido</div>
       <h2>Elige tu<br>hotel</h2>
-      <p>Habitación sencilla, régimen todo incluido, por las cuatro noches. El hotel que elijas aquí se refleja solo en Tu inversión — y también puedes cambiarlo desde ahí.</p>
+      <p>Habitación doble para 2 personas, régimen todo incluido, por las cuatro noches. El hotel que elijas aquí se refleja solo en Tu inversión — y también puedes cambiarlo desde ahí.</p>
     </div>
     <div class="grid" id="grid-hoteles"></div>
   </div>
@@ -282,17 +282,17 @@ footer p{margin:0 0 8px;line-height:1.7}
       <div class="q-resumen" id="q-resumen">—</div>
     </div>
 
-    <div class="inv-head"><h3>Valor total</h3></div>
+    <div class="inv-head"><h3>Valor por persona</h3></div>
 
     <div class="price-main">
-      <div class="l">Valor del viaje</div>
+      <div class="l">Valor por persona</div>
       <div class="v" id="v-total">—</div>
       <div class="s" id="v-total-cop">—</div>
     </div>
 
     <div id="bloque-pago"></div>
 
-    <p class="q-note">Valor para 1 persona en habitación sencilla, sujeto a disponibilidad al momento de confirmar.</p>
+    <p class="q-note">Valor por persona, en habitación doble para 2 personas, sujeto a disponibilidad al momento de confirmar.</p>
   </div>
 </section>
 
@@ -306,7 +306,7 @@ footer p{margin:0 0 8px;line-height:1.7}
         <div class="ac-b">
           <ul class="lst yes">
             <li>Tiquete aéreo Medellín–Cancún ida y regreso, con Avianca, en la tarifa que elijas, con impuestos</li>
-            <li>Alojamiento en el hotel que elijas, habitación sencilla y régimen todo incluido, del 26 al 30 de septiembre de 2026</li>
+            <li>Alojamiento en el hotel que elijas, habitación doble para 2 personas y régimen todo incluido, del 26 al 30 de septiembre de 2026</li>
             <li>Traslados aeropuerto–hotel–aeropuerto en Cancún</li>
             <li>Acompañamiento de Raíces por WhatsApp, antes y durante el viaje</li>
           </ul>
@@ -340,7 +340,7 @@ footer p{margin:0 0 8px;line-height:1.7}
         <div class="ac-b">
           <div class="fine">
             <p><strong>Documentación:</strong> pasaporte vigente con al menos 6 meses de validez. México no exige visa a colombianos como turistas para estadías cortas, pero te recomendamos confirmar los requisitos vigentes antes de viajar.</p>
-            <p><strong>Vigencia:</strong> esta cotización se envía el 25 de agosto de 2026 y está sujeta a cambios y disponibilidad por parte de la aerolínea y los hoteles — se recomienda confirmar lo antes posible.</p>
+            <p><strong>Vigencia:</strong> esta cotización se envía el 26 de agosto de 2026 y está sujeta a cambios y disponibilidad por parte de la aerolínea y los hoteles — se recomienda confirmar lo antes posible.</p>
           </div>
         </div>
       </details>
@@ -378,7 +378,7 @@ footer p{margin:0 0 8px;line-height:1.7}
       </div>
     </div>
     <div class="f-bot">
-      <span>Cotización preparada para Gloria Villegas · 25 de agosto de 2026</span>
+      <span>Cotización preparada para Gloria Villegas · 26 de agosto de 2026</span>
       <span>Documento privado. No constituye reserva confirmada.</span>
     </div>
     <p class="credits"><b style="color:rgba(230,202,178,.55);font-weight:500">Créditos.</b> Fotos y videos de los hoteles: cortesía de cada propiedad y de sus sitios y motores de reserva oficiales. Las marcas y logotipos citados pertenecen a sus respectivos titulares.</p>
@@ -399,50 +399,44 @@ footer p{margin:0 0 8px;line-height:1.7}
 </div>
 
 <script>
-const TRM = 3056.51, RESERVA_SERVICIOS = 0.22, TRASLADO = 30;
+const TRM = 3118.24, RESERVA_SERVICIOS = 0.22, TRASLADO = 30;
 const FECHA_VIAJE = "2026-09-26", DIAS_ANTES = 20;
 const moneyUSD = n => "US$" + n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
 const moneyCOP = n => "$" + (Math.round(n/1000)*1000).toLocaleString("es-CO") + " COP";
 
 const FARES = [
-  {k:"light", label:"Light", ftag:"Lo esencial", netoCOP:1357635,
+  {k:"light", label:"Light", ftag:"Lo esencial", ventaCOP:1602755,
    inc:[["y","1 artículo personal (bajo el asiento)"],["y","1 equipaje de mano (10 kg)"],["n","Sin maleta de bodega"],["n","Tarifa no reembolsable"]]},
-  {k:"classic", label:"Classic", ftag:"La más elegida", best:true, netoCOP:1741860,
-   inc:[["y","1 artículo personal y 1 equipaje de mano (10 kg)"],["y","1 maleta de bodega (23 kg)"],["y","Selección de asiento Economy"],["y","Cambios antes del vuelo (con costo)"],["n","Tarifa no reembolsable"]]},
-  {k:"flex", label:"Flex", ftag:"Máxima flexibilidad", netoCOP:2177060,
-   inc:[["y","1 artículo personal y 1 equipaje de mano (10 kg)"],["y","1 maleta de bodega (23 kg)"],["y","Asiento Plus (sujeto a disponibilidad)"],["y","Cambios antes del vuelo"],["y","Reembolsos antes del vuelo"]]}
+  {k:"classic", label:"Classic", ftag:"La más elegida", best:true, ventaCOP:2024191,
+   inc:[["y","1 artículo personal y 1 equipaje de mano (10 kg)"],["y","1 maleta de bodega (23 kg)"],["y","Selección de asiento Economy"],["y","Cambios antes del vuelo (con costo)"],["n","Tarifa no reembolsable"]]}
 ];
 
 const HOTELES = [
   {slug:"dos-playas", nombre:"Hotel Dos Playas Faranda Cancun", cadena:"Faranda Hotels", zona:"Zona Hotelera · Cancún", est:3,
-   precioUSD:619.52, reembolsable:true, cancelTxt:"Cancelación gratuita hasta el 16 de septiembre de 2026",
-   video:null, fotos:20, hab:{nombre:"Single Standard", fotos:0},
-   desc:"Hotel frente al mar en la Zona Hotelera de Cancún, a pocos minutos del centro. Cuenta con parqueadero, spa, restaurante, gimnasio y wifi, y es de los más reservados de la zona por su buena relación entre ubicación y precio."},
-  {slug:"oasis-palm", nombre:"Oasis Palm - All Inclusive", cadena:"Oasis Hoteles", zona:"Zona Hotelera · Cancún", est:4,
-   precioUSD:688.88, reembolsable:false,
-   video:null, fotos:20, hab:{nombre:"Single Standard", fotos:0},
-   desc:"Resort todo incluido de Oasis Hoteles en la Zona Hotelera de Cancún, frente a la playa. Ofrece piscinas al aire libre, spa, restaurante, gimnasio, aire acondicionado y wifi en todas sus áreas."},
-  {slug:"flamingo", nombre:"Flamingo Cancun All Inclusive", cadena:"Flamingo Cancún", zona:"Zona Hotelera · Cancún", est:4,
-   precioUSD:702.16, reembolsable:true, cancelTxt:"Cancelación gratuita hasta el 11 de septiembre de 2026",
-   video:null, fotos:20, hab:{nombre:"Standard Lagoon", fotos:1},
-   desc:"Todo incluido justo sobre la playa de la Zona Hotelera, con vista a la laguna Nichupté. Cuenta con piscina, spa, gimnasio, aire acondicionado y varios restaurantes dentro del hotel."},
-  {slug:"grand-oasis", nombre:"Grand Oasis Cancun", cadena:"Oasis Hoteles · Luxury Collection", zona:"Zona Hotelera · Cancún", est:5,
-   precioUSD:775.85, reembolsable:false,
-   video:null, fotos:20, hab:{nombre:"Grand Standard", fotos:2},
-   desc:"Uno de los resorts más completos de Cancún: todo incluido con amplia oferta de restaurantes y bares, piscinas, spa, gimnasio y entretenimiento nocturno dentro del mismo hotel, sobre la playa de la Zona Hotelera."},
-  {slug:"riu-dunamar", nombre:"Riu Dunamar - All Inclusive", cadena:"Riu Hoteles · Luxury Collection", zona:"Playa Mujeres · Cancún", est:5,
-   precioUSD:697.58, reembolsable:true, cancelTxt:"Cancelación gratuita hasta el 18 de septiembre de 2026",
-   video:null, fotos:20, hab:{nombre:"Habitación Doble", fotos:2},
-   desc:"Uno de los resorts más recientes de Riu, en Playa Mujeres, con parque acuático, piscinas con bar swim-up, spa, gimnasio, club infantil RiuLand y varios restaurantes de especialidades dentro del todo incluido 24 horas."},
-  {slug:"riu-latino", nombre:"Riu Latino - Adults Only - All Inclusive", cadena:"Riu Hoteles · Luxury Collection", zona:"Playa Mujeres · Cancún", est:5,
-   precioUSD:741.61, reembolsable:true, cancelTxt:"Cancelación gratuita hasta el 18 de septiembre de 2026",
-   video:null, fotos:17, hab:{nombre:"Habitación Standard", fotos:0},
-   desc:"Resort todo incluido 24 horas solo para adultos, en Playa Mujeres, con restaurantes de especialidades, spa, gimnasio y varias piscinas frente al mar — pensado para un descanso tranquilo."}
+   precioUSD:337.52, reembolsable:false,
+   video:"p3l6MkMMX5w", fotos:10, hab:{nombre:"Doble Standard", fotos:3},
+   desc:"Hotel frente al mar en la Zona Hotelera de Cancún, entre la playa y la laguna Nichupté, con un concepto íntimo y tranquilo ideal para descansar. Cuenta con 2 restaurantes (buffet internacional y especialidades asiáticas), 2 bares, piscina al aire libre y acceso directo a la playa, cerca de centros comerciales y vida nocturna."},
+  {slug:"ocean-view", nombre:"Ocean View Cancun Arenas", cadena:"Zona Hotelera", zona:"Zona Hotelera · Cancún", est:3,
+   precioUSD:337.62, reembolsable:true, limiteFecha:"2026-09-15",
+   video:"6-Yaooa0o9k", fotos:10, hab:{nombre:"Doble Standard", fotos:0},
+   desc:"Hotel funcional en la Zona Hotelera de Cancún, con cenas temáticas frente al mar en su Terraza Ocean Grill, sport bar para ver los partidos y hasta centro de negocios. Su restaurante principal ofrece buffet y opción a la carta, con snack bar junto a la piscina y bares en el lobby y la infinity pool."},
+  {slug:"wyndham", nombre:"Wyndham Grand Cancun All Inclusive Resort & Villas", cadena:"Wyndham Hotels & Resorts", zona:"Zona Hotelera · Cancún", est:5,
+   precioUSD:371.34, reembolsable:true, limiteFecha:"2026-09-22",
+   video:"Tu56PHuUFJM", fotos:6, hab:{nombre:"Superior Lagoon", fotos:2},
+   desc:"Resort todo incluido entre el mar y la laguna Nichupté, con gran variedad de comida (buffet, steakhouse, italiano, sushi y mexicana), un bar de playa solo para adultos con jacuzzi y villas familiares de 3 habitaciones para viajar en grupo con privacidad. Ambiente de playa y piscina durante el día, con servicio a la habitación 24 horas."},
+  {slug:"grand-oasis", nombre:"Grand Oasis Cancun", cadena:"Oasis Hoteles · Luxury Collection", zona:"Zona Hotelera · Cancún", est:5, recomendado:true,
+   precioUSD:397.90, reembolsable:false,
+   video:"LjGM57_AEZs", fotos:10, hab:{nombre:"Grand Standard", fotos:2},
+   desc:"Uno de los resorts con más entretenimiento de Cancún: espectáculos estilo Las Vegas, casino, club nocturno y hasta golf de 9 hoyos dentro del complejo. Su oferta gastronómica suma 16 restaurantes y 17 bares, con propuestas gourmet premiadas como Benazuza y Sakura, además de piscinas, spa y acceso directo a la playa."},
+  {slug:"oleo", nombre:"Oleo Cancun Playa", cadena:"Todo incluido", zona:"Zona Hotelera · Cancún", est:4.5,
+   precioUSD:446.24, reembolsable:false,
+   video:"NxiXhLArk_A", fotos:6, hab:{nombre:"Junior Suite Sunset", fotos:1},
+   desc:"Óleo Cancún Playa es un resort boutique frente al mar en la Zona Hotelera de Cancún, con diseño minimalista y contemporáneo y servicio personalizado. Su categoría Junior Suite Sunset ofrece vistas hacia el Caribe y la laguna Nichupté, ideal para ver el atardecer. Opera todo incluido, con alberca frente a la playa y restaurantes de cocina internacional y mediterránea."}
 ];
 
-const state = { fare:"classic", hotel:"riu-dunamar" };
+const state = { fare:"classic", hotel:"grand-oasis" };
 
-const estrellas = n => "★".repeat(n);
+const estrellas = n => "★".repeat(Math.floor(n)) + (n % 1 >= 0.5 ? "½" : "");
 const hotelActual = () => HOTELES.find(h => h.slug === state.hotel);
 const fareActual = () => FARES.find(f => f.k === state.fare);
 const FOTO = (slug,i) => "assets/hoteles/" + slug + "/" + i + ".jpg";
@@ -452,7 +446,7 @@ document.getElementById("airlines").innerHTML = `
   <div class="air-block">
     <div class="air-head"><h3>Avianca</h3><span class="air-tag">Directo</span><span class="air-route">Medellín ✈ Cancún · sin escalas</span></div>
     <div class="air-legs">Ida y regreso, 26 al 30 de septiembre de 2026 · 4 noches</div>
-    <div class="fares c3">
+    <div class="fares c2">
       ${FARES.map(f => `
         <div class="fare-col ${f.best ? "best" : ""}">
           <h4>${f.label}</h4><span class="ftag">${f.ftag}</span>
@@ -475,9 +469,12 @@ function renderHoteles(){
       : `<div class="hab-note">Este hotel no publica fotos de esta categoría de habitación — la confirmamos con el hotel al reservar.</div>`;
     return `
     <article class="card ${sel ? "is-sel" : ""}" data-card="${h.slug}">
-      <button class="card-img" type="button" data-gal="${h.slug}" aria-label="Ver fotos de ${h.nombre}">
-        <img src="${FOTO(h.slug,1)}" alt="${h.nombre}" loading="lazy">
-      </button>
+      ${h.recomendado ? `<div class="card-badge">Recomendado por Raíces</div>` : ""}
+      ${h.fotos > 0
+        ? `<button class="card-img" type="button" data-gal="${h.slug}" aria-label="Ver fotos de ${h.nombre}">
+             <img src="${FOTO(h.slug,1)}" alt="${h.nombre}" loading="lazy">
+           </button>`
+        : `<div class="card-img" style="display:grid;place-items:center;color:var(--mute);font-size:12px;background:var(--arena-soft)">Foto próximamente</div>`}
       <div class="card-b">
         <h3>${h.nombre}</h3>
         <div class="stars">${estrellas(h.est)}</div>
@@ -560,15 +557,16 @@ function renderHotelPills(){
 
 function calc(){
   const fare = fareActual(), hotel = hotelActual();
-  const tiqueteUSD = fare.netoCOP / TRM;
+  const tiqueteUSD = fare.ventaCOP / TRM;
   const total = tiqueteUSD + hotel.precioUSD + TRASLADO;
   const reserva = tiqueteUSD + RESERVA_SERVICIOS * (hotel.precioUSD + TRASLADO);
   const saldo = total - reserva;
 
   let pagoUnico = true, fechaLimite = null;
   if(hotel.reembolsable){
-    const d = new Date(FECHA_VIAJE + "T00:00:00");
-    d.setDate(d.getDate() - DIAS_ANTES);
+    const d = hotel.limiteFecha
+      ? new Date(hotel.limiteFecha + "T00:00:00")
+      : (() => { const x = new Date(FECHA_VIAJE + "T00:00:00"); x.setDate(x.getDate() - DIAS_ANTES); return x; })();
     const enUnaSemana = new Date(); enUnaSemana.setDate(enUnaSemana.getDate() + 7);
     if(d > enUnaSemana){ pagoUnico = false; fechaLimite = d; }
   }
@@ -584,7 +582,7 @@ function render(){
     ? c.fechaLimite.toLocaleDateString("es-CO",{day:"numeric",month:"long",year:"numeric"}) : null;
 
   document.getElementById("bloque-pago").innerHTML = c.pagoUnico
-    ? `<div class="pay-note">Con el hotel elegido, el viaje se paga <b>100% por adelantado</b> al confirmar. Con ese pago quedan emitido el tiquete y confirmado el hotel.</div>`
+    ? `<div class="pay-note">Con el hotel elegido, el viaje se paga <b>100% por adelantado</b> al confirmar, por persona. Con ese pago quedan emitido el tiquete y confirmado el hotel.</div>`
     : `<div class="pay">
          <div class="pay-card"><div class="n">Reserva para separar hoy</div><div class="amt">${moneyUSD(c.reserva)}</div>
            <div class="amt-cop">≈ ${moneyCOP(c.reserva*TRM)}</div>
@@ -595,14 +593,14 @@ function render(){
        </div>`;
 
   document.getElementById("q-resumen").innerHTML =
-    `Vuelo Avianca, tarifa <b>${c.fare.label}</b> · Hotel <b>${c.hotel.nombre}</b> · 26 al 30 de septiembre de 2026.`;
+    `Vuelo Avianca, tarifa <b>${c.fare.label}</b> · Hotel <b>${c.hotel.nombre}</b> · 26 al 30 de septiembre de 2026 · 2 personas.`;
 
   const msg =
-    "Hola Raíces, soy Gloria Villegas. Quiero reservar mi viaje a Cancún (26 al 30 de septiembre de 2026):\n\n" +
+    "Hola Raíces, soy Gloria Villegas. Quiero reservar mi viaje a Cancún para 2 personas (26 al 30 de septiembre de 2026):\n\n" +
     "• Vuelo Avianca, tarifa " + c.fare.label + "\n" +
     "• Hotel: " + c.hotel.nombre + "\n\n" +
-    "Valor total: " + moneyUSD(c.total) + "\n" +
-    (c.pagoUnico ? "Pago 100% por adelantado.\n" : "Reserva: " + moneyUSD(c.reserva) + "\n") +
+    "Valor total por persona: " + moneyUSD(c.total) + "\n" +
+    (c.pagoUnico ? "Pago 100% por adelantado.\n" : "Reserva por persona: " + moneyUSD(c.reserva) + "\n") +
     "\n¿Cómo hago el pago?";
   document.querySelectorAll("a.js-wa").forEach(x => { x.href = "https://wa.me/573122738001?text=" + encodeURIComponent(msg); });
 }
