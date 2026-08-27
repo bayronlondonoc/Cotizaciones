@@ -546,8 +546,9 @@ function renderHotelPills(){
 function calc(){
   const fare = fareActual(), hotel = hotelActual();
   const tiqueteUSD = fare.ventaCOP / TRM;
-  const total = tiqueteUSD + hotel.precioUSD + hotel.traslado;
-  const reserva = tiqueteUSD + RESERVA_SERVICIOS * (hotel.precioUSD + hotel.traslado);
+  const hotelPP = hotel.precioUSD / 2;
+  const total = tiqueteUSD + hotelPP + hotel.traslado;
+  const reserva = tiqueteUSD + RESERVA_SERVICIOS * (hotelPP + hotel.traslado);
   const saldo = total - reserva;
 
   let pagoUnico = true, fechaLimite = null;
