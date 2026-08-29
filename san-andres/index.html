@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cotización de viaje a San Andrés · Raíces</title>
+<meta name="description" content="San Andrés Islas — 3 noches todo incluido para 3 viajeros, con vuelo directo, tours y traslados incluidos.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="assets/marca/favicon.png">
+<meta property="og:title" content="Cotización de viaje a San Andrés · Raíces">
+<meta property="og:description" content="San Andrés Islas — 3 noches todo incluido para 3 viajeros, con vuelo directo, tours y traslados incluidos.">
+<meta property="og:image" content="https://bayronlondonoc.github.io/cotizaciones/san-andres/assets/destinos/hero.jpg">
+<meta property="og:url" content="https://bayronlondonoc.github.io/cotizaciones/san-andres/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --arena:#E6CAB2; --arena-soft:#F0DFC9; --bg:#F7F0E4; --paper:#FDFAF3;
+  --tierra:#68362C; --ink:#3B2018; --ink-soft:#5C3A2E; --mute:#8A6A58;
+  --atardecer:#9C2B0D; --oliva:#7D8561; --oliva-dark:#5E6547;
+  --line:rgba(59,32,24,.14);
+  --shadow:0 18px 40px rgba(59,32,24,.10); --shadow-soft:0 8px 22px rgba(59,32,24,.07);
+  --radius:18px;
+  --font-display:"Passion One","Arial Black",sans-serif; --font-body:"Poppins",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-body);font-weight:300;font-size:16px;line-height:1.65;color:var(--ink);background:var(--bg);overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1180px,92vw);margin-inline:auto}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:.96;letter-spacing:.01em;text-transform:uppercase;color:var(--tierra);margin:0}
+h1{font-size:clamp(40px,7vw,84px)} h2{font-size:clamp(30px,4.6vw,56px)} h3{font-size:clamp(20px,2.6vw,28px)}
+h2 em{font-style:normal;color:var(--atardecer)}
+p{margin:0 0 1em}
+.eyebrow{font-family:var(--font-body);font-weight:500;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--atardecer);margin-bottom:14px}
+
+.nav{position:sticky;top:0;z-index:50;background:rgba(247,240,228,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:center;gap:34px;height:78px}
+.nav img{height:38px;width:auto}
+.nav-links{display:flex;gap:22px;font-size:15px;letter-spacing:.03em}
+.nav-links a{text-decoration:none;color:var(--ink-soft);padding:4px 0;border-bottom:1.5px solid transparent;transition:.2s;white-space:nowrap}
+.nav-links a:hover{color:var(--atardecer);border-bottom-color:var(--atardecer)}
+.nav-burger{display:none}
+@media(max-width:1020px){
+  .nav-in{justify-content:space-between;gap:12px}
+  .nav-burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:40px;padding:0 9px;background:transparent;border:1px solid var(--line);border-radius:11px;cursor:pointer;flex:none}
+  .nav-burger span{display:block;height:2px;border-radius:2px;background:var(--tierra);transition:transform .25s,opacity .2s}
+  .nav-burger[aria-expanded="true"]{border-color:var(--atardecer)}
+  .nav-burger[aria-expanded="true"] span{background:var(--atardecer)}
+  .nav-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .nav-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{position:absolute;left:0;right:0;top:100%;display:none;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:6px 0}
+  .nav-links.is-open{display:flex}
+  .nav-links a{padding:13px 6vw;border-bottom:0;border-left:3px solid transparent}
+  .nav-links a:hover{border-left-color:var(--atardecer);background:rgba(230,202,178,.34)}
+}
+
+.hero{position:relative;min-height:min(80vh,700px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(45,24,18,.62) 0%,rgba(45,24,18,.28) 45%,rgba(45,24,18,0) 80%),
+  linear-gradient(180deg,rgba(59,32,24,.35) 0%,rgba(59,32,24,.12) 22%,rgba(85,42,33,.58) 48%,rgba(85,42,33,.90) 78%,rgba(72,35,27,.97) 100%)}
+.hero-in{position:relative;z-index:2;width:100%;padding:56px 6vw 62px 18vw}
+@media(max-width:900px){.hero-in{padding:48px 6vw 52px}}
+.hero h1{color:#fff;margin:14px 0 10px}
+.hero .kicker{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--arena);font-weight:500}
+.hero .sub{font-size:clamp(15px,1.9vw,19px);color:#F6E7D6;max-width:58ch}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.pill{border:1px solid rgba(230,202,178,.5);border-radius:999px;padding:7px 16px;font-size:13px;color:#F6E7D6;backdrop-filter:blur(4px);background:rgba(59,32,24,.22)}
+
+section{padding:clamp(54px,7.5vw,104px) 0;position:relative}
+.sec-head{margin-bottom:40px}
+.sec-head p{color:var(--ink-soft);font-size:17px;margin-top:16px}
+.rot{position:absolute;left:max(12px,calc((100vw - min(1180px,92vw))/2 - 46px));top:clamp(54px,7.5vw,104px);writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);font-weight:500;user-select:none}
+@media(max-width:1100px){.rot{display:none}}
+.alt{background:var(--paper)}
+
+.ciclos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.ciclo{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow-soft)}
+.alt .ciclo{background:var(--bg)}
+.ciclo .mes-tag{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500;margin-bottom:6px}
+.ciclo h3{font-size:24px;margin-bottom:8px}
+.ciclo .d{font-size:13.5px;color:var(--ink-soft);line-height:1.6}
+.ciclo .d b{color:var(--tierra);font-weight:500}
+
+.air-block{margin-bottom:34px}
+.air-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;margin-bottom:6px}
+.air-head h3{font-size:clamp(22px,3vw,30px)}
+.air-tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--oliva);padding:4px 11px;border-radius:999px;font-weight:500}
+.air-route{font-size:12.5px;color:var(--mute)}
+.air-legs{font-size:13px;color:var(--ink-soft);margin-bottom:14px;line-height:1.75}
+.air-legs b{color:var(--tierra);font-weight:500}
+.fares{display:grid;gap:14px}
+.fares.c2{grid-template-columns:1fr 1fr}
+@media(max-width:820px){.fares.c2{grid-template-columns:1fr}}
+.fare-col{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.alt .fare-col{background:var(--bg)}
+.fare-col.best{border-color:rgba(156,43,13,.4);box-shadow:0 0 0 1px rgba(156,43,13,.16)}
+.fare-col h4{font-family:var(--font-display);font-weight:400;font-size:20px;text-transform:uppercase;color:var(--tierra);margin:0 0 2px}
+.fare-col .ftag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--atardecer);font-weight:500;margin-bottom:12px;display:block}
+.fare-col ul{list-style:none;margin:0;padding:0}
+.fare-col li{font-size:12.5px;color:var(--ink-soft);padding:5px 0 5px 20px;position:relative;line-height:1.45}
+.fare-col li::before{position:absolute;left:0;top:5px;font-family:var(--font-display);font-size:13px}
+.fare-col li.y::before{content:"+";color:var(--oliva)}
+.fare-col li.n::before{content:"–";color:var(--mute)}
+.fare-col li.n{color:var(--mute)}
+.air-note{font-size:12.5px;color:var(--mute);line-height:1.7;margin:14px 0 0;font-style:italic}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.card{position:relative;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s}
+.alt .card{background:var(--bg)}
+.card.is-sel{border-color:var(--atardecer);box-shadow:0 0 0 1px rgba(156,43,13,.2),var(--shadow)}
+.card-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--arena-soft);border:0;padding:0;width:100%;display:block;cursor:pointer}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.card-b{padding:16px 20px 20px;display:flex;flex-direction:column;flex:1}
+.card-b h3{font-size:18px;margin:0 0 3px;line-height:1.08}
+.stars{color:#C6892B;font-size:12px;letter-spacing:1px;margin-bottom:6px}
+.hmeta{font-size:11.5px;color:var(--mute);margin-bottom:10px}
+.hdesc{font-size:12.5px;color:var(--ink-soft);line-height:1.65;margin:0 0 12px}
+.mini-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.mini-gal button{padding:0;border:0;background:none;cursor:pointer;border-radius:8px;overflow:hidden;line-height:0}
+.mini-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:opacity .2s}
+.mini-gal button:hover img{opacity:.8}
+.hab-block{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line)}
+.hab-h{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500;margin-bottom:2px}
+.hab-name{font-family:var(--font-display);font-size:15px;color:var(--tierra);letter-spacing:.02em;text-transform:uppercase;line-height:1.15;margin-bottom:4px}
+.hab-name span{font-family:var(--font-body);font-size:10.5px;letter-spacing:.12em;color:var(--mute);display:block;text-transform:uppercase;font-weight:500}
+.hab-note{font-size:11px;color:var(--mute);margin-top:7px;line-height:1.5;font-style:italic}
+.gal-link{margin-top:14px;background:none;border:0;padding:0;color:var(--oliva-dark);font-size:12px;text-decoration:underline;cursor:pointer;font-family:var(--font-body);text-align:left;align-self:flex-start}
+.select-btn{margin-top:auto;padding-top:16px}
+.select-btn button{width:100%;border:1.5px solid var(--tierra);background:transparent;color:var(--tierra);font-family:var(--font-body);font-weight:500;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;padding:12px;border-radius:999px;cursor:pointer;transition:.2s}
+.select-btn button:hover{background:var(--arena-soft)}
+.card.is-sel .select-btn button{background:var(--atardecer);border-color:var(--atardecer);color:#fff;cursor:default}
+
+.hmodal-overlay{position:fixed;inset:0;z-index:300;background:rgba(59,32,24,.65);backdrop-filter:blur(4px);opacity:0;pointer-events:none;overflow-y:auto;padding:30px 16px;transition:opacity .3s}
+.hmodal-overlay.open{opacity:1;pointer-events:auto}
+.hmodal{background:var(--paper);border-radius:18px;max-width:880px;margin:0 auto;padding:26px;position:relative;box-shadow:var(--shadow)}
+.hmodal-close{position:absolute;top:10px;right:14px;background:none;border:0;font-size:28px;color:var(--mute);cursor:pointer;line-height:1}
+.hm-sec{font-family:var(--font-display);font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--tierra);margin:22px 0 10px}
+.hm-sub{font-size:11.5px;color:var(--mute);margin:-6px 0 10px;font-style:italic}
+.hm-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.hm-gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;cursor:zoom-in}
+@media(max-width:560px){.hm-gal{grid-template-columns:1fr 1fr}}
+.lightbox{position:fixed;inset:0;z-index:400;background:rgba(22,9,4,.93);display:flex;align-items:center;justify-content:center;padding:5vh 5vw;opacity:0;pointer-events:none;transition:opacity .3s}
+.lightbox.open{opacity:1;pointer-events:auto}
+.lightbox img{max-width:100%;max-height:100%;border-radius:10px}
+.lb-close{position:fixed;top:14px;right:22px;background:none;border:0;font-size:38px;color:rgba(255,255,255,.85);cursor:pointer;line-height:1}
+
+.quote{background:var(--tierra);color:var(--arena)}
+.quote h2,.quote h3{color:var(--arena)} .quote .eyebrow{color:var(--arena)}
+.quote h2 em{color:#F0B49C}
+.quote .sec-head p{color:rgba(230,202,178,.82)}
+.q-panel{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-radius:var(--radius);padding:26px 28px}
+.q-selgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px 26px}
+@media(max-width:720px){.q-selgrid{grid-template-columns:1fr}}
+.q-selgroup{min-width:0}
+.q-selgroup > label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(230,202,178,.65);margin-bottom:9px;font-weight:500}
+.q-opts{display:flex;flex-wrap:wrap;gap:7px}
+.q-opt{position:relative}
+.q-opt input{position:absolute;opacity:0;pointer-events:none}
+.q-opt span{display:block;border:1px solid rgba(230,202,178,.32);border-radius:999px;padding:8px 14px;font-size:12.5px;cursor:pointer;color:var(--arena);line-height:1.3}
+.q-opt input:checked + span{background:var(--atardecer);border-color:var(--atardecer);color:#fff}
+.q-opt input:focus-visible + span{outline:2px solid var(--arena);outline-offset:2px}
+.q-resumen{background:rgba(253,250,243,.06);border:1px dashed rgba(230,202,178,.3);border-radius:12px;padding:14px 18px;margin-top:18px;font-size:13px;color:rgba(230,202,178,.9);line-height:1.7}
+.q-resumen b{color:#fff;font-weight:500}
+
+.inv-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;margin:34px 0 0}
+.inv-head h3{font-size:clamp(22px,3vw,30px)}
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+@media(max-width:900px){.rooms{grid-template-columns:1fr}}
+.rp{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-left:3px solid var(--atardecer);border-radius:14px;padding:22px 24px;display:flex;flex-direction:column}
+.rp .rp-who{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(230,202,178,.7);font-weight:500;margin-bottom:14px;line-height:1.5}
+.rp .rp-l{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(230,202,178,.6);font-weight:500}
+.rp .rp-usd{font-family:var(--font-display);font-size:clamp(30px,4.4vw,40px);color:#fff;line-height:1.05;margin:5px 0 2px}
+.rp .rp-cop{font-size:12px;color:rgba(230,202,178,.68)}
+.rp-split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(230,202,178,.2)}
+.rp-split .rp-amt{font-family:var(--font-display);font-size:20px;color:#fff;line-height:1.2;margin-top:4px}
+.rp-split .rp-cop{font-size:10.5px}
+.rp-solo{margin-top:18px;padding-top:16px;border-top:1px solid rgba(230,202,178,.2);font-size:12px;color:rgba(230,202,178,.78);line-height:1.6}
+.rp-solo b{color:#fff;font-weight:500}
+.pay-note{background:rgba(253,250,243,.06);border:1px solid rgba(230,202,178,.22);border-left:3px solid var(--arena);border-radius:14px;padding:18px 22px;margin-top:22px;font-size:13px;color:rgba(230,202,178,.85);line-height:1.7}
+.pay-note b{color:#fff;font-weight:500}
+.q-note{font-size:12.5px;color:rgba(230,202,178,.62);margin-top:20px;line-height:1.7;text-align:center}
+
+.acc{display:flex;flex-direction:column;gap:14px}
+.ac{background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-soft);overflow:hidden}
+.alt .ac{background:var(--bg)}
+.ac[open]{border-color:rgba(104,54,44,.28)}
+.ac summary{display:flex;align-items:center;gap:14px;padding:20px 24px;cursor:pointer;list-style:none;font-family:var(--font-display);text-transform:uppercase;font-size:clamp(17px,2.1vw,21px);color:var(--tierra)}
+.ac summary::-webkit-details-marker{display:none}
+.ac summary:hover{background:rgba(230,202,178,.24)}
+.ac-ic{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-family:var(--font-display);font-size:15px;color:#fff}
+.ac-ic.yes{background:var(--oliva)} .ac-ic.no{background:var(--atardecer)}
+.ac-ic.warn{background:var(--tierra)} .ac-ic.info{background:var(--mute);font-style:italic}
+.ac-ar{margin-left:auto;flex:none;width:9px;height:9px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:rotate(45deg) translate(-2px,-2px);transition:transform .25s}
+.ac[open] .ac-ar{transform:rotate(225deg) translate(-2px,-2px);border-color:var(--atardecer)}
+.ac-b{padding:0 24px 22px}
+.lst{list-style:none;padding:0;margin:0;font-size:14.5px;color:var(--ink-soft)}
+.lst li{padding:9px 0 9px 28px;position:relative;border-bottom:1px solid var(--line)}
+.lst li:last-child{border-bottom:0}
+.lst li::before{position:absolute;left:0;top:9px;font-family:var(--font-display);font-size:15px}
+.lst.yes li::before{content:"+";color:var(--oliva)}
+.lst.no li::before{content:"–";color:var(--atardecer)}
+.fine{font-size:13px;color:var(--mute);line-height:1.75}
+.fine strong{color:var(--tierra);font-weight:500}
+
+.cta{background:var(--atardecer);color:#fff;text-align:center}
+.cta h2{color:#fff} .cta h2 em{color:var(--arena)}
+.cta p{color:rgba(255,255,255,.88);max-width:56ch;margin:16px auto 30px;font-size:17px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--arena);color:var(--tierra);text-decoration:none;font-weight:500;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:16px 34px;border-radius:999px;transition:.2s}
+.btn:hover{background:#fff;transform:translateY(-2px)}
+footer{background:var(--tierra);color:rgba(230,202,178,.72);padding:56px 0 30px;font-size:13px}
+footer img{height:34px;margin-bottom:22px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;margin-bottom:40px}
+@media(max-width:760px){.f-grid{grid-template-columns:1fr;gap:26px}}
+footer h4{font-family:var(--font-display);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--arena);margin:0 0 14px}
+footer a{color:rgba(230,202,178,.72);text-decoration:none}
+footer a:hover{color:#fff}
+footer p{margin:0 0 8px;line-height:1.7}
+.f-bot{border-top:1px solid rgba(230,202,178,.16);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;font-size:11.5px;color:rgba(230,202,178,.5)}
+.credits{font-size:10.5px;color:rgba(230,202,178,.38);line-height:1.8;margin-top:18px}
+@media print{ .nav,.cta,.ac-ar,.hmodal-overlay,.lightbox,.select-btn{display:none} .hero{min-height:auto} body{background:#fff} section{padding:22px 0} .card,.ac,.fare-col,.ciclo,.rp{break-inside:avoid;box-shadow:none} }
+.play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.play span{width:56px;height:56px;border-radius:50%;background:rgba(59,32,24,.62);backdrop-filter:blur(2px);display:grid;place-items:center;transition:.2s}
+.play svg{width:19px;height:19px;fill:#fff;margin-left:3px}
+.card-img:hover .play span{background:var(--atardecer);transform:scale(1.06)}
+.badge{position:absolute;top:12px;left:12px;z-index:2;background:var(--atardecer);color:#fff;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;padding:5px 11px;border-radius:999px}
+.vid-note{font-size:11px;color:var(--mute);margin:9px 0 0;line-height:1.5;font-style:italic}
+.sec-head.mid{text-align:center;max-width:760px;margin-inline:auto}
+.grid.c2{max-width:900px;margin-inline:auto}
+.air-block.mid{max-width:900px;margin-inline:auto}
+.air-block.mid .air-head{justify-content:center}
+.air-block.mid .air-legs{text-align:center}
+.tr-wrap{max-width:620px;margin-inline:auto}
+.tr{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-soft);padding:26px 28px;text-align:center}
+.alt .tr{background:var(--bg)}
+.tr h3{font-size:22px;margin-bottom:8px}
+.tr .tr-tag{display:inline-block;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#fff;background:var(--oliva);padding:4px 12px;border-radius:999px;font-weight:500;margin-bottom:12px}
+.tr p{font-size:13.5px;color:var(--ink-soft);line-height:1.7;margin:0 0 14px}
+.tr ul{list-style:none;margin:0;padding:0;display:inline-block;text-align:left}
+.tr li{font-size:12.5px;color:var(--ink-soft);padding:5px 0 5px 20px;position:relative;line-height:1.5}
+.tr li::before{content:"+";position:absolute;left:0;top:4px;font-family:var(--font-display);font-size:14px;color:var(--oliva)}
+.rooms.one{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
+.rooms.one .rp{text-align:center;border-left:1px solid rgba(230,202,178,.22);border-top:3px solid var(--atardecer)}
+.rooms.one .rp-split{text-align:center}
+.hab-solo{max-width:420px;margin:0 auto}
+.fares.one{grid-template-columns:1fr;max-width:440px;margin-inline:auto}
+.grid.c3{max-width:1180px}
+.gal-link{align-self:center}
+.lb-nav{position:fixed;top:50%;transform:translateY(-50%);background:rgba(59,32,24,.55);border:0;color:#fff;font-size:26px;line-height:1;width:50px;height:50px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.lb-nav:hover{background:var(--atardecer)}
+.lb-prev{left:14px} .lb-next{right:14px}
+.lb-count{position:fixed;bottom:16px;left:0;right:0;text-align:center;color:rgba(255,255,255,.7);font-size:12px;letter-spacing:.14em}
+.hab-block + .hab-block{margin-top:12px}
+.tr ul.two{columns:2;column-gap:26px}
+@media(max-width:560px){.tr ul.two{columns:1}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" aria-label="Raíces"><img src="assets/marca/logo-horizontal.png" alt="Raíces"></a>
+    <button class="nav-burger" type="button" id="nav-burger" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir el menú"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="nav-links">
+      <a href="#vuelos">Vuelos</a>
+      <a href="#hoteles">Hoteles</a>
+      <a href="#tours">Tours y traslados</a>
+      <a href="#inversion">Tu inversión</a>
+      <a href="#condiciones">Condiciones</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <img class="bg" src="assets/destinos/hero.jpg" alt="San Andrés Islas">
+  <div class="hero-in">
+    <div class="kicker">Cotización Raíces</div>
+    <h1>San Andrés<br>Islas</h1>
+    <p class="sub">Tres noches de todo incluido en el mar de los siete colores, con vuelo directo, los tours clásicos de la isla y los traslados del aeropuerto ya resueltos. Elige el hotel y la categoría de habitación, y el valor por persona se calcula solo.</p>
+    <div class="hero-meta">
+      <span class="pill">3 noches</span>
+      <span class="pill">3 viajeros</span>
+      <span class="pill">Todo incluido</span>
+      <span class="pill">Vuelo directo</span>
+      <span class="pill">Tours y traslados incluidos</span>
+    </div>
+  </div>
+</header>
+
+<section id="vuelos">
+  <div class="rot">Vuelos</div>
+  <div class="wrap">
+    <div class="sec-head mid">
+      <div class="eyebrow">Tiquete aéreo</div>
+      <h2>Con quién<br><em>vuelan</em></h2>
+      <p>Avianca, directo en las dos rutas: sin escalas ni conexiones. Salida temprano el primer día y regreso en la noche del último, para aprovechar la isla completa.</p>
+    </div>
+    <div id="airlines"></div>
+  </div>
+</section>
+
+<section id="hoteles" class="alt">
+  <div class="rot">Hoteles</div>
+  <div class="wrap">
+    <div class="sec-head mid">
+      <div class="eyebrow">Dónde se quedan</div>
+      <h2>Cinco hoteles<br>todo <em>incluido</em></h2>
+      <p>Todos con plan todo incluido: desayuno, almuerzo, cena, snacks y bebidas dentro del hotel, sin pagar nada aparte durante la estadía. Toca el video de cada uno para recorrerlo por dentro, o las fotos para verlas en grande.</p>
+    </div>
+    <div class="grid c3" id="grid-hoteles"></div>
+  </div>
+</section>
+
+<section id="tours">
+  <div class="rot">Tours</div>
+  <div class="wrap">
+    <div class="sec-head mid">
+      <div class="eyebrow">Ya está resuelto</div>
+      <h2>Tours y <em>traslados</em></h2>
+      <p>El combo de tours y los traslados del aeropuerto van incluidos en el plan, para los tres viajeros.</p>
+    </div>
+    <div class="tr-wrap">
+      <div class="tr">
+        <span class="tr-tag">Incluido en el plan</span>
+        <h3>Combo de tours y traslados</h3>
+        <p>Los tres recorridos clásicos de San Andrés, más el traslado del aeropuerto al hotel y de vuelta. La programación de cada tour se coordina en la isla según la disponibilidad de cupos del día.</p>
+        <ul class="two">
+          <li>Tour al Acuario <b>o</b> a Johnny Cay, en un día</li>
+          <li>Tour Bahía Diurno</li>
+          <li>Tour Vuelta a la Isla terrestre</li>
+          <li>Traslado aeropuerto → hotel → aeropuerto</li>
+          <li>Salida desde el muelle privado de Portofino, frente al parque de la barracuda</li>
+          <li>Para los tres viajeros</li>
+        </ul>
+        <p style="font-size:12px;color:var(--mute);font-style:italic;margin:16px 0 0">Los tours marítimos no incluyen alimentación, bebidas ni el valor de ingreso a los sitios de interés. El recorrido terrestre no llega hasta el Hoyo Soplador. Lleven ropa de playa cómoda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="inversion" class="quote">
+  <div class="wrap">
+    <div class="sec-head mid">
+      <div class="eyebrow">Tu inversión</div>
+      <h2>Arma tu <em>plan</em></h2>
+      <p>Elige el hotel y la categoría de habitación. El valor por persona se calcula solo.</p>
+    </div>
+
+    <div class="q-panel">
+      <div class="q-selgrid">
+        <div class="q-selgroup" style="grid-column:1/-1"><label>Hotel · 3 noches</label><div class="q-opts" id="sel-hotel"></div></div>
+        <div class="q-selgroup" style="grid-column:1/-1" id="grp-cat"><label>Categoría de habitación</label><div class="q-opts" id="sel-cat"></div></div>
+      </div>
+      <div class="q-resumen" id="q-resumen"></div>
+    </div>
+
+    <div class="inv-head" style="justify-content:center"><h3>Valor por persona</h3></div>
+
+    <div class="rooms one" id="rooms"></div>
+
+    <div id="pay-zone"></div>
+
+    <p class="q-note">Valores por persona, con todo lo del plan incluido: tiquete aéreo, alojamiento todo incluido, tours y traslados. Sujetos a disponibilidad al momento de confirmar.</p>
+  </div>
+</section>
+
+<section id="condiciones" class="alt">
+  <div class="rot">Condiciones</div>
+  <div class="wrap">
+    <div class="sec-head mid"><div class="eyebrow">Letra clara</div><h2>Qué incluye<br>y <em>qué no</em></h2></div>
+    <div class="acc">
+      <details class="ac" open>
+        <summary><span class="ac-ic yes">+</span>El plan incluye<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <ul class="lst yes">
+            <li>Tiquete aéreo para los tres viajeros con <b>Avianca</b>, tarifa Basic, con impuestos: ida y regreso, los dos <b>directos</b></li>
+            <li><b>Tres noches</b> de alojamiento en San Andrés, en el hotel y la categoría que elijan</li>
+            <li><b>Todo incluido</b>: desayuno, almuerzo, cena, snacks y bebidas dentro del hotel</li>
+            <li>Combo de tours: <b>Acuario o Johnny Cay</b>, <b>Bahía Diurno</b> y <b>Vuelta a la Isla</b> terrestre</li>
+            <li>Traslado <b>aeropuerto → hotel → aeropuerto</b>, para los tres viajeros</li>
+            <li>Acompañamiento de Raíces por WhatsApp, antes y durante el viaje</li>
+          </ul>
+        </div>
+      </details>
+      <details class="ac">
+        <summary><span class="ac-ic no">–</span>El plan no incluye<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <ul class="lst no">
+            <li><b>Tarjeta de turismo de San Andrés</b>, que se compra en el aeropuerto de origen antes de abordar (es obligatoria y se paga por persona)</li>
+            <li>Equipaje de mano en cabina, maleta de bodega y selección de silla, que la tarifa Basic no cubre</li>
+            <li>Alimentación, bebidas y entradas a los sitios de interés durante los tours</li>
+            <li>Restaurantes de especialidades con reserva previa, licores premium y spa dentro del hotel</li>
+            <li>Deportes náuticos motorizados y actividades fuera del hotel</li>
+            <li>Seguro de asistencia médica en viaje</li>
+            <li>Propinas, compras y gastos personales</li>
+          </ul>
+        </div>
+      </details>
+      <details class="ac">
+        <summary><span class="ac-ic warn">!</span>Política de pago<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b"><div class="fine" id="pol-pago"></div></div>
+      </details>
+      <details class="ac">
+        <summary><span class="ac-ic info">i</span>Documentación y entrada a la isla<span class="ac-ar" aria-hidden="true"></span></summary>
+        <div class="ac-b">
+          <div class="fine">
+            <p><strong>Documento:</strong> cédula de ciudadanía vigente para los mayores de edad, y registro civil o tarjeta de identidad para los menores. San Andrés es territorio colombiano, así que no se necesita pasaporte ni visa.</p>
+            <p><strong>Tarjeta de turismo:</strong> para entrar a San Andrés es obligatoria y se compra en el aeropuerto de origen, antes de abordar, con el documento de identidad en la mano. No está incluida en esta cotización.</p>
+            <p><strong>Vigencia:</strong> esta cotización se envía el 28 de agosto de 2026 y está sujeta a cambios y disponibilidad por parte de la aerolínea y de los hoteles. Se recomienda confirmar lo antes posible.</p>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="eyebrow" style="color:rgba(255,255,255,.7)">¿Listos?</div>
+    <h2>Reservar por <em>WhatsApp</em></h2>
+    <p>Al tocar el botón se abre WhatsApp con el plan ya escrito: el hotel, la categoría de habitación y el valor por persona. Solo lo envían y seguimos por ahí.</p>
+    <a class="btn js-wa" href="https://wa.me/573122738001" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+    <p style="font-size:13.5px;margin-top:26px;opacity:.75">¿Prefieren ajustar algo antes? Escríbenos y lo resolvemos.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/marca/logo-blanco.png" alt="Raíces">
+    <div class="f-grid">
+      <div><h4>Raíces</h4><p>Cumplimos lo que prometemos.<br>Turismo auténtico y con esencia.</p></div>
+      <div>
+        <h4>Contacto</h4>
+        <p><a href="https://wa.me/573122738001" target="_blank" rel="noopener">WhatsApp +57 312 273 8001</a></p>
+        <p><a href="mailto:hola@raices.travel">hola@raices.travel</a></p>
+        <p><a href="https://raices.travel" target="_blank" rel="noopener">raices.travel</a></p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <p>RNT No. 92495</p>
+        <p>Lemont Group S.A.S.</p>
+        <p><a href="https://raices.travel/terminos-y-condiciones.html" target="_blank" rel="noopener">Términos y condiciones</a></p>
+        <p><a href="https://raices.travel/tratamiento-de-datos.html" target="_blank" rel="noopener">Tratamiento de datos</a></p>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>Cotización San Andrés Islas · 3 viajeros · 28 de agosto de 2026</span>
+      <span>Documento privado. No constituye reserva confirmada.</span>
+    </div>
+    <p class="credits"><b style="color:rgba(230,202,178,.55);font-weight:500">Créditos.</b> Fotos y videos de los hoteles: cortesía de cada propiedad y de sus canales oficiales. Las marcas y logotipos citados pertenecen a sus respectivos titulares.</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close" aria-label="Cerrar">&times;</button>
+  <button class="lb-nav lb-prev" id="lb-prev" aria-label="Anterior">&#8249;</button>
+  <img id="lightbox-img" alt="">
+  <button class="lb-nav lb-next" id="lb-next" aria-label="Siguiente">&#8250;</button>
+  <div class="lb-count" id="lb-count"></div>
+</div>
+
+<script>
+const MARKUP        = 1.10;   // hoteles y tiquetes
+const TIQUETE_BASE  = 631700; // por persona
+const COMBO_PP      = 140000; // por persona
+const RESERVA_HOTEL = 0.35;
+const NL = String.fromCharCode(10);
+
+const TIQUETE_PP = TIQUETE_BASE * MARKUP;
+const money = n => "$" + (Math.round(n/1000)*1000).toLocaleString("es-CO") + " COP";
+
+const AEROLINEAS = [
+  { id:"avianca", nombre:"Avianca", tag:"Directo, ida y regreso", ruta:"Medellín (MDE) &#9992; San Andrés (ADZ)",
+    ida:"Sale 8:05 a.m. &middot; directo, sin escalas",
+    regreso:"Sale 8:10 p.m. &middot; directo, sin escalas",
+    nota:"Los dos vuelos son directos y en horarios que estiran el viaje: salen temprano el primer día, así que almuerzan ya en la isla, y regresan en la noche del último, con el día completo de playa.",
+    fares:[
+      {k:"basic", label:"Basic", ftag:"Tarifa cotizada", best:true,
+       inc:[["y","1 artículo personal (morral pequeño bajo el asiento)"],["n","Sin equipaje de mano en cabina"],["n","Sin maleta de bodega"],["n","Sin selección de silla"],["n","Sin cambios ni devoluciones"]]}
+    ]}
+];
+
+const HOTELES = [
+  {slug:"arena-blanca", nombre:"Arena Blanca", est:3, zona:"San Andrés Islas",
+   regimen:"Todo incluido",
+   desc:"Hotel todo incluido de la misma casa que el Hotel Dorado, con el que comparte los shows nocturnos: unas noches el espectáculo es aquí y otras allá, y los huéspedes de los dos hoteles pueden verlos. Buffets de estilo local, nacional e internacional, y bebidas y snacks incluidos durante el día.",
+   video:null, fotos:10,
+   opciones:[
+     {k:"estandar", label:"Estándar", base:1432000, hab:"Habitación Estándar", dir:"hab-estandar", habFotos:6},
+     {k:"oasis",    label:"Oasis",    base:1545000, hab:"Habitación Oasis",    dir:"hab-oasis",    habFotos:6}
+   ]},
+  {slug:"dorado", nombre:"Dorado San Andrés", est:3, zona:"San Andrés Islas",
+   regimen:"Todo incluido",
+   desc:"Todo incluido completo: desayuno, almuerzo y cena tipo buffet, bebidas sin alcohol ilimitadas y bebidas con alcohol de 10:00 a.m. a 2:00 a.m., más tres franjas de snacks al día — perros, hamburguesas, pizza, pollo, tacos. Shows nocturnos todos los días de 8:30 a 10:00 p.m. El restaurante tiene salón principal y terraza, a elección.",
+   video:"MF9DYeeJaHc", thumb:"mqdefault", fotos:0,
+   opciones:[
+     {k:"interna", label:"Vista interna", base:1320000, hab:"Habitación Vista Interna", dir:null, habFotos:0},
+     {k:"mar",     label:"Vista al mar",  base:1432000, hab:"Habitación Vista al Mar",  dir:null, habFotos:0}
+   ]},
+  {slug:"sol-caribe-sa", nombre:"Sol Caribe San Andrés", est:4, zona:"San Andrés &middot; centro",
+   regimen:"Todo incluido",
+   desc:"El Sol Caribe del centro, a pocos metros de las playas públicas y de la zona comercial, con club de playa privado en San Luis (bar, snacks y deportes náuticos no motorizados). Cuatro restaurantes: Sol Marino de pescados y mariscos, Barbacoa de parrilla, Mirador del Sol con grandes ventanales y el buffet Bucanero. Noches con shows de baile y música. Como huéspedes también pueden disfrutar de día el Sol Caribe Campo.",
+   video:"uBm7LQ_67ws", fotos:0,
+   opciones:[
+     {k:"estandar", label:"Estándar", base:1710000, hab:"Habitación Estándar", dir:null, habFotos:0}
+   ]},
+  {slug:"sol-caribe-campo", nombre:"Sol Caribe Campo", est:4, zona:"San Andrés &middot; San Luis",
+   regimen:"Todo incluido",
+   desc:"El más tranquilo de los dos Sol Caribe, en San Luis. Su club de playa privado queda a cinco minutos con transporte incluido, y allá el todo incluido sigue funcionando: snacks, helados y bebidas ilimitadas. Tres restaurantes — la Trattoria italiana con reserva previa y los buffets Palmas y Corales — tres piscinas, sala de juegos y parques infantiles. Como huéspedes también pueden disfrutar de día el Sol Caribe San Andrés.",
+   video:"GLAQyLLVoP0", fotos:0,
+   opciones:[
+     {k:"estandar", label:"Estándar", base:1710000, hab:"Habitación Estándar", dir:null, habFotos:0}
+   ]},
+  {slug:"ghl-sunrise", nombre:"GHL Relax Hotel Sunrise", est:4, zona:"San Andrés Islas",
+   regimen:"Todo incluido",
+   desc:"Su marca es la piscina de agua dulce construida sobre el mar. Tres restaurantes y dos bares, con el Paradise de cocina internacional y vista directa al mar, más Henriette y El Muelle. De noche tiene discoteca, y durante el día gimnasio y jacuzzi.",
+   video:"B3e5HZLHq-4", fotos:0,
+   opciones:[
+     {k:"interna", label:"Vista interna", base:2118000, hab:"Habitación Doble Estándar", dir:"hab", habFotos:6},
+     {k:"mar",     label:"Vista al mar",  base:2456000, hab:"Habitación Doble Vista al Mar", dir:"hab", habFotos:6}
+   ],
+   habsCard:[{k:"interna", hab:"Habitación Doble", dir:"hab", habFotos:6,
+              nota:"La habitación es la misma en las dos categorías; lo que cambia es la vista."}]}
+];
+
+const state = { hotel:"arena-blanca", cat:"estandar" };
+
+const hotelActual = () => HOTELES.find(h => h.slug === state.hotel);
+const catActual   = () => { const h = hotelActual(); return h.opciones.find(o => o.k === state.cat) || h.opciones[0]; };
+const estrellas   = n => "★".repeat(Math.floor(n)) + (n % 1 ? "½" : "");
+const ytThumb     = h  => "https://img.youtube.com/vi/" + h.video + "/" + (h.thumb || "maxresdefault") + ".jpg";
+const FOTOHOTEL   = (slug,i) => "assets/hoteles/" + slug + "/" + i + ".jpg";
+const FOTOHAB     = (slug,dir,i) => "assets/hoteles/" + slug + "/" + dir + "/" + i + ".jpg";
+
+function calc(){
+  const hotelPP = catActual().base * MARKUP;
+  const total   = TIQUETE_PP + hotelPP + COMBO_PP;
+  const reserva = TIQUETE_PP + RESERVA_HOTEL * hotelPP;
+  const r = n => Math.round(n/1000)*1000;
+  const totalR = r(total), reservaR = r(reserva);
+  return { totalR, reservaR, saldoR: totalR - reservaR };
+}
+
+// ---------- aerolínea (informativo, sin precios) ----------
+document.getElementById("airlines").innerHTML = AEROLINEAS.map(a => `
+  <div class="air-block mid">
+    <div class="air-head"><h3>${a.nombre}</h3><span class="air-tag">${a.tag}</span><span class="air-route">${a.ruta}</span></div>
+    <div class="air-legs"><b>Ida:</b> ${a.ida}<br><b>Regreso:</b> ${a.regreso}</div>
+    <div class="fares ${a.fares.length > 1 ? "c2" : "one"}">
+      ${a.fares.map(f => `
+        <div class="fare-col ${f.best ? "best" : ""}">
+          <h4>${f.label}</h4><span class="ftag">${f.ftag}</span>
+          <ul>${f.inc.map(i => `<li class="${i[0]}">${i[1]}</li>`).join("")}</ul>
+        </div>`).join("")}
+    </div>
+    ${a.nota ? `<p class="air-note">${a.nota}</p>` : ""}
+  </div>`).join("");
+
+// ---------- lightbox con galería ----------
+const LB = { fotos:[], i:0 };
+const lbEl = document.getElementById("lightbox");
+function lbShow(){
+  document.getElementById("lightbox-img").src = LB.fotos[LB.i];
+  document.getElementById("lb-count").textContent = LB.fotos.length > 1 ? (LB.i+1) + " / " + LB.fotos.length : "";
+  const multi = LB.fotos.length > 1;
+  document.getElementById("lb-prev").style.display = multi ? "grid" : "none";
+  document.getElementById("lb-next").style.display = multi ? "grid" : "none";
+}
+function lbOpen(fotos, i){ LB.fotos = fotos; LB.i = i || 0; lbShow(); lbEl.classList.add("open"); }
+function lbMove(d){ if(!LB.fotos.length) return; LB.i = (LB.i + d + LB.fotos.length) % LB.fotos.length; lbShow(); }
+document.getElementById("lb-close").addEventListener("click", () => lbEl.classList.remove("open"));
+document.getElementById("lb-prev").addEventListener("click", e => { e.stopPropagation(); lbMove(-1); });
+document.getElementById("lb-next").addEventListener("click", e => { e.stopPropagation(); lbMove(1); });
+lbEl.addEventListener("click", e => { if(e.target.id === "lightbox" || e.target.id === "lightbox-img") lbEl.classList.remove("open"); });
+addEventListener("keydown", e => {
+  if(!lbEl.classList.contains("open")) return;
+  if(e.key === "Escape") lbEl.classList.remove("open");
+  if(e.key === "ArrowLeft") lbMove(-1);
+  if(e.key === "ArrowRight") lbMove(1);
+});
+
+// ---------- hoteles (sin precios) ----------
+const galHotel = h => Array.from({length:h.fotos}, (_,i) => FOTOHOTEL(h.slug, i+1));
+const galHab   = (h,o) => o.habFotos ? Array.from({length:o.habFotos}, (_,i) => FOTOHAB(h.slug, o.dir, i+1)) : [];
+
+function renderHoteles(){
+  document.getElementById("grid-hoteles").innerHTML = HOTELES.map(h => {
+    const sel = state.hotel === h.slug;
+    const portada = h.video
+      ? `<a class="card-img" href="https://www.youtube.com/watch?v=${h.video}" target="_blank" rel="noopener" aria-label="Ver el video de ${h.nombre}">
+           <img src="${ytThumb(h)}" alt="${h.nombre}" loading="lazy">
+           <div class="play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div>
+         </a>`
+      : `<button type="button" class="card-img" data-gal="${h.slug}" data-i="0" aria-label="Ver las fotos de ${h.nombre}">
+           <img src="${FOTOHOTEL(h.slug,1)}" alt="${h.nombre}" loading="lazy">
+         </button>`;
+
+    const notaPortada = h.video
+      ? `<p class="vid-note">Toca la imagen para ver el video del hotel.</p>`
+      : `<p class="vid-note">Este hotel no tiene video oficial — toca las fotos para verlas en grande.</p>`;
+
+    const galeria = h.fotos ? `
+      <div class="mini-gal">${galHotel(h).slice(1,5).map((f,i) =>
+        `<button type="button" data-gal="${h.slug}" data-i="${i+1}" aria-label="Ver foto del hotel"><img src="${f}" alt="${h.nombre}" loading="lazy"></button>`).join("")}</div>
+      <button type="button" class="gal-link" data-gal="${h.slug}" data-i="0">Ver las ${h.fotos} fotos del hotel</button>` : "";
+
+    const habs = (h.habsCard || h.opciones).map(o => `
+      <div class="hab-block">
+        <div class="hab-h">Categoría de habitación</div>
+        <div class="hab-name">${o.hab}</div>
+        ${o.habFotos
+          ? `<div class="mini-gal" style="grid-template-columns:repeat(${Math.min(o.habFotos,4)},1fr)">${
+              galHab(h,o).slice(0,4).map((f,i) => `<button type="button" data-gal="${h.slug}:${o.k}" data-i="${i}" aria-label="Ver la habitación"><img src="${f}" alt="${o.hab}" loading="lazy"></button>`).join("")
+            }</div><div class="hab-note">${o.nota || "Esta es la habitación o una similar."}</div>`
+          : `<div class="hab-note">Este hotel no publica fotos de esta categoría — la confirmamos con el hotel al reservar.</div>`}
+      </div>`).join("");
+
+    return `
+    <article class="card ${sel ? "is-sel" : ""}" data-card="${h.slug}">
+      ${portada}
+      <div class="card-b">
+        <h3>${h.nombre}</h3>
+        <div class="stars">${estrellas(h.est)}</div>
+        <div class="hmeta">${h.zona}</div>
+        <div class="hmeta" style="color:var(--oliva);font-weight:600">${h.regimen}</div>
+        <p class="hdesc">${h.desc}</p>
+        ${notaPortada}
+        ${galeria}
+        ${habs}
+        <div class="select-btn"><button type="button" data-pick="${h.slug}">${sel ? "Hotel elegido" : "Elegir este hotel"}</button></div>
+      </div>
+    </article>`;
+  }).join("");
+
+  document.querySelectorAll("[data-gal]").forEach(el => el.addEventListener("click", e => {
+    e.preventDefault(); e.stopPropagation();
+    const [slug, ok] = el.dataset.gal.split(":");
+    const h = HOTELES.find(x => x.slug === slug);
+    const fotos = ok ? galHab(h, h.opciones.find(o => o.k === ok)) : galHotel(h);
+    lbOpen(fotos, parseInt(el.dataset.i, 10) || 0);
+  }));
+  document.querySelectorAll("[data-pick]").forEach(el => el.addEventListener("click", () => pickHotel(el.dataset.pick)));
+}
+
+function pickHotel(slug){
+  if(state.hotel === slug){ return; }
+  state.hotel = slug;
+  const h = hotelActual();
+  if(!h.opciones.some(o => o.k === state.cat)) state.cat = h.opciones[0].k;
+  document.querySelectorAll("[data-card]").forEach(card => {
+    const on = card.dataset.card === slug;
+    card.classList.toggle("is-sel", on);
+    card.querySelector("[data-pick]").textContent = on ? "Hotel elegido" : "Elegir este hotel";
+  });
+  const radio = document.querySelector('input[name="hotel"][value="' + slug + '"]');
+  if(radio) radio.checked = true;
+  renderCats(); render();
+}
+
+// ---------- selectores ----------
+const pill = (name,val,label,checked) =>
+  `<label class="q-opt"><input type="radio" name="${name}" value="${val}" ${checked ? "checked" : ""}><span>${label}</span></label>`;
+
+function renderCats(){
+  const h = hotelActual();
+  const grp = document.getElementById("grp-cat");
+  if(h.opciones.length < 2){ grp.style.display = "none"; document.getElementById("sel-cat").innerHTML = ""; return; }
+  grp.style.display = "";
+  document.getElementById("sel-cat").innerHTML =
+    h.opciones.map(o => pill("cat", o.k, o.label, state.cat === o.k)).join("");
+  document.querySelectorAll('input[name="cat"]').forEach(r =>
+    r.addEventListener("change", () => { state.cat = r.value; render(); }));
+}
+
+function renderPills(){
+  document.getElementById("sel-hotel").innerHTML =
+    HOTELES.map(h => pill("hotel", h.slug, h.nombre, state.hotel === h.slug)).join("");
+  document.querySelectorAll('input[name="hotel"]').forEach(r => r.addEventListener("change", () => pickHotel(r.value)));
+  renderCats();
+}
+
+// ---------- render de precios ----------
+function render(){
+  const c = calc(), h = hotelActual(), o = catActual();
+
+  document.getElementById("rooms").innerHTML = `
+    <div class="rp">
+      <div class="rp-who">Por persona &middot; 3 viajeros &middot; 3 noches</div>
+      <div class="rp-l">Valor por persona</div>
+      <div class="rp-usd">${money(c.totalR)}</div>
+      <div class="rp-split">
+        <div><div class="rp-l">Reserva</div><div class="rp-amt">${money(c.reservaR)}</div></div>
+        <div><div class="rp-l">Saldo</div><div class="rp-amt">${money(c.saldoR)}</div></div>
+      </div>
+    </div>`;
+
+  document.getElementById("pay-zone").innerHTML =
+    `<div class="pay-note">Cada viajero reserva con <b>${money(c.reservaR)}</b>. Con ese pago quedan emitidos los tiquetes aéreos y confirmados el hotel, los tours y los traslados. El saldo de <b>${money(c.saldoR)}</b> por persona se paga <b>a más tardar 30 días antes del viaje</b>; si no se paga en esa fecha, la reserva se libera automáticamente.</div>`;
+
+  document.getElementById("pol-pago").innerHTML =
+    `<p>Cada viajero reserva con <strong>${money(c.reservaR)}</strong>. Con el pago de la reserva se emiten los tiquetes aéreos y se confirman el hotel, los tours y los traslados.</p>
+     <p>El saldo de <strong>${money(c.saldoR)}</strong> por persona se paga <strong>a más tardar 30 días antes de la fecha de viaje</strong>. Si no se paga en esa fecha, la reserva se libera automáticamente.</p>
+     <p>Los tiquetes aéreos, una vez emitidos, <strong>no admiten devolución</strong>.</p>`;
+
+  document.getElementById("q-resumen").innerHTML =
+    `Hospedaje en <b>${h.nombre}</b>, ${h.regimen.toLowerCase()}, 3 noches en <b>${o.hab}</b>.<br>` +
+    `Vuelo <b>Avianca</b> directo, tarifa <b>Basic</b>. Tours y traslados incluidos.`;
+
+  const msg = [
+    "Hola Raíces. Quiero reservar el viaje a San Andrés, 3 noches para 3 viajeros:",
+    "",
+    "• Hotel: " + h.nombre + " — " + o.hab + " (todo incluido)",
+    "• Vuelo Avianca directo, tarifa Basic",
+    "• Combo de tours y traslados incluido",
+    "",
+    "Valor por persona: " + money(c.totalR),
+    "Reserva por persona: " + money(c.reservaR),
+    "",
+    "Quedo atento para hacer el pago."
+  ].join(NL);
+  document.querySelectorAll("a.js-wa").forEach(x => { x.href = "https://wa.me/573122738001?text=" + encodeURIComponent(msg); });
+}
+
+renderHoteles(); renderPills(); render();
+
+(() => {
+  const b = document.getElementById("nav-burger"), m = document.getElementById("nav-links");
+  const cerrar = () => { m.classList.remove("is-open"); b.setAttribute("aria-expanded","false"); };
+  b.addEventListener("click", () => { m.classList.contains("is-open") ? cerrar() : (m.classList.add("is-open"), b.setAttribute("aria-expanded","true")); });
+  m.querySelectorAll("a").forEach(a => a.addEventListener("click", cerrar));
+  addEventListener("keydown", e => { if(e.key === "Escape") cerrar(); });
+  matchMedia("(min-width: 1021px)").addEventListener("change", cerrar);
+})();
+(() => {
+  const acs = [...document.querySelectorAll("details.ac")]; let prev = [];
+  addEventListener("beforeprint", () => { prev = acs.map(d => d.open); acs.forEach(d => d.open = true); });
+  addEventListener("afterprint", () => acs.forEach((d,i) => d.open = prev[i]));
+})();
+</script>
+</body>
+</html>
